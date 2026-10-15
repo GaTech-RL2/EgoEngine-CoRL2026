@@ -369,7 +369,6 @@ class InverseKinematicsController(JointPositionController):
         Note that this controller wraps a PositionController, and so determines the desired positions
         to achieve the inputted pose, and sets its internal setpoint in terms of joint positions
 
-        TODO: Add feature so that using @set_ik automatically sets the target values to these absolute values
 
         Args:
             delta (Iterable): Desired relative position / orientation goal state

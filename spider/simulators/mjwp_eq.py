@@ -506,7 +506,6 @@ def _copy_state(src: mjwarp.Data, dst: mjwarp.Data):
     """
     Copy the state from src to dst
 
-    TODO: this function is a temporary solution for domain randomization. A better way should be defining a new warp kernel to update simulation parameter accordingly.
 
     Args:
         src: mjwarp.Data

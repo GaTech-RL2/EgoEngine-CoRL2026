@@ -1,0 +1,94 @@
+{
+  "validated_at_utc": "2026-10-15T19:27:20.832689+00:00",
+  "scope": "Release packaging, prepared visual generation and EEF dataset export; no new CUDA training run.",
+  "visual_environment": {
+    "python": "3.10",
+    "requirements": "requirements/visual-tested.txt",
+    "isolated_install": true,
+    "editable_install": true,
+    "pip_check": "passed",
+    "fresh_installed_cli_demo_frames": 93
+  },
+  "isolated_render_trials": {
+    "initial": "Native render subprocess exited mid-video without a Python traceback.",
+    "standalone_retry": "Passed all 93 frames and paired HDF5 export.",
+    "initial_interruption_cause": "Not established; native subprocess logs are retained locally.",
+    "render_errors_include_child_exit_status": true
+  },
+  "checks": {
+    "visual_interface_suite": {
+      "tests": 28,
+      "passed": 28,
+      "skipped": 0
+    },
+    "action_protocol_suite": {
+      "tests": 24,
+      "passed": 24
+    },
+    "retarget_reference_suite": {
+      "tests": 1,
+      "passed": 1
+    },
+    "prepared_cases": 6,
+    "scene_xml_variants": 12,
+    "python_files_parsed": 396,
+    "text_files_scanned": 2175,
+    "non_english_code_findings": 0,
+    "internal_instruction_findings": 0,
+    "broken_documentation_links": 0,
+    "verified_mesh_texture_assets": 873,
+    "xml_element_comparisons_unchanged": 766,
+    "release_algorithm_changes": false
+  },
+  "aria_visual_datasets": [
+    {
+      "case": "mustard_1",
+      "frames": 93,
+      "eef_action_values": 18,
+      "visual_joint_values": 50,
+      "image_shape": [
+        256,
+        256,
+        3
+      ],
+      "rendered_robot_visible_in_every_frame": true
+    },
+    {
+      "case": "mustard_2",
+      "frames": 105,
+      "eef_action_values": 18,
+      "visual_joint_values": 50,
+      "image_shape": [
+        256,
+        256,
+        3
+      ],
+      "rendered_robot_visible_in_every_frame": true
+    },
+    {
+      "case": "mustard_3",
+      "frames": 108,
+      "eef_action_values": 18,
+      "visual_joint_values": 50,
+      "image_shape": [
+        256,
+        256,
+        3
+      ],
+      "rendered_robot_visible_in_every_frame": true
+    }
+  ],
+  "configured_robot": {
+    "name": "FrankaXHand",
+    "fresh_case": "mustard_1",
+    "frames": 93,
+    "materials_verified": 52,
+    "hand_commands_unchanged": true,
+    "eef_labels_unchanged": true
+  },
+  "limitations": [
+    "TACO removed backgrounds are missing; Cut retarget has an empty visibility mask.",
+    "RL completion varies across cases and seeds; all bundled TACO tasks are not validated successes.",
+    "Original mixed-runner simulation-step Cost integration remains unverified."
+  ]
+}

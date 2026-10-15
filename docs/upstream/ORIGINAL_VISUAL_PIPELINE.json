@@ -34,7 +34,6 @@
     "clone_mode": "mixed"
   },
   "asset_manifest": "ORIGINAL_VISUAL_ASSETS.json",
-  "rule": "Use original replay functions and the original robosuite environment; no synthesized robot XML, material overrides or rewritten camera/render/mask loops.",
   "upstream_source_sha256": {
     "visual/rl_tracking_dev/replay_trajectory_seg_aria.py": "86e95c1ffbf203864124d506334372100a14b0e5f00b296ed715d737c7484ff6",
     "visual/rl_tracking_dev/envs/rl_env_wrapper.py": "e0257c1cda353379490e946d2ea1f6aa1c4f7461277710d24856ad8d067074ab",
@@ -74,5 +73,6 @@
     "visual/robosuite/models/grippers/x_hands.py": "844f253fee38e1fe797f6b14f26fe86c205c8860b3395637b6ab45ab1a7e8e1c",
     "visual/robosuite/models/robots/manipulators/rby1_robot.py": "5fec2aebb7cf7bdabf9b9265f003c9097fce023e1604b4b173f3a69ca39a96a9",
     "visual/robosuite/utils/binding_utils.py": "daba4730b2f154da47184ade49b73d3bb829cc1f7b40f3b97075302a49a33a8b"
-  }
+  },
+  "implementation": "Retained replay functions, original robosuite environment, authored robot XMLs/materials and original camera/render/mask loops."
 }

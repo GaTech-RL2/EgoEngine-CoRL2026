@@ -1,5 +1,8 @@
 # Reproducing EgoEngine
 
+The [release validation record](validation/RELEASE.json) lists executed checks,
+generated frame counts and environment-specific interruptions.
+
 Run commands from the repository root in an editable checkout. The example data,
 robot meshes and object assets are included; no original workstation or separate
 legacy repository is required. The supported starting point is the

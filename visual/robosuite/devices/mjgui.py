@@ -87,7 +87,6 @@ class MJGUI(Device):
         """
         Helper function to get the names of the sites used for mocap bodies.
 
-        TODO: unify this logic to be controller independent.
 
         Returns:
             List[str]: A list of site names.

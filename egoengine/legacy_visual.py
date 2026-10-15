@@ -61,7 +61,9 @@ def render_original(case, output, width=None, height=None):
                                 stdout=stream, stderr=subprocess.STDOUT)
     if result.returncode:
         tail = log.read_text(errors='replace')[-5000:]
-        raise RuntimeError(f'Original visual replay failed. See {log}\n{tail}')
+        raise RuntimeError(
+            f'Original visual replay failed (exit {result.returncode}). See {log}\n{tail}'
+        )
     source_size = video_info(rgb_dir / 'video.mp4')
     width = width or source_size['width']
     if height is None:

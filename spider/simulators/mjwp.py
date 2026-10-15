@@ -274,7 +274,6 @@ def _diff_qpos(
     config: Config, qpos_sim: torch.Tensor, qpos_ref: torch.Tensor
 ) -> torch.Tensor:
     """Compute the difference between qpos_sim and qpos_ref
-    TODO: replace with mujoco built-in function, not sure how to call warp internal function yet.
     """
     batch_size = qpos_sim.shape[0]
     qpos_diff = torch.zeros((batch_size, config.nv), device=config.device)
@@ -335,7 +334,6 @@ def get_reward(
     ref is a tuple: (qpos_ref, qvel_ref, ctrl_ref, contact_ref, contact_pos_ref)
     Returns (N,)
 
-    TODO: move reward computation to task-specific module
     """
     qpos_ref, qvel_ref, ctrl_ref, contact_ref, _contact_pos_ref = ref
     qpos_sim = wp.to_torch(env.data_wp.qpos)
@@ -1200,7 +1198,6 @@ def copy_sample_state(
 def _copy_state(src: mjwarp.Data, dst: mjwarp.Data):
     """Copy the state from src to dst
 
-    TODO: this function is a temporary solution for domain randomization. A better way should be defining a new warp kernel to update simulation parameter accordingly.
 
     Args:
         src: mjwarp.Data

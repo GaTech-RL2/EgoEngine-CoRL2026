@@ -8,7 +8,6 @@
 
 Input data format: npz file which contains qpos for key frames.
 
-TODO: for enable collision, first use non collision as initial guess
 
 Author: Chaoyi Pan
 Date: 2025-07-06

@@ -232,7 +232,6 @@ class TwoArmTransport(TwoArmEnv):
 
         Un-normalized max-wise components if using reward shaping:
 
-            # TODO!
 
         Note that the final reward is normalized and scaled by reward_scale / 1.0 as
         well so that the max score is equal to reward_scale

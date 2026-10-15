@@ -449,7 +449,7 @@ please set shareable to be false.
           intensity: intensity of the light
           radius: radius of the originating light source
           color: color of the light
-          light_type: type of light source (types include "sphere", "dome") (TODO: add other light types from Omniverse)
+          light_type: type of light source (types include "sphere", "dome")
           light_name: name of the light to be stored in USD
         """
         pos = np.array(pos)
