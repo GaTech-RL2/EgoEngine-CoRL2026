@@ -1,15 +1,30 @@
-# EgoEngine: From Egocentric Human Videos to High-Fidelity Dexterous Robot Demonstrations
+<div align="center">
+
+# EgoEngine
+
+### From Egocentric Human Videos to High-Fidelity Dexterous Robot Demonstrations
+
+**CoRL 2026 · Conference on Robot Learning**
 
 [Yangcen Liu](https://yangcenliu.github.io/),
-[Shuo Cheng](https://sites.google.com/view/shuocheng),
-[Xinchen Yin](https://xinchenyin.github.io/),
-[Woo Chul Shin](https://woocshin.github.io/profile/),
+[Shuo Cheng](https://sites.google.com/view/shuocheng)<sup>†</sup>,
+[Xinchen Yin](https://xinchenyin.github.io/)<sup>†</sup>,
+[Woo Chul Shin](https://woocshin.github.io/profile/)<sup>†</sup>,
 [Alfred Cueva](https://alfred-cueva.github.io/), Yiran Yang,
 [Zhenyang Chen](https://chenzheny.github.io/),
 [Chuye Zhang](https://zhangchuye.github.io/),
 [Danfei Xu](https://faculty.cc.gatech.edu/~danfei/)
 
-**[Project website](https://egoengine.github.io/) · [Paper](https://arxiv.org/abs/2606.12604) · [Use my robot](docs/USE_MY_ROBOT.md) · [Reproduction guide](docs/REPRODUCIBILITY.md)**
+<sub>† Co-second authors (equal contribution).</sub>
+
+[![Paper on arXiv](https://img.shields.io/badge/Paper-arXiv-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2606.12604)
+[![Code on GitHub](https://img.shields.io/badge/Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GaTech-RL2/EgoEngine-CoRL2026)
+[![Project website](https://img.shields.io/badge/Project-Website-2563EB?style=for-the-badge)](https://egoengine.github.io/)
+[![Twitter / X thread](https://img.shields.io/badge/Twitter-X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Randle_Liu/status/2069023588154290538?s=20)
+
+[Use my robot](docs/USE_MY_ROBOT.md) · [Reproduction guide](docs/REPRODUCIBILITY.md)
+
+</div>
 
 ![EgoEngine overview, Figure 1 of the paper](docs/media/method.png)
 
