@@ -17,10 +17,10 @@
 
 <sub>† Co-second authors (equal contribution).</sub>
 
-[![Paper on arXiv](https://img.shields.io/badge/Paper-arXiv-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2606.12604)
-[![Code on GitHub](https://img.shields.io/badge/Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GaTech-RL2/EgoEngine-CoRL2026)
-[![Project website](https://img.shields.io/badge/Project-Website-2563EB?style=for-the-badge)](https://egoengine.github.io/)
-[![Twitter / X thread](https://img.shields.io/badge/Twitter-X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Randle_Liu/status/2069023588154290538?s=20)
+[![Paper on arXiv](https://img.shields.io/badge/Paper-24242A?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2606.12604)
+[![Code on GitHub](https://img.shields.io/badge/Code-24242A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GaTech-RL2/EgoEngine-CoRL2026)
+[![Project website](https://img.shields.io/badge/Website-24242A?style=for-the-badge)](https://egoengine.github.io/)
+[![Twitter / X thread](https://img.shields.io/badge/Twitter-24242A?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Randle_Liu/status/2069023588154290538?s=20)
 
 [Use my robot](docs/USE_MY_ROBOT.md) · [Reproduction guide](docs/REPRODUCIBILITY.md)
 
