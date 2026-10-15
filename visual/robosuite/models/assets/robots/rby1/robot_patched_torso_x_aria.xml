@@ -1,0 +1,1502 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="RBY1">
+    <compiler angle="radian" autolimits="true" />
+    <visual>
+        <global offwidth="800" offheight="800" />
+        <map force="0.1" zfar="30" />
+        <rgba haze="0.15 0.25 0.35 1" />
+        </visual>
+    <default>
+        <motor ctrllimited="true" ctrlrange="-1 1" /><material shininess="0.25" />
+        <default class="visual">
+            <material shininess="0.5" />
+            <joint range="0 0" armature="0" damping="0" />
+            <geom type="mesh" contype="0" conaffinity="0" group="1" />
+            </default>
+        <default class="collision">
+            <material shininess="0.5" />
+            <joint range="0 0" armature="0" damping="0" />
+            <geom type="mesh" conaffinity="0" group="0" />
+            </default>
+        <default class="in-model-collision">
+            <material shininess="0.5" />
+            <joint range="0 0" armature="0" damping="0" />
+            <geom contype="0" conaffinity="0" group="0" rgba="0.3 0 0 0" />
+            </default>
+        </default>
+    <asset>
+        <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="3072" />
+        <texture type="2d" name="plane" builtin="checker" mark="cross" rgb1="0.2 0.3 0.4" rgb2="0.1 0.15 0.2" markrgb="0.8 0.8 0.8" width="512" height="512" />
+        <material name="plane" texture="plane" texuniform="true" reflectance="0.3" />
+        <material name="0,0,0" specular="1" shininess="1" rgba="0.17 0.17 0.16 1" />
+        <material name="10,10,10_LINK_6" specular="1" shininess="0.2" rgba="0.17 0.17 0.16 1" />
+        <material name="10,10,10" specular="0.039216" shininess="1" rgba="0.17 0.17 0.16 1" />
+        <material name="163,163,175" specular="1" shininess="0.2" rgba="0.639216 0.639216 0.686275 1" />
+        <material name="178,0,0" specular="1" shininess="0.2" rgba="0.698039 0 0 1" />
+        <material name="190,188,186" specular="1" shininess="0.2" rgba="0.745098 0.737255 0.729412 1" />
+        <material name="191,191,191" specular="0" shininess="0.3" rgba="0.74902 0.74902 0.74902 1" />
+        <material name="192,192,192" specular="1" shininess="0.2" rgba="0.752941 0.752941 0.752941 1" />
+        <material name="216,214,214" specular="1" shininess="0.2" rgba="0.847059 0.839216 0.839216 1" />
+        <material name="237,255,168" specular="1" shininess="0.2" rgba="0.929412 1 0.658824 1" />
+        <material name="242,236,238" specular="1" shininess="0.2" rgba="0.94902 0.92549 0.933333 1" />
+        <material name="244,244,244" specular="0.956863" shininess="1" rgba="0.91 0.91 0.89 1" />
+        <material name="25,25,25" specular="1" shininess="0.8" rgba="0.20 0.20 0.19 1" />
+        <material name="254,254,255_LINK_6" specular="1" shininess="0.2" rgba="0.93 0.93 0.91 1" />
+        <material name="254,254,255" specular="0.997385" shininess="1" rgba="0.93 0.93 0.91 1" />
+        <material name="65,55,50" specular="1" shininess="0.2" rgba="0.254902 0.215686 0.196078 1" />
+        <material name="65,65,65" specular="0.254902" shininess="1" rgba="0.254902 0.254902 0.254902 1" />
+        <material name="69,69,69_1" specular="0" shininess="1" rgba="0.23 0.23 0.22 1" />
+        <material name="69,69,69" specular="1" shininess="1" rgba="0.23 0.23 0.22 1" />
+        <material name="70,70,70_FINGER" specular="0.27451" shininess="1" rgba="0.24 0.24 0.23 1" />
+        <material name="70,70,70" specular="1" shininess="0.2" rgba="0.24 0.24 0.23 1" />
+        <material name="79,79,79" specular="1" shininess="0.2" rgba="0.309804 0.309804 0.309804 1" />
+        <material name="80,80,80" specular="0" shininess="0.5" rgba="0.313725 0.313725 0.313725 1" />
+        <material name="219,216,216" specular="1" shininess="0.2" rgba="0.858824 0.847059 0.847059 1" />
+        <material name="160,160,160" specular="1" shininess="0.2" rgba="0.627451 0.627451 0.627451 1" />
+        <material name="246,246,243" specular="1" shininess="0.2" rgba="0.92 0.92 0.89 1" />
+        <material name="255,255,255" specular="1" shininess="0.2" />
+        <material name="RIGHT_ARM_BLACK_ARIA" specular="0.32" shininess="0.18" rgba="0.33 0.26 0.25 1" />
+        <material name="RIGHT_ARM_DARK_ARIA" specular="0.32" shininess="0.18" rgba="0.31 0.27 0.26 1" />
+        <material name="RIGHT_ARM_WHITE_ARIA" specular="1.45" shininess="1.35" rgba="0.82 0.73 0.67 1" />
+        <material name="235,235,235" specular="1" shininess="0.2" rgba="0.921569 0.921569 0.921569 1" />
+        <mesh name="base_0" file="./assets/base/base_0.obj" />
+        <mesh name="base_1" file="./assets/base/base_1.obj" />
+        <mesh name="base_2" file="./assets/base/base_2.obj" />
+        <mesh name="base_3" file="./assets/base/base_3.obj" />
+        <mesh name="base_collision_0" file="./assets/base/base_collision_0.obj" />
+        <mesh name="base_collision_1" file="./assets/base/base_collision_1.obj" />
+        <mesh name="base_collision_10" file="./assets/base/base_collision_10.obj" />
+        <mesh name="base_collision_11" file="./assets/base/base_collision_11.obj" />
+        <mesh name="base_collision_12" file="./assets/base/base_collision_12.obj" />
+        <mesh name="base_collision_13" file="./assets/base/base_collision_13.obj" />
+        <mesh name="base_collision_14" file="./assets/base/base_collision_14.obj" />
+        <mesh name="base_collision_15" file="./assets/base/base_collision_15.obj" />
+        <mesh name="base_collision_2" file="./assets/base/base_collision_2.obj" />
+        <mesh name="base_collision_3" file="./assets/base/base_collision_3.obj" />
+        <mesh name="base_collision_4" file="./assets/base/base_collision_4.obj" />
+        <mesh name="base_collision_5" file="./assets/base/base_collision_5.obj" />
+        <mesh name="base_collision_6" file="./assets/base/base_collision_6.obj" />
+        <mesh name="base_collision_7" file="./assets/base/base_collision_7.obj" />
+        <mesh name="base_collision_8" file="./assets/base/base_collision_8.obj" />
+        <mesh name="base_collision_9" file="./assets/base/base_collision_9.obj" />
+        <mesh name="WHEEL" file="./assets/WHEEL/WHEEL.obj"/>
+        <mesh name="WHEEL_collision_0" file="./assets/WHEEL/WHEEL_collision_0.obj"/>
+        <mesh name="EE_BODY" file="./assets/EE_BODY/EE_BODY.obj" />
+        <mesh name="EE_BODY_collision_0" file="./assets/EE_BODY/EE_BODY_collision_0.obj" />
+        <mesh name="EE_BODY_collision_1" file="./assets/EE_BODY/EE_BODY_collision_1.obj" />
+        <mesh name="EE_BODY_collision_2" file="./assets/EE_BODY/EE_BODY_collision_2.obj" />
+        <mesh name="EE_BODY_collision_3" file="./assets/EE_BODY/EE_BODY_collision_3.obj" />
+        <mesh name="EE_BODY_collision_4" file="./assets/EE_BODY/EE_BODY_collision_4.obj" />
+        <mesh name="EE_BODY_collision_5" file="./assets/EE_BODY/EE_BODY_collision_5.obj" />
+        <mesh name="EE_BODY_collision_6" file="./assets/EE_BODY/EE_BODY_collision_6.obj" />
+        <mesh name="EE_BODY_collision_7" file="./assets/EE_BODY/EE_BODY_collision_7.obj" />
+        <mesh name="EE_BODY_collision_8" file="./assets/EE_BODY/EE_BODY_collision_8.obj" />
+        <mesh name="EE_BODY_collision_9" file="./assets/EE_BODY/EE_BODY_collision_9.obj" />
+        <mesh name="EE_BODY_collision_10" file="./assets/EE_BODY/EE_BODY_collision_10.obj" />
+        <mesh name="EE_BODY_collision_11" file="./assets/EE_BODY/EE_BODY_collision_11.obj" />
+        <mesh name="EE_BODY_collision_12" file="./assets/EE_BODY/EE_BODY_collision_12.obj" />
+        <mesh name="EE_BODY_collision_13" file="./assets/EE_BODY/EE_BODY_collision_13.obj" />
+        <mesh name="EE_BODY_collision_14" file="./assets/EE_BODY/EE_BODY_collision_14.obj" />
+        <mesh name="EE_BODY_collision_15" file="./assets/EE_BODY/EE_BODY_collision_15.obj" />
+        <mesh name="EE_BODY_collision_16" file="./assets/EE_BODY/EE_BODY_collision_16.obj" />
+        <mesh name="EE_BODY_collision_17" file="./assets/EE_BODY/EE_BODY_collision_17.obj" />
+        <mesh name="EE_BODY_collision_18" file="./assets/EE_BODY/EE_BODY_collision_18.obj" />
+        <mesh name="EE_BODY_collision_19" file="./assets/EE_BODY/EE_BODY_collision_19.obj" />
+        <mesh name="EE_BODY_collision_20" file="./assets/EE_BODY/EE_BODY_collision_20.obj" />
+        <mesh name="EE_BODY_collision_21" file="./assets/EE_BODY/EE_BODY_collision_21.obj" />
+        <mesh name="EE_BODY_collision_22" file="./assets/EE_BODY/EE_BODY_collision_22.obj" />
+        <mesh name="EE_BODY_collision_23" file="./assets/EE_BODY/EE_BODY_collision_23.obj" />
+        <mesh name="EE_BODY_collision_24" file="./assets/EE_BODY/EE_BODY_collision_24.obj" />
+        <mesh name="EE_FINGER_0" file="./assets/EE_FINGER/EE_FINGER_0.obj" />
+        <mesh name="EE_FINGER_1" file="./assets/EE_FINGER/EE_FINGER_1.obj" />
+        <mesh name="EE_FINGER_collision_0" file="./assets/EE_FINGER/EE_FINGER_collision_0.obj" />
+        <mesh name="EE_FINGER_collision_1" file="./assets/EE_FINGER/EE_FINGER_collision_1.obj" />
+        <mesh name="EE_FINGER_collision_2" file="./assets/EE_FINGER/EE_FINGER_collision_2.obj" />
+        <mesh name="EE_FINGER_collision_3" file="./assets/EE_FINGER/EE_FINGER_collision_3.obj" />
+        <mesh name="EE_FINGER_collision_4" file="./assets/EE_FINGER/EE_FINGER_collision_4.obj" />
+        <mesh name="FT_SENSOR_L_0" file="./assets/FT_SENSOR_L/FT_SENSOR_L_0.obj" />
+        <mesh name="FT_SENSOR_L_1" file="./assets/FT_SENSOR_L/FT_SENSOR_L_1.obj" />
+        <mesh name="FT_SENSOR_L_2" file="./assets/FT_SENSOR_L/FT_SENSOR_L_2.obj" />
+        <mesh name="FT_SENSOR_L_3" file="./assets/FT_SENSOR_L/FT_SENSOR_L_3.obj" />
+        <mesh name="FT_SENSOR_L_4" file="./assets/FT_SENSOR_L/FT_SENSOR_L_4.obj" />
+        <mesh name="FT_SENSOR_L_5" file="./assets/FT_SENSOR_L/FT_SENSOR_L_5.obj" />
+        <mesh name="FT_SENSOR_L_6" file="./assets/FT_SENSOR_L/FT_SENSOR_L_6.obj" />
+        <mesh name="FT_SENSOR_L_7" file="./assets/FT_SENSOR_L/FT_SENSOR_L_7.obj" />
+        <mesh name="FT_SENSOR_L_8" file="./assets/FT_SENSOR_L/FT_SENSOR_L_8.obj" />
+        <mesh name="FT_SENSOR_L_9" file="./assets/FT_SENSOR_L/FT_SENSOR_L_9.obj" />
+        <mesh name="FT_SENSOR_L_10" file="./assets/FT_SENSOR_L/FT_SENSOR_L_10.obj" />
+        <mesh name="FT_SENSOR_L_collision_0" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_0.obj" />
+        <mesh name="FT_SENSOR_L_collision_1" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_1.obj" />
+        <mesh name="FT_SENSOR_L_collision_2" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_2.obj" />
+        <mesh name="FT_SENSOR_L_collision_3" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_3.obj" />
+        <mesh name="FT_SENSOR_L_collision_4" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_4.obj" />
+        <mesh name="FT_SENSOR_L_collision_5" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_5.obj" />
+        <mesh name="FT_SENSOR_L_collision_6" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_6.obj" />
+        <mesh name="FT_SENSOR_L_collision_7" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_7.obj" />
+        <mesh name="FT_SENSOR_L_collision_8" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_8.obj" />
+        <mesh name="FT_SENSOR_L_collision_9" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_9.obj" />
+        <mesh name="FT_SENSOR_L_collision_10" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_10.obj" />
+        <mesh name="FT_SENSOR_L_collision_11" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_11.obj" />
+        <mesh name="FT_SENSOR_L_collision_12" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_12.obj" />
+        <mesh name="FT_SENSOR_L_collision_13" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_13.obj" />
+        <mesh name="FT_SENSOR_L_collision_14" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_14.obj" />
+        <mesh name="FT_SENSOR_L_collision_15" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_15.obj" />
+        <mesh name="FT_SENSOR_L_collision_16" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_16.obj" />
+        <mesh name="FT_SENSOR_L_collision_17" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_17.obj" />
+        <mesh name="FT_SENSOR_L_collision_18" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_18.obj" />
+        <mesh name="FT_SENSOR_L_collision_19" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_19.obj" />
+        <mesh name="FT_SENSOR_L_collision_20" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_20.obj" />
+        <mesh name="FT_SENSOR_L_collision_21" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_21.obj" />
+        <mesh name="FT_SENSOR_L_collision_22" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_22.obj" />
+        <mesh name="FT_SENSOR_L_collision_23" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_23.obj" />
+        <mesh name="FT_SENSOR_L_collision_24" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_24.obj" />
+        <mesh name="FT_SENSOR_L_collision_25" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_25.obj" />
+        <mesh name="FT_SENSOR_L_collision_26" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_26.obj" />
+        <mesh name="FT_SENSOR_L_collision_27" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_27.obj" />
+        <mesh name="FT_SENSOR_L_collision_28" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_28.obj" />
+        <mesh name="FT_SENSOR_L_collision_29" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_29.obj" />
+        <mesh name="FT_SENSOR_L_collision_30" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_30.obj" />
+        <mesh name="FT_SENSOR_L_collision_31" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_31.obj" />
+        <mesh name="FT_SENSOR_L_collision_32" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_32.obj" />
+        <mesh name="FT_SENSOR_L_collision_33" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_33.obj" />
+        <mesh name="FT_SENSOR_L_collision_34" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_34.obj" />
+        <mesh name="FT_SENSOR_L_collision_35" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_35.obj" />
+        <mesh name="FT_SENSOR_L_collision_36" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_36.obj" />
+        <mesh name="FT_SENSOR_L_collision_37" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_37.obj" />
+        <mesh name="FT_SENSOR_L_collision_38" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_38.obj" />
+        <mesh name="FT_SENSOR_L_collision_39" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_39.obj" />
+        <mesh name="FT_SENSOR_L_collision_40" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_40.obj" />
+        <mesh name="FT_SENSOR_L_collision_41" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_41.obj" />
+        <mesh name="FT_SENSOR_L_collision_42" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_42.obj" />
+        <mesh name="FT_SENSOR_L_collision_43" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_43.obj" />
+        <mesh name="FT_SENSOR_L_collision_44" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_44.obj" />
+        <mesh name="FT_SENSOR_L_collision_45" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_45.obj" />
+        <mesh name="FT_SENSOR_L_collision_46" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_46.obj" />
+        <mesh name="FT_SENSOR_L_collision_47" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_47.obj" />
+        <mesh name="FT_SENSOR_L_collision_48" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_48.obj" />
+        <mesh name="FT_SENSOR_L_collision_49" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_49.obj" />
+        <mesh name="FT_SENSOR_L_collision_50" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_50.obj" />
+        <mesh name="FT_SENSOR_L_collision_51" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_51.obj" />
+        <mesh name="FT_SENSOR_L_collision_52" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_52.obj" />
+        <mesh name="FT_SENSOR_L_collision_53" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_53.obj" />
+        <mesh name="FT_SENSOR_L_collision_54" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_54.obj" />
+        <mesh name="FT_SENSOR_L_collision_55" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_55.obj" />
+        <mesh name="FT_SENSOR_L_collision_56" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_56.obj" />
+        <mesh name="FT_SENSOR_L_collision_57" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_57.obj" />
+        <mesh name="FT_SENSOR_L_collision_58" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_58.obj" />
+        <mesh name="FT_SENSOR_L_collision_59" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_59.obj" />
+        <mesh name="FT_SENSOR_L_collision_60" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_60.obj" />
+        <mesh name="FT_SENSOR_L_collision_61" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_61.obj" />
+        <mesh name="FT_SENSOR_L_collision_62" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_62.obj" />
+        <mesh name="FT_SENSOR_L_collision_63" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_63.obj" />
+        <mesh name="FT_SENSOR_L_collision_64" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_64.obj" />
+        <mesh name="FT_SENSOR_L_collision_65" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_65.obj" />
+        <mesh name="FT_SENSOR_L_collision_66" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_66.obj" />
+        <mesh name="FT_SENSOR_L_collision_67" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_67.obj" />
+        <mesh name="FT_SENSOR_L_collision_68" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_68.obj" />
+        <mesh name="FT_SENSOR_L_collision_69" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_69.obj" />
+        <mesh name="FT_SENSOR_L_collision_70" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_70.obj" />
+        <mesh name="FT_SENSOR_L_collision_71" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_71.obj" />
+        <mesh name="FT_SENSOR_L_collision_72" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_72.obj" />
+        <mesh name="FT_SENSOR_L_collision_73" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_73.obj" />
+        <mesh name="FT_SENSOR_L_collision_74" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_74.obj" />
+        <mesh name="FT_SENSOR_L_collision_75" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_75.obj" />
+        <mesh name="FT_SENSOR_L_collision_76" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_76.obj" />
+        <mesh name="FT_SENSOR_L_collision_77" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_77.obj" />
+        <mesh name="FT_SENSOR_L_collision_78" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_78.obj" />
+        <mesh name="FT_SENSOR_L_collision_79" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_79.obj" />
+        <mesh name="FT_SENSOR_L_collision_80" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_80.obj" />
+        <mesh name="FT_SENSOR_L_collision_81" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_81.obj" />
+        <mesh name="FT_SENSOR_L_collision_82" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_82.obj" />
+        <mesh name="FT_SENSOR_L_collision_83" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_83.obj" />
+        <mesh name="FT_SENSOR_L_collision_84" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_84.obj" />
+        <mesh name="FT_SENSOR_L_collision_85" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_85.obj" />
+        <mesh name="FT_SENSOR_L_collision_86" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_86.obj" />
+        <mesh name="FT_SENSOR_L_collision_87" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_87.obj" />
+        <mesh name="FT_SENSOR_L_collision_88" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_88.obj" />
+        <mesh name="FT_SENSOR_L_collision_89" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_89.obj" />
+        <mesh name="FT_SENSOR_L_collision_90" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_90.obj" />
+        <mesh name="FT_SENSOR_L_collision_91" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_91.obj" />
+        <mesh name="FT_SENSOR_L_collision_92" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_92.obj" />
+        <mesh name="FT_SENSOR_L_collision_93" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_93.obj" />
+        <mesh name="FT_SENSOR_L_collision_94" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_94.obj" />
+        <mesh name="FT_SENSOR_L_collision_95" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_95.obj" />
+        <mesh name="FT_SENSOR_L_collision_96" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_96.obj" />
+        <mesh name="FT_SENSOR_L_collision_97" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_97.obj" />
+        <mesh name="FT_SENSOR_L_collision_98" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_98.obj" />
+        <mesh name="FT_SENSOR_L_collision_99" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_99.obj" />
+        <mesh name="FT_SENSOR_L_collision_100" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_100.obj" />
+        <mesh name="FT_SENSOR_L_collision_101" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_101.obj" />
+        <mesh name="FT_SENSOR_L_collision_102" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_102.obj" />
+        <mesh name="FT_SENSOR_L_collision_103" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_103.obj" />
+        <mesh name="FT_SENSOR_L_collision_104" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_104.obj" />
+        <mesh name="FT_SENSOR_L_collision_105" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_105.obj" />
+        <mesh name="FT_SENSOR_L_collision_106" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_106.obj" />
+        <mesh name="FT_SENSOR_L_collision_107" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_107.obj" />
+        <mesh name="FT_SENSOR_L_collision_108" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_108.obj" />
+        <mesh name="FT_SENSOR_L_collision_109" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_109.obj" />
+        <mesh name="FT_SENSOR_L_collision_110" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_110.obj" />
+        <mesh name="FT_SENSOR_L_collision_111" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_111.obj" />
+        <mesh name="FT_SENSOR_L_collision_112" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_112.obj" />
+        <mesh name="FT_SENSOR_L_collision_113" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_113.obj" />
+        <mesh name="FT_SENSOR_L_collision_114" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_114.obj" />
+        <mesh name="FT_SENSOR_L_collision_115" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_115.obj" />
+        <mesh name="FT_SENSOR_L_collision_116" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_116.obj" />
+        <mesh name="FT_SENSOR_R_0" file="./assets/FT_SENSOR_R/FT_SENSOR_R_0.obj" />
+        <mesh name="FT_SENSOR_R_1" file="./assets/FT_SENSOR_R/FT_SENSOR_R_1.obj" />
+        <mesh name="FT_SENSOR_R_2" file="./assets/FT_SENSOR_R/FT_SENSOR_R_2.obj" />
+        <mesh name="FT_SENSOR_R_3" file="./assets/FT_SENSOR_R/FT_SENSOR_R_3.obj" />
+        <mesh name="FT_SENSOR_R_4" file="./assets/FT_SENSOR_R/FT_SENSOR_R_4.obj" />
+        <mesh name="FT_SENSOR_R_5" file="./assets/FT_SENSOR_R/FT_SENSOR_R_5.obj" />
+        <mesh name="FT_SENSOR_R_6" file="./assets/FT_SENSOR_R/FT_SENSOR_R_6.obj" />
+        <mesh name="FT_SENSOR_R_7" file="./assets/FT_SENSOR_R/FT_SENSOR_R_7.obj" />
+        <mesh name="FT_SENSOR_R_8" file="./assets/FT_SENSOR_R/FT_SENSOR_R_8.obj" />
+        <mesh name="FT_SENSOR_R_9" file="./assets/FT_SENSOR_R/FT_SENSOR_R_9.obj" />
+        <mesh name="FT_SENSOR_R_10" file="./assets/FT_SENSOR_R/FT_SENSOR_R_10.obj" />
+        <mesh name="FT_SENSOR_R_collision_0" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_0.obj" />
+        <mesh name="FT_SENSOR_R_collision_1" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_1.obj" />
+        <mesh name="FT_SENSOR_R_collision_2" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_2.obj" />
+        <mesh name="FT_SENSOR_R_collision_3" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_3.obj" />
+        <mesh name="FT_SENSOR_R_collision_4" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_4.obj" />
+        <mesh name="FT_SENSOR_R_collision_5" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_5.obj" />
+        <mesh name="FT_SENSOR_R_collision_6" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_6.obj" />
+        <mesh name="FT_SENSOR_R_collision_7" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_7.obj" />
+        <mesh name="FT_SENSOR_R_collision_8" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_8.obj" />
+        <mesh name="FT_SENSOR_R_collision_9" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_9.obj" />
+        <mesh name="FT_SENSOR_R_collision_10" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_10.obj" />
+        <mesh name="FT_SENSOR_R_collision_11" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_11.obj" />
+        <mesh name="FT_SENSOR_R_collision_12" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_12.obj" />
+        <mesh name="FT_SENSOR_R_collision_13" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_13.obj" />
+        <mesh name="FT_SENSOR_R_collision_14" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_14.obj" />
+        <mesh name="FT_SENSOR_R_collision_15" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_15.obj" />
+        <mesh name="FT_SENSOR_R_collision_16" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_16.obj" />
+        <mesh name="FT_SENSOR_R_collision_17" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_17.obj" />
+        <mesh name="FT_SENSOR_R_collision_18" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_18.obj" />
+        <mesh name="FT_SENSOR_R_collision_19" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_19.obj" />
+        <mesh name="FT_SENSOR_R_collision_20" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_20.obj" />
+        <mesh name="FT_SENSOR_R_collision_21" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_21.obj" />
+        <mesh name="FT_SENSOR_R_collision_22" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_22.obj" />
+        <mesh name="FT_SENSOR_R_collision_23" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_23.obj" />
+        <mesh name="FT_SENSOR_R_collision_24" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_24.obj" />
+        <mesh name="FT_SENSOR_R_collision_25" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_25.obj" />
+        <mesh name="FT_SENSOR_R_collision_26" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_26.obj" />
+        <mesh name="FT_SENSOR_R_collision_27" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_27.obj" />
+        <mesh name="FT_SENSOR_R_collision_28" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_28.obj" />
+        <mesh name="FT_SENSOR_R_collision_29" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_29.obj" />
+        <mesh name="FT_SENSOR_R_collision_30" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_30.obj" />
+        <mesh name="FT_SENSOR_R_collision_31" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_31.obj" />
+        <mesh name="FT_SENSOR_R_collision_32" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_32.obj" />
+        <mesh name="FT_SENSOR_R_collision_33" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_33.obj" />
+        <mesh name="FT_SENSOR_R_collision_34" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_34.obj" />
+        <mesh name="FT_SENSOR_R_collision_35" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_35.obj" />
+        <mesh name="FT_SENSOR_R_collision_36" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_36.obj" />
+        <mesh name="FT_SENSOR_R_collision_37" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_37.obj" />
+        <mesh name="FT_SENSOR_R_collision_38" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_38.obj" />
+        <mesh name="FT_SENSOR_R_collision_39" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_39.obj" />
+        <mesh name="FT_SENSOR_R_collision_40" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_40.obj" />
+        <mesh name="FT_SENSOR_R_collision_41" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_41.obj" />
+        <mesh name="FT_SENSOR_R_collision_42" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_42.obj" />
+        <mesh name="FT_SENSOR_R_collision_43" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_43.obj" />
+        <mesh name="FT_SENSOR_R_collision_44" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_44.obj" />
+        <mesh name="FT_SENSOR_R_collision_45" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_45.obj" />
+        <mesh name="FT_SENSOR_R_collision_46" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_46.obj" />
+        <mesh name="FT_SENSOR_R_collision_47" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_47.obj" />
+        <mesh name="FT_SENSOR_R_collision_48" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_48.obj" />
+        <mesh name="FT_SENSOR_R_collision_49" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_49.obj" />
+        <mesh name="FT_SENSOR_R_collision_50" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_50.obj" />
+        <mesh name="FT_SENSOR_R_collision_51" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_51.obj" />
+        <mesh name="FT_SENSOR_R_collision_52" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_52.obj" />
+        <mesh name="FT_SENSOR_R_collision_53" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_53.obj" />
+        <mesh name="FT_SENSOR_R_collision_54" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_54.obj" />
+        <mesh name="FT_SENSOR_R_collision_55" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_55.obj" />
+        <mesh name="FT_SENSOR_R_collision_56" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_56.obj" />
+        <mesh name="FT_SENSOR_R_collision_57" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_57.obj" />
+        <mesh name="FT_SENSOR_R_collision_58" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_58.obj" />
+        <mesh name="FT_SENSOR_R_collision_59" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_59.obj" />
+        <mesh name="FT_SENSOR_R_collision_60" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_60.obj" />
+        <mesh name="FT_SENSOR_R_collision_61" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_61.obj" />
+        <mesh name="FT_SENSOR_R_collision_62" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_62.obj" />
+        <mesh name="FT_SENSOR_R_collision_63" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_63.obj" />
+        <mesh name="FT_SENSOR_R_collision_64" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_64.obj" />
+        <mesh name="FT_SENSOR_R_collision_65" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_65.obj" />
+        <mesh name="FT_SENSOR_R_collision_66" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_66.obj" />
+        <mesh name="FT_SENSOR_R_collision_67" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_67.obj" />
+        <mesh name="FT_SENSOR_R_collision_68" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_68.obj" />
+        <mesh name="FT_SENSOR_R_collision_69" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_69.obj" />
+        <mesh name="FT_SENSOR_R_collision_70" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_70.obj" />
+        <mesh name="FT_SENSOR_R_collision_71" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_71.obj" />
+        <mesh name="FT_SENSOR_R_collision_72" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_72.obj" />
+        <mesh name="FT_SENSOR_R_collision_73" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_73.obj" />
+        <mesh name="FT_SENSOR_R_collision_74" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_74.obj" />
+        <mesh name="FT_SENSOR_R_collision_75" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_75.obj" />
+        <mesh name="FT_SENSOR_R_collision_76" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_76.obj" />
+        <mesh name="FT_SENSOR_R_collision_77" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_77.obj" />
+        <mesh name="FT_SENSOR_R_collision_78" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_78.obj" />
+        <mesh name="FT_SENSOR_R_collision_79" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_79.obj" />
+        <mesh name="FT_SENSOR_R_collision_80" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_80.obj" />
+        <mesh name="FT_SENSOR_R_collision_81" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_81.obj" />
+        <mesh name="FT_SENSOR_R_collision_82" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_82.obj" />
+        <mesh name="FT_SENSOR_R_collision_83" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_83.obj" />
+        <mesh name="FT_SENSOR_R_collision_84" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_84.obj" />
+        <mesh name="FT_SENSOR_R_collision_85" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_85.obj" />
+        <mesh name="FT_SENSOR_R_collision_86" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_86.obj" />
+        <mesh name="FT_SENSOR_R_collision_87" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_87.obj" />
+        <mesh name="FT_SENSOR_R_collision_88" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_88.obj" />
+        <mesh name="FT_SENSOR_R_collision_89" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_89.obj" />
+        <mesh name="FT_SENSOR_R_collision_90" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_90.obj" />
+        <mesh name="FT_SENSOR_R_collision_91" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_91.obj" />
+        <mesh name="FT_SENSOR_R_collision_92" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_92.obj" />
+        <mesh name="FT_SENSOR_R_collision_93" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_93.obj" />
+        <mesh name="FT_SENSOR_R_collision_94" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_94.obj" />
+        <mesh name="FT_SENSOR_R_collision_95" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_95.obj" />
+        <mesh name="FT_SENSOR_R_collision_96" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_96.obj" />
+        <mesh name="FT_SENSOR_R_collision_97" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_97.obj" />
+        <mesh name="FT_SENSOR_R_collision_98" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_98.obj" />
+        <mesh name="FT_SENSOR_R_collision_99" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_99.obj" />
+        <mesh name="FT_SENSOR_R_collision_100" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_100.obj" />
+        <mesh name="FT_SENSOR_R_collision_101" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_101.obj" />
+        <mesh name="FT_SENSOR_R_collision_102" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_102.obj" />
+        <mesh name="FT_SENSOR_R_collision_103" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_103.obj" />
+        <mesh name="FT_SENSOR_R_collision_104" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_104.obj" />
+        <mesh name="FT_SENSOR_R_collision_105" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_105.obj" />
+        <mesh name="FT_SENSOR_R_collision_106" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_106.obj" />
+        <mesh name="FT_SENSOR_R_collision_107" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_107.obj" />
+        <mesh name="FT_SENSOR_R_collision_108" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_108.obj" />
+        <mesh name="FT_SENSOR_R_collision_109" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_109.obj" />
+        <mesh name="FT_SENSOR_R_collision_110" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_110.obj" />
+        <mesh name="FT_SENSOR_R_collision_111" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_111.obj" />
+        <mesh name="FT_SENSOR_R_collision_112" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_112.obj" />
+        <mesh name="LINK_1" file="./assets/LINK_1/LINK_1.obj" />
+        <mesh name="LINK_1_collision_0" file="./assets/LINK_1/LINK_1_collision_0.obj" />
+        <mesh name="LINK_1_collision_1" file="./assets/LINK_1/LINK_1_collision_1.obj" />
+        <mesh name="LINK_1_collision_2" file="./assets/LINK_1/LINK_1_collision_2.obj" />
+        <mesh name="LINK_1_collision_3" file="./assets/LINK_1/LINK_1_collision_3.obj" />
+        <mesh name="LINK_1_collision_4" file="./assets/LINK_1/LINK_1_collision_4.obj" />
+        <mesh name="LINK_1_collision_5" file="./assets/LINK_1/LINK_1_collision_5.obj" />
+        <mesh name="LINK_1_collision_6" file="./assets/LINK_1/LINK_1_collision_6.obj" />
+        <mesh name="LINK_1_collision_7" file="./assets/LINK_1/LINK_1_collision_7.obj" />
+        <mesh name="LINK_1_collision_8" file="./assets/LINK_1/LINK_1_collision_8.obj" />
+        <mesh name="LINK_1_collision_9" file="./assets/LINK_1/LINK_1_collision_9.obj" />
+        <mesh name="LINK_2_0" file="./assets/LINK_2/LINK_2_0.obj" />
+        <mesh name="LINK_2_1" file="./assets/LINK_2/LINK_2_1.obj" />
+        <mesh name="LINK_2_collision_0" file="./assets/LINK_2/LINK_2_collision_0.obj" />
+        <mesh name="LINK_2_collision_1" file="./assets/LINK_2/LINK_2_collision_1.obj" />
+        <mesh name="LINK_2_collision_2" file="./assets/LINK_2/LINK_2_collision_2.obj" />
+        <mesh name="LINK_2_collision_3" file="./assets/LINK_2/LINK_2_collision_3.obj" />
+        <mesh name="LINK_2_collision_4" file="./assets/LINK_2/LINK_2_collision_4.obj" />
+        <mesh name="LINK_2_collision_5" file="./assets/LINK_2/LINK_2_collision_5.obj" />
+        <mesh name="LINK_2_collision_6" file="./assets/LINK_2/LINK_2_collision_6.obj" />
+        <mesh name="LINK_2_collision_7" file="./assets/LINK_2/LINK_2_collision_7.obj" />
+        <mesh name="LINK_2_collision_8" file="./assets/LINK_2/LINK_2_collision_8.obj" />
+        <mesh name="LINK_2_collision_9" file="./assets/LINK_2/LINK_2_collision_9.obj" />
+        <mesh name="LINK_2_collision_10" file="./assets/LINK_2/LINK_2_collision_10.obj" />
+        <mesh name="LINK_2_collision_11" file="./assets/LINK_2/LINK_2_collision_11.obj" />
+        <mesh name="LINK_2_collision_12" file="./assets/LINK_2/LINK_2_collision_12.obj" />
+        <mesh name="LINK_2_collision_13" file="./assets/LINK_2/LINK_2_collision_13.obj" />
+        <mesh name="LINK_2_collision_14" file="./assets/LINK_2/LINK_2_collision_14.obj" />
+        <mesh name="LINK_2_collision_15" file="./assets/LINK_2/LINK_2_collision_15.obj" />
+        <mesh name="LINK_2_collision_16" file="./assets/LINK_2/LINK_2_collision_16.obj" />
+        <mesh name="LINK_3_0" file="./assets/LINK_3/LINK_3_0.obj" />
+        <mesh name="LINK_3_1" file="./assets/LINK_3/LINK_3_1.obj" />
+        <mesh name="LINK_3_collision_0" file="./assets/LINK_3/LINK_3_collision_0.obj" />
+        <mesh name="LINK_3_collision_1" file="./assets/LINK_3/LINK_3_collision_1.obj" />
+        <mesh name="LINK_3_collision_2" file="./assets/LINK_3/LINK_3_collision_2.obj" />
+        <mesh name="LINK_3_collision_3" file="./assets/LINK_3/LINK_3_collision_3.obj" />
+        <mesh name="LINK_3_collision_4" file="./assets/LINK_3/LINK_3_collision_4.obj" />
+        <mesh name="LINK_3_collision_5" file="./assets/LINK_3/LINK_3_collision_5.obj" />
+        <mesh name="LINK_3_collision_6" file="./assets/LINK_3/LINK_3_collision_6.obj" />
+        <mesh name="LINK_3_collision_7" file="./assets/LINK_3/LINK_3_collision_7.obj" />
+        <mesh name="LINK_3_collision_8" file="./assets/LINK_3/LINK_3_collision_8.obj" />
+        <mesh name="LINK_3_collision_9" file="./assets/LINK_3/LINK_3_collision_9.obj" />
+        <mesh name="LINK_3_collision_10" file="./assets/LINK_3/LINK_3_collision_10.obj" />
+        <mesh name="LINK_3_collision_11" file="./assets/LINK_3/LINK_3_collision_11.obj" />
+        <mesh name="LINK_4" file="./assets/LINK_4/LINK_4.obj" />
+        <mesh name="LINK_4_collision_0" file="./assets/LINK_4/LINK_4_collision_0.obj" />
+        <mesh name="LINK_4_collision_1" file="./assets/LINK_4/LINK_4_collision_1.obj" />
+        <mesh name="LINK_4_collision_2" file="./assets/LINK_4/LINK_4_collision_2.obj" />
+        <mesh name="LINK_4_collision_3" file="./assets/LINK_4/LINK_4_collision_3.obj" />
+        <mesh name="LINK_4_collision_4" file="./assets/LINK_4/LINK_4_collision_4.obj" />
+        <mesh name="LINK_4_collision_5" file="./assets/LINK_4/LINK_4_collision_5.obj" />
+        <mesh name="LINK_4_collision_6" file="./assets/LINK_4/LINK_4_collision_6.obj" />
+        <mesh name="LINK_4_collision_7" file="./assets/LINK_4/LINK_4_collision_7.obj" />
+        <mesh name="LINK_4_collision_8" file="./assets/LINK_4/LINK_4_collision_8.obj" />
+        <mesh name="LINK_4_collision_9" file="./assets/LINK_4/LINK_4_collision_9.obj" />
+        <mesh name="LINK_4_collision_10" file="./assets/LINK_4/LINK_4_collision_10.obj" />
+        <mesh name="LINK_4_collision_11" file="./assets/LINK_4/LINK_4_collision_11.obj" />
+        <mesh name="LINK_4_collision_12" file="./assets/LINK_4/LINK_4_collision_12.obj" />
+        <mesh name="LINK_4_collision_13" file="./assets/LINK_4/LINK_4_collision_13.obj" />
+        <mesh name="LINK_4_collision_14" file="./assets/LINK_4/LINK_4_collision_14.obj" />
+        <mesh name="LINK_4_collision_15" file="./assets/LINK_4/LINK_4_collision_15.obj" />
+        <mesh name="LINK_4_collision_16" file="./assets/LINK_4/LINK_4_collision_16.obj" />
+        <mesh name="LINK_4_collision_17" file="./assets/LINK_4/LINK_4_collision_17.obj" />
+        <mesh name="LINK_5" file="./assets/LINK_5/LINK_5.obj" />
+        <mesh name="LINK_5_collision_0" file="./assets/LINK_5/LINK_5_collision_0.obj" />
+        <mesh name="LINK_5_collision_1" file="./assets/LINK_5/LINK_5_collision_1.obj" />
+        <mesh name="LINK_5_collision_2" file="./assets/LINK_5/LINK_5_collision_2.obj" />
+        <mesh name="LINK_5_collision_3" file="./assets/LINK_5/LINK_5_collision_3.obj" />
+        <mesh name="LINK_5_collision_4" file="./assets/LINK_5/LINK_5_collision_4.obj" />
+        <mesh name="LINK_5_collision_5" file="./assets/LINK_5/LINK_5_collision_5.obj" />
+        <mesh name="LINK_5_collision_6" file="./assets/LINK_5/LINK_5_collision_6.obj" />
+        <mesh name="LINK_5_collision_7" file="./assets/LINK_5/LINK_5_collision_7.obj" />
+        <mesh name="LINK_5_collision_8" file="./assets/LINK_5/LINK_5_collision_8.obj" />
+        <mesh name="LINK_5_collision_9" file="./assets/LINK_5/LINK_5_collision_9.obj" />
+        <mesh name="LINK_5_collision_10" file="./assets/LINK_5/LINK_5_collision_10.obj" />
+        <mesh name="LINK_5_collision_11" file="./assets/LINK_5/LINK_5_collision_11.obj" />
+        <mesh name="LINK_5_collision_12" file="./assets/LINK_5/LINK_5_collision_12.obj" />
+        <mesh name="LINK_5_collision_13" file="./assets/LINK_5/LINK_5_collision_13.obj" />
+        <mesh name="LINK_5_collision_14" file="./assets/LINK_5/LINK_5_collision_14.obj" />
+        <mesh name="LINK_5_collision_15" file="./assets/LINK_5/LINK_5_collision_15.obj" />
+        <mesh name="LINK_5_collision_16" file="./assets/LINK_5/LINK_5_collision_16.obj" />
+        <mesh name="LINK_5_collision_17" file="./assets/LINK_5/LINK_5_collision_17.obj" />
+        <mesh name="LINK_5_collision_18" file="./assets/LINK_5/LINK_5_collision_18.obj" />
+        <mesh name="LINK_5_collision_19" file="./assets/LINK_5/LINK_5_collision_19.obj" />
+        <mesh name="LINK_5_collision_20" file="./assets/LINK_5/LINK_5_collision_20.obj" />
+        <mesh name="LINK_5_collision_21" file="./assets/LINK_5/LINK_5_collision_21.obj" />
+        <mesh name="LINK_5_collision_22" file="./assets/LINK_5/LINK_5_collision_22.obj" />
+        <mesh name="LINK_5_collision_23" file="./assets/LINK_5/LINK_5_collision_23.obj" />
+        <mesh name="LINK_6_0" file="./assets/LINK_6/LINK_6_0.obj" />
+        <mesh name="LINK_6_1" file="./assets/LINK_6/LINK_6_1.obj" />
+        <mesh name="LINK_6_2" file="./assets/LINK_6/LINK_6_2.obj" />
+        <mesh name="LINK_6_3" file="./assets/LINK_6/LINK_6_3.obj" />
+        <mesh name="LINK_6_4" file="./assets/LINK_6/LINK_6_4.obj" />
+        <mesh name="LINK_6_5" file="./assets/LINK_6/LINK_6_5.obj" />
+        <mesh name="LINK_6_collision_0" file="./assets/LINK_6/LINK_6_collision_0.obj" />
+        <mesh name="LINK_6_collision_1" file="./assets/LINK_6/LINK_6_collision_1.obj" />
+        <mesh name="LINK_6_collision_2" file="./assets/LINK_6/LINK_6_collision_2.obj" />
+        <mesh name="LINK_6_collision_3" file="./assets/LINK_6/LINK_6_collision_3.obj" />
+        <mesh name="LINK_6_collision_4" file="./assets/LINK_6/LINK_6_collision_4.obj" />
+        <mesh name="LINK_6_collision_5" file="./assets/LINK_6/LINK_6_collision_5.obj" />
+        <mesh name="LINK_6_collision_6" file="./assets/LINK_6/LINK_6_collision_6.obj" />
+        <mesh name="LINK_6_collision_7" file="./assets/LINK_6/LINK_6_collision_7.obj" />
+        <mesh name="LINK_6_collision_8" file="./assets/LINK_6/LINK_6_collision_8.obj" />
+        <mesh name="LINK_6_collision_9" file="./assets/LINK_6/LINK_6_collision_9.obj" />
+        <mesh name="LINK_6_collision_10" file="./assets/LINK_6/LINK_6_collision_10.obj" />
+        <mesh name="LINK_6_collision_11" file="./assets/LINK_6/LINK_6_collision_11.obj" />
+        <mesh name="LINK_6_collision_12" file="./assets/LINK_6/LINK_6_collision_12.obj" />
+        <mesh name="LINK_6_collision_13" file="./assets/LINK_6/LINK_6_collision_13.obj" />
+        <mesh name="LINK_6_collision_14" file="./assets/LINK_6/LINK_6_collision_14.obj" />
+        <mesh name="LINK_6_collision_15" file="./assets/LINK_6/LINK_6_collision_15.obj" />
+        <mesh name="LINK_6_collision_16" file="./assets/LINK_6/LINK_6_collision_16.obj" />
+        <mesh name="LINK_6_collision_17" file="./assets/LINK_6/LINK_6_collision_17.obj" />
+        <mesh name="LINK_6_collision_18" file="./assets/LINK_6/LINK_6_collision_18.obj" />
+        <mesh name="LINK_6_collision_19" file="./assets/LINK_6/LINK_6_collision_19.obj" />
+        <mesh name="LINK_6_collision_20" file="./assets/LINK_6/LINK_6_collision_20.obj" />
+        <mesh name="LINK_6_collision_21" file="./assets/LINK_6/LINK_6_collision_21.obj" />
+        <mesh name="LINK_6_collision_22" file="./assets/LINK_6/LINK_6_collision_22.obj" />
+        <mesh name="LINK_6_collision_23" file="./assets/LINK_6/LINK_6_collision_23.obj" />
+        <mesh name="LINK_6_collision_24" file="./assets/LINK_6/LINK_6_collision_24.obj" />
+        <mesh name="LINK_6_collision_25" file="./assets/LINK_6/LINK_6_collision_25.obj" />
+        <mesh name="LINK_6_collision_26" file="./assets/LINK_6/LINK_6_collision_26.obj" />
+        <mesh name="LINK_6_collision_27" file="./assets/LINK_6/LINK_6_collision_27.obj" />
+        <mesh name="LINK_6_collision_28" file="./assets/LINK_6/LINK_6_collision_28.obj" />
+        <mesh name="LINK_6_collision_29" file="./assets/LINK_6/LINK_6_collision_29.obj" />
+        <mesh name="LINK_6_collision_30" file="./assets/LINK_6/LINK_6_collision_30.obj" />
+        <mesh name="LINK_6_collision_31" file="./assets/LINK_6/LINK_6_collision_31.obj" />
+        <mesh name="LINK_6_collision_32" file="./assets/LINK_6/LINK_6_collision_32.obj" />
+        <mesh name="LINK_6_collision_33" file="./assets/LINK_6/LINK_6_collision_33.obj" />
+        <mesh name="LINK_6_collision_34" file="./assets/LINK_6/LINK_6_collision_34.obj" />
+        <mesh name="LINK_6_collision_35" file="./assets/LINK_6/LINK_6_collision_35.obj" />
+        <mesh name="LINK_6_collision_36" file="./assets/LINK_6/LINK_6_collision_36.obj" />
+        <mesh name="LINK_6_collision_37" file="./assets/LINK_6/LINK_6_collision_37.obj" />
+        <mesh name="LINK_6_collision_38" file="./assets/LINK_6/LINK_6_collision_38.obj" />
+        <mesh name="LINK_6_collision_39" file="./assets/LINK_6/LINK_6_collision_39.obj" />
+        <mesh name="LINK_6_collision_40" file="./assets/LINK_6/LINK_6_collision_40.obj" />
+        <mesh name="LINK_6_collision_41" file="./assets/LINK_6/LINK_6_collision_41.obj" />
+        <mesh name="LINK_6_collision_42" file="./assets/LINK_6/LINK_6_collision_42.obj" />
+        <mesh name="LINK_6_collision_43" file="./assets/LINK_6/LINK_6_collision_43.obj" />
+        <mesh name="LINK_6_collision_44" file="./assets/LINK_6/LINK_6_collision_44.obj" />
+        <mesh name="LINK_6_collision_45" file="./assets/LINK_6/LINK_6_collision_45.obj" />
+        <mesh name="LINK_6_collision_46" file="./assets/LINK_6/LINK_6_collision_46.obj" />
+        <mesh name="LINK_6_collision_47" file="./assets/LINK_6/LINK_6_collision_47.obj" />
+        <mesh name="LINK_6_collision_48" file="./assets/LINK_6/LINK_6_collision_48.obj" />
+        <mesh name="LINK_6_collision_49" file="./assets/LINK_6/LINK_6_collision_49.obj" />
+        <mesh name="LINK_6_collision_50" file="./assets/LINK_6/LINK_6_collision_50.obj" />
+        <mesh name="LINK_6_collision_51" file="./assets/LINK_6/LINK_6_collision_51.obj" />
+        <mesh name="LINK_6_collision_52" file="./assets/LINK_6/LINK_6_collision_52.obj" />
+        <mesh name="LINK_6_collision_53" file="./assets/LINK_6/LINK_6_collision_53.obj" />
+        <mesh name="LINK_6_collision_54" file="./assets/LINK_6/LINK_6_collision_54.obj" />
+        <mesh name="LINK_6_collision_55" file="./assets/LINK_6/LINK_6_collision_55.obj" />
+        <mesh name="LINK_6_collision_56" file="./assets/LINK_6/LINK_6_collision_56.obj" />
+        <mesh name="LINK_6_collision_57" file="./assets/LINK_6/LINK_6_collision_57.obj" />
+        <mesh name="LINK_6_collision_58" file="./assets/LINK_6/LINK_6_collision_58.obj" />
+        <mesh name="LINK_6_collision_59" file="./assets/LINK_6/LINK_6_collision_59.obj" />
+        <mesh name="LINK_6_collision_60" file="./assets/LINK_6/LINK_6_collision_60.obj" />
+        <mesh name="LINK_6_collision_61" file="./assets/LINK_6/LINK_6_collision_61.obj" />
+        <mesh name="LINK_6_collision_62" file="./assets/LINK_6/LINK_6_collision_62.obj" />
+        <mesh name="LINK_6_collision_63" file="./assets/LINK_6/LINK_6_collision_63.obj" />
+        <mesh name="LINK_6_collision_64" file="./assets/LINK_6/LINK_6_collision_64.obj" />
+        <mesh name="LINK_6_collision_65" file="./assets/LINK_6/LINK_6_collision_65.obj" />
+        <mesh name="LINK_6_collision_66" file="./assets/LINK_6/LINK_6_collision_66.obj" />
+        <mesh name="LINK_6_collision_67" file="./assets/LINK_6/LINK_6_collision_67.obj" />
+        <mesh name="LINK_6_collision_68" file="./assets/LINK_6/LINK_6_collision_68.obj" />
+        <mesh name="LINK_6_collision_69" file="./assets/LINK_6/LINK_6_collision_69.obj" />
+        <mesh name="LINK_6_collision_70" file="./assets/LINK_6/LINK_6_collision_70.obj" />
+        <mesh name="LINK_6_collision_71" file="./assets/LINK_6/LINK_6_collision_71.obj" />
+        <mesh name="LINK_6_collision_72" file="./assets/LINK_6/LINK_6_collision_72.obj" />
+        <mesh name="LINK_6_collision_73" file="./assets/LINK_6/LINK_6_collision_73.obj" />
+        <mesh name="LINK_6_collision_74" file="./assets/LINK_6/LINK_6_collision_74.obj" />
+        <mesh name="LINK_6_collision_75" file="./assets/LINK_6/LINK_6_collision_75.obj" />
+        <mesh name="LINK_6_collision_76" file="./assets/LINK_6/LINK_6_collision_76.obj" />
+        <mesh name="LINK_6_collision_77" file="./assets/LINK_6/LINK_6_collision_77.obj" />
+        <mesh name="LINK_6_collision_78" file="./assets/LINK_6/LINK_6_collision_78.obj" />
+        <mesh name="LINK_6_collision_79" file="./assets/LINK_6/LINK_6_collision_79.obj" />
+        <mesh name="LINK_6_collision_80" file="./assets/LINK_6/LINK_6_collision_80.obj" />
+        <mesh name="LINK_6_collision_81" file="./assets/LINK_6/LINK_6_collision_81.obj" />
+        <mesh name="LINK_6_collision_82" file="./assets/LINK_6/LINK_6_collision_82.obj" />
+        <mesh name="LINK_6_collision_83" file="./assets/LINK_6/LINK_6_collision_83.obj" />
+        <mesh name="LINK_6_collision_84" file="./assets/LINK_6/LINK_6_collision_84.obj" />
+        <mesh name="LINK_6_collision_85" file="./assets/LINK_6/LINK_6_collision_85.obj" />
+        <mesh name="LINK_6_collision_86" file="./assets/LINK_6/LINK_6_collision_86.obj" />
+        <mesh name="LINK_6_collision_87" file="./assets/LINK_6/LINK_6_collision_87.obj" />
+        <mesh name="LINK_6_collision_88" file="./assets/LINK_6/LINK_6_collision_88.obj" />
+        <mesh name="LINK_6_collision_89" file="./assets/LINK_6/LINK_6_collision_89.obj" />
+        <mesh name="LINK_6_collision_90" file="./assets/LINK_6/LINK_6_collision_90.obj" />
+        <mesh name="LINK_6_collision_91" file="./assets/LINK_6/LINK_6_collision_91.obj" />
+        <mesh name="LINK_6_collision_92" file="./assets/LINK_6/LINK_6_collision_92.obj" />
+        <mesh name="LINK_6_collision_93" file="./assets/LINK_6/LINK_6_collision_93.obj" />
+        <mesh name="LINK_6_collision_94" file="./assets/LINK_6/LINK_6_collision_94.obj" />
+        <mesh name="LINK_6_collision_95" file="./assets/LINK_6/LINK_6_collision_95.obj" />
+        <mesh name="LINK_6_collision_96" file="./assets/LINK_6/LINK_6_collision_96.obj" />
+        <mesh name="LINK_6_collision_97" file="./assets/LINK_6/LINK_6_collision_97.obj" />
+        <mesh name="LINK_6_collision_98" file="./assets/LINK_6/LINK_6_collision_98.obj" />
+        <mesh name="LINK_6_collision_99" file="./assets/LINK_6/LINK_6_collision_99.obj" />
+        <mesh name="LINK_6_collision_100" file="./assets/LINK_6/LINK_6_collision_100.obj" />
+        <mesh name="LINK_6_collision_101" file="./assets/LINK_6/LINK_6_collision_101.obj" />
+        <mesh name="LINK_6_collision_102" file="./assets/LINK_6/LINK_6_collision_102.obj" />
+        <mesh name="LINK_6_collision_103" file="./assets/LINK_6/LINK_6_collision_103.obj" />
+        <mesh name="LINK_6_collision_104" file="./assets/LINK_6/LINK_6_collision_104.obj" />
+        <mesh name="LINK_6_collision_105" file="./assets/LINK_6/LINK_6_collision_105.obj" />
+        <mesh name="LINK_6_collision_106" file="./assets/LINK_6/LINK_6_collision_106.obj" />
+        <mesh name="LINK_6_collision_107" file="./assets/LINK_6/LINK_6_collision_107.obj" />
+        <mesh name="LINK_6_collision_108" file="./assets/LINK_6/LINK_6_collision_108.obj" />
+        <mesh name="LINK_6_collision_109" file="./assets/LINK_6/LINK_6_collision_109.obj" />
+        <mesh name="LINK_6_collision_110" file="./assets/LINK_6/LINK_6_collision_110.obj" />
+        <mesh name="LINK_6_collision_111" file="./assets/LINK_6/LINK_6_collision_111.obj" />
+        <mesh name="LINK_6_collision_112" file="./assets/LINK_6/LINK_6_collision_112.obj" />
+        <mesh name="LINK_6_collision_113" file="./assets/LINK_6/LINK_6_collision_113.obj" />
+        <mesh name="LINK_6_collision_114" file="./assets/LINK_6/LINK_6_collision_114.obj" />
+        <mesh name="LINK_6_collision_115" file="./assets/LINK_6/LINK_6_collision_115.obj" />
+        <mesh name="LINK_6_collision_116" file="./assets/LINK_6/LINK_6_collision_116.obj" />
+        <mesh name="LINK_6_collision_117" file="./assets/LINK_6/LINK_6_collision_117.obj" />
+        <mesh name="LINK_6_collision_118" file="./assets/LINK_6/LINK_6_collision_118.obj" />
+        <mesh name="LINK_6_collision_119" file="./assets/LINK_6/LINK_6_collision_119.obj" />
+        <mesh name="LINK_6_collision_120" file="./assets/LINK_6/LINK_6_collision_120.obj" />
+        <mesh name="LINK_6_collision_121" file="./assets/LINK_6/LINK_6_collision_121.obj" />
+        <mesh name="LINK_6_collision_122" file="./assets/LINK_6/LINK_6_collision_122.obj" />
+        <mesh name="LINK_6_collision_123" file="./assets/LINK_6/LINK_6_collision_123.obj" />
+        <mesh name="LINK_6_collision_124" file="./assets/LINK_6/LINK_6_collision_124.obj" />
+        <mesh name="LINK_6_collision_125" file="./assets/LINK_6/LINK_6_collision_125.obj" />
+        <mesh name="LINK_6_collision_126" file="./assets/LINK_6/LINK_6_collision_126.obj" />
+        <mesh name="LINK_6_collision_127" file="./assets/LINK_6/LINK_6_collision_127.obj" />
+        <mesh name="LINK_6_collision_128" file="./assets/LINK_6/LINK_6_collision_128.obj" />
+        <mesh name="LINK_6_collision_129" file="./assets/LINK_6/LINK_6_collision_129.obj" />
+        <mesh name="LINK_6_collision_130" file="./assets/LINK_6/LINK_6_collision_130.obj" />
+        <mesh name="LINK_6_collision_131" file="./assets/LINK_6/LINK_6_collision_131.obj" />
+        <mesh name="LINK_6_collision_132" file="./assets/LINK_6/LINK_6_collision_132.obj" />
+        <mesh name="LINK_6_collision_133" file="./assets/LINK_6/LINK_6_collision_133.obj" />
+        <mesh name="LINK_6_collision_134" file="./assets/LINK_6/LINK_6_collision_134.obj" />
+        <mesh name="LINK_6_collision_135" file="./assets/LINK_6/LINK_6_collision_135.obj" />
+        <mesh name="LINK_6_collision_136" file="./assets/LINK_6/LINK_6_collision_136.obj" />
+        <mesh name="LINK_6_collision_137" file="./assets/LINK_6/LINK_6_collision_137.obj" />
+        <mesh name="LINK_6_collision_138" file="./assets/LINK_6/LINK_6_collision_138.obj" />
+        <mesh name="LINK_6_collision_139" file="./assets/LINK_6/LINK_6_collision_139.obj" />
+        <mesh name="LINK_6_collision_140" file="./assets/LINK_6/LINK_6_collision_140.obj" />
+        <mesh name="LINK_6_collision_141" file="./assets/LINK_6/LINK_6_collision_141.obj" />
+        <mesh name="LINK_6_collision_142" file="./assets/LINK_6/LINK_6_collision_142.obj" />
+        <mesh name="LINK_6_collision_143" file="./assets/LINK_6/LINK_6_collision_143.obj" />
+        <mesh name="LINK_6_collision_144" file="./assets/LINK_6/LINK_6_collision_144.obj" />
+        <mesh name="LINK_6_collision_145" file="./assets/LINK_6/LINK_6_collision_145.obj" />
+        <mesh name="LINK_6_collision_146" file="./assets/LINK_6/LINK_6_collision_146.obj" />
+        <mesh name="LINK_6_collision_147" file="./assets/LINK_6/LINK_6_collision_147.obj" />
+        <mesh name="LINK_6_collision_148" file="./assets/LINK_6/LINK_6_collision_148.obj" />
+        <mesh name="LINK_6_collision_149" file="./assets/LINK_6/LINK_6_collision_149.obj" />
+        <mesh name="LINK_6_collision_150" file="./assets/LINK_6/LINK_6_collision_150.obj" />
+        <mesh name="LINK_6_collision_151" file="./assets/LINK_6/LINK_6_collision_151.obj" />
+        <mesh name="LINK_6_collision_152" file="./assets/LINK_6/LINK_6_collision_152.obj" />
+        <mesh name="LINK_6_collision_153" file="./assets/LINK_6/LINK_6_collision_153.obj" />
+        <mesh name="LINK_6_collision_154" file="./assets/LINK_6/LINK_6_collision_154.obj" />
+        <mesh name="LINK_6_collision_155" file="./assets/LINK_6/LINK_6_collision_155.obj" />
+        <mesh name="LINK_6_collision_156" file="./assets/LINK_6/LINK_6_collision_156.obj" />
+        <mesh name="LINK_6_collision_157" file="./assets/LINK_6/LINK_6_collision_157.obj" />
+        <mesh name="LINK_6_collision_158" file="./assets/LINK_6/LINK_6_collision_158.obj" />
+        <mesh name="LINK_6_collision_159" file="./assets/LINK_6/LINK_6_collision_159.obj" />
+        <mesh name="LINK_6_collision_160" file="./assets/LINK_6/LINK_6_collision_160.obj" />
+        <mesh name="LINK_6_collision_161" file="./assets/LINK_6/LINK_6_collision_161.obj" />
+        <mesh name="LINK_6_collision_162" file="./assets/LINK_6/LINK_6_collision_162.obj" />
+        <mesh name="LINK_6_collision_163" file="./assets/LINK_6/LINK_6_collision_163.obj" />
+        <mesh name="LINK_6_collision_164" file="./assets/LINK_6/LINK_6_collision_164.obj" />
+        <mesh name="LINK_6_collision_165" file="./assets/LINK_6/LINK_6_collision_165.obj" />
+        <mesh name="LINK_6_collision_166" file="./assets/LINK_6/LINK_6_collision_166.obj" />
+        <mesh name="LINK_6_collision_167" file="./assets/LINK_6/LINK_6_collision_167.obj" />
+        <mesh name="LINK_6_collision_168" file="./assets/LINK_6/LINK_6_collision_168.obj" />
+        <mesh name="LINK_6_collision_169" file="./assets/LINK_6/LINK_6_collision_169.obj" />
+        <mesh name="LINK_6_collision_170" file="./assets/LINK_6/LINK_6_collision_170.obj" />
+        <mesh name="LINK_6_collision_171" file="./assets/LINK_6/LINK_6_collision_171.obj" />
+        <mesh name="LINK_6_collision_172" file="./assets/LINK_6/LINK_6_collision_172.obj" />
+        <mesh name="LINK_6_collision_173" file="./assets/LINK_6/LINK_6_collision_173.obj" />
+        <mesh name="LINK_6_collision_174" file="./assets/LINK_6/LINK_6_collision_174.obj" />
+        <mesh name="LINK_6_collision_175" file="./assets/LINK_6/LINK_6_collision_175.obj" />
+        <mesh name="LINK_6_collision_176" file="./assets/LINK_6/LINK_6_collision_176.obj" />
+        <mesh name="LINK_6_collision_177" file="./assets/LINK_6/LINK_6_collision_177.obj" />
+        <mesh name="LINK_6_collision_178" file="./assets/LINK_6/LINK_6_collision_178.obj" />
+        <mesh name="LINK_6_collision_179" file="./assets/LINK_6/LINK_6_collision_179.obj" />
+        <mesh name="LINK_6_collision_180" file="./assets/LINK_6/LINK_6_collision_180.obj" />
+        <mesh name="LINK_6_collision_181" file="./assets/LINK_6/LINK_6_collision_181.obj" />
+        <mesh name="LINK_6_collision_182" file="./assets/LINK_6/LINK_6_collision_182.obj" />
+        <mesh name="LINK_6_collision_183" file="./assets/LINK_6/LINK_6_collision_183.obj" />
+        <mesh name="LINK_6_collision_184" file="./assets/LINK_6/LINK_6_collision_184.obj" />
+        <mesh name="LINK_6_collision_185" file="./assets/LINK_6/LINK_6_collision_185.obj" />
+        <mesh name="LINK_6_collision_186" file="./assets/LINK_6/LINK_6_collision_186.obj" />
+        <mesh name="LINK_6_collision_187" file="./assets/LINK_6/LINK_6_collision_187.obj" />
+        <mesh name="LINK_6_collision_188" file="./assets/LINK_6/LINK_6_collision_188.obj" />
+        <mesh name="LINK_6_collision_189" file="./assets/LINK_6/LINK_6_collision_189.obj" />
+        <mesh name="LINK_6_collision_190" file="./assets/LINK_6/LINK_6_collision_190.obj" />
+        <mesh name="LINK_6_collision_191" file="./assets/LINK_6/LINK_6_collision_191.obj" />
+        <mesh name="LINK_6_collision_192" file="./assets/LINK_6/LINK_6_collision_192.obj" />
+        <mesh name="LINK_6_collision_193" file="./assets/LINK_6/LINK_6_collision_193.obj" />
+        <mesh name="LINK_6_collision_194" file="./assets/LINK_6/LINK_6_collision_194.obj" />
+        <mesh name="LINK_6_collision_195" file="./assets/LINK_6/LINK_6_collision_195.obj" />
+        <mesh name="LINK_6_collision_196" file="./assets/LINK_6/LINK_6_collision_196.obj" />
+        <mesh name="LINK_6_collision_197" file="./assets/LINK_6/LINK_6_collision_197.obj" />
+        <mesh name="LINK_6_collision_198" file="./assets/LINK_6/LINK_6_collision_198.obj" />
+        <mesh name="LINK_6_collision_199" file="./assets/LINK_6/LINK_6_collision_199.obj" />
+        <mesh name="LINK_6_collision_200" file="./assets/LINK_6/LINK_6_collision_200.obj" />
+        <mesh name="LINK_6_collision_201" file="./assets/LINK_6/LINK_6_collision_201.obj" />
+        <mesh name="LINK_6_collision_202" file="./assets/LINK_6/LINK_6_collision_202.obj" />
+        <mesh name="LINK_6_collision_203" file="./assets/LINK_6/LINK_6_collision_203.obj" />
+        <mesh name="LINK_6_collision_204" file="./assets/LINK_6/LINK_6_collision_204.obj" />
+        <mesh name="LINK_6_collision_205" file="./assets/LINK_6/LINK_6_collision_205.obj" />
+        <mesh name="LINK_6_collision_206" file="./assets/LINK_6/LINK_6_collision_206.obj" />
+        <mesh name="LINK_6_collision_207" file="./assets/LINK_6/LINK_6_collision_207.obj" />
+        <mesh name="LINK_6_collision_208" file="./assets/LINK_6/LINK_6_collision_208.obj" />
+        <mesh name="LINK_6_collision_209" file="./assets/LINK_6/LINK_6_collision_209.obj" />
+        <mesh name="LINK_6_collision_210" file="./assets/LINK_6/LINK_6_collision_210.obj" />
+        <mesh name="LINK_6_collision_211" file="./assets/LINK_6/LINK_6_collision_211.obj" />
+        <mesh name="LINK_6_collision_212" file="./assets/LINK_6/LINK_6_collision_212.obj" />
+        <mesh name="LINK_6_collision_213" file="./assets/LINK_6/LINK_6_collision_213.obj" />
+        <mesh name="LINK_6_collision_214" file="./assets/LINK_6/LINK_6_collision_214.obj" />
+        <mesh name="LINK_6_collision_215" file="./assets/LINK_6/LINK_6_collision_215.obj" />
+        <mesh name="LINK_6_collision_216" file="./assets/LINK_6/LINK_6_collision_216.obj" />
+        <mesh name="LINK_6_collision_217" file="./assets/LINK_6/LINK_6_collision_217.obj" />
+        <mesh name="LINK_6_collision_218" file="./assets/LINK_6/LINK_6_collision_218.obj" />
+        <mesh name="LINK_6_collision_219" file="./assets/LINK_6/LINK_6_collision_219.obj" />
+        <mesh name="LINK_6_collision_220" file="./assets/LINK_6/LINK_6_collision_220.obj" />
+        <mesh name="LINK_7" file="./assets/LINK_7/LINK_7.obj" />
+        <mesh name="LINK_7_collision_0" file="./assets/LINK_7/LINK_7_collision_0.obj" />
+        <mesh name="LINK_7_collision_1" file="./assets/LINK_7/LINK_7_collision_1.obj" />
+        <mesh name="LINK_7_collision_2" file="./assets/LINK_7/LINK_7_collision_2.obj" />
+        <mesh name="LINK_7_collision_3" file="./assets/LINK_7/LINK_7_collision_3.obj" />
+        <mesh name="LINK_7_collision_4" file="./assets/LINK_7/LINK_7_collision_4.obj" />
+        <mesh name="LINK_7_collision_5" file="./assets/LINK_7/LINK_7_collision_5.obj" />
+        <mesh name="LINK_7_collision_6" file="./assets/LINK_7/LINK_7_collision_6.obj" />
+        <mesh name="LINK_7_collision_7" file="./assets/LINK_7/LINK_7_collision_7.obj" />
+        <mesh name="LINK_7_collision_8" file="./assets/LINK_7/LINK_7_collision_8.obj" />
+        <mesh name="LINK_7_collision_9" file="./assets/LINK_7/LINK_7_collision_9.obj" />
+        <mesh name="LINK_7_collision_10" file="./assets/LINK_7/LINK_7_collision_10.obj" />
+        <mesh name="LINK_7_collision_11" file="./assets/LINK_7/LINK_7_collision_11.obj" />
+        <mesh name="LINK_7_collision_12" file="./assets/LINK_7/LINK_7_collision_12.obj" />
+        <mesh name="LINK_7_collision_13" file="./assets/LINK_7/LINK_7_collision_13.obj" />
+        <mesh name="LINK_7_collision_14" file="./assets/LINK_7/LINK_7_collision_14.obj" />
+        <mesh name="LINK_7_collision_15" file="./assets/LINK_7/LINK_7_collision_15.obj" />
+        <mesh name="LINK_7_collision_16" file="./assets/LINK_7/LINK_7_collision_16.obj" />
+        <mesh name="LINK_7_collision_17" file="./assets/LINK_7/LINK_7_collision_17.obj" />
+        <mesh name="LINK_7_collision_18" file="./assets/LINK_7/LINK_7_collision_18.obj" />
+        <mesh name="LINK_7_collision_19" file="./assets/LINK_7/LINK_7_collision_19.obj" />
+        <mesh name="LINK_8" file="./assets/LINK_8/LINK_8.obj" />
+        <mesh name="LINK_8_collision_0" file="./assets/LINK_8/LINK_8_collision_0.obj" />
+        <mesh name="LINK_8_collision_1" file="./assets/LINK_8/LINK_8_collision_1.obj" />
+        <mesh name="LINK_8_collision_2" file="./assets/LINK_8/LINK_8_collision_2.obj" />
+        <mesh name="LINK_8_collision_3" file="./assets/LINK_8/LINK_8_collision_3.obj" />
+        <mesh name="LINK_8_collision_4" file="./assets/LINK_8/LINK_8_collision_4.obj" />
+        <mesh name="LINK_8_collision_5" file="./assets/LINK_8/LINK_8_collision_5.obj" />
+        <mesh name="LINK_8_collision_6" file="./assets/LINK_8/LINK_8_collision_6.obj" />
+        <mesh name="LINK_8_collision_7" file="./assets/LINK_8/LINK_8_collision_7.obj" />
+        <mesh name="LINK_8_collision_8" file="./assets/LINK_8/LINK_8_collision_8.obj" />
+        <mesh name="LINK_8_collision_9" file="./assets/LINK_8/LINK_8_collision_9.obj" />
+        <mesh name="LINK_8_collision_10" file="./assets/LINK_8/LINK_8_collision_10.obj" />
+        <mesh name="LINK_8_collision_11" file="./assets/LINK_8/LINK_8_collision_11.obj" />
+        <mesh name="LINK_8_collision_12" file="./assets/LINK_8/LINK_8_collision_12.obj" />
+        <mesh name="LINK_8_collision_13" file="./assets/LINK_8/LINK_8_collision_13.obj" />
+        <mesh name="LINK_9_0" file="./assets/LINK_9/LINK_9_0.obj" />
+        <mesh name="LINK_9_1" file="./assets/LINK_9/LINK_9_1.obj" />
+        <mesh name="LINK_9_collision_0" file="./assets/LINK_9/LINK_9_collision_0.obj" />
+        <mesh name="LINK_9_collision_1" file="./assets/LINK_9/LINK_9_collision_1.obj" />
+        <mesh name="LINK_9_collision_2" file="./assets/LINK_9/LINK_9_collision_2.obj" />
+        <mesh name="LINK_9_collision_3" file="./assets/LINK_9/LINK_9_collision_3.obj" />
+        <mesh name="LINK_9_collision_4" file="./assets/LINK_9/LINK_9_collision_4.obj" />
+        <mesh name="LINK_9_collision_5" file="./assets/LINK_9/LINK_9_collision_5.obj" />
+        <mesh name="LINK_9_collision_6" file="./assets/LINK_9/LINK_9_collision_6.obj" />
+        <mesh name="LINK_9_collision_7" file="./assets/LINK_9/LINK_9_collision_7.obj" />
+        <mesh name="LINK_9_collision_8" file="./assets/LINK_9/LINK_9_collision_8.obj" />
+        <mesh name="LINK_10_0" file="./assets/LINK_10/LINK_10_0.obj" />
+        <mesh name="LINK_10_1" file="./assets/LINK_10/LINK_10_1.obj" />
+        <mesh name="LINK_10_collision_0" file="./assets/LINK_10/LINK_10_collision_0.obj" />
+        <mesh name="LINK_10_collision_1" file="./assets/LINK_10/LINK_10_collision_1.obj" />
+        <mesh name="LINK_10_collision_2" file="./assets/LINK_10/LINK_10_collision_2.obj" />
+        <mesh name="LINK_10_collision_3" file="./assets/LINK_10/LINK_10_collision_3.obj" />
+        <mesh name="LINK_11_WY_1" file="./assets/LINK_11/LINK_11_WY_1.obj" />
+        <mesh name="LINK_11_WY_2" file="./assets/LINK_11/LINK_11_WY_2.obj" />
+        <mesh name="LINK_11_WY_collision_0" file="./assets/LINK_11/LINK_11_WY_collision_0.obj" />
+        <mesh name="LINK_12_WP" file="./assets/LINK_12/LINK_12_WP.obj" />
+        <mesh name="LINK_12_WP_collision_0" file="./assets/LINK_12/LINK_12_WP_collision_0.obj" />
+        <mesh name="LINK_13_WR" file="./assets/LINK_13/LINK_13_WR.obj" />
+        <mesh name="LINK_13_WR_collision_0" file="./assets/LINK_13/LINK_13_WR_collision_0.obj" />
+        <mesh name="LINK_14" file="./assets/LINK_14/LINK_14.obj" />
+        <mesh name="LINK_14_collision_0" file="./assets/LINK_14/LINK_14_collision_0.obj" />
+        <mesh name="LINK_14_collision_1" file="./assets/LINK_14/LINK_14_collision_1.obj" />
+        <mesh name="LINK_14_collision_2" file="./assets/LINK_14/LINK_14_collision_2.obj" />
+        <mesh name="LINK_14_collision_3" file="./assets/LINK_14/LINK_14_collision_3.obj" />
+        <mesh name="LINK_14_collision_4" file="./assets/LINK_14/LINK_14_collision_4.obj" />
+        <mesh name="LINK_14_collision_5" file="./assets/LINK_14/LINK_14_collision_5.obj" />
+        <mesh name="LINK_14_collision_6" file="./assets/LINK_14/LINK_14_collision_6.obj" />
+        <mesh name="LINK_14_collision_7" file="./assets/LINK_14/LINK_14_collision_7.obj" />
+        <mesh name="LINK_14_collision_8" file="./assets/LINK_14/LINK_14_collision_8.obj" />
+        <mesh name="LINK_14_collision_9" file="./assets/LINK_14/LINK_14_collision_9.obj" />
+        <mesh name="LINK_14_collision_10" file="./assets/LINK_14/LINK_14_collision_10.obj" />
+        <mesh name="LINK_14_collision_11" file="./assets/LINK_14/LINK_14_collision_11.obj" />
+        <mesh name="LINK_14_collision_12" file="./assets/LINK_14/LINK_14_collision_12.obj" />
+        <mesh name="LINK_14_collision_13" file="./assets/LINK_14/LINK_14_collision_13.obj" />
+        <mesh name="LINK_14_collision_14" file="./assets/LINK_14/LINK_14_collision_14.obj" />
+        <mesh name="LINK_14_collision_15" file="./assets/LINK_14/LINK_14_collision_15.obj" />
+        <mesh name="LINK_14_collision_16" file="./assets/LINK_14/LINK_14_collision_16.obj" />
+        <mesh name="LINK_14_collision_17" file="./assets/LINK_14/LINK_14_collision_17.obj" />
+        <mesh name="LINK_15" file="./assets/LINK_15/LINK_15.obj" />
+        <mesh name="LINK_15_collision_0" file="./assets/LINK_15/LINK_15_collision_0.obj" />
+        <mesh name="LINK_15_collision_1" file="./assets/LINK_15/LINK_15_collision_1.obj" />
+        <mesh name="LINK_15_collision_2" file="./assets/LINK_15/LINK_15_collision_2.obj" />
+        <mesh name="LINK_15_collision_3" file="./assets/LINK_15/LINK_15_collision_3.obj" />
+        <mesh name="LINK_15_collision_4" file="./assets/LINK_15/LINK_15_collision_4.obj" />
+        <mesh name="LINK_15_collision_5" file="./assets/LINK_15/LINK_15_collision_5.obj" />
+        <mesh name="LINK_15_collision_6" file="./assets/LINK_15/LINK_15_collision_6.obj" />
+        <mesh name="LINK_15_collision_7" file="./assets/LINK_15/LINK_15_collision_7.obj" />
+        <mesh name="LINK_15_collision_8" file="./assets/LINK_15/LINK_15_collision_8.obj" />
+        <mesh name="LINK_15_collision_9" file="./assets/LINK_15/LINK_15_collision_9.obj" />
+        <mesh name="LINK_15_collision_10" file="./assets/LINK_15/LINK_15_collision_10.obj" />
+        <mesh name="LINK_15_collision_11" file="./assets/LINK_15/LINK_15_collision_11.obj" />
+        <mesh name="LINK_15_collision_12" file="./assets/LINK_15/LINK_15_collision_12.obj" />
+        <mesh name="LINK_16_0" file="./assets/LINK_16/LINK_16_0.obj" />
+        <mesh name="LINK_16_1" file="./assets/LINK_16/LINK_16_1.obj" />
+        <mesh name="LINK_16_collision_0" file="./assets/LINK_16/LINK_16_collision_0.obj" />
+        <mesh name="LINK_16_collision_1" file="./assets/LINK_16/LINK_16_collision_1.obj" />
+        <mesh name="LINK_16_collision_2" file="./assets/LINK_16/LINK_16_collision_2.obj" />
+        <mesh name="LINK_16_collision_3" file="./assets/LINK_16/LINK_16_collision_3.obj" />
+        <mesh name="LINK_16_collision_4" file="./assets/LINK_16/LINK_16_collision_4.obj" />
+        <mesh name="LINK_16_collision_5" file="./assets/LINK_16/LINK_16_collision_5.obj" />
+        <mesh name="LINK_16_collision_6" file="./assets/LINK_16/LINK_16_collision_6.obj" />
+        <mesh name="LINK_16_collision_7" file="./assets/LINK_16/LINK_16_collision_7.obj" />
+        <mesh name="LINK_16_collision_8" file="./assets/LINK_16/LINK_16_collision_8.obj" />
+        <mesh name="LINK_16_collision_9" file="./assets/LINK_16/LINK_16_collision_9.obj" />
+        <mesh name="LINK_16_collision_10" file="./assets/LINK_16/LINK_16_collision_10.obj" />
+        <mesh name="LINK_16_collision_11" file="./assets/LINK_16/LINK_16_collision_11.obj" />
+        <mesh name="LINK_17_0" file="./assets/LINK_17/LINK_17_0.obj" />
+        <mesh name="LINK_17_1" file="./assets/LINK_17/LINK_17_1.obj" />
+        <mesh name="LINK_17_collision_0" file="./assets/LINK_17/LINK_17_collision_0.obj" />
+        <mesh name="LINK_17_collision_1" file="./assets/LINK_17/LINK_17_collision_1.obj" />
+        <mesh name="LINK_17_collision_2" file="./assets/LINK_17/LINK_17_collision_2.obj" />
+        <mesh name="LINK_17_collision_3" file="./assets/LINK_17/LINK_17_collision_3.obj" />
+        <mesh name="LINK_18_WY_1"           file="./assets/LINK_18/LINK_18_WY_1.obj" />
+        <mesh name="LINK_18_WY_2"           file="./assets/LINK_18/LINK_18_WY_2.obj" />
+        <mesh name="LINK_18_WY_collision_0" file="./assets/LINK_18/LINK_18_WY_collision_0.obj" />
+        <mesh name="LINK_19_WP"             file="./assets/LINK_19/LINK_19_WP.obj" />
+        <mesh name="LINK_19_WP_collision_0" file="./assets/LINK_19/LINK_19_WP_collision_0.obj" />
+        <mesh name="LINK_20_WR"             file="./assets/LINK_20/LINK_20_WR.obj" />
+        <mesh name="LINK_20_WR_collision_0" file="./assets/LINK_20/LINK_20_WR_collision_0.obj" />
+
+
+        <mesh name="NECK_0" file="./assets/NECK_0/NECK_0.obj" />
+        <mesh name="NECK_1" file="./assets/NECK_1/NECK_1.obj" />
+        <mesh name="NECK_2" file="./assets/NECK_2/NECK_2.obj" />
+
+        <mesh name="RIGHT_MOUNT/ee_mount_r" file="./assets/RIGHT_MOUNT/ee_mount_r.obj" />
+        <mesh name="RIGHT_MOUNT/ee_mount_r_collision" file="./assets/RIGHT_MOUNT/ee_mount_r.obj" />
+        <mesh name="LEFT_MOUNT/ee_mount_l" file="./assets/LEFT_MOUNT/ee_mount_l.obj" />
+        <mesh name="LEFT_MOUNT/ee_mount_l_collision" file="./assets/LEFT_MOUNT/ee_mount_l.obj" />
+
+        </asset>
+    <worldbody>
+        <light pos="0 0 5" dir="0 0 -1" directional="true" castshadow="false" diffuse="0.82 0.78 0.65" specular="0 0 0" />
+        <body name="base">
+            <inertial pos="-0.0615794 -0.00142271 0.135139" quat="0.00383057 0.733861 -0.00742942 0.679248" mass="60.0804" diaginertia="3.77525 2.99424 1.36264" />
+            <geom class="visual" material="25,25,25" mesh="base_0" />
+            <geom class="visual" material="25,25,25" mesh="base_1" />
+            <geom class="visual" material="25,25,25" mesh="base_2" />
+            <geom class="visual" material="25,25,25" mesh="base_3" />
+            <geom class="collision" rgba="0.913776 0.409043 0.22273 1" mesh="base_collision_0" />
+            <geom class="collision" rgba="0.439059 0.480101 0.581859 1" mesh="base_collision_1" />
+            <geom class="collision" rgba="0.530996 0.133082 0.647987 1" mesh="base_collision_10" />
+            <geom class="collision" rgba="0.576751 0.278222 0.248449 1" mesh="base_collision_11" />
+            <geom class="collision" rgba="0.590156 0.338018 0.504138 1" mesh="base_collision_12" />
+            <geom class="collision" rgba="0.436278 0.70572 0.519255 1" mesh="base_collision_13" />
+            <geom class="collision" rgba="0.0168614 0.663206 0.400969 1" mesh="base_collision_14" />
+            <geom class="collision" rgba="0.07031 0.963799 0.983775 1" mesh="base_collision_15" />
+            <geom class="collision" rgba="0.365404 0.972861 0.969446 1" mesh="base_collision_2" />
+            <geom class="collision" rgba="0.654679 0.602862 0.873599 1" mesh="base_collision_3" />
+            <geom class="collision" rgba="0.603384 0.124052 0.712968 1" mesh="base_collision_4" />
+            <geom class="collision" rgba="0.991949 0.0683181 0.527824 1" mesh="base_collision_5" />
+            <geom class="collision" rgba="0.754519 0.43387 0.852582 1" mesh="base_collision_6" />
+            <geom class="collision" rgba="0.595089 0.989603 0.782578 1" mesh="base_collision_7" />
+            <geom class="collision" rgba="0.534582 0.929289 0.374113 1" mesh="base_collision_8" />
+            <geom class="collision" rgba="0.940236 0.697378 0.501641 1" mesh="base_collision_9" />
+            <!-- Wheels from URDF model_v1.3.urdf -->
+            <body name="wheel_fr" pos="0.243 -0.245 0.076">
+                <joint name="wheel_fr" type="hinge" axis="0 1 0" limited="false" damping="0.1"/>
+                <geom class="visual" mesh="WHEEL"/>
+                <geom class="collision" mesh="WHEEL_collision_0"/>
+            </body>
+
+            <body name="wheel_fl" pos="0.243 0.245 0.076">
+                <joint name="wheel_fl" type="hinge" axis="0 1 0" limited="false" damping="0.1"/>
+                <geom class="visual" mesh="WHEEL"/>
+                <geom class="collision" mesh="WHEEL_collision_0"/>
+            </body>
+
+            <body name="wheel_rr" pos="-0.247 -0.245 0.076">
+                <joint name="wheel_rr" type="hinge" axis="0 1 0" limited="false" damping="0.1"/>
+                <geom class="visual" mesh="WHEEL"/>
+                <geom class="collision" mesh="WHEEL_collision_0"/>
+            </body>
+
+            <body name="wheel_rl" pos="-0.247 0.245 0.076">
+                <joint name="wheel_rl" type="hinge" axis="0 1 0" limited="false" damping="0.1"/>
+                <geom class="visual" mesh="WHEEL"/>
+                <geom class="collision" mesh="WHEEL_collision_0"/>
+            </body>
+
+            <body name="link_torso_0" pos="0 0 0.2805">
+                <inertial pos="-0.0884841 0.00021367 4.6e-07" quat="0.443798 0.550483 -0.443815 0.55049" mass="2.24282" diaginertia="0.0189253 0.0143368 0.00985172" />
+                <joint name="torso_0" pos="0 0 0" axis="1 0 0" limited="true" range="0.0 0.0001" />
+                <geom class="visual" material="254,254,255" mesh="LINK_1" />
+                <geom class="collision" rgba="0.00335443 0.464104 0.341321 1" mesh="LINK_1_collision_0" />
+                <geom class="collision" rgba="0.0627149 0.0706018 0.941567 1" mesh="LINK_1_collision_1" />
+                <geom class="collision" rgba="0.226473 0.601387 0.366906 1" mesh="LINK_1_collision_2" />
+                <geom class="collision" rgba="0.348605 0.325343 0.874153 1" mesh="LINK_1_collision_3" />
+                <geom class="collision" rgba="0.698653 0.0744891 0.247745 1" mesh="LINK_1_collision_4" />
+                <geom class="collision" rgba="0.395168 0.931441 0.458303 1" mesh="LINK_1_collision_5" />
+                <geom class="collision" rgba="0.42423 0.321302 0.807372 1" mesh="LINK_1_collision_6" />
+                <geom class="collision" rgba="0.665423 0.920882 0.560883 1" mesh="LINK_1_collision_7" />
+                <geom class="collision" rgba="0.501394 0.929684 0.226623 1" mesh="LINK_1_collision_8" />
+                <geom class="collision" rgba="0.403159 0.64453 0.141536 1" mesh="LINK_1_collision_9" />
+                <geom class="in-model-collision" size="0.105" pos="-0.115 0 0" quat="0.707105 0 0.707108 0" />
+                <body name="link_torso_1">
+                    <inertial pos="0.00728955 -0.0172852 0.0691138" quat="0.997768 -0.0453891 0.0382115 -0.0306483" mass="9.72163" diaginertia="0.149421 0.139376 0.0275059" />
+                    <joint name="torso_1" pos="0 0 0" axis="0 1 0" limited="true" range="0.5 0.5001" />
+                    <geom class="visual" material="0,0,0" mesh="LINK_2_0" />
+                    <geom class="visual" material="254,254,255" mesh="LINK_2_1" />
+                    <geom class="collision" rgba="0.988146 0.0791108 0.502579 1" mesh="LINK_2_collision_0" />
+                    <geom class="collision" rgba="0.142836 0.978351 0.693149 1" mesh="LINK_2_collision_1" />
+                    <geom class="collision" rgba="0.370191 0.0689032 0.84488 1" mesh="LINK_2_collision_2" />
+                    <geom class="collision" rgba="0.434746 0.200827 0.879242 1" mesh="LINK_2_collision_3" />
+                    <geom class="collision" rgba="0.0425328 0.631211 0.541433 1" mesh="LINK_2_collision_4" />
+                    <geom class="collision" rgba="0.399521 0.844109 0.500993 1" mesh="LINK_2_collision_5" />
+                    <geom class="collision" rgba="0.213421 0.561018 0.149186 1" mesh="LINK_2_collision_6" />
+                    <geom class="collision" rgba="0.789628 0.715294 0.276861 1" mesh="LINK_2_collision_7" />
+                    <geom class="collision" rgba="0.219858 0.150431 0.278137 1" mesh="LINK_2_collision_8" />
+                    <geom class="collision" rgba="0.0632126 0.0204493 0.430714 1" mesh="LINK_2_collision_9" />
+                    <geom class="collision" rgba="0.696688 0.0825516 0.889482 1" mesh="LINK_2_collision_10" />
+                    <geom class="collision" rgba="0.72894 0.536709 0.458786 1" mesh="LINK_2_collision_11" />
+                    <geom class="collision" rgba="0.979184 0.949799 0.756312 1" mesh="LINK_2_collision_12" />
+                    <geom class="collision" rgba="0.312578 0.505701 0.0739962 1" mesh="LINK_2_collision_13" />
+                    <geom class="collision" rgba="0.40021 0.14445 0.656993 1" mesh="LINK_2_collision_14" />
+                    <geom class="collision" rgba="0.816932 0.0962988 0.886882 1" mesh="LINK_2_collision_15" />
+                    <geom class="collision" rgba="0.130384 0.277917 0.550422 1" mesh="LINK_2_collision_16" />
+                    <geom class="in-model-collision" size="0.115" pos="0.01 0 0.24" />
+                    <body name="link_torso_2" pos="0 0 0.35">
+                        <inertial pos="0.00653835 -0.0176954 0.0563658" quat="0.99687 -0.052526 0.0433482 -0.0401474" mass="9.21692" diaginertia="0.12242 0.116748 0.0292915" />
+                        <joint name="torso_2" pos="0 0 0" axis="0 1 0" limited="true" range="-1.001 -1.0" />
+                        <geom class="visual" material="10,10,10" mesh="LINK_3_0" />
+                        <geom class="visual" material="254,254,255" mesh="LINK_3_1" />
+                        <geom class="collision" rgba="0.445331 0.577146 0.938911 1" mesh="LINK_3_collision_0" />
+                        <geom class="collision" rgba="0.127711 0.975411 0.857006 1" mesh="LINK_3_collision_1" />
+                        <geom class="collision" rgba="0.28631 0.652003 0.853762 1" mesh="LINK_3_collision_2" />
+                        <geom class="collision" rgba="0.34182 0.0827254 0.0571686 1" mesh="LINK_3_collision_3" />
+                        <geom class="collision" rgba="0.116383 0.165821 0.697386 1" mesh="LINK_3_collision_4" />
+                        <geom class="collision" rgba="0.736341 0.729362 0.51052 1" mesh="LINK_3_collision_5" />
+                        <geom class="collision" rgba="0.46486 0.411822 0.947474 1" mesh="LINK_3_collision_6" />
+                        <geom class="collision" rgba="0.458292 0.479945 0.40278 1" mesh="LINK_3_collision_7" />
+                        <geom class="collision" rgba="0.48092 0.214617 0.40731 1" mesh="LINK_3_collision_8" />
+                        <geom class="collision" rgba="0.375274 0.151843 0.10931 1" mesh="LINK_3_collision_9" />
+                        <geom class="collision" rgba="0.641291 0.585906 0.32774 1" mesh="LINK_3_collision_10" />
+                        <geom class="collision" rgba="0.947777 0.516712 0.795026 1" mesh="LINK_3_collision_11" />
+                        <geom class="in-model-collision" size="0.095" pos="0.025 0 0.23" />
+                        <body name="link_torso_3" pos="0 0 0.35">
+                            <inertial pos="-0.00574156 -0.0172598 5.61e-05" quat="0.0913806 0.682262 -0.18841 0.700478" mass="4.18679" diaginertia="0.00955618 0.00946572 0.00832635" />
+                            <joint name="torso_3" pos="0 0 0" axis="0 1 0" limited="true" range="0.5 0.5001" />
+                            <geom class="visual" material="10,10,10" mesh="LINK_4" />
+                            <geom class="collision" rgba="0.570044 0.232273 0.184018 1" mesh="LINK_4_collision_0" />
+                            <geom class="collision" rgba="0.384158 0.416996 0.115604 1" mesh="LINK_4_collision_1" />
+                            <geom class="collision" rgba="0.804974 0.688906 0.102789 1" mesh="LINK_4_collision_2" />
+                            <geom class="collision" rgba="0.63707 0.935052 0.772207 1" mesh="LINK_4_collision_3" />
+                            <geom class="collision" rgba="0.956679 0.222815 0.591491 1" mesh="LINK_4_collision_4" />
+                            <geom class="collision" rgba="0.706036 0.410004 0.305486 1" mesh="LINK_4_collision_5" />
+                            <geom class="collision" rgba="0.321298 0.27949 0.388509 1" mesh="LINK_4_collision_6" />
+                            <geom class="collision" rgba="0.474232 0.123536 0.884627 1" mesh="LINK_4_collision_7" />
+                            <geom class="collision" rgba="0.302178 0.138434 0.508775 1" mesh="LINK_4_collision_8" />
+                            <geom class="collision" rgba="0.0590659 0.038523 0.429264 1" mesh="LINK_4_collision_9" />
+                            <geom class="collision" rgba="0.290493 0.363528 0.524917 1" mesh="LINK_4_collision_10" />
+                            <geom class="collision" rgba="0.234547 0.994337 0.808671 1" mesh="LINK_4_collision_11" />
+                            <geom class="collision" rgba="0.574295 0.661843 0.755938 1" mesh="LINK_4_collision_12" />
+                            <geom class="collision" rgba="0.155603 0.0320459 0.805468 1" mesh="LINK_4_collision_13" />
+                            <geom class="collision" rgba="0.325601 0.534643 0.351192 1" mesh="LINK_4_collision_14" />
+                            <geom class="collision" rgba="0.891099 0.68082 0.970359 1" mesh="LINK_4_collision_15" />
+                            <geom class="collision" rgba="0.156323 0.425762 0.530566 1" mesh="LINK_4_collision_16" />
+                            <geom class="collision" rgba="0.546918 0.877207 0.227723 1" mesh="LINK_4_collision_17" />
+                            <body name="link_torso_4">
+                                <inertial pos="-0.0909709 5.085e-05 0.0260195" quat="-0.0536434 0.4399 -0.0270045 0.896036" mass="4.45566" diaginertia="0.0255574 0.0255082 0.00942882" />
+                                <joint name="torso_4" pos="0 0 0" axis="1 0 0" limited="true" range="0.0 0.0001" />
+                                <geom class="visual" material="25,25,25" mesh="LINK_5" />
+                                <geom class="collision" rgba="0.122477 0.0688048 0.537766 1" mesh="LINK_5_collision_0" />
+                                <geom class="collision" rgba="0.331488 0.625165 0.433921 1" mesh="LINK_5_collision_1" />
+                                <geom class="collision" rgba="0.12551 0.920308 0.500364 1" mesh="LINK_5_collision_2" />
+                                <geom class="collision" rgba="0.923672 0.892365 0.501211 1" mesh="LINK_5_collision_3" />
+                                <geom class="collision" rgba="0.71858 0.616353 0.272604 1" mesh="LINK_5_collision_4" />
+                                <geom class="collision" rgba="0.335607 0.800393 0.823929 1" mesh="LINK_5_collision_5" />
+                                <geom class="collision" rgba="0.457671 0.727173 0.761137 1" mesh="LINK_5_collision_6" />
+                                <geom class="collision" rgba="0.979297 0.70484 0.337566 1" mesh="LINK_5_collision_7" />
+                                <geom class="collision" rgba="0.398961 0.585416 0.936142 1" mesh="LINK_5_collision_8" />
+                                <geom class="collision" rgba="0.953424 0.301008 0.698018 1" mesh="LINK_5_collision_9" />
+                                <geom class="collision" rgba="0.372751 0.375133 0.314837 1" mesh="LINK_5_collision_10" />
+                                <geom class="collision" rgba="0.767549 0.271163 0.524837 1" mesh="LINK_5_collision_11" />
+                                <geom class="collision" rgba="0.177562 0.572833 0.599205 1" mesh="LINK_5_collision_12" />
+                                <geom class="collision" rgba="0.010528 0.718666 0.499306 1" mesh="LINK_5_collision_13" />
+                                <geom class="collision" rgba="0.890597 0.480424 0.337036 1" mesh="LINK_5_collision_14" />
+                                <geom class="collision" rgba="0.246044 0.681112 0.91581 1" mesh="LINK_5_collision_15" />
+                                <geom class="collision" rgba="0.863894 0.384449 0.187993 1" mesh="LINK_5_collision_16" />
+                                <geom class="collision" rgba="0.158941 0.297937 0.096627 1" mesh="LINK_5_collision_17" />
+                                <geom class="collision" rgba="0.310521 0.86824 0.889769 1" mesh="LINK_5_collision_18" />
+                                <geom class="collision" rgba="0.555597 0.428452 0.278236 1" mesh="LINK_5_collision_19" />
+                                <geom class="collision" rgba="0.772073 0.637273 0.618797 1" mesh="LINK_5_collision_20" />
+                                <geom class="collision" rgba="0.421381 0.667641 0.776193 1" mesh="LINK_5_collision_21" />
+                                <geom class="collision" rgba="0.944842 0.640345 0.922158 1" mesh="LINK_5_collision_22" />
+                                <geom class="collision" rgba="0.261053 0.105517 0.377191 1" mesh="LINK_5_collision_23" />
+                                <geom class="in-model-collision" size="0.105" pos="-0.07 0 0.0385" quat="0.707105 0 0.707108 0" />
+                                <body name="link_torso_5" pos="0 0 0.309427">
+                                    <inertial pos="-0.0132199 0.000254676 -0.0318761" quat="0.998675 -0.00438307 -0.0510462 0.00477378" mass="12.6659" diaginertia="0.21618 0.167212 0.132309" />
+                                    <joint name="torso_5" pos="0 0 0" axis="0 0 1" limited="true" range="0.0 0.0001" />
+                                    <geom class="visual" material="254,254,255_LINK_6" mesh="LINK_6_0" />
+                                    <geom class="visual" material="191,191,191" mesh="LINK_6_1" />
+                                    <geom class="visual" material="70,70,70" mesh="LINK_6_2" />
+                                    <geom class="visual" material="178,0,0" mesh="LINK_6_3" />
+                                    <geom class="visual" material="10,10,10_LINK_6" mesh="LINK_6_4" />
+                                    <geom class="visual" material="254,254,255_LINK_6" mesh="LINK_6_5" />
+                                    <geom class="collision" rgba="0.67095 0.803729 0.925705 1" mesh="LINK_6_collision_0" />
+                                    <geom class="collision" rgba="0.58284 0.574918 0.69835 1" mesh="LINK_6_collision_1" />
+                                    <geom class="collision" rgba="0.563497 0.361427 0.551036 1" mesh="LINK_6_collision_2" />
+                                    <geom class="collision" rgba="0.917808 0.0701221 0.0969448 1" mesh="LINK_6_collision_3" />
+                                    <geom class="collision" rgba="0.501465 0.438073 0.892918 1" mesh="LINK_6_collision_4" />
+                                    <geom class="collision" rgba="0.0335267 0.796062 0.188619 1" mesh="LINK_6_collision_5" />
+                                    <geom class="collision" rgba="0.152055 0.479965 0.346845 1" mesh="LINK_6_collision_6" />
+                                    <geom class="collision" rgba="0.849923 0.654797 0.315694 1" mesh="LINK_6_collision_7" />
+                                    <geom class="collision" rgba="0.282398 0.218818 0.97703 1" mesh="LINK_6_collision_8" />
+                                    <geom class="collision" rgba="0.846623 0.0774905 0.456622 1" mesh="LINK_6_collision_9" />
+                                    <geom class="collision" rgba="0.185282 0.0974587 0.211064 1" mesh="LINK_6_collision_10" />
+                                    <geom class="collision" rgba="0.738757 0.118984 0.0764917 1" mesh="LINK_6_collision_11" />
+                                    <geom class="collision" rgba="0.856659 0.00141678 0.37736 1" mesh="LINK_6_collision_12" />
+                                    <geom class="collision" rgba="0.756017 0.870042 0.130526 1" mesh="LINK_6_collision_13" />
+                                    <geom class="collision" rgba="0.946486 0.955139 0.424804 1" mesh="LINK_6_collision_14" />
+                                    <geom class="collision" rgba="0.343359 0.17153 0.874348 1" mesh="LINK_6_collision_15" />
+                                    <geom class="collision" rgba="0.786212 0.292617 0.820632 1" mesh="LINK_6_collision_16" />
+                                    <geom class="collision" rgba="0.377144 0.502919 0.448641 1" mesh="LINK_6_collision_17" />
+                                    <geom class="collision" rgba="0.28047 0.713578 0.697642 1" mesh="LINK_6_collision_18" />
+                                    <geom class="collision" rgba="0.943258 0.874427 0.481523 1" mesh="LINK_6_collision_19" />
+                                    <geom class="collision" rgba="0.430613 0.638555 0.560233 1" mesh="LINK_6_collision_20" />
+                                    <geom class="collision" rgba="0.243627 0.439613 0.497891 1" mesh="LINK_6_collision_21" />
+                                    <geom class="collision" rgba="0.380434 0.4937 0.660949 1" mesh="LINK_6_collision_22" />
+                                    <geom class="collision" rgba="0.637586 0.0193305 0.311735 1" mesh="LINK_6_collision_23" />
+                                    <geom class="collision" rgba="0.130865 0.983428 0.539341 1" mesh="LINK_6_collision_24" />
+                                    <geom class="collision" rgba="0.0540982 0.0306283 0.655782 1" mesh="LINK_6_collision_25" />
+                                    <geom class="collision" rgba="0.226509 0.777907 0.553229 1" mesh="LINK_6_collision_26" />
+                                    <geom class="collision" rgba="0.214966 0.566364 0.825629 1" mesh="LINK_6_collision_27" />
+                                    <geom class="collision" rgba="0.661897 0.123623 0.875115 1" mesh="LINK_6_collision_28" />
+                                    <geom class="collision" rgba="0.801096 0.437591 0.181214 1" mesh="LINK_6_collision_29" />
+                                    <geom class="collision" rgba="0.413463 0.989274 0.237689 1" mesh="LINK_6_collision_30" />
+                                    <geom class="collision" rgba="0.285718 0.90446 0.763068 1" mesh="LINK_6_collision_31" />
+                                    <geom class="collision" rgba="0.0756921 0.0816994 0.156088 1" mesh="LINK_6_collision_32" />
+                                    <geom class="collision" rgba="0.721194 0.465152 0.679443 1" mesh="LINK_6_collision_33" />
+                                    <geom class="collision" rgba="0.880131 0.470382 0.768283 1" mesh="LINK_6_collision_34" />
+                                    <geom class="collision" rgba="0.0900244 0.285468 0.662099 1" mesh="LINK_6_collision_35" />
+                                    <geom class="collision" rgba="0.618427 0.759041 0.93675 1" mesh="LINK_6_collision_36" />
+                                    <geom class="collision" rgba="0.138437 0.690165 0.522802 1" mesh="LINK_6_collision_37" />
+                                    <geom class="collision" rgba="0.721525 0.213487 0.654264 1" mesh="LINK_6_collision_38" />
+                                    <geom class="collision" rgba="0.646444 0.488775 0.62125 1" mesh="LINK_6_collision_39" />
+                                    <geom class="collision" rgba="0.170498 0.302146 0.484658 1" mesh="LINK_6_collision_40" />
+                                    <geom class="collision" rgba="0.116185 0.0502752 0.260817 1" mesh="LINK_6_collision_41" />
+                                    <geom class="collision" rgba="0.152734 0.551024 0.180357 1" mesh="LINK_6_collision_42" />
+                                    <geom class="collision" rgba="0.107027 0.123485 0.605808 1" mesh="LINK_6_collision_43" />
+                                    <geom class="collision" rgba="0.930808 0.586874 0.702799 1" mesh="LINK_6_collision_44" />
+                                    <geom class="collision" rgba="0.813046 0.853788 0.404626 1" mesh="LINK_6_collision_45" />
+                                    <geom class="collision" rgba="0.181608 0.152569 0.830618 1" mesh="LINK_6_collision_46" />
+                                    <geom class="collision" rgba="0.630409 0.819986 0.828261 1" mesh="LINK_6_collision_47" />
+                                    <geom class="collision" rgba="0.800957 0.464041 0.0412068 1" mesh="LINK_6_collision_48" />
+                                    <geom class="collision" rgba="0.873251 0.0378149 0.851933 1" mesh="LINK_6_collision_49" />
+                                    <geom class="collision" rgba="0.340943 0.445647 0.196306 1" mesh="LINK_6_collision_50" />
+                                    <geom class="collision" rgba="0.701232 0.42582 0.555346 1" mesh="LINK_6_collision_51" />
+                                    <geom class="collision" rgba="0.281276 0.676991 0.174043 1" mesh="LINK_6_collision_52" />
+                                    <geom class="collision" rgba="0.355998 0.921498 0.141032 1" mesh="LINK_6_collision_53" />
+                                    <geom class="collision" rgba="0.104027 0.559706 0.154309 1" mesh="LINK_6_collision_54" />
+                                    <geom class="collision" rgba="0.66441 0.616203 0.439705 1" mesh="LINK_6_collision_55" />
+                                    <geom class="collision" rgba="0.890601 0.992196 0.409428 1" mesh="LINK_6_collision_56" />
+                                    <geom class="collision" rgba="0.939823 0.882479 0.542171 1" mesh="LINK_6_collision_57" />
+                                    <geom class="collision" rgba="0.212416 0.517962 0.950734 1" mesh="LINK_6_collision_58" />
+                                    <geom class="collision" rgba="0.865648 0.555122 0.322181 1" mesh="LINK_6_collision_59" />
+                                    <geom class="collision" rgba="0.158929 0.371401 0.519788 1" mesh="LINK_6_collision_60" />
+                                    <geom class="collision" rgba="0.778521 0.200898 0.951451 1" mesh="LINK_6_collision_61" />
+                                    <geom class="collision" rgba="0.601699 0.708479 0.396227 1" mesh="LINK_6_collision_62" />
+                                    <geom class="collision" rgba="0.947247 0.495787 0.23913 1" mesh="LINK_6_collision_63" />
+                                    <geom class="collision" rgba="0.969402 0.32069 0.930168 1" mesh="LINK_6_collision_64" />
+                                    <geom class="collision" rgba="0.37779 0.337438 0.380816 1" mesh="LINK_6_collision_65" />
+                                    <geom class="collision" rgba="0.749883 0.356738 0.514389 1" mesh="LINK_6_collision_66" />
+                                    <geom class="collision" rgba="0.896016 0.200129 0.477963 1" mesh="LINK_6_collision_67" />
+                                    <geom class="collision" rgba="0.909796 0.793163 0.967898 1" mesh="LINK_6_collision_68" />
+                                    <geom class="collision" rgba="0.383502 0.280225 0.791274 1" mesh="LINK_6_collision_69" />
+                                    <geom class="collision" rgba="0.0208666 0.323371 0.13093 1" mesh="LINK_6_collision_70" />
+                                    <geom class="collision" rgba="0.935397 0.237844 0.0235904 1" mesh="LINK_6_collision_71" />
+                                    <geom class="collision" rgba="0.728101 0.382683 0.768286 1" mesh="LINK_6_collision_72" />
+                                    <geom class="collision" rgba="0.216405 0.531465 0.475667 1" mesh="LINK_6_collision_73" />
+                                    <geom class="collision" rgba="0.78268 0.870167 0.652933 1" mesh="LINK_6_collision_74" />
+                                    <geom class="collision" rgba="0.273684 0.143196 0.605194 1" mesh="LINK_6_collision_75" />
+                                    <geom class="collision" rgba="0.679679 0.137314 0.731935 1" mesh="LINK_6_collision_76" />
+                                    <geom class="collision" rgba="0.845573 0.65383 0.118394 1" mesh="LINK_6_collision_77" />
+                                    <geom class="collision" rgba="0.506067 0.140993 0.0863536 1" mesh="LINK_6_collision_78" />
+                                    <geom class="collision" rgba="0.327231 0.00187935 0.827952 1" mesh="LINK_6_collision_79" />
+                                    <geom class="collision" rgba="0.274065 0.179001 0.174778 1" mesh="LINK_6_collision_80" />
+                                    <geom class="collision" rgba="0.192794 0.273582 0.837916 1" mesh="LINK_6_collision_81" />
+                                    <geom class="collision" rgba="0.810169 0.915384 0.0842832 1" mesh="LINK_6_collision_82" />
+                                    <geom class="collision" rgba="0.727137 0.346408 0.0880843 1" mesh="LINK_6_collision_83" />
+                                    <geom class="collision" rgba="0.0315803 0.609165 0.187033 1" mesh="LINK_6_collision_84" />
+                                    <geom class="collision" rgba="0.703488 0.723738 0.381183 1" mesh="LINK_6_collision_85" />
+                                    <geom class="collision" rgba="0.925221 0.441751 0.601182 1" mesh="LINK_6_collision_86" />
+                                    <geom class="collision" rgba="0.978965 0.000621601 0.408698 1" mesh="LINK_6_collision_87" />
+                                    <geom class="collision" rgba="0.884311 0.245019 0.455601 1" mesh="LINK_6_collision_88" />
+                                    <geom class="collision" rgba="0.80104 0.756867 0.970935 1" mesh="LINK_6_collision_89" />
+                                    <geom class="collision" rgba="0.693753 0.475673 0.0395278 1" mesh="LINK_6_collision_90" />
+                                    <geom class="collision" rgba="0.0774318 0.535073 0.2871 1" mesh="LINK_6_collision_91" />
+                                    <geom class="collision" rgba="0.873042 0.617578 0.628142 1" mesh="LINK_6_collision_92" />
+                                    <geom class="collision" rgba="0.675592 0.820456 0.670562 1" mesh="LINK_6_collision_93" />
+                                    <geom class="collision" rgba="0.598207 0.497644 0.541727 1" mesh="LINK_6_collision_94" />
+                                    <geom class="collision" rgba="0.382113 0.910464 0.182347 1" mesh="LINK_6_collision_95" />
+                                    <geom class="collision" rgba="0.773257 0.0970744 0.200899 1" mesh="LINK_6_collision_96" />
+                                    <geom class="collision" rgba="0.441368 0.919552 0.06631 1" mesh="LINK_6_collision_97" />
+                                    <geom class="collision" rgba="0.650268 0.252932 0.977884 1" mesh="LINK_6_collision_98" />
+                                    <geom class="collision" rgba="0.0626021 0.963953 0.653541 1" mesh="LINK_6_collision_99" />
+                                    <geom class="collision" rgba="0.36917 0.688894 0.74541 1" mesh="LINK_6_collision_100" />
+                                    <geom class="collision" rgba="0.608725 0.0868021 0.279116 1" mesh="LINK_6_collision_101" />
+                                    <geom class="collision" rgba="0.0302291 0.737334 0.619071 1" mesh="LINK_6_collision_102" />
+                                    <geom class="collision" rgba="0.797741 0.500071 0.904071 1" mesh="LINK_6_collision_103" />
+                                    <geom class="collision" rgba="0.407752 0.365404 0.543061 1" mesh="LINK_6_collision_104" />
+                                    <geom class="collision" rgba="0.704163 0.505815 0.433858 1" mesh="LINK_6_collision_105" />
+                                    <geom class="collision" rgba="0.849877 0.373425 0.555919 1" mesh="LINK_6_collision_106" />
+                                    <geom class="collision" rgba="0.470053 0.194556 0.72051 1" mesh="LINK_6_collision_107" />
+                                    <geom class="collision" rgba="0.500155 0.5061 0.0988742 1" mesh="LINK_6_collision_108" />
+                                    <geom class="collision" rgba="0.170701 0.628772 0.757498 1" mesh="LINK_6_collision_109" />
+                                    <geom class="collision" rgba="0.185845 0.960962 0.66991 1" mesh="LINK_6_collision_110" />
+                                    <geom class="collision" rgba="0.381596 0.344557 0.455628 1" mesh="LINK_6_collision_111" />
+                                    <geom class="collision" rgba="0.50397 0.994361 0.822424 1" mesh="LINK_6_collision_112" />
+                                    <geom class="collision" rgba="0.477588 0.140826 0.844093 1" mesh="LINK_6_collision_113" />
+                                    <geom class="collision" rgba="0.634471 0.332707 0.906284 1" mesh="LINK_6_collision_114" />
+                                    <geom class="collision" rgba="0.71005 0.716309 0.0416935 1" mesh="LINK_6_collision_115" />
+                                    <geom class="collision" rgba="0.57302 0.309456 0.133884 1" mesh="LINK_6_collision_116" />
+                                    <geom class="collision" rgba="0.57713 0.78959 0.247769 1" mesh="LINK_6_collision_117" />
+                                    <geom class="collision" rgba="0.586174 0.869572 0.670952 1" mesh="LINK_6_collision_118" />
+                                    <geom class="collision" rgba="0.0503124 0.582003 0.126935 1" mesh="LINK_6_collision_119" />
+                                    <geom class="collision" rgba="0.898845 0.0845285 0.343586 1" mesh="LINK_6_collision_120" />
+                                    <geom class="collision" rgba="0.497818 0.723347 0.64944 1" mesh="LINK_6_collision_121" />
+                                    <geom class="collision" rgba="0.701337 0.504985 0.516421 1" mesh="LINK_6_collision_122" />
+                                    <geom class="collision" rgba="0.291553 0.109704 0.392037 1" mesh="LINK_6_collision_123" />
+                                    <geom class="collision" rgba="0.826344 0.510228 0.463521 1" mesh="LINK_6_collision_124" />
+                                    <geom class="collision" rgba="0.880642 0.565414 0.887081 1" mesh="LINK_6_collision_125" />
+                                    <geom class="collision" rgba="0.697325 0.50619 0.18826 1" mesh="LINK_6_collision_126" />
+                                    <geom class="collision" rgba="0.638187 0.0453172 0.292413 1" mesh="LINK_6_collision_127" />
+                                    <geom class="collision" rgba="0.279249 0.00679196 0.519089 1" mesh="LINK_6_collision_128" />
+                                    <geom class="collision" rgba="0.05437 0.685694 0.107772 1" mesh="LINK_6_collision_129" />
+                                    <geom class="collision" rgba="0.111207 0.240191 0.114957 1" mesh="LINK_6_collision_130" />
+                                    <geom class="collision" rgba="0.69399 0.455129 0.624472 1" mesh="LINK_6_collision_131" />
+                                    <geom class="collision" rgba="0.432112 0.436308 0.331297 1" mesh="LINK_6_collision_132" />
+                                    <geom class="collision" rgba="0.108385 0.545311 0.518934 1" mesh="LINK_6_collision_133" />
+                                    <geom class="collision" rgba="0.084453 0.747822 0.823175 1" mesh="LINK_6_collision_134" />
+                                    <geom class="collision" rgba="0.0901448 0.653867 0.0315576 1" mesh="LINK_6_collision_135" />
+                                    <geom class="collision" rgba="0.586693 0.326755 0.609656 1" mesh="LINK_6_collision_136" />
+                                    <geom class="collision" rgba="0.802128 0.562266 0.10496 1" mesh="LINK_6_collision_137" />
+                                    <geom class="collision" rgba="0.163261 0.178485 0.249566 1" mesh="LINK_6_collision_138" />
+                                    <geom class="collision" rgba="0.404688 0.648798 0.663901 1" mesh="LINK_6_collision_139" />
+                                    <geom class="collision" rgba="0.110351 0.189826 0.250993 1" mesh="LINK_6_collision_140" />
+                                    <geom class="collision" rgba="0.931474 0.427149 0.51655 1" mesh="LINK_6_collision_141" />
+                                    <geom class="collision" rgba="0.920399 0.773579 0.589787 1" mesh="LINK_6_collision_142" />
+                                    <geom class="collision" rgba="0.263036 0.672448 0.264428 1" mesh="LINK_6_collision_143" />
+                                    <geom class="collision" rgba="0.0176948 0.425394 0.609217 1" mesh="LINK_6_collision_144" />
+                                    <geom class="collision" rgba="0.727182 0.578172 0.310403 1" mesh="LINK_6_collision_145" />
+                                    <geom class="collision" rgba="0.565512 0.181858 0.534247 1" mesh="LINK_6_collision_146" />
+                                    <geom class="collision" rgba="0.937906 0.167695 0.605307 1" mesh="LINK_6_collision_147" />
+                                    <geom class="collision" rgba="0.186728 0.55248 0.672165 1" mesh="LINK_6_collision_148" />
+                                    <geom class="collision" rgba="0.868098 0.498917 0.815288 1" mesh="LINK_6_collision_149" />
+                                    <geom class="collision" rgba="0.4477 0.925521 0.486916 1" mesh="LINK_6_collision_150" />
+                                    <geom class="collision" rgba="0.825091 0.609295 0.321457 1" mesh="LINK_6_collision_151" />
+                                    <geom class="collision" rgba="0.37955 0.119182 0.292189 1" mesh="LINK_6_collision_152" />
+                                    <geom class="collision" rgba="0.656709 0.138176 0.707249 1" mesh="LINK_6_collision_153" />
+                                    <geom class="collision" rgba="0.951668 0.351243 0.685722 1" mesh="LINK_6_collision_154" />
+                                    <geom class="collision" rgba="0.728211 0.0375537 0.72245 1" mesh="LINK_6_collision_155" />
+                                    <geom class="collision" rgba="0.740412 0.329209 0.699799 1" mesh="LINK_6_collision_156" />
+                                    <geom class="collision" rgba="0.551586 0.502966 0.236801 1" mesh="LINK_6_collision_157" />
+                                    <geom class="collision" rgba="0.860219 0.0857584 0.316386 1" mesh="LINK_6_collision_158" />
+                                    <geom class="collision" rgba="0.800889 0.43908 0.454215 1" mesh="LINK_6_collision_159" />
+                                    <geom class="collision" rgba="0.0840198 0.736501 0.420919 1" mesh="LINK_6_collision_160" />
+                                    <geom class="collision" rgba="0.133157 0.632765 0.616072 1" mesh="LINK_6_collision_161" />
+                                    <geom class="collision" rgba="0.661798 0.965678 0.834598 1" mesh="LINK_6_collision_162" />
+                                    <geom class="collision" rgba="0.278743 0.0964401 0.570403 1" mesh="LINK_6_collision_163" />
+                                    <geom class="collision" rgba="0.367659 0.393532 0.980115 1" mesh="LINK_6_collision_164" />
+                                    <geom class="collision" rgba="0.257642 0.718893 0.152931 1" mesh="LINK_6_collision_165" />
+                                    <geom class="collision" rgba="0.461912 0.278098 0.712917 1" mesh="LINK_6_collision_166" />
+                                    <geom class="collision" rgba="0.725897 0.884742 0.848738 1" mesh="LINK_6_collision_167" />
+                                    <geom class="collision" rgba="0.633906 0.306531 0.831996 1" mesh="LINK_6_collision_168" />
+                                    <geom class="collision" rgba="0.246944 0.487792 0.405767 1" mesh="LINK_6_collision_169" />
+                                    <geom class="collision" rgba="0.623528 0.966331 0.674377 1" mesh="LINK_6_collision_170" />
+                                    <geom class="collision" rgba="0.701481 0.660747 0.582582 1" mesh="LINK_6_collision_171" />
+                                    <geom class="collision" rgba="0.171895 0.889315 0.109252 1" mesh="LINK_6_collision_172" />
+                                    <geom class="collision" rgba="0.681758 0.0391632 0.975624 1" mesh="LINK_6_collision_173" />
+                                    <geom class="collision" rgba="0.620416 0.725044 0.938336 1" mesh="LINK_6_collision_174" />
+                                    <geom class="collision" rgba="0.356073 0.200375 0.726603 1" mesh="LINK_6_collision_175" />
+                                    <geom class="collision" rgba="0.38617 0.877348 0.200242 1" mesh="LINK_6_collision_176" />
+                                    <geom class="collision" rgba="0.124974 0.112302 0.550192 1" mesh="LINK_6_collision_177" />
+                                    <geom class="collision" rgba="0.764255 0.38243 0.984964 1" mesh="LINK_6_collision_178" />
+                                    <geom class="collision" rgba="0.809502 0.306067 0.427984 1" mesh="LINK_6_collision_179" />
+                                    <geom class="collision" rgba="0.181145 0.490388 0.539707 1" mesh="LINK_6_collision_180" />
+                                    <geom class="collision" rgba="0.44763 0.962894 0.183244 1" mesh="LINK_6_collision_181" />
+                                    <geom class="collision" rgba="0.939077 0.274378 0.140884 1" mesh="LINK_6_collision_182" />
+                                    <geom class="collision" rgba="0.0664407 0.68087 0.452222 1" mesh="LINK_6_collision_183" />
+                                    <geom class="collision" rgba="0.749191 0.843868 0.0136378 1" mesh="LINK_6_collision_184" />
+                                    <geom class="collision" rgba="0.45229 0.153524 0.678089 1" mesh="LINK_6_collision_185" />
+                                    <geom class="collision" rgba="0.466324 0.0181163 0.955236 1" mesh="LINK_6_collision_186" />
+                                    <geom class="collision" rgba="0.1937 0.282831 0.443005 1" mesh="LINK_6_collision_187" />
+                                    <geom class="collision" rgba="0.395442 0.604883 0.540556 1" mesh="LINK_6_collision_188" />
+                                    <geom class="collision" rgba="0.300586 0.666074 0.890337 1" mesh="LINK_6_collision_189" />
+                                    <geom class="collision" rgba="0.54224 0.407658 0.930738 1" mesh="LINK_6_collision_190" />
+                                    <geom class="collision" rgba="0.621032 0.487293 0.695157 1" mesh="LINK_6_collision_191" />
+                                    <geom class="collision" rgba="0.282022 0.763755 0.257213 1" mesh="LINK_6_collision_192" />
+                                    <geom class="collision" rgba="0.200322 0.610419 0.842237 1" mesh="LINK_6_collision_193" />
+                                    <geom class="collision" rgba="0.734647 0.651799 0.821082 1" mesh="LINK_6_collision_194" />
+                                    <geom class="collision" rgba="0.111359 0.880794 0.431143 1" mesh="LINK_6_collision_195" />
+                                    <geom class="collision" rgba="0.34372 0.527134 0.441524 1" mesh="LINK_6_collision_196" />
+                                    <geom class="collision" rgba="0.0663317 0.956654 0.304 1" mesh="LINK_6_collision_197" />
+                                    <geom class="collision" rgba="0.593922 0.487797 0.410759 1" mesh="LINK_6_collision_198" />
+                                    <geom class="collision" rgba="0.972116 0.77154 0.587051 1" mesh="LINK_6_collision_199" />
+                                    <geom class="collision" rgba="0.72681 0.501536 0.483067 1" mesh="LINK_6_collision_200" />
+                                    <geom class="collision" rgba="0.0591589 0.184171 0.263133 1" mesh="LINK_6_collision_201" />
+                                    <geom class="collision" rgba="0.351833 0.899831 0.054928 1" mesh="LINK_6_collision_202" />
+                                    <geom class="collision" rgba="0.0805865 0.478552 0.191926 1" mesh="LINK_6_collision_203" />
+                                    <geom class="collision" rgba="0.296583 0.774317 0.104552 1" mesh="LINK_6_collision_204" />
+                                    <geom class="collision" rgba="0.465706 0.281809 0.742889 1" mesh="LINK_6_collision_205" />
+                                    <geom class="collision" rgba="0.534326 0.0948678 0.157688 1" mesh="LINK_6_collision_206" />
+                                    <geom class="collision" rgba="0.746831 0.955463 0.204029 1" mesh="LINK_6_collision_207" />
+                                    <geom class="collision" rgba="0.818515 0.517899 0.621452 1" mesh="LINK_6_collision_208" />
+                                    <geom class="collision" rgba="0.713111 0.823904 0.771412 1" mesh="LINK_6_collision_209" />
+                                    <geom class="collision" rgba="0.844068 0.570762 0.00706066 1" mesh="LINK_6_collision_210" />
+                                    <geom class="collision" rgba="0.467474 0.839081 0.87867 1" mesh="LINK_6_collision_211" />
+                                    <geom class="collision" rgba="0.444754 0.133638 0.809464 1" mesh="LINK_6_collision_212" />
+                                    <geom class="collision" rgba="0.0694613 0.0798865 0.70326 1" mesh="LINK_6_collision_213" />
+                                    <geom class="collision" rgba="0.215767 0.042213 0.628299 1" mesh="LINK_6_collision_214" />
+                                    <geom class="collision" rgba="0.597416 0.492474 0.0856576 1" mesh="LINK_6_collision_215" />
+                                    <geom class="collision" rgba="0.863703 0.00611759 0.780506 1" mesh="LINK_6_collision_216" />
+                                    <geom class="collision" rgba="0.0341078 0.52413 0.432206 1" mesh="LINK_6_collision_217" />
+                                    <geom class="collision" rgba="0.279001 0.935338 0.399033 1" mesh="LINK_6_collision_218" />
+                                    <geom class="collision" rgba="0.746172 0.40121 0.973633 1" mesh="LINK_6_collision_219" />
+                                    <geom class="collision" rgba="0.555194 0.112806 0.342746 1" mesh="LINK_6_collision_220" />
+                                    <geom class="in-model-collision" size="0.155" pos="0 0 0.0075" />
+
+
+                                    <!-- ===== URDF head/neck chain (NECK_0/1/2) ===== -->
+                                    <body name="link_head_0" pos="0.022 0 0.120073451525">
+                                        <inertial
+                                            pos="0.00024733 0.00033306 -0.01029730"
+                                            mass="0.65731648"
+                                            fullinertia="0.00046241 0.00043223 0.00027509 0.00000182 0.00001119 0.00000061" />
+                                        <geom class="visual" mesh="NECK_0" />
+
+                                        <body name="link_head_1" pos="0 0 0.080">
+                                            <inertial
+                                                pos="-0.00041643 0.00593524 -0.00289916"
+                                                mass="0.70476502"
+                                                fullinertia="0.00066212 0.00036078 0.00059265 -0.00000515 0.00000093 -0.00001312" />
+                                            <joint name="head_0" pos="0 0 0" axis="0 0 1" limited="true" range="-1.57 1.57" />
+                                            <geom class="visual" mesh="NECK_1" />
+
+                                            <body name="link_head_2" pos="0 0 0">
+                                                <inertial
+                                                    pos="0.05315320 0.00547509 0.05913909"
+                                                    mass="0.95262738"
+                                                    fullinertia="0.00114243 0.00107559 0.00151415 0.00027678 -0.00035426 0.00023641" />
+                                                <joint name="head_1" pos="0 0 0" axis="0 1 0" limited="true" range="-1.57 1.57" />
+                                                <geom class="visual" mesh="NECK_2" />
+                                            </body>
+                                        </body>
+                                    </body>
+
+                                    <!-- ===== end URDF head/neck chain ===== -->
+
+                                    <body name="link_right_arm_0" pos="0 -0.22 0.0800735">
+                                        <site name="right_center" pos="0 0 0" size="0.01" rgba="1 0.3 0.3 1" group="2" />
+                                        <inertial pos="-0.00316662 0.0343718 -3e-07" quat="0.536676 0.553304 0.439546 0.461122" mass="1.26164" diaginertia="0.00433912 0.00432154 0.00223129" />
+                                        <joint name="right_arm_0" pos="0 0 0" axis="0 0.939693 -0.34202" limited="true" range="-2.35619 2.35619" />
+                                        <geom class="visual" material="RIGHT_ARM_BLACK_ARIA" mesh="LINK_7" />
+                                        <geom class="collision" rgba="0.415696 0.639983 0.396772 1" mesh="LINK_7_collision_0" />
+                                        <geom class="collision" rgba="0.168942 0.244135 0.916109 1" mesh="LINK_7_collision_1" />
+                                        <geom class="collision" rgba="0.478609 0.15611 0.319609 1" mesh="LINK_7_collision_2" />
+                                        <geom class="collision" rgba="0.422679 0.995381 0.622168 1" mesh="LINK_7_collision_3" />
+                                        <geom class="collision" rgba="0.746814 0.892092 0.245563 1" mesh="LINK_7_collision_4" />
+                                        <geom class="collision" rgba="0.608129 0.891946 0.589744 1" mesh="LINK_7_collision_5" />
+                                        <geom class="collision" rgba="0.886376 0.195699 0.386877 1" mesh="LINK_7_collision_6" />
+                                        <geom class="collision" rgba="0.899222 0.70314 0.636374 1" mesh="LINK_7_collision_7" />
+                                        <geom class="collision" rgba="0.608631 0.675419 0.227083 1" mesh="LINK_7_collision_8" />
+                                        <geom class="collision" rgba="0.126672 0.194257 0.457223 1" mesh="LINK_7_collision_9" />
+                                        <geom class="collision" rgba="0.279508 0.691616 0.141007 1" mesh="LINK_7_collision_10" />
+                                        <geom class="collision" rgba="0.421364 0.823424 0.438073 1" mesh="LINK_7_collision_11" />
+                                        <geom class="collision" rgba="0.990312 0.53755 0.507082 1" mesh="LINK_7_collision_12" />
+                                        <geom class="collision" rgba="0.0880795 0.619881 0.321361 1" mesh="LINK_7_collision_13" />
+                                        <geom class="collision" rgba="0.886131 0.353942 0.607271 1" mesh="LINK_7_collision_14" />
+                                        <geom class="collision" rgba="0.816796 0.653373 0.74874 1" mesh="LINK_7_collision_15" />
+                                        <geom class="collision" rgba="0.796211 0.851122 0.95289 1" mesh="LINK_7_collision_16" />
+                                        <geom class="collision" rgba="0.155397 0.490091 0.562114 1" mesh="LINK_7_collision_17" />
+                                        <geom class="collision" rgba="0.798353 0.354702 0.0302492 1" mesh="LINK_7_collision_18" />
+                                        <geom class="collision" rgba="0.422567 0.297994 0.28899 1" mesh="LINK_7_collision_19" />
+                                        <geom class="in-model-collision" size="0.075" pos="-0.015 0.018 -0.008" quat="0.707105 0 0.707108 0" />
+                                        <body name="link_right_arm_1">
+                                            <inertial pos="-0.00307855 -0.00124741 -0.0129432" quat="0.691024 -0.061096 -0.016345 0.72006" mass="2.27287" diaginertia="0.00447747 0.0038967 0.00286448" />
+                                            <joint name="right_arm_1" pos="0 0 0" axis="1 0 0" limited="true" range="-3.14159 0.05" />
+                                            <geom class="visual" material="RIGHT_ARM_BLACK_ARIA" mesh="LINK_8" />
+                                            <geom class="collision" rgba="0.396603 0.723347 0.79009 1" mesh="LINK_8_collision_0" />
+                                            <geom class="collision" rgba="0.945977 0.596419 0.86474 1" mesh="LINK_8_collision_1" />
+                                            <geom class="collision" rgba="0.432842 0.507949 0.566378 1" mesh="LINK_8_collision_2" />
+                                            <geom class="collision" rgba="0.90434 0.510019 0.981144 1" mesh="LINK_8_collision_3" />
+                                            <geom class="collision" rgba="0.743383 0.225025 0.92928 1" mesh="LINK_8_collision_4" />
+                                            <geom class="collision" rgba="0.754415 0.229025 0.194017 1" mesh="LINK_8_collision_5" />
+                                            <geom class="collision" rgba="0.543934 0.0674062 0.210485 1" mesh="LINK_8_collision_6" />
+                                            <geom class="collision" rgba="0.377243 0.994208 0.0792065 1" mesh="LINK_8_collision_7" />
+                                            <geom class="collision" rgba="0.629847 0.303169 0.713021 1" mesh="LINK_8_collision_8" />
+                                            <geom class="collision" rgba="0.684672 0.485782 0.759938 1" mesh="LINK_8_collision_9" />
+                                            <geom class="collision" rgba="0.57012 0.538632 0.898261 1" mesh="LINK_8_collision_10" />
+                                            <geom class="collision" rgba="0.907179 0.125337 0.0660093 1" mesh="LINK_8_collision_11" />
+                                            <geom class="collision" rgba="0.142597 0.47314 0.0668656 1" mesh="LINK_8_collision_12" />
+                                            <geom class="collision" rgba="0.597687 0.688731 0.956223 1" mesh="LINK_8_collision_13" />
+                                            <geom class="in-model-collision" size="0.05" pos="0 0 -0.1" />
+                                            <body name="link_right_arm_2">
+                                                <inertial pos="0.00115434 -0.00196635 -0.161925" quat="0.998316 -0.0390505 -0.0388849 0.0181103" mass="2.46909" diaginertia="0.0098447 0.00928024 0.00322202" />
+                                                <joint name="right_arm_2" pos="0 0 0" axis="0 0 1" limited="true" range="-2.0944 2.0944" />
+                                                <geom class="visual" material="RIGHT_ARM_WHITE_ARIA" mesh="LINK_9_0" />
+                                                <geom class="visual" material="RIGHT_ARM_BLACK_ARIA" mesh="LINK_9_1" />
+                                                <geom class="collision" rgba="0.555479 0.34297 0.745642 1" mesh="LINK_9_collision_0" />
+                                                <geom class="collision" rgba="0.781705 0.379878 0.10929 1" mesh="LINK_9_collision_1" />
+                                                <geom class="collision" rgba="0.0499903 0.572391 0.00159486 1" mesh="LINK_9_collision_2" />
+                                                <geom class="collision" rgba="0.129055 0.919906 0.848492 1" mesh="LINK_9_collision_3" />
+                                                <geom class="collision" rgba="0.425236 0.856622 0.159606 1" mesh="LINK_9_collision_4" />
+                                                <geom class="collision" rgba="0.904888 0.0461877 0.170714 1" mesh="LINK_9_collision_5" />
+                                                <geom class="collision" rgba="0.069659 0.826089 0.434541 1" mesh="LINK_9_collision_6" />
+                                                <geom class="collision" rgba="0.177491 0.146092 0.826676 1" mesh="LINK_9_collision_7" />
+                                                <geom class="collision" rgba="0.334128 0.0309075 0.131705 1" mesh="LINK_9_collision_8" />
+                                                <geom class="in-model-collision" size="0.05" pos="0.026 0 -0.276" quat="0.707105 0.707108 0 0" />
+                                                <body name="link_right_arm_3" pos="0.031 0 -0.276">
+                                                    <inertial pos="-0.0160313 -0.00692891 -0.0454981" quat="0.950945 0.0932571 0.100342 0.277377" mass="2.26099" diaginertia="0.0086724 0.00849326 0.00187523" />
+                                                    <joint name="right_arm_3" pos="0 0 0" axis="0 1 0" limited="true" range="-2.61799 0.01" />
+                                                    <geom class="visual" material="RIGHT_ARM_WHITE_ARIA" mesh="LINK_10_0" />
+                                                    <geom class="visual" material="RIGHT_ARM_BLACK_ARIA" mesh="LINK_10_1" />
+                                                    <geom class="collision" rgba="0.160788 0.785403 0.620264 1" mesh="LINK_10_collision_0" />
+                                                    <geom class="collision" rgba="0.68809 0.504721 0.323054 1" mesh="LINK_10_collision_1" />
+                                                    <geom class="collision" rgba="0.129237 0.624425 0.798142 1" mesh="LINK_10_collision_2" />
+                                                    <geom class="collision" rgba="0.568366 0.947072 0.731744 1" mesh="LINK_10_collision_3" />
+                                                    <geom class="in-model-collision" size="0.04" pos="-0.031 0 -0.1075" />
+                                                    <body name="link_right_arm_4" pos="-0.031 0 -0.3095">
+                                                        <inertial pos="-1.1e-07 -0.0269604 0.0618211" quat="0.686909 -0.167796 0.167796 0.686909" mass="0.425087" diaginertia="0.000885625 0.00082466 0.000266295" />
+                                                        <joint name="right_arm_4" pos="0 0 0" axis="0 0 1" limited="true" range="-3.141593 3.141593" />
+                                                        <geom class="visual" material="RIGHT_ARM_DARK_ARIA" mesh="LINK_11_WY_1" />
+                                                        <geom class="visual" material="RIGHT_ARM_WHITE_ARIA" mesh="LINK_11_WY_2" />
+                                                        <geom class="collision" rgba="0.365043 0.142608 0.0255638 1" mesh="LINK_11_WY_collision_0" />
+                                                        <geom class="in-model-collision" size="0.035" pos="0 -0.038 0.0175" />
+                                                        <body name="link_right_arm_5">
+                                                            <inertial pos="0.00318034 -0.00532264 -0.0280966" quat="0.559407 0.0608226 -0.0803636 0.822743" mass="1.59194" diaginertia="0.00262685 0.00255036 0.00151658" />
+                                                            <joint name="right_arm_5" pos="0 0 0" axis="0 1 0" limited="true" range="-0.872665 0.872665" />
+                                                            <geom class="visual" material="RIGHT_ARM_BLACK_ARIA" mesh="LINK_12_WP" />
+                                                            <geom class="collision" rgba="0.656516 0.636324 0.546159 1" mesh="LINK_12_WP_collision_0" />
+                                                            <geom class="in-model-collision" size="0.075" pos="0 0 -0.024" />
+                                                            <body name="link_right_arm_6">
+                                                                <inertial pos="0.00101419 0.000398553 -0.149904" quat="0.730015 -0.0098152 -0.00428736 0.683347" mass="1.16921" diaginertia="0.00296506 0.00265919 0.00114611" />
+                                                                <joint name="right_arm_6" pos="0 0 0" axis="1 0 0" limited="true" range="-1.570796 1.570796" />
+                                                                <geom class="visual" material="RIGHT_ARM_BLACK_ARIA" mesh="LINK_13_WR" />
+                                                                <geom class="collision" rgba="0.120867 0.668425 0.301727 1" mesh="LINK_13_WR_collision_0" />
+                                                                <body name="right" pos="0.000000 0.000000 -0.087" quat="0.707107 0 0 0.707107">
+                                                                    <geom class="visual" material="RIGHT_ARM_BLACK_ARIA" mesh="RIGHT_MOUNT/ee_mount_r" />
+                                                                <geom class="collision" rgba="0.626659 0.0926462 0.885688 1" mesh="RIGHT_MOUNT/ee_mount_r" />
+                                                                </body>
+                                                                <body name="right_eef" pos="0.000000 0.000000 -0.102" quat="0.707107 0 0 0.707107">
+
+                                                                <site name="right_eef_site" pos="0 0 0" size="0.01" rgba="1 0.3 0.3 1" group="2"/>
+
+                                                                </body>
+                                                        </body>
+                                                    </body>
+                                                    </body>
+                                                </body>
+                                            </body>
+                                        </body>
+                                    </body>
+
+                                    <body name="link_left_arm_0" pos="0 0.22 0.0800735">
+                                        <site name="left_center" pos="0 0 0" size="0.01" rgba="1 0.3 0.3 1" group="2" />
+                                        <inertial pos="-0.00316662 -0.0343715 2.42e-06" quat="0.441442 0.459281 0.538276 0.551768" mass="1.26164" diaginertia="0.0043391 0.00432158 0.00223133" />
+                                        <joint name="left_arm_0" pos="0 0 0" axis="0 0.939693 0.34202" limited="true" range="-2.35619 2.35619" />
+                                        <geom class="visual" material="10,10,10" mesh="LINK_14" />
+                                        <geom class="collision" rgba="0.658896 0.227723 0.351012 1" mesh="LINK_14_collision_0" />
+                                        <geom class="collision" rgba="0.703324 0.643042 0.908372 1" mesh="LINK_14_collision_1" />
+                                        <geom class="collision" rgba="0.331008 0.391189 0.0928608 1" mesh="LINK_14_collision_2" />
+                                        <geom class="collision" rgba="0.789167 0.989116 0.696597 1" mesh="LINK_14_collision_3" />
+                                        <geom class="collision" rgba="0.763602 0.254482 0.753656 1" mesh="LINK_14_collision_4" />
+                                        <geom class="collision" rgba="0.00896135 0.94105 0.18539 1" mesh="LINK_14_collision_5" />
+                                        <geom class="collision" rgba="0.943748 0.594392 0.117513 1" mesh="LINK_14_collision_6" />
+                                        <geom class="collision" rgba="0.986519 0.656633 0.445279 1" mesh="LINK_14_collision_7" />
+                                        <geom class="collision" rgba="0.565523 0.814463 0.996381 1" mesh="LINK_14_collision_8" />
+                                        <geom class="collision" rgba="0.387185 0.611466 0.171194 1" mesh="LINK_14_collision_9" />
+                                        <geom class="collision" rgba="0.195813 0.865424 0.648536 1" mesh="LINK_14_collision_10" />
+                                        <geom class="collision" rgba="0.406962 0.253079 0.109401 1" mesh="LINK_14_collision_11" />
+                                        <geom class="collision" rgba="0.600606 0.832831 0.0644417 1" mesh="LINK_14_collision_12" />
+                                        <geom class="collision" rgba="0.306606 0.377534 0.965805 1" mesh="LINK_14_collision_13" />
+                                        <geom class="collision" rgba="0.722973 0.167577 0.0516009 1" mesh="LINK_14_collision_14" />
+                                        <geom class="collision" rgba="0.0186089 0.714373 0.269886 1" mesh="LINK_14_collision_15" />
+                                        <geom class="collision" rgba="0.472537 0.377985 0.186323 1" mesh="LINK_14_collision_16" />
+                                        <geom class="collision" rgba="0.218388 0.471455 0.0699751 1" mesh="LINK_14_collision_17" />
+                                        <geom class="in-model-collision" size="0.075" pos="-0.015 -0.018 -0.008" quat="0.707105 0 0.707108 0" />
+                                        <body name="link_left_arm_1">
+                                            <inertial pos="-0.0018347 0.00040596 -0.0100873" quat="0.701113 -0.0246572 -0.049881 0.710875" mass="1.88139" diaginertia="0.00355382 0.00296561 0.0022966" />
+                                            <joint name="left_arm_1" pos="0 0 0" axis="1 0 0" limited="true" range="-0.05 3.14159" />
+                                            <geom class="visual" material="10,10,10" mesh="LINK_15" />
+                                            <geom class="collision" rgba="0.806846 0.847526 0.636441 1" mesh="LINK_15_collision_0" />
+                                            <geom class="collision" rgba="0.666802 0.606495 0.742396 1" mesh="LINK_15_collision_1" />
+                                            <geom class="collision" rgba="0.535184 0.556706 0.231874 1" mesh="LINK_15_collision_2" />
+                                            <geom class="collision" rgba="0.657341 0.497485 0.926882 1" mesh="LINK_15_collision_3" />
+                                            <geom class="collision" rgba="0.464876 0.81437 0.424935 1" mesh="LINK_15_collision_4" />
+                                            <geom class="collision" rgba="0.966185 0.0546422 0.974373 1" mesh="LINK_15_collision_5" />
+                                            <geom class="collision" rgba="0.0212759 0.543351 0.739886 1" mesh="LINK_15_collision_6" />
+                                            <geom class="collision" rgba="0.45393 0.897724 0.603587 1" mesh="LINK_15_collision_7" />
+                                            <geom class="collision" rgba="0.196873 0.931645 0.696195 1" mesh="LINK_15_collision_8" />
+                                            <geom class="collision" rgba="0.471261 0.630731 0.985089 1" mesh="LINK_15_collision_9" />
+                                            <geom class="collision" rgba="0.920498 0.590706 0.814963 1" mesh="LINK_15_collision_10" />
+                                            <geom class="collision" rgba="0.0479192 0.801514 0.303553 1" mesh="LINK_15_collision_11" />
+                                            <geom class="collision" rgba="0.411658 0.387721 0.819765 1" mesh="LINK_15_collision_12" />
+                                            <geom class="in-model-collision" size="0.05" pos="0 0 -0.1" />
+                                            <body name="link_left_arm_2">
+                                                <inertial pos="0.00066086 -0.00038583 -0.15743" quat="0.999413 -0.00635373 -0.0335732 -0.00246859" mass="2.35634" diaginertia="0.00845197 0.00802394 0.00293109" />
+                                                <joint name="left_arm_2" pos="0 0 0" axis="0 0 1" limited="true" range="-2.0944 2.0944" />
+                                                <geom class="visual" material="254,254,255" mesh="LINK_16_0" />
+                                                <geom class="visual" material="10,10,10" mesh="LINK_16_1" />
+                                                <geom class="collision" rgba="0.482372 0.502287 0.460695 1" mesh="LINK_16_collision_0" />
+                                                <geom class="collision" rgba="0.0102204 0.700697 0.712643 1" mesh="LINK_16_collision_1" />
+                                                <geom class="collision" rgba="0.0106429 0.989816 0.827425 1" mesh="LINK_16_collision_2" />
+                                                <geom class="collision" rgba="0.976107 0.171655 0.180398 1" mesh="LINK_16_collision_3" />
+                                                <geom class="collision" rgba="0.63028 0.817608 0.245085 1" mesh="LINK_16_collision_4" />
+                                                <geom class="collision" rgba="0.000200726 0.183595 0.878469 1" mesh="LINK_16_collision_5" />
+                                                <geom class="collision" rgba="0.421517 0.517134 0.978153 1" mesh="LINK_16_collision_6" />
+                                                <geom class="collision" rgba="0.571396 0.0574628 0.226908 1" mesh="LINK_16_collision_7" />
+                                                <geom class="collision" rgba="0.232506 0.329983 0.799821 1" mesh="LINK_16_collision_8" />
+                                                <geom class="collision" rgba="0.275698 0.276459 0.169058 1" mesh="LINK_16_collision_9" />
+                                                <geom class="collision" rgba="0.88481 0.529556 0.259237 1" mesh="LINK_16_collision_10" />
+                                                <geom class="collision" rgba="0.691638 0.0728988 0.694389 1" mesh="LINK_16_collision_11" />
+                                                <geom class="in-model-collision" size="0.05" pos="0.026 0 -0.276" quat="0.707105 0.707108 0 0" />
+                                                <body name="link_left_arm_3" pos="0.031 0 -0.276">
+                                                    <inertial pos="-0.015653 0.00793126 -0.0499794" quat="0.977098 -0.0897025 0.113811 -0.15582" mass="2.00906" diaginertia="0.00798526 0.00783637 0.00146823" />
+                                                    <joint name="left_arm_3" pos="0 0 0" axis="0 1 0" limited="true" range="-2.61799 0.01" />
+                                                    <geom class="visual" material="254,254,255" mesh="LINK_17_0" />
+                                                    <geom class="visual" material="10,10,10" mesh="LINK_17_1" />
+                                                    <geom class="collision" rgba="0.0452132 0.806852 0.788385 1" mesh="LINK_17_collision_0" />
+                                                    <geom class="collision" rgba="0.778718 0.497018 0.87375 1" mesh="LINK_17_collision_1" />
+                                                    <geom class="collision" rgba="0.122324 0.326903 0.603638 1" mesh="LINK_17_collision_2" />
+                                                    <geom class="collision" rgba="0.0385106 0.0892887 0.471616 1" mesh="LINK_17_collision_3" />
+                                                    <geom class="in-model-collision" size="0.04" pos="-0.031 0 -0.1075" />
+                                                    <body name="link_left_arm_4" pos="-0.031 0 -0.3095">
+                                                            <inertial pos="1.1e-07 0.0269604 0.0618211"
+                                                                    quat="0.686909 0.167796 -0.167796 0.686909"
+                                                                    mass="0.425087"
+                                                                    diaginertia="0.000885625 0.00082466 0.000266295" />
+                                                            <joint name="left_arm_4" pos="0 0 0" axis="0 0 1" limited="true" range="-3.141593 3.141593" />
+                                                            <geom class="visual" material="25,25,25" mesh="LINK_18_WY_1" />
+                                                            <geom class="visual" material="254,254,255" mesh="LINK_18_WY_2" />
+                                                            <geom class="collision" rgba="0.365043 0.142608 0.0255638 1" mesh="LINK_18_WY_collision_0" />
+                                                            <geom class="in-model-collision" size="0.035" pos="0 0.038 0.0175" />
+                                                        <body name="link_left_arm_5">
+                                                            <inertial pos="0.00340082 0.00576824 -0.0250731"
+                                                                    quat="0.874666 -0.0845974 0.0492323 0.474742"
+                                                                    mass="1.44265"
+                                                                    diaginertia="0.00238544 0.00231489 0.00134498" />
+                                                            <joint name="left_arm_5" pos="0 0 0" axis="0 1 0" limited="true" range="-0.872665 0.872665" />
+                                                            <geom class="visual"    material="10,10,10" mesh="LINK_19_WP" />
+                                                            <geom class="collision" rgba="0.656516 0.636324 0.546159 1" mesh="LINK_19_WP_collision_0" />
+                                                            <geom class="in-model-collision" size="0.075" pos="0 0 -0.024" />
+                                                        <body name="link_left_arm_6">
+                                                                <inertial pos="-0.00092669 0.000508285 -0.149904"
+                                                                            quat="0.72966 0.00249295 0.012223 0.683697"
+                                                                            mass="1.16921"
+                                                                            diaginertia="0.00296541 0.00265922 0.00114589" />
+                                                                <joint name="left_arm_6" pos="0 0 0" axis="1 0 0" limited="true" range="-1.570796 1.570796" />
+                                                                <geom class="visual"    material="10,10,10" mesh="LINK_20_WR" />
+                                                                <geom class="collision" rgba="0.120867 0.668425 0.301727 1" mesh="LINK_20_WR_collision_0" />
+                                                                <body name="left" pos="0 0 -0.087" quat="0.707107 0 0 0.707107">
+                                                                    <geom class="visual" material="10,10,10" mesh="LEFT_MOUNT/ee_mount_l" />
+                                                                <geom class="collision" rgba="0.626659 0.0926462 0.885688 1" mesh="LEFT_MOUNT/ee_mount_l" />
+                                                                </body>
+
+                                                                <body name="left_eef" pos="0 0 -0.102" quat="0.707107 0 0 0.707107">
+                                                                <site name="left_eef_site" pos="0 0 0" size="0.01" rgba="1 0.3 0.3 1" group="2"/>
+
+
+
+
+                                                                </body>
+                                                                </body>
+
+
+
+                                                            </body>
+                                                        </body>
+                                                    </body>
+                                                    </body>
+                                                </body>
+                                            </body>
+
+                                        </body>
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+        </worldbody>
+    <actuator>
+
+        <motor name="wheel_fr" joint="wheel_fr" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="wheel_fl" joint="wheel_fl" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="wheel_rr" joint="wheel_rr" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="wheel_rl" joint="wheel_rl" ctrllimited="true" ctrlrange="-1 1"/>
+
+
+        <motor name="right_arm_0" joint="right_arm_0" ctrllimited="true" ctrlrange="-10000 10000"/>
+        <motor name="right_arm_1" joint="right_arm_1" ctrllimited="true" ctrlrange="-10000 10000"/>
+        <motor name="right_arm_2" joint="right_arm_2" ctrllimited="true" ctrlrange="-10000 10000"/>
+        <motor name="right_arm_3" joint="right_arm_3" ctrllimited="true" ctrlrange="-10000 10000"/>
+        <motor name="right_arm_4" joint="right_arm_4" ctrllimited="true" ctrlrange="-10000 10000"/>
+        <motor name="right_arm_5" joint="right_arm_5" ctrllimited="true" ctrlrange="-10000 10000"/>
+        <motor name="right_arm_6" joint="right_arm_6" ctrllimited="true" ctrlrange="-10000 10000"/>
+
+        <motor name="left_arm_0" joint="left_arm_0" ctrllimited="true" ctrlrange="-10000 10000"/>
+        <motor name="left_arm_1" joint="left_arm_1" ctrllimited="true" ctrlrange="-10000 10000"/>
+        <motor name="left_arm_2" joint="left_arm_2" ctrllimited="true" ctrlrange="-10000 10000"/>
+        <motor name="left_arm_3" joint="left_arm_3" ctrllimited="true" ctrlrange="-10000 10000"/>
+        <motor name="left_arm_4" joint="left_arm_4" ctrllimited="true" ctrlrange="-10000 10000"/>
+        <motor name="left_arm_5" joint="left_arm_5" ctrllimited="true" ctrlrange="-10000 10000"/>
+        <motor name="left_arm_6" joint="left_arm_6" ctrllimited="true" ctrlrange="-10000 10000"/>
+        <motor name="torso_0" joint="torso_0" ctrllimited="true" ctrlrange="-1e-08 0"/>
+        <motor name="torso_1" joint="torso_1" ctrllimited="true" ctrlrange="-1e-08 0"/>
+        <motor name="torso_2" joint="torso_2" ctrllimited="true" ctrlrange="-1e-08 0"/>
+        <motor name="torso_3" joint="torso_3" ctrllimited="true" ctrlrange="-1e-08 0"/>
+        <motor name="torso_4" joint="torso_4" ctrllimited="true" ctrlrange="-1e-08 0.0"/>
+        <motor name="torso_5" joint="torso_5" ctrllimited="true" ctrlrange="-1e-08 0.0"/>
+        <motor name="head_0" joint="head_0" ctrllimited="true" ctrlrange="-10000 10000"/>
+        <motor name="head_1" joint="head_1" ctrllimited="true" ctrlrange="-10000 10000"/>
+
+
+    </actuator>
+
+</mujoco>

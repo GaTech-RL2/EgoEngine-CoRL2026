@@ -1,0 +1,17 @@
+# @package _global_
+task: lift_board
+robot_type: xhand
+embodiment_type: bimanual
+data_id: 0
+temperature: 1.0
+num_samples: 1024
+horizon: 2.0
+improvement_threshold: 0.01
+improvement_check_steps: 2
+max_num_iterations: 32
+base_pos_rew_scale: 0.1
+base_rot_rew_scale: 0.03
+# rot_rew_scale: 0.3
+joint_noise_scale: 0.03
+pos_noise_scale: 0.01
+rot_noise_scale: 0.01

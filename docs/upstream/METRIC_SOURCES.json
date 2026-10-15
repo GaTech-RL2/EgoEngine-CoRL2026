@@ -1,0 +1,17 @@
+{
+  "repository": "Randle-Github/EgoEngine-MPC",
+  "commit": "602d6ca6d840540e4a1983870e971528488643ab",
+  "original_rl_script": "examples/run_mjwp_rl_rsl.py",
+  "original_rl_script_sha256": "2e0cdf23f4fbd9995fa8bdef3c053a17d4c40cd86023ee22244675f4ce77a6cc",
+  "original_rl_git_blob": "eb06c37e8202cb1e97c6278b93be308418917923",
+  "retained_rl_script": "action/examples/run_mjwp_rl_rsl.py",
+  "retained_rl_script_sha256": "053433c7660cde66be08ab36f18c250ca77270383ef48b11e824cbd0e6fa394f",
+  "verified_original_env_steps_expression": "float((it + 1) * int(args.num_envs) * int(args.num_steps_per_env))",
+  "original_history_lines": [
+    1499,
+    1672
+  ],
+  "progress_and_timing_source": "Original RL wrapped_log and run_aria_rl_chunk.sh; definitions must be preserved",
+  "mixed_cost_integration_status": "Binding to full original metric workflow under verification; diagnostic physics ledger is not a substitute",
+  "mixed_runner_sha256": "86df7c3013d66d13c220cdffa8a433b8f1de20977965ce66a24f033a7dd04f59"
+}

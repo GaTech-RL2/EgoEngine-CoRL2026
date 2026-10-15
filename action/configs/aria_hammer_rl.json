@@ -1,0 +1,20 @@
+{
+  "base_config": "aria_rl.json",
+  "task": "hammer",
+  "run": {
+    "mode": "batch"
+  },
+  "overrides": {
+    "early_stop_on_success": true,
+    "object_pos_threshold": 0.08,
+    "object_rot_threshold": 2.5,
+    "contact_rew_scale": 2.0,
+    "base_pos_rew_scale": 0.0,
+    "base_rot_rew_scale": 0.0,
+    "action_smoothness_rew_scale": 0.0,
+    "joint_rew_scale": 0.0,
+    "pos_noise_scale": 0.08,
+    "rot_noise_scale": 1.0,
+    "joint_noise_scale": 0.8
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "action": {
+    "repository": "https://github.com/Randle-Github/EgoEngine-MPC",
+    "branch": "main",
+    "commit": "602d6ca6d840540e4a1983870e971528488643ab",
+    "imported_changes": [
+      "Remove task-specific trajectory corrections",
+      "Implement paper mode switching and legacy timing",
+      "Resolve bimanual active-object observations from named scene joints",
+      "Port CoDesign goal-conditioned residual PPO, independent resets and bounded exploration"
+    ]
+  },
+  "visual": {
+    "repository": "https://github.com/GaTech-RL2/robosuite",
+    "branch": "yc",
+    "commit": "839657875c382f8c4f52d9e6d847096b2c68ddd2",
+    "imported_changes": [
+      "Remove task-specific trajectory corrections",
+      "Bundle full original and modified RB-Y1 mesh assets",
+      "Move retained compositor to visual/compositor.py",
+      "Restore 815 original visual mesh/texture dependencies; preserve authored source and materials"
+    ]
+  },
+  "release_boundary": "Prepared poses, scenes, camera calibration and demonstrator-free background; FoundationPose and early perception are excluded",
+  "unified_interfaces": [
+    "egoengine CLI",
+    "Actual EEF action state export and reference-frame alignment",
+    "Direct calls to retained original robosuite visual replay and compositor",
+    "Independent visual/action provenance and HDF5 export",
+    "Reproducible documentation media commands"
+  ],
+  "rl_recipe_source": {
+    "manifest": "docs/upstream/CODESIGN_RECIPE.json",
+    "implementation": "docs/RL_RECIPE.md"
+  },
+  "visual_pipeline_manifest": "docs/upstream/ORIGINAL_VISUAL_PIPELINE.json"
+}

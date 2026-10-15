@@ -1,0 +1,52 @@
+{
+  "seed": 0,
+  "num_steps_per_env": 16,
+  "save_interval": 300,
+  "multi_gpu": null,
+  "algorithm": {
+    "class_name": "rsl_rl.algorithms.ppo:PPO",
+    "value_loss_coef": 1.0,
+    "use_clipped_value_loss": true,
+    "clip_param": 0.2,
+    "entropy_coef": 0.01,
+    "num_learning_epochs": 5,
+    "num_mini_batches": 4,
+    "learning_rate": 0.0003,
+    "schedule": "adaptive",
+    "gamma": 0.99,
+    "lam": 0.95,
+    "desired_kl": 0.01,
+    "max_grad_norm": 1.0,
+    "rnd_cfg": null,
+    "symmetry_cfg": null
+  },
+  "actor": {
+    "class_name": "rsl_rl.models.mlp_model:MLPModel",
+    "hidden_dims": [
+      256,
+      128
+    ],
+    "activation": "elu",
+    "obs_normalization": true,
+    "stochastic": true,
+    "init_noise_std": 1.0
+  },
+  "critic": {
+    "class_name": "rsl_rl.models.mlp_model:MLPModel",
+    "hidden_dims": [
+      256,
+      128
+    ],
+    "activation": "elu",
+    "obs_normalization": true,
+    "stochastic": false
+  },
+  "obs_groups": {
+    "actor": [
+      "policy"
+    ],
+    "critic": [
+      "policy"
+    ]
+  }
+}

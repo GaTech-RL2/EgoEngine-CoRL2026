@@ -1,0 +1,97 @@
+{
+    "type": "RBY1",
+    "body_parts": {
+        "arms": {
+            "right": {
+                "type" : "JOINT_POSITION",
+                "input_min":   -3.14159265,
+                "input_max":    3.14159265,
+                "output_min":  -3.14159265,
+                "output_max":   3.14159265,
+                "input_type": "absolute",
+                "kd": 200,
+                "kv": 200,
+                "kp": 1000,
+                "velocity_limits": [-1,1],
+                "kp_limits": [0, 1000],
+                "interpolation": null,
+                "ramp_ratio": 0.2,
+                "gripper": {
+                    "type": "JOINT_POSITION",
+                    "input_min":   -3.14159265,
+                    "input_max":    3.14159265,
+                    "output_min":  -3.14159265,
+                    "output_max":   3.14159265,
+                    "input_type": "absolute",
+                    "kd": 200,
+                    "kv": 200,
+                    "kp": 1000,
+                    "velocity_limits": [-1,1],
+                    "kp_limits": [0, 1000],
+                    "interpolation": null,
+                    "ramp_ratio": 0.2
+                }
+            },
+            "left": {
+                "type" : "JOINT_POSITION",
+                "input_min":   -3.14159265,
+                "input_max":    3.14159265,
+                "output_min":  -3.14159265,
+                "output_max":   3.14159265,
+                "input_type": "absolute",
+                "kd": 200,
+                "kv": 200,
+                "kp": 1000,
+                "velocity_limits": [-1,1],
+                "kp_limits": [0, 1000],
+                "interpolation": null,
+                "ramp_ratio": 0.2,
+                "gripper": {
+                    "type": "JOINT_POSITION",
+                    "input_min":   -3.14159265,
+                    "input_max":    3.14159265,
+                    "output_min":  -3.14159265,
+                    "output_max":   3.14159265,
+                    "input_type": "absolute",
+                    "kd": 200,
+                    "kv": 200,
+                    "kp": 1000,
+                    "velocity_limits": [-1,1],
+                    "kp_limits": [0, 1000],
+                    "interpolation": null,
+                    "ramp_ratio": 0.2
+                }
+            }
+        },
+        "torso": {
+            "type" : "JOINT_POSITION",
+            "input_min":   -3.14159265,
+            "input_max":    3.14159265,
+            "output_min":  -3.14159265,
+            "output_max":   3.14159265,
+            "input_type": "absolute",
+            "kd": 200,
+            "kv": 200,
+            "kp": 1000,
+            "velocity_limits": [-1,1],
+            "kp_limits": [0, 1000],
+            "interpolation": null,
+            "ramp_ratio": 0.2
+        },
+        "head": {
+            "type" : "JOINT_POSITION",
+            "input_min":   -3.14159265,
+            "input_max":    3.14159265,
+            "output_min":  -3.14159265,
+            "output_max":   3.14159265,
+            "input_type": "absolute",
+            "kd": 200,
+            "kv": 200,
+            "kp": 1000,
+            "velocity_limits": [-1,1],
+            "kp_limits": [0, 1000],
+            "interpolation": null,
+            "ramp_ratio": 0.2
+        }
+    }
+}

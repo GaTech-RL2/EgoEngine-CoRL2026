@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="032_cm">
+  <asset>
+    <mesh file="meshes/032_cm.obj" name="032_cm_mesh" scale="0.01 0.01 0.01" />
+    <mesh file="meshes/032_convex.obj" name="032_convex_mesh" scale="0.01 0.01 0.01" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom mesh="032_convex_mesh" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="1200" friction="0.7 0.2 0.05" contype="1" conaffinity="1" group="1" />
+        <geom mesh="032_cm_mesh" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="1200" friction="0.7 0.2 0.05" group="0" />
+      </body>
+      <site name="bottom_site" rgba="0 0 0 0" size="0.005" pos="0 0 -3.629825" />
+      <site name="top_site" rgba="0 0 0 0" size="0.005" pos="0 0 3.629825" />
+      <site name="horizontal_radius_site" rgba="0 0 0 0" size="0.005" pos="12.711287 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

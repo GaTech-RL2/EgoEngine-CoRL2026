@@ -1,0 +1,4 @@
+<mujoco>
+  <include file="assets.xml"/>
+  <include file="geoms.xml"/>
+</mujoco>

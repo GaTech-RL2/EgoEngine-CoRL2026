@@ -1,0 +1,16 @@
+# @package _global_
+# Override configuration for gigahand dataset
+dataset_name: gigahand
+robot_type: xhand
+embodiment_type: bimanual
+task: p36-tea
+data_id: 10
+horizon: 1.6
+temperature: 1.0
+improvement_threshold: 0.01
+improvement_check_steps: 1
+base_pos_rew_scale: 0.1
+base_rot_rew_scale: 0.03
+joint_noise_scale: 0.03
+pos_noise_scale: 0.03
+rot_noise_scale: 0.01

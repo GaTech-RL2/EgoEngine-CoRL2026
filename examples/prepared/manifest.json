@@ -1,0 +1,315 @@
+{
+  "created_date": "2026-10-14",
+  "cases": [
+    {
+      "dataset": "TACO",
+      "task": "brush_brush_bowl_20230927_027",
+      "dataset_name": "gigahand",
+      "robot_type": "xhand",
+      "embodiment_type": "bimanual",
+      "data_id": 0,
+      "processed_dir": "processed/gigahand/xhand/bimanual/brush_brush_bowl_20230927_027",
+      "visual_dir": "visual_inputs/TACO/brush_brush_bowl_20230927_027",
+      "action_inputs_complete": true,
+      "visual_inputs_complete": false,
+      "missing_visual_inputs": [
+        "demonstrator-free background video"
+      ],
+      "note": "Historical visual and action result previews were recovered from the project website. New robot foreground and visibility masks can be rendered by the unified CLI; photorealistic compositing still needs demonstrator-free backgrounds.",
+      "historical_outputs": [
+        "visual_inputs/TACO/brush_brush_bowl_20230927_027/historical_inpainted_video.mp4",
+        "visual_inputs/TACO/brush_brush_bowl_20230927_027/historical_ref.mp4",
+        "visual_inputs/TACO/brush_brush_bowl_20230927_027/historical_replay.mp4",
+        "visual_inputs/TACO/brush_brush_bowl_20230927_027/historical_rl.mp4"
+      ],
+      "camera_convention": "target_to_camera",
+      "reference_robot_layers_regenerable": true,
+      "camera_anchor_joint": "left_object_joint"
+    },
+    {
+      "dataset": "TACO",
+      "task": "cut_knife_plate_20230926_040",
+      "dataset_name": "gigahand",
+      "robot_type": "xhand",
+      "embodiment_type": "bimanual",
+      "data_id": 0,
+      "processed_dir": "processed/gigahand/xhand/bimanual/cut_knife_plate_20230926_040",
+      "visual_dir": "visual_inputs/TACO/cut_knife_plate_20230926_040",
+      "action_inputs_complete": true,
+      "visual_inputs_complete": false,
+      "missing_visual_inputs": [
+        "demonstrator-free background video",
+        "valid original RB-Y1 retarget/camera alignment"
+      ],
+      "note": "Historical visual and action result previews were recovered from the project website. New robot foreground and visibility masks can be rendered by the unified CLI; photorealistic compositing still needs demonstrator-free backgrounds.",
+      "historical_outputs": [
+        "visual_inputs/TACO/cut_knife_plate_20230926_040/historical_inpainted_video.mp4",
+        "visual_inputs/TACO/cut_knife_plate_20230926_040/historical_ref.mp4",
+        "visual_inputs/TACO/cut_knife_plate_20230926_040/historical_replay.mp4",
+        "visual_inputs/TACO/cut_knife_plate_20230926_040/historical_rl.mp4"
+      ],
+      "camera_convention": "target_to_camera",
+      "reference_robot_layers_regenerable": false,
+      "camera_anchor_joint": "left_object_joint",
+      "visual_replay_issue": "Saved original RB-Y1 robot_cfg and retarget-world camera produce an empty robot mask in all 210 frames; original data preserved. Needs a corrected upstream retarget, not an RL-to-robot IK fit."
+    },
+    {
+      "dataset": "TACO",
+      "task": "scrape_off_knife_plate_20230926_034",
+      "dataset_name": "gigahand",
+      "robot_type": "xhand",
+      "embodiment_type": "bimanual",
+      "data_id": 0,
+      "processed_dir": "processed/gigahand/xhand/bimanual/scrape_off_knife_plate_20230926_034",
+      "visual_dir": "visual_inputs/TACO/scrape_off_knife_plate_20230926_034",
+      "action_inputs_complete": true,
+      "visual_inputs_complete": false,
+      "missing_visual_inputs": [
+        "demonstrator-free background video"
+      ],
+      "note": "Historical visual and action result previews were recovered from the project website. New robot foreground and visibility masks can be rendered by the unified CLI; photorealistic compositing still needs demonstrator-free backgrounds.",
+      "historical_outputs": [
+        "visual_inputs/TACO/scrape_off_knife_plate_20230926_034/historical_inpainted_video.mp4",
+        "visual_inputs/TACO/scrape_off_knife_plate_20230926_034/historical_ref.mp4",
+        "visual_inputs/TACO/scrape_off_knife_plate_20230926_034/historical_replay.mp4",
+        "visual_inputs/TACO/scrape_off_knife_plate_20230926_034/historical_rl.mp4"
+      ],
+      "camera_convention": "target_to_camera",
+      "reference_robot_layers_regenerable": true,
+      "camera_anchor_joint": "left_object_joint"
+    },
+    {
+      "dataset": "Aria",
+      "task": "mustard_1",
+      "dataset_name": "aria",
+      "robot_type": "xhand",
+      "embodiment_type": "right",
+      "data_id": 0,
+      "processed_dir": "processed/aria/xhand/right/mustard_1",
+      "visual_dir": "visual_inputs/Aria/mustard_1",
+      "action_inputs_complete": true,
+      "visual_inputs_complete": true,
+      "note": "Three distinct processed Mustard episodes; other Aria tasks were unavailable on the checked host.",
+      "visual_compositor_verified": true,
+      "visual_regenerated_output": "visual_inputs/Aria/mustard_1/visual_regenerated.mp4",
+      "camera_convention": "camera_to_world"
+    },
+    {
+      "dataset": "Aria",
+      "task": "mustard_2",
+      "dataset_name": "aria",
+      "robot_type": "xhand",
+      "embodiment_type": "right",
+      "data_id": 0,
+      "processed_dir": "processed/aria/xhand/right/mustard_2",
+      "visual_dir": "visual_inputs/Aria/mustard_2",
+      "action_inputs_complete": true,
+      "visual_inputs_complete": true,
+      "note": "Three distinct processed Mustard episodes; other Aria tasks were unavailable on the checked host.",
+      "visual_compositor_verified": true,
+      "visual_regenerated_output": "visual_inputs/Aria/mustard_2/visual_regenerated.mp4",
+      "camera_convention": "camera_to_world"
+    },
+    {
+      "dataset": "Aria",
+      "task": "mustard_3",
+      "dataset_name": "aria",
+      "robot_type": "xhand",
+      "embodiment_type": "right",
+      "data_id": 0,
+      "processed_dir": "processed/aria/xhand/right/mustard_3",
+      "visual_dir": "visual_inputs/Aria/mustard_3",
+      "action_inputs_complete": true,
+      "visual_inputs_complete": true,
+      "note": "Three distinct processed Mustard episodes; other Aria tasks were unavailable on the checked host.",
+      "visual_compositor_verified": true,
+      "visual_regenerated_output": "visual_inputs/Aria/mustard_3/visual_regenerated.mp4",
+      "camera_convention": "camera_to_world"
+    }
+  ],
+  "assets": [
+    {
+      "destination": "assets/9df35d936997_right_hand_link.STL",
+      "bytes": 1033984,
+      "sha256": "990938909f1c2743425f425433f8d73352160072a82d81aa21fb8f73918cdc38"
+    },
+    {
+      "destination": "assets/ab2b337c3bd2_right_hand_thumb_bend_link.STL",
+      "bytes": 296884,
+      "sha256": "128a534a22c58c34ba091365daf5cf3310d576386033623ff7c3ba0e4bcdfa75"
+    },
+    {
+      "destination": "assets/ce34bae6e8e6_right_hand_thumb_rota_link1.STL",
+      "bytes": 697884,
+      "sha256": "1fe3c9615f90eccd012b5fed8b3aba1f1de68987f03d643367b53740530e1a63"
+    },
+    {
+      "destination": "assets/e09b599c7e04_right_hand_thumb_rota_link2.STL",
+      "bytes": 398584,
+      "sha256": "25c5ae9613658b5a73a45e6ae96369cfb0dac83742285849dfb35d04c450db19"
+    },
+    {
+      "destination": "assets/5f94ef3b57bc_right_hand_index_bend_link.STL",
+      "bytes": 164784,
+      "sha256": "8969bc01d636eb86d64d8e5ae81fc9530392fbaf1e99d01ea700cad16739e809"
+    },
+    {
+      "destination": "assets/93192da1524d_right_hand_index_rota_link1.STL",
+      "bytes": 691384,
+      "sha256": "aa81e5c7a89339893f8ce3c109ad44f5da9e81b067f655bf85a8c94a15170560"
+    },
+    {
+      "destination": "assets/da8d9c34b2ec_right_hand_index_rota_link2.STL",
+      "bytes": 395584,
+      "sha256": "1978ac4ba6eb13bba2fb7a03e6b7ad16ad9c22fce6cac4b71c2620650bbe7110"
+    },
+    {
+      "destination": "assets/c2052608db13_right_hand_mid_link1.STL",
+      "bytes": 691384,
+      "sha256": "b9ece604072b09b00b14dca913f7adcfe86f81067eb511d08c4d995bf057aa1d"
+    },
+    {
+      "destination": "assets/e34586c5e2cd_right_hand_mid_link2.STL",
+      "bytes": 395584,
+      "sha256": "4a451a017695c88bac5028d04618b77efe3e0105839698126078aff18db33bad"
+    },
+    {
+      "destination": "assets/4124a270e46b_right_hand_ring_link1.STL",
+      "bytes": 691384,
+      "sha256": "cc6449f3311c0c6066921c088630611d0d96c786e3a0976b57cf74443ac459ae"
+    },
+    {
+      "destination": "assets/dceedfc6c87b_right_hand_ring_link2.STL",
+      "bytes": 395584,
+      "sha256": "93fc89a8ed9c9cbc4bd1ef0ee6e251ab6064ff61776be66e0cd69497015be09d"
+    },
+    {
+      "destination": "assets/bc9d59c1c1d8_right_hand_pinky_link1.STL",
+      "bytes": 691384,
+      "sha256": "d8d95abf22c08b0cb19bf17f6dc70ef5ad10c2c0476d6155ddf545fd80b6f7b8"
+    },
+    {
+      "destination": "assets/b4dd4960c7ab_right_hand_pinky_link2.STL",
+      "bytes": 395584,
+      "sha256": "e45d273473af9a3c6e7920cbea599c3fd28b796dbbd92104ba051633da96e4ce"
+    },
+    {
+      "destination": "assets/c51ab3bed416_left_hand_link.STL",
+      "bytes": 1037784,
+      "sha256": "4d2e6c0d9af6a2f116aa5fde55b280186e102705efb035fdbfda9a747ebf1a9b"
+    },
+    {
+      "destination": "assets/212f3af5eee5_left_hand_thumb_bend_link.STL",
+      "bytes": 296684,
+      "sha256": "b13cf4e0e7bdcc534087a49c9edf36ba46ca526869fe6259ef4c22f82365483d"
+    },
+    {
+      "destination": "assets/639ca56365dc_left_hand_thumb_rota_link1.STL",
+      "bytes": 698584,
+      "sha256": "ba4d473f8913f60f31178c68ba2e196fffba6340ae85d9e5adfe64166f331ea2"
+    },
+    {
+      "destination": "assets/d125c6749fab_left_hand_thumb_rota_link2.STL",
+      "bytes": 395384,
+      "sha256": "e0252b238a0d06999ab39b94f53290d22c14e0ddb66015fbded0614e3906e393"
+    },
+    {
+      "destination": "assets/b0844ddd9693_left_hand_index_bend_link.STL",
+      "bytes": 164784,
+      "sha256": "dffd1bf191354b1e1445996b059ac3f7d5c85bff45767c28e4031c88b55594d5"
+    },
+    {
+      "destination": "assets/92435b382c1c_left_hand_index_rota_link1.STL",
+      "bytes": 691384,
+      "sha256": "d3043620eff3416a9d060f08cf890763db8db77bd72715c0b426fd5724a770c3"
+    },
+    {
+      "destination": "assets/dbdace464f01_left_hand_index_rota_link2.STL",
+      "bytes": 395584,
+      "sha256": "125636813d960f2ca14932bb74c03d4035a310e4bcbbb5fd5bf7ecdf69757bf4"
+    },
+    {
+      "destination": "assets/3cae01f96940_left_hand_mid_link1.STL",
+      "bytes": 691384,
+      "sha256": "a66d2574f4a433eef6a0f43b9d4ecd14b32557693953defa654cd10c7c305aa0"
+    },
+    {
+      "destination": "assets/a0729b382851_left_hand_mid_link2.STL",
+      "bytes": 395584,
+      "sha256": "a695ec28c9c41cc4a18b0ffc421cec785221fa43cca94b1c8b8f3077987a357b"
+    },
+    {
+      "destination": "assets/9a24effdc06e_left_hand_ring_link1.STL",
+      "bytes": 691384,
+      "sha256": "96a858ed17c4193ee87a09b1544d2a34b8dcedd5bd10f89e56ee26451dbdd4b9"
+    },
+    {
+      "destination": "assets/187f9126db34_left_hand_ring_link2.STL",
+      "bytes": 395584,
+      "sha256": "33a7411768db62e15b952cde84579d8a64207ebbfe599188888a138058bc7f90"
+    },
+    {
+      "destination": "assets/30e6a4d82be5_left_hand_pinky_link1.STL",
+      "bytes": 691384,
+      "sha256": "1a7d786e133d34955e4358d72fed7ddabd798bff80207af9b932f01ec7fb15c2"
+    },
+    {
+      "destination": "assets/b534aed38066_left_hand_pinky_link2.STL",
+      "bytes": 395584,
+      "sha256": "98148a77d8367fe6cfe9f44fa3e01f288ba56a9cd86c232232972ff3ca3366c7"
+    },
+    {
+      "destination": "assets/983ae5c9fc75_178_cm.obj",
+      "bytes": 5505587,
+      "sha256": "18b3b617592056ad91c211e77f3c3e870544a0ed711bcd2e073d7177012f4010"
+    },
+    {
+      "destination": "assets/98b91b9dbd4a_022_cm.obj",
+      "bytes": 3848290,
+      "sha256": "35c52d853b85aa521eeadda78abb2bd370975611c8c35cd9a9d4c96746d8418c"
+    },
+    {
+      "destination": "assets/fea6b8dae637_122_cm.obj",
+      "bytes": 7074014,
+      "sha256": "bba16a9ba2aa41c1677037ef44cc8d6a37e8de7d1eb23f9ae087945b04dfc3b5"
+    },
+    {
+      "destination": "assets/954342239144_021_cm.obj",
+      "bytes": 7270021,
+      "sha256": "8b5ba183ea2eda320860b48656400a75c48cffa200cc7a0d293be4faa317837a"
+    },
+    {
+      "destination": "assets/b33f8d0b9edf_049_cm.obj",
+      "bytes": 7143184,
+      "sha256": "565fc1e83100e0ec7f19a7192846aed29afd124fa187ea24b1ec8c520aea6bcf"
+    },
+    {
+      "destination": "assets/e263bdd47031_mustard_convex.obj",
+      "source_repository": "GaTech-RL2/robosuite",
+      "source_commit": "839657875c382f8c4f52d9e6d847096b2c68ddd2",
+      "source_path": "rl_tracking_dev/aria_objects/meshes/mustard_convex.obj",
+      "bytes": 1510769,
+      "sha256": "1e15ef867354c496aa6eb19ceeb8af2fa9198711d9221055d3178ee041d8d875"
+    },
+    {
+      "destination": "assets/95ab61c37240_mustard.obj",
+      "source_repository": "GaTech-RL2/robosuite",
+      "source_commit": "839657875c382f8c4f52d9e6d847096b2c68ddd2",
+      "source_path": "rl_tracking_dev/aria_objects/meshes/mustard.obj",
+      "bytes": 1652344,
+      "sha256": "f156897814cba5889427759c52d76f7d7c7dd7902aef87e38ec898195bbc6d79"
+    },
+    {
+      "destination": "assets/7fa1be09413a_071_cm.obj",
+      "bytes": 7080688,
+      "sha256": "31a9c07102ea7fd6263fdf6f54f0103c463733be4d49a7244b018bbc257ca124"
+    },
+    {
+      "destination": "assets/08ba85e1bd40_146_cm.obj",
+      "bytes": 7012259,
+      "sha256": "2bc69db147f598ae3260313dc02892f7e76764c0af6addfcb375cae569f699d9"
+    }
+  ],
+  "missing_assets_to_restore": [],
+  "provenance": "Existing processed reference cases, generated before the task-specific code cleanup; no optimization result was regenerated."
+}

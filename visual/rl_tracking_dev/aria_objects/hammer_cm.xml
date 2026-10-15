@@ -1,0 +1,33 @@
+<mujoco model="hammer">
+  <asset>
+    <mesh file="meshes/hammer_cut_1.5x.stl" name="hammer_visual_mesh" scale="1 1 1" />
+    <mesh file="meshes/hammer_collision/0.obj" name="hammer_collision_0" scale="1 1 1" />
+    <mesh file="meshes/hammer_collision/1.obj" name="hammer_collision_1" scale="1 1 1" />
+    <mesh file="meshes/hammer_collision/2.obj" name="hammer_collision_2" scale="1 1 1" />
+    <mesh file="meshes/hammer_collision/3.obj" name="hammer_collision_3" scale="1 1 1" />
+    <mesh file="meshes/hammer_collision/4.obj" name="hammer_collision_4" scale="1 1 1" />
+    <mesh file="meshes/hammer_collision/5.obj" name="hammer_collision_5" scale="1 1 1" />
+    <mesh file="meshes/hammer_collision/6.obj" name="hammer_collision_6" scale="1 1 1" />
+    <mesh file="meshes/hammer_collision/7.obj" name="hammer_collision_7" scale="1 1 1" />
+  </asset>
+
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom mesh="hammer_visual_mesh" type="mesh" solimp="0.8 0.95 0.01" solref="0.02 1" density="25" friction="0.65 0.03 0.003" contype="0" conaffinity="0" group="1" margin="0.001" />
+        <geom mesh="hammer_collision_0" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_collision_1" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_collision_2" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_collision_3" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_collision_4" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_collision_5" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_collision_6" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_collision_7" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+      </body>
+
+      <site name="bottom_site" rgba="0 0 0 0" size="0.005" pos="0.000000 0.000000 -0.025266" />
+      <site name="top_site" rgba="0 0 0 0" size="0.005" pos="0.000000 0.000000 0.022812" />
+      <site name="horizontal_radius_site" rgba="0 0 0 0" size="0.005" pos="0.230347 0.000000 0.000000" />
+    </body>
+  </worldbody>
+</mujoco>

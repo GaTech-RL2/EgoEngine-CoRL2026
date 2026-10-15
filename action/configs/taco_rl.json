@@ -1,0 +1,77 @@
+{
+  "dataset": {
+    "dataset_root": "/home/ycl/projects/datasets/egoengine",
+    "dataset_dir": "/home/ycl/projects/workspace/spider/example_datasets",
+    "dataset_name": "gigahand",
+    "robot_type": "xhand",
+    "source_embodiment": "bimanual",
+    "data_id": 0,
+    "hand_modes": ["left", "right"],
+    "list_file": "vis_taco_usable_demos.txt",
+    "hz": 20
+  },
+  "run": {
+    "mode": "batch",
+    "python_bin": "python",
+    "log_dir": "outputs/rl_rsl",
+    "device": "cuda:0"
+  },
+  "rl": {
+    "num_envs": 4096,
+    "eval_num_envs": 256,
+    "future_ctrl_steps": 0,
+    "max_episode_ctrl_steps": 64,
+    "num_steps_per_env": 16,
+    "learning_iterations": 300,
+    "early_stop_on_success": true,
+    "ckpt_interval": 500,
+    "viz_interval": 40,
+    "rollout_video_ctrl_steps": 0
+  },
+  "wandb": {
+    "media_only": true,
+    "project": "egoengine-spider-rl",
+    "entity": "",
+    "run_name": ""
+  },
+  "timing": {
+    "sim_dt": 0.01,
+    "ctrl_dt": 0.05,
+    "horizon": 1.6,
+    "knot_dt": 0.4
+  },
+  "reward": {
+    "pos_rew_scale": 1.0,
+    "rot_rew_scale": 0.3,
+    "joint_rew_scale": 0.0001,
+    "base_pos_rew_scale": 0.001,
+    "base_rot_rew_scale": 0.001,
+    "vel_rew_scale": 0.0,
+    "contact_rew_scale": 0.0,
+    "object_pos_threshold": 0.05,
+    "object_rot_threshold": 1,
+    "object_mass_scale": 0.1,
+    "action_smoothness_rew_scale": 0.005
+  },
+  "domain_randomization": {
+    "num_dr": 0,
+    "pair_margin_range": [0.0, 0.0],
+    "xy_offset_range": [0.0, 0.0],
+    "object_mass_scale_range": [1.0, 1.0]
+  },
+  "noise": {
+    "first_ctrl_noise_scale": 0.5,
+    "last_ctrl_noise_scale": 0.65,
+    "final_noise_scale": 0.1,
+    "joint_noise_scale": 0.3,
+    "pos_noise_scale": 0.08,
+    "rot_noise_scale": 0.05
+  },
+  "overrides": {
+    "object_rot_threshold": 1.5,
+    "contact_rew_scale": 2.0,
+    "joint_rew_scale": 0.005,
+    "joint_noise_scale": 0.4,
+    "rot_noise_scale": 0.7
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "dataset": {
+    "dataset_root": "/home/ycl/projects/datasets/egoengine",
+    "dataset_dir": "example_datasets",
+    "dataset_name": "gigahand",
+    "robot_type": "xhand",
+    "source_embodiment": "bimanual",
+    "data_id": 0,
+    "hand_modes": ["left", "right"],
+    "list_file": "vis_taco_usable_demos.txt"
+  },
+  "run": {
+    "mode": "batch",
+    "python_bin": "python",
+    "device_env": "MPC_DEVICE",
+    "default_device": "cuda:0",
+    "show_viewer": false,
+    "viewer_backend": "mujoco"
+  },
+  "mpc": {
+    "sim_dt": 0.01,
+    "ctrl_dt": 0.05,
+    "horizon": 0.5,
+    "knot_dt": 0.05,
+    "num_samples": 2048,
+    "max_num_iterations": 32,
+    "improvement_threshold": 0.005,
+    "temperature": 0.1
+  },
+  "reward": {
+    "pos_rew_scale": 1.0,
+    "rot_rew_scale": 0.3,
+    "joint_rew_scale": 0,
+    "base_pos_rew_scale": 0,
+    "base_rot_rew_scale": 0,
+    "vel_rew_scale": 0.0,
+    "contact_rew_scale": 0.0,
+    "object_pos_threshold": 0.05,
+    "object_rot_threshold": 1,
+    "object_mass_scale": 0.1
+  }
+}

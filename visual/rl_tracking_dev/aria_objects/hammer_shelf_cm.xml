@@ -1,0 +1,65 @@
+<mujoco model="hammer_shelf">
+  <asset>
+    <mesh file="meshes/hammer_shelf.obj" name="hammer_shelf_visual_mesh" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/0.obj" name="hammer_shelf_collision_0" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/1.obj" name="hammer_shelf_collision_1" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/2.obj" name="hammer_shelf_collision_2" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/3.obj" name="hammer_shelf_collision_3" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/4.obj" name="hammer_shelf_collision_4" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/5.obj" name="hammer_shelf_collision_5" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/6.obj" name="hammer_shelf_collision_6" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/7.obj" name="hammer_shelf_collision_7" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/8.obj" name="hammer_shelf_collision_8" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/9.obj" name="hammer_shelf_collision_9" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/10.obj" name="hammer_shelf_collision_10" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/11.obj" name="hammer_shelf_collision_11" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/12.obj" name="hammer_shelf_collision_12" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/13.obj" name="hammer_shelf_collision_13" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/14.obj" name="hammer_shelf_collision_14" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/15.obj" name="hammer_shelf_collision_15" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/16.obj" name="hammer_shelf_collision_16" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/17.obj" name="hammer_shelf_collision_17" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/18.obj" name="hammer_shelf_collision_18" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/19.obj" name="hammer_shelf_collision_19" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/20.obj" name="hammer_shelf_collision_20" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/21.obj" name="hammer_shelf_collision_21" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/22.obj" name="hammer_shelf_collision_22" scale="1 1 1" />
+    <mesh file="meshes/hammer_shelf_collision/23.obj" name="hammer_shelf_collision_23" scale="1 1 1" />
+  </asset>
+
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom mesh="hammer_shelf_visual_mesh" type="mesh" solimp="0.8 0.95 0.01" solref="0.02 1" density="25" friction="0.65 0.03 0.003" contype="0" conaffinity="0" group="1" margin="0.001" />
+        <geom mesh="hammer_shelf_collision_0" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_1" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_2" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_3" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_4" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_5" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_6" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_7" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_8" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_9" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_10" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_11" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_12" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_13" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_14" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_15" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_16" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_17" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_18" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_19" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_20" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_21" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_22" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+        <geom mesh="hammer_shelf_collision_23" type="mesh" group="0" contype="4" conaffinity="7" density="25" friction="0.65 0.03 0.003" solimp="0.8 0.95 0.01" solref="0.02 1" condim="4" />
+      </body>
+
+      <site name="bottom_site" rgba="0 0 0 0" size="0.005" pos="0.000000 0.000000 0.000000" />
+      <site name="top_site" rgba="0 0 0 0" size="0.005" pos="0.000000 0.000000 0.106749" />
+      <site name="horizontal_radius_site" rgba="0 0 0 0" size="0.005" pos="0.229810 0.000000 0.000000" />
+    </body>
+  </worldbody>
+</mujoco>

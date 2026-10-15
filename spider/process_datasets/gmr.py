@@ -1,0 +1,260 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# All rights reserved.
+
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+
+"""This is converter for kinematic data from GMR
+
+Please generate the pkl file from GMR first with command like:
+
+For simpx
+```bash
+python scripts/smplx_to_robot.py --smplx_file "/home/pcy/Research/code/GMR/data/ACCAD/Male2MartialArtsExtended_c3d/Extended_1_stageii.npz" --robot "unitree_g1" --save_path "/home/pcy/Research/code/spider/example_datasets/processed/amass/g1/humanoid/martial_arts/0/trajectory_gmr.pkl"
+```
+
+For lafan1:
+```bash
+python scripts/bvh_to_robot.py --bvh_file "/home/pcy/Research/code/GMR/data/lafan1/dance1_subject1.bvh" --robot "unitree_g1" --save_path "/home/pcy/Research/code/spider/example_datasets/processed/lafan/g1/humanoid/dance/0/trajectory_gmr.pkl" --rate_limit --format "lafan1" --motion_fps 30
+```
+
+Input: pkl file from GMR
+Output:
+1. npz file containing:
+    qpos, qvel, ctrl, contact
+2. scene file including robot and object (for AMASS, no object is needed)
+
+"""
+
+import json
+import os
+import pickle
+import shutil
+
+import imageio
+import mujoco
+import numpy as np
+import torch
+import tyro
+from loop_rate_limiters import RateLimiter
+
+from spider import ROOT
+from spider.io import get_processed_data_dir
+from spider.math import quat_sub
+from spider.mujoco_utils import get_viewer
+
+
+def main(
+    dataset_dir: str = f"{ROOT}/../example_datasets",
+    dataset_name: str = "amass",
+    robot_type: str = "unitree_g1",
+    embodiment_type: str = "humanoid",
+    task: str = "sprint",
+    data_id: int = 0,
+    show_viewer: bool = True,
+    save_video: bool = True,
+    overwrite: bool = True,
+    enable_rate_limiter: bool = False,
+    start_frame: int = 0,
+    end_frame: int = -1,
+    contact_detection_mode: str = "one",
+):
+    """Process GMR data to create a SPIDER dataset.
+
+    Args:
+        dataset_dir: The directory containing the GMR data.
+        dataset_name: The name of the dataset.
+        robot_type: The type of robot.
+        embodiment_type: The type of embodiment.
+        task: The task to perform.
+        data_id: The id of the data.
+        show_viewer: Whether to show the viewer.
+        save_video: Whether to save the video.
+        overwrite: Whether to overwrite the existing data.
+        enable_rate_limiter: Whether to enable the rate limiter.
+        start_frame: The start frame of the data.
+        end_frame: The end frame of the data.
+        contact_detection_mode: The mode of contact detection.
+            "auto": Automatically detect contact based on mujoco contact detection.
+            "zero": Always disable contact.
+            "one": Always enable contact.
+    """
+    dataset_dir = os.path.abspath(dataset_dir)
+    processed_dir = get_processed_data_dir(
+        dataset_dir=dataset_dir,
+        dataset_name=dataset_name,
+        robot_type=robot_type,
+        embodiment_type=embodiment_type,
+        task=task,
+        data_id=data_id,
+    )
+    print(f"Processed directory: {processed_dir}")
+    # load gmr pkl data
+    gmr_pkl_path = f"{processed_dir}/trajectory_gmr.pkl"
+    if not os.path.exists(gmr_pkl_path):
+        raise FileNotFoundError(f"GMR pkl file not found at {gmr_pkl_path}")
+    with open(gmr_pkl_path, "rb") as f:
+        gmr_data = pickle.load(f)
+    fps = gmr_data["fps"]
+    print(f"fps: {fps}")
+    root_pos = gmr_data["root_pos"]
+    root_quat = gmr_data["root_rot"][:, [3, 0, 1, 2]]  # from xyzw to wxyz
+    dof_pos = gmr_data["dof_pos"]
+    qpos = np.concatenate([root_pos, root_quat, dof_pos], axis=-1)
+    qpos = qpos[start_frame:end_frame]
+    print(f"qpos shape: {qpos.shape}")
+
+    # prepare scene file by copying from SPIDER assets
+    # in SPIDER, we need 2 files: one for robot, another for scene
+    # robot file
+    src_robot_dir = f"{ROOT}/assets/robots/{robot_type}"
+    tgt_robot_dir = f"{dataset_dir}/processed/{dataset_name}/assets/robots/{robot_type}"
+    if not os.path.exists(tgt_robot_dir) or overwrite:
+        shutil.copytree(src_robot_dir, tgt_robot_dir, dirs_exist_ok=True)
+        print(f"copy from {src_robot_dir} to {tgt_robot_dir}")
+
+    # create a scene file, which only includes the robot
+    scene_dir = f"{processed_dir}/.."
+    tgt_scene_file = f"{scene_dir}/scene.xml"
+    src_scene_file = f"{tgt_robot_dir}/scene.xml"
+    # copy
+    shutil.copy(src_scene_file, tgt_scene_file)
+    print(f"copy from {src_scene_file} to {tgt_scene_file}")
+
+    # run mujoco
+    mj_model = mujoco.MjModel.from_xml_path(tgt_scene_file)
+    mj_data = mujoco.MjData(mj_model)
+    run_viewer = get_viewer(show_viewer, mj_model, mj_data)
+    rate_limiter = RateLimiter(fps)
+
+    # contact site id
+    contact_site_ids = []
+    for i in range(mj_model.nsite):
+        site_name = mujoco.mj_id2name(mj_model, mujoco.mjtObj.mjOBJ_SITE, i)
+        if site_name and "contact" in site_name:
+            contact_site_ids.append(i)
+    assert len(contact_site_ids) > 0 and contact_detection_mode != "zero", (
+        "No contact site found while you enable contact detection"
+    )
+
+    # create task info file
+    task_info_file = f"{scene_dir}/task_info.json"
+    with open(task_info_file, "w") as f:
+        json.dump(
+            {"ref_dt": 1.0 / fps, "contact_site_ids": contact_site_ids}, f, indent=2
+        )
+    print(f"Saved task info to {task_info_file}")
+
+    # log info
+    info_list = []
+    # log video
+    if save_video:
+        images = []
+        mj_model.vis.global_.offwidth = 720
+        mj_model.vis.global_.offheight = 480
+        renderer = mujoco.Renderer(mj_model, height=480, width=720)
+    with run_viewer() as gui:
+        for i in range(qpos.shape[0]):
+            mj_data.qpos[:] = qpos[i]
+            # compute qvel
+            if i > 0:
+                mujoco.mj_differentiatePos(
+                    mj_model, mj_data.qvel, 1.0 / fps, qpos[i - 1], qpos[i]
+                )
+            else:
+                mj_data.qvel[:] = 0.0
+
+            # compute ctrl
+            mj_data.ctrl[:] = qpos[i][7:]
+            mujoco.mj_forward(mj_model, mj_data)
+
+            # compute contact
+            contact_pos = mj_data.site_xpos[contact_site_ids, :]
+            if contact_detection_mode == "one":
+                contact = np.ones(len(contact_site_ids))
+            elif contact_detection_mode == "zero":
+                contact = np.zeros(len(contact_site_ids))
+            else:
+                contact = contact_pos[:, 2] < 0.001
+
+            # log
+            info = {
+                "qpos": mj_data.qpos.copy(),
+                "qvel": mj_data.qvel.copy(),
+                "ctrl": mj_data.ctrl.copy(),
+                "contact": contact,
+                "contact_pos": contact_pos.copy(),
+            }
+            info_list.append(info)
+            # render
+            if save_video:
+                renderer.update_scene(mj_data, "track")
+                images.append(renderer.render())
+            if show_viewer:
+                gui.sync()
+            if enable_rate_limiter:
+                rate_limiter.sleep()
+    info_aggregated = {}
+    for key in info_list[0].keys():
+        info_aggregated[key] = np.stack([info[key] for info in info_list], axis=0)
+    np.savez(f"{processed_dir}/trajectory_kinematic.npz", **info_aggregated)
+    print(f"Saved trajectory to {processed_dir}/trajectory_kinematic.npz")
+    if save_video:
+        imageio.mimsave(f"{processed_dir}/visualization_kinematic.mp4", images, fps=fps)
+        print(f"Saved video to {processed_dir}/visualization_kinematic.mp4")
+
+    # optional: rollout ik trajectory to compute the trajectory kinematic distance
+    num_substeps = 2
+    mj_model.opt.timestep = 1.0 / fps / num_substeps
+    # reset to initial state
+    mj_data.qpos[:] = qpos[0]
+    mj_data.qvel[:] = 0.0
+    mj_data.ctrl[:] = qpos[0][7:]
+    mujoco.mj_forward(mj_model, mj_data)
+    # rollout
+    qpos_rollout = np.zeros((qpos.shape[0], mj_model.nq))
+    qvel_rollout = np.zeros((qpos.shape[0], mj_model.nv))
+    ctrl_rollout = np.zeros((qpos.shape[0], mj_model.nu))
+    qpos_rollout[0] = qpos[0]
+    qvel_rollout[0] = 0.0
+    ctrl_rollout[0] = qpos[0][7:]
+    images = []
+    for i in range(1, qpos.shape[0]):
+        for j in range(num_substeps):
+            mj_data.ctrl[:] = qpos[i - 1][7:]
+            mujoco.mj_step(mj_model, mj_data)
+        if save_video:
+            renderer.update_scene(mj_data, "track")
+            images.append(renderer.render())
+        qpos_rollout[i] = mj_data.qpos.copy()
+        qvel_rollout[i] = mj_data.qvel.copy()
+        ctrl_rollout[i] = mj_data.ctrl.copy()
+
+    # compute tracking error
+    pos_err = np.linalg.norm(qpos_rollout[:, :3] - qpos[:, :3], axis=1).mean()
+    quat_err_torch = quat_sub(
+        torch.from_numpy(qpos_rollout[:, 3:7]),
+        torch.from_numpy(qpos[:, 3:7]),
+    )
+    quat_err = np.linalg.norm(quat_err_torch.numpy(), axis=1).mean()
+    joint_err = np.linalg.norm(qpos_rollout[:, 7:] - qpos[:, 7:], axis=1).mean()
+    print(
+        f"rollout ik tracking error: \npos_err: {pos_err:.2f}\nquat_err: {quat_err:.2f}\njoint_err: {joint_err:.2f}"
+    )
+
+    # save ik data
+    np.savez(
+        f"{processed_dir}/trajectory_ik.npz",
+        qpos=qpos_rollout,
+        qvel=qvel_rollout,
+        ctrl=ctrl_rollout,
+    )
+
+    # save ik video
+    if save_video:
+        imageio.mimsave(f"{processed_dir}/visualization_ik.mp4", images, fps=fps)
+        print(f"Saved video to {processed_dir}/visualization_ik.mp4")
+
+
+if __name__ == "__main__":
+    tyro.cli(main)

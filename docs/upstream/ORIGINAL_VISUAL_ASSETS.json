@@ -1,0 +1,3265 @@
+{
+  "source": "Existing egoengine working project; only files referenced by retained visual XMLs were recovered",
+  "files": {
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_0.obj": {
+      "sha256": "773aa06b04a0cab07bcfd897473079069cde4201febd8ad517f29844a426871d",
+      "bytes": 5658
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_1.obj": {
+      "sha256": "c20a94c811951405c4705c65c024ad82f92c813d54bb145e351aeb5427dbec3f",
+      "bytes": 7442
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_2.obj": {
+      "sha256": "dbd035170b47d15f6ae967bd80330a0b16fe4a5b38e31fe43264dc2cbce8140a",
+      "bytes": 422271
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_3.obj": {
+      "sha256": "b2599069709b2cd21b47b4f7a060aeedc34d87acff143b7ae0020c39af8a8bf6",
+      "bytes": 11546
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_collision_0.obj": {
+      "sha256": "48959052d34c7f2e7aa29d24c26c53e616c90b18882d5c2f59547afaeb86a50b",
+      "bytes": 18078
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_collision_1.obj": {
+      "sha256": "48959052d34c7f2e7aa29d24c26c53e616c90b18882d5c2f59547afaeb86a50b",
+      "bytes": 18078
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_collision_10.obj": {
+      "sha256": "48959052d34c7f2e7aa29d24c26c53e616c90b18882d5c2f59547afaeb86a50b",
+      "bytes": 18078
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_collision_11.obj": {
+      "sha256": "48959052d34c7f2e7aa29d24c26c53e616c90b18882d5c2f59547afaeb86a50b",
+      "bytes": 18078
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_collision_12.obj": {
+      "sha256": "48959052d34c7f2e7aa29d24c26c53e616c90b18882d5c2f59547afaeb86a50b",
+      "bytes": 18078
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_collision_13.obj": {
+      "sha256": "48959052d34c7f2e7aa29d24c26c53e616c90b18882d5c2f59547afaeb86a50b",
+      "bytes": 18078
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_collision_14.obj": {
+      "sha256": "48959052d34c7f2e7aa29d24c26c53e616c90b18882d5c2f59547afaeb86a50b",
+      "bytes": 18078
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_collision_15.obj": {
+      "sha256": "48959052d34c7f2e7aa29d24c26c53e616c90b18882d5c2f59547afaeb86a50b",
+      "bytes": 18078
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_collision_2.obj": {
+      "sha256": "48959052d34c7f2e7aa29d24c26c53e616c90b18882d5c2f59547afaeb86a50b",
+      "bytes": 18078
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_collision_3.obj": {
+      "sha256": "48959052d34c7f2e7aa29d24c26c53e616c90b18882d5c2f59547afaeb86a50b",
+      "bytes": 18078
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_collision_4.obj": {
+      "sha256": "48959052d34c7f2e7aa29d24c26c53e616c90b18882d5c2f59547afaeb86a50b",
+      "bytes": 18078
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_collision_5.obj": {
+      "sha256": "48959052d34c7f2e7aa29d24c26c53e616c90b18882d5c2f59547afaeb86a50b",
+      "bytes": 18078
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_collision_6.obj": {
+      "sha256": "48959052d34c7f2e7aa29d24c26c53e616c90b18882d5c2f59547afaeb86a50b",
+      "bytes": 18078
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_collision_7.obj": {
+      "sha256": "48959052d34c7f2e7aa29d24c26c53e616c90b18882d5c2f59547afaeb86a50b",
+      "bytes": 18078
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_collision_8.obj": {
+      "sha256": "48959052d34c7f2e7aa29d24c26c53e616c90b18882d5c2f59547afaeb86a50b",
+      "bytes": 18078
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/base/base_collision_9.obj": {
+      "sha256": "48959052d34c7f2e7aa29d24c26c53e616c90b18882d5c2f59547afaeb86a50b",
+      "bytes": 18078
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/WHEEL/WHEEL.obj": {
+      "sha256": "1353e06fa2ff06a073980468720634a11e259ebf557c7032c2ad96f5621bca74",
+      "bytes": 4268181
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/WHEEL/WHEEL_collision_0.obj": {
+      "sha256": "17cd9f5f367191b273ac1400dd6938f571bfbabd61840cdf897f05f801d89305",
+      "bytes": 4237591
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY.obj": {
+      "sha256": "770c820269dba14d00d622cfb3e98b3844ba4c6a1ac014d55dff5a8e14c3a44a",
+      "bytes": 561697
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_0.obj": {
+      "sha256": "cdbff33617f0419619a8542292b9b8cb9e8fe722bf12c25f2d0aa66368e02949",
+      "bytes": 12088
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_1.obj": {
+      "sha256": "f732bd5ca963eda0b5d7236abf3e6939406ff1797edffa21ff8e5f172909d828",
+      "bytes": 23190
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_2.obj": {
+      "sha256": "2df6f3e7cadebe5e284f4f399cef0a14720bffccd411d272a064704fb35293c4",
+      "bytes": 23691
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_3.obj": {
+      "sha256": "d3163728734f35d32efc48b9e1a505e83d913c2f3197f62c4cd81369225b66bf",
+      "bytes": 43995
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_4.obj": {
+      "sha256": "b4e5e1a9c4f4084bcceb9b8e1f6e6ad4eef1fa9cfe2087e4351f06e36722ad2c",
+      "bytes": 2852
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_5.obj": {
+      "sha256": "8fbad6b38ad87f46297aef6b90258538cf09ba34eef7b7f5454d99c0d8f234c9",
+      "bytes": 3082
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_6.obj": {
+      "sha256": "7a6bb0cd8e70506783c4f48f33a797e4fb53915f9dc1abf50b5c922411a7963a",
+      "bytes": 1188
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_7.obj": {
+      "sha256": "a8cc7735e1bd36df4a8e45b612c7a5580ad80d6bc58bbbfa561d15c8a056f40b",
+      "bytes": 1702
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_8.obj": {
+      "sha256": "8e0ab5d5bdfd1a9532f2373c9de1fef6d416349a4434382e03b2a5a5f533ab5b",
+      "bytes": 2531
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_9.obj": {
+      "sha256": "1a8187d16ee560d379cba77fc821af69cb1feb5855d4dda3a0d4f32d8c2ff794",
+      "bytes": 3003
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_10.obj": {
+      "sha256": "ddf6f79dee274864d84d5ef4249b771a25a65f0f924578b8f635cdffbfaf17b9",
+      "bytes": 3942
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_11.obj": {
+      "sha256": "709c27ab1e90c4869728dc36bdd3bb24b0efa3e01ec1546b328077756ccaa14d",
+      "bytes": 11957
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_12.obj": {
+      "sha256": "ba1fd2eb97763f965acd52ab8531e0ec2922f585ccddae41254ebb8b36351d06",
+      "bytes": 7291
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_13.obj": {
+      "sha256": "fcff365db1c98d15105117ab5b9b60583cfc890c2f670f505b13923a769bb71d",
+      "bytes": 10512
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_14.obj": {
+      "sha256": "66d0706827fe2829d6a79916b06a8e1ba79a4679452a99c80fe11142c29b04bd",
+      "bytes": 6122
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_15.obj": {
+      "sha256": "0708619bf312351b920a1d7542978ca23a70cc7f3d07719e2a6b14f1d3de94ff",
+      "bytes": 5186
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_16.obj": {
+      "sha256": "b1b6fc6c5609762f0b2aeb33f4d080596d6280881bf874d8d165a1c5dda95152",
+      "bytes": 2985
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_17.obj": {
+      "sha256": "209ea59e827040272147bc960034b7842447f6217dec5c588fcebc0c53f67472",
+      "bytes": 10559
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_18.obj": {
+      "sha256": "a68bab620df3b9a4dcda8b8616ed2ea7a15414f8c142ebeb229df50bce0257d4",
+      "bytes": 6277
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_19.obj": {
+      "sha256": "0353ef353fa8a0144c03d9ed88c17b5612ce51f48bf4ef9c88a824d23885c71e",
+      "bytes": 11564
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_20.obj": {
+      "sha256": "5d3bc1c724e800fc9373c916f58d7c1efe7365502bdaeca7bc9e8915935c3367",
+      "bytes": 9877
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_21.obj": {
+      "sha256": "a3001027efae2fe25e19f2c7866321c9d2f1cc017284c80fb00b65e9f8b2a160",
+      "bytes": 9734
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_22.obj": {
+      "sha256": "220b7e3e91223514221d1e57ae40d44a5b2ccb7624c569829863be4864ae8989",
+      "bytes": 5870
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_23.obj": {
+      "sha256": "2efce1e8a8ed69a4b9be7760454f48efee8a2e96db80aca1e2242b09586a9cc4",
+      "bytes": 5167
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_BODY/EE_BODY_collision_24.obj": {
+      "sha256": "4265d6e254454d15feeea448b48e64e3d9e542e856d5683be52ee06e84348d71",
+      "bytes": 11265
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_FINGER/EE_FINGER_0.obj": {
+      "sha256": "9493ac3abc1a8b0ae8064e613844adabdbf685b3b5c88ed82c0864a3a7cd90f8",
+      "bytes": 12382
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_FINGER/EE_FINGER_1.obj": {
+      "sha256": "b0990e96b306bee55d247d8f154be77581780eaabaa18205447935122363996a",
+      "bytes": 66166
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_FINGER/EE_FINGER_collision_0.obj": {
+      "sha256": "75831eddc64906feb778e69f1f642006ebdebac50d9582308439860e8768ec83",
+      "bytes": 3278
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_FINGER/EE_FINGER_collision_1.obj": {
+      "sha256": "983095aaf839287edba5cf04f2fdc654747217c3003a188f5626c6289001ad82",
+      "bytes": 8016
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_FINGER/EE_FINGER_collision_2.obj": {
+      "sha256": "6de26d9369d201d5e60c11e3efc420b3ea408e6bcc49bde15e9229cc037b7db9",
+      "bytes": 35734
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_FINGER/EE_FINGER_collision_3.obj": {
+      "sha256": "ca703fc0843887e381e93fd11d4d3c84fa2dc4fa1717605a5ceb974a48623623",
+      "bytes": 2648
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/EE_FINGER/EE_FINGER_collision_4.obj": {
+      "sha256": "bb9fc2c8c9b6ae8f10b8d6cce41c711366914d1b5540fce440dc53a2d24c81f7",
+      "bytes": 10146
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_0.obj": {
+      "sha256": "a8cfd34f5b7562ddf9ddedb06144a62eeab951555b50fd0c4424e601a0a973d7",
+      "bytes": 333264
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_1.obj": {
+      "sha256": "35d2b4b4e0084d2a0564364b927dafc77a30e935fa22facedf3e767dd77d2d63",
+      "bytes": 70280
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_2.obj": {
+      "sha256": "57cef6ca3b481b51455b5e494239832038e3796d1ba1812d7e3e3835c246502d",
+      "bytes": 435379
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_3.obj": {
+      "sha256": "7c61e217aa552a888b7d8e2e2aecf890dfadc2465b0c5dcc5a94285c6f369d51",
+      "bytes": 811886
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_4.obj": {
+      "sha256": "47b3f3fc4b6f009f3c882e0b9ebce84ce853eb00e13052a0d66898682534b0be",
+      "bytes": 206964
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_5.obj": {
+      "sha256": "effaafe52bea38419165fecd240b3e55888fb0f565e77f3ec17884f491e1a4c8",
+      "bytes": 2528
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_6.obj": {
+      "sha256": "f35f1c84eb0cf1b7233b0aaba409a89808d933c773b33245a00bba82cc68056c",
+      "bytes": 22493
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_7.obj": {
+      "sha256": "abc8824858b80814eb8cb2ac8f3e841bf1292074d43400b05f6b7fa15e54e5f6",
+      "bytes": 19290
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_8.obj": {
+      "sha256": "4dba9c0b0dc8c09281a58445f6d5ff1cb9bf4cefd886b8dfa09f81636e801e8c",
+      "bytes": 300840
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_9.obj": {
+      "sha256": "65e0e1b35cdcedd983629426e6e768f2042fc560f4587323b351a0d9bd103720",
+      "bytes": 1659247
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_10.obj": {
+      "sha256": "61cdd94cc4e1e61332377d11010a73454514eb07d13d4288b985b5e25fc762f3",
+      "bytes": 873637
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_0.obj": {
+      "sha256": "468e7d1a7399b612875783089bae5437c2134695b097c3831dfc22095fce91ef",
+      "bytes": 7302
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_1.obj": {
+      "sha256": "602069c13e957fc000ff1851a52686cae00c583a93c6180d244843fd71296840",
+      "bytes": 7673
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_2.obj": {
+      "sha256": "0eb863a0d47ba804f5b3355cbac63598d9e5fae4e63a815d2b433e8b3a3029cc",
+      "bytes": 34537
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_3.obj": {
+      "sha256": "91694bf6edf9881c4ef4f915dbd98913e9566bd4717ef0a2c51aa4e67b6c6628",
+      "bytes": 6235
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_4.obj": {
+      "sha256": "9c11701cba858cf992f139e9849d122478b161cc010452e67c5e875c78f17e0e",
+      "bytes": 1156
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_5.obj": {
+      "sha256": "ab378fffddfe3201e89dc59d444599f7121c3b06ba070d025dd6d5e48c9c0391",
+      "bytes": 4009
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_6.obj": {
+      "sha256": "25b649d2659b40388ea05cc92a13720b08b314b3f25e592797f88e9a12691e63",
+      "bytes": 13659
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_7.obj": {
+      "sha256": "a8b55b2a6b8bf0038fc6d81b105aca796faced055c3ba99ef49b1ecacbe29eb7",
+      "bytes": 4425
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_8.obj": {
+      "sha256": "df9d2fec05bc1838c8bb9240797ed143fdf2bad4900c2455fd5314bfdfc48a94",
+      "bytes": 27308
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_9.obj": {
+      "sha256": "6140edf2fa93256bde4963c150dd54337747f8a41266b177ea18f2a4c5d32c73",
+      "bytes": 32141
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_10.obj": {
+      "sha256": "ed9b782086a12297a3b211a8949d69f9ba2efa5a67a8a4cf483478106c610537",
+      "bytes": 17957
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_11.obj": {
+      "sha256": "1aa69f491f3fac6c385d732a9e8f141797db92b068795d8dc55a80f3fce2ee0c",
+      "bytes": 2340
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_12.obj": {
+      "sha256": "b5a8f39e43162a9387098afa28b06e859fa3e5c288c5762ec493e14a31a99d65",
+      "bytes": 1932
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_13.obj": {
+      "sha256": "c736c6278da7aac095c66894ebfac6b03ffa2b32f4d93abe7594e77dae0328bc",
+      "bytes": 5508
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_14.obj": {
+      "sha256": "7a873b30c1ef44591a41738f2ae163296a3187a8dce86e56ac9b4ec932229360",
+      "bytes": 6665
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_15.obj": {
+      "sha256": "f99c90b23d44907b7c25a89c4b0a32efec068a4d3f1a4b9633120746cc2af070",
+      "bytes": 5644
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_16.obj": {
+      "sha256": "56db5991f3aa5029564f4d963c9e452df826abf02d44313f0ab097cfbdcbd993",
+      "bytes": 7343
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_17.obj": {
+      "sha256": "b1be24662157336dea79c6d7350aee34f2652a4f7814d9bb47627bfc93dd7c8e",
+      "bytes": 7324
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_18.obj": {
+      "sha256": "fb9fc98caaab1b29c389cc3547f6c610a4fdb7062c142008a7c6fbfaef0970f0",
+      "bytes": 21701
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_19.obj": {
+      "sha256": "fa1d0d41ffe4471e77b68e1d71f8fcdf5283dd95bd9830dea7ded44d41377694",
+      "bytes": 5495
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_20.obj": {
+      "sha256": "f786248a88ae39baa0ffad82c7305bec24bc3c3a09f89a28f7fa65ac4e7d5f63",
+      "bytes": 9096
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_21.obj": {
+      "sha256": "10b012dadc7de760da0a54147f95bab45298220115371f45337ebd657cae5750",
+      "bytes": 5491
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_22.obj": {
+      "sha256": "9bb1ac87fd2d00329dbac3683b0e2662f418c8f5c0186f8f0408524f35b8e368",
+      "bytes": 6888
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_23.obj": {
+      "sha256": "f8ed3e526b469beb2069410a1d8da60fb62344f2959271a12a16020542338a60",
+      "bytes": 31752
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_24.obj": {
+      "sha256": "e748c3bf7854bed07460b67906a433bd28d15a80b730e4bbded901be8cf969cb",
+      "bytes": 12324
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_25.obj": {
+      "sha256": "ce41ef54a42647ccbbed57f8b292041fad7437fd7b420943813f91058948a967",
+      "bytes": 17419
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_26.obj": {
+      "sha256": "0d3d25126bcd7524c9d2c712bfa0bdaaa72ce80bb7b6e6995ea85a9dca6443c5",
+      "bytes": 6414
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_27.obj": {
+      "sha256": "6aae3a786290b58fc2964de77d301579ad6b3ffe3a68ae8c3448effcd79ce356",
+      "bytes": 21251
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_28.obj": {
+      "sha256": "d466ed880ba550b1cff0f83f7eecaafb233756563176ca4bebb33a48bbf8ed49",
+      "bytes": 7949
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_29.obj": {
+      "sha256": "f3c76337bcec98361cdaf1cba9076e9a1fe3f24538020d86e8dd28a3eb2f51ba",
+      "bytes": 16076
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_30.obj": {
+      "sha256": "bbf9ec21bc01bc2e769668ca43ed15a7a18b6cdc312d5246511ff3e93f3eb521",
+      "bytes": 2493
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_31.obj": {
+      "sha256": "be54423b5c143efaa1a4275a4fc3f68096922f3fded57d9fff9476e9fde11fb6",
+      "bytes": 17339
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_32.obj": {
+      "sha256": "ff5f42ac987fde679e1c4e13cf2a6afbf8bced8017f244dd7a4d0b7d90aed6ff",
+      "bytes": 7412
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_33.obj": {
+      "sha256": "08af5cf5ecac72d0df3526aa77c6d98d7ae2fe17fd164f55023d726cc9e585a2",
+      "bytes": 2239
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_34.obj": {
+      "sha256": "d511ec6f78ed3fdcdc6fa32c2e6108749224ee858f37ddf2b94b2d2bb70741df",
+      "bytes": 15897
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_35.obj": {
+      "sha256": "a07a1ca72db43a5316dc48a59bf0eb35551c343ff854731b7929223fcb811a27",
+      "bytes": 4586
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_36.obj": {
+      "sha256": "ed70ae597d4280c86ac52c380ae11356de90a03842f94029e7a2289b4e128e64",
+      "bytes": 3865
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_37.obj": {
+      "sha256": "1d1ab45870f7fc587dd14bcb4afe8a51f6e5ac985f457b0cee7fbc431b134ab3",
+      "bytes": 4199
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_38.obj": {
+      "sha256": "e7731c899b73595cf734c8f4400af18b9cc650d6dd6c429e4494b3a77bc49813",
+      "bytes": 7570
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_39.obj": {
+      "sha256": "28fda3ccc1e0b7599c07cfae11a7545695038f9ee17aab4f46790bb10373999a",
+      "bytes": 9155
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_40.obj": {
+      "sha256": "b353a49d6280da7ebdf098a88bd9ad7e8e43ddfec25681de64006f42aee6bb14",
+      "bytes": 6642
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_41.obj": {
+      "sha256": "807b49421267c4025ee6e8ba141771359281df975385d473b29a5e69d2db3b74",
+      "bytes": 1822
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_42.obj": {
+      "sha256": "e0ac11145e4617acec5dceb8ab05e6a0d19cafc0a2db6573051b1dbbf8952c57",
+      "bytes": 3059
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_43.obj": {
+      "sha256": "cf041acab59526506611539b88cc3ab0672848d5217cb03295c7c1b1cc5596e1",
+      "bytes": 2226
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_44.obj": {
+      "sha256": "2c1f8ad9cb1acdad19f668b4edcac62d1751513d6836bb8d773d9808c35cbd60",
+      "bytes": 2424
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_45.obj": {
+      "sha256": "f7e747a72e827284e1cb6a083cc8f7d6422236d2412b904fef23da5fc360d042",
+      "bytes": 2569
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_46.obj": {
+      "sha256": "3b476b3007236edac772aa1c2d3397b670295839960d4b6d703c047ba132b438",
+      "bytes": 3712
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_47.obj": {
+      "sha256": "c2400de1bffaaaac18e65765eab5c762917f53eeb46cc444e100b5cf0f770195",
+      "bytes": 6910
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_48.obj": {
+      "sha256": "03f4a20184cc8983376611ff601ec0a2b8edc12a1c36db2a58ad95fd49edf0d9",
+      "bytes": 5557
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_49.obj": {
+      "sha256": "17c9413b936e57b7a960b56c31874ae01487f33055aeee723e49b86372236849",
+      "bytes": 6696
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_50.obj": {
+      "sha256": "b87f81071eb5af54c5db91c43378bdfc5f919af406e66c5976fcb2b15bc89688",
+      "bytes": 3409
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_51.obj": {
+      "sha256": "8b034a64c88d5e9a04ae625a24a95b7f0d884930abd6189e32c4e9019b0c44cc",
+      "bytes": 4455
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_52.obj": {
+      "sha256": "7aa8108dc12827d78a9e1437594fbc279a3d7aa160e3f569bdf6941689065879",
+      "bytes": 3756
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_53.obj": {
+      "sha256": "90973d5928c93f3a197c4315c048df21c988f31b287a43e1e9173b4971374bbf",
+      "bytes": 4182
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_54.obj": {
+      "sha256": "44e2a66917c9cd52bd82eb19d68c7c8d4faf77b9ba2d94acc1a95b7fb52ecdcf",
+      "bytes": 3573
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_55.obj": {
+      "sha256": "a536f2992a774004bf9fde32f1fcd0069971148817c4054ff291e330dd7ef144",
+      "bytes": 4468
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_56.obj": {
+      "sha256": "676be6906670c080ce7af0981f0891f0c2916cec075a618bb599a2f474d759f6",
+      "bytes": 2291
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_57.obj": {
+      "sha256": "7a21dd00596f01addc7f11b604d9c2edec3473c9997fea041f086a561c77e102",
+      "bytes": 7361
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_58.obj": {
+      "sha256": "5a9911afa27ccccea6a8487933d1bf5b8d9eada9d53dfd03d021d66730a069f4",
+      "bytes": 6641
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_59.obj": {
+      "sha256": "d20e2cbed82c4fa46afaa85253825659f5116c28386542d895296760518fc726",
+      "bytes": 4176
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_60.obj": {
+      "sha256": "59a9bd191910829631dfe0c915d090a61f71b5a2a5f10b584bad2c3a8da6be18",
+      "bytes": 2021
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_61.obj": {
+      "sha256": "1313df997306caaff61bc6e5fb966849066dde231408b9a24049c167a0bbdcbe",
+      "bytes": 2402
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_62.obj": {
+      "sha256": "1b2052502a5881d3f28a352654f414cae631779015f0b9920682b7d612672310",
+      "bytes": 3452
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_63.obj": {
+      "sha256": "0db2ef4d01baab020e8f02d3193c175e212dbb53f301b0c25ce25d77f47b958a",
+      "bytes": 3124
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_64.obj": {
+      "sha256": "35f72e7950949f22da73d53fbc5771ac28bc331f187bcb71ff022baee3650288",
+      "bytes": 1660
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_65.obj": {
+      "sha256": "c4e541ed3d7be4c6fcbe53b060394166a7840ad968e55b7297e017e731853c40",
+      "bytes": 3974
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_66.obj": {
+      "sha256": "b3fc89b345c38db7ba8d1fbe79d8ef908ff3a1c90810c6f8232847c8910e538c",
+      "bytes": 11073
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_67.obj": {
+      "sha256": "b3cc0a889fe138a980d42cfaa9c3459824e06b7c90533ddeeac91d7275be8a97",
+      "bytes": 3051
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_68.obj": {
+      "sha256": "0208f8036ebc6d2e8c53fdd30307f7e7e4c57b95de2fbf9f9463048908f7d5a8",
+      "bytes": 11240
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_69.obj": {
+      "sha256": "2444986cf69f5a9c0f8990400f7c36485dfad5fe5b676967b171f6024a75ef87",
+      "bytes": 8029
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_70.obj": {
+      "sha256": "a6a1383ed8b207d482b00ba1ce12b510e86b7563df06e885ae6e3ba8606eeb1d",
+      "bytes": 2276
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_71.obj": {
+      "sha256": "b454b6b551ba79afca6ab4ee44e7519827b2126996a336a2d66659b64869d3f4",
+      "bytes": 4350
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_72.obj": {
+      "sha256": "9c98874122965731e20f372d949feabaf3323cee672cefd48c8ece56f04f3f90",
+      "bytes": 2772
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_73.obj": {
+      "sha256": "5e9165d0729de3816412be1393e03bba4baf162e0857a6f24d390c10cba1d213",
+      "bytes": 3938
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_74.obj": {
+      "sha256": "049892bf8b21a5a9cc92d2d2a57896502100909b12c20c25b276bbc655eec5f9",
+      "bytes": 2629
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_75.obj": {
+      "sha256": "43f93c8eeddc7555f7068bc33e946c59d316b6263299ea8470ad0981dc367868",
+      "bytes": 4023
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_76.obj": {
+      "sha256": "c766fdb418862936b33669e35307807eecffa360189a15aea63d5c3980de8bf0",
+      "bytes": 2247
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_77.obj": {
+      "sha256": "ce3c863f571dbe1cfad727fb787c9287228c7eb27a8a386331df20d7dbedb398",
+      "bytes": 11458
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_78.obj": {
+      "sha256": "c1c3f4136c9b64386b149c56625dbbcf4420e119d0ef78cefeb45b91d4e91abc",
+      "bytes": 11069
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_79.obj": {
+      "sha256": "5710f62a21f8cf1a17921a96a193f543f47cf7764e13fd53302c16cb59ef4454",
+      "bytes": 4756
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_80.obj": {
+      "sha256": "cad6693367379fb9fae1132e3330edd43e75c7f6dd037f00090c9f38bb22e475",
+      "bytes": 8769
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_81.obj": {
+      "sha256": "cb7d723cebe1addbecebbfd4111b45ff1724e8c87aef6834a3e9181795c6a7e0",
+      "bytes": 1353
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_82.obj": {
+      "sha256": "04e1c33894cbf523469decf9c2156c97fd032199a2092c848802eb3946369da5",
+      "bytes": 3867
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_83.obj": {
+      "sha256": "6c67fd5d89d312349e847e8971c715b672924c73b28f05c569fab825d3717a63",
+      "bytes": 4005
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_84.obj": {
+      "sha256": "9c88cb3c4eff7903ad9786ea1e0a8f47c67ff012f1b4da18a3272e66dc807db8",
+      "bytes": 3344
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_85.obj": {
+      "sha256": "b766b5689c6060c1fa0fac6df112386895d889bffbbd8c9c0a05adaef98f5e62",
+      "bytes": 667
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_86.obj": {
+      "sha256": "d9fdb2c6217e34b17d8959b8ba342318aceae7d3b376740eac4c2182c02ee6b4",
+      "bytes": 5200
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_87.obj": {
+      "sha256": "f669bf8be1ccc841aa4c89c0ef651fde7ac9b3a9eb79a730ca73e9cf95de1fbb",
+      "bytes": 4088
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_88.obj": {
+      "sha256": "1ccbb3604f26c47f9052cbe2adb97cafae4af0f077db2fa4643e368c557aea17",
+      "bytes": 5539
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_89.obj": {
+      "sha256": "132a16e4f6ece1122f662cacf31b94dc157c030113da6b5d06da72f2cad24fdd",
+      "bytes": 3440
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_90.obj": {
+      "sha256": "904b59e392f3ea37d4957cd70bb88eaa69a26b3130e22f23eb8830797ebcdd5c",
+      "bytes": 2934
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_91.obj": {
+      "sha256": "51817de42435d3c54a42037f33dbe7889ded413e509370be76afe264b1989366",
+      "bytes": 3037
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_92.obj": {
+      "sha256": "05c7cf48cbdb92fcc1afafd6c6f421ad4052cdce62f30e9b430692a6bd076b83",
+      "bytes": 1882
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_93.obj": {
+      "sha256": "b08bf9e9780ef47007916c9dd6e606214d2f510d1aebd9170ac20a3bbdd8a231",
+      "bytes": 3650
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_94.obj": {
+      "sha256": "b72d9be03cfbf712b0cc33aa07b4c1d48c4ffe84bd2c0cdae8b25fc75d1f1eea",
+      "bytes": 3099
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_95.obj": {
+      "sha256": "b77859090ba366bf146a8c9d128846c22c680796ded1dd4d582e0cc43e3bfd42",
+      "bytes": 4818
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_96.obj": {
+      "sha256": "c1ba17e1fea0471ae55e3493087e568336d1afde8f21552cab0595a871076ec2",
+      "bytes": 2091
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_97.obj": {
+      "sha256": "f2ec1ee8c83b43d6f885e0f3dde649a4ae6371459c885b8ca2e6447b2f19602b",
+      "bytes": 3903
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_98.obj": {
+      "sha256": "7a133ac50f817db75615f6dad1154ba46d8074183dece787e09f14d6c159d6b7",
+      "bytes": 9313
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_99.obj": {
+      "sha256": "e3f99a3f0796da2b9337b32dabb60b1217e1dba96846ce8a4e15b72c92f3b569",
+      "bytes": 2617
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_100.obj": {
+      "sha256": "3fd3c795386e386bc2e529d9d32e1e870322eb24e602d9dc1a6738c8097c3942",
+      "bytes": 2165
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_101.obj": {
+      "sha256": "7d22d799acae46ec531940421e81c7ec399602e3e260ae946aaa080a8f5526b4",
+      "bytes": 2686
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_102.obj": {
+      "sha256": "baef0546195ad25c393af761952ce7f503652da7a166ad77fb6db4aa69a1c0f1",
+      "bytes": 1671
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_103.obj": {
+      "sha256": "a4730ce3469aa20aa83983f80003a78b99d387952493a6c76eb4c0349ae13eed",
+      "bytes": 939
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_104.obj": {
+      "sha256": "e7d943d84bf983f5dc6f1037dee5755ded97f78a5cb67751d7a5b41353c3ca57",
+      "bytes": 2985
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_105.obj": {
+      "sha256": "595b47be8240a577e122a636a8d8f20ca4cfbbed3174e639700493d25ee44591",
+      "bytes": 2991
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_106.obj": {
+      "sha256": "a8badcfb9c1efcc7e8a87081a21664eebbc5f30ec9b12d1a6f76d179490d4b98",
+      "bytes": 1351
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_107.obj": {
+      "sha256": "c87adbba9ecbb4f7afccd0900f4e1347d861e31067cdba3b8f8ef74b84b8715c",
+      "bytes": 9809
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_108.obj": {
+      "sha256": "cd646aff04aa3ac293496dc1240c8ed1766743ad2fa4d6c0c9973a46e3460bfd",
+      "bytes": 6087
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_109.obj": {
+      "sha256": "2560a2dcf436c908281e80ec73d12a35e04cf10942fa525f3f7099c9f2910751",
+      "bytes": 871
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_110.obj": {
+      "sha256": "b3b5881fc81fbda7a3fd44bde52b9dc45a303560ddc98bae5c57e5c992b117be",
+      "bytes": 6525
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_111.obj": {
+      "sha256": "401f8987330b145ccba98558e95dca8f7bf002698f1bb92611727c15f84234a8",
+      "bytes": 2104
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_112.obj": {
+      "sha256": "da2836bb17482a4476ce553dafe97867c5fd461f4a0219a3e59859babe1cd8be",
+      "bytes": 2609
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_113.obj": {
+      "sha256": "3a1c8790e1f1f9c1609973d09a29f882f859f94e7078f3a6383e8a8ceb0a18ef",
+      "bytes": 1671
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_114.obj": {
+      "sha256": "9487bd854ef04ab2b65c44d41b22bc765eace14e6188cb19154bcaa93f5cdf08",
+      "bytes": 4502
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_115.obj": {
+      "sha256": "18c64c754655b4c81d77f5f6a0fb05f74ebef532f103d0653ca0040acd3f7b55",
+      "bytes": 9800
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_L/FT_SENSOR_L_collision_116.obj": {
+      "sha256": "57c7cf0a6ac83b5c6a7a736032072bed856f9d373073759a31f3978230ebf697",
+      "bytes": 2938
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_0.obj": {
+      "sha256": "a0d3a58f52b5f1cb2607f5885a8ac4f23471f6a9b7ec8834a0b6f773e0bdcb2e",
+      "bytes": 333313
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_1.obj": {
+      "sha256": "ad3b5e1a5af9d0e42d7dc327da551bd06a6fdebb0640f346ab103a949eeb43ca",
+      "bytes": 70272
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_2.obj": {
+      "sha256": "f38b46ce965fdcc25f15d28977699ec52b8e8541402af01992779ff06e8c4a16",
+      "bytes": 435379
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_3.obj": {
+      "sha256": "3bdffddd57a2d46ed9e3c7f77bca271994c11c90ea284f6ea8aec69127cf378c",
+      "bytes": 811886
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_4.obj": {
+      "sha256": "27eb8c62ebb035276b252dc5c3f1e4399faf704ff8e92b9d935cdaa6f8e50313",
+      "bytes": 206960
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_5.obj": {
+      "sha256": "adeac5348c61b93d1994a9c10431ca5bba5f52a1975473bb9e2866ad4485727a",
+      "bytes": 2568
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_6.obj": {
+      "sha256": "04ef69f8daedd93bd98b7c597fa1688ac30c09f1b29268e84f65ffba2506d969",
+      "bytes": 22067
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_7.obj": {
+      "sha256": "8515e06dc01c4e2e3aa3ea69384925afc60deda3c88ba2e1ca624b00c2e3fa6e",
+      "bytes": 18770
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_8.obj": {
+      "sha256": "495e8fa17abe9045ab683f62ba632ee2cd334a13ec55b182874bc40f446b2a88",
+      "bytes": 298976
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_9.obj": {
+      "sha256": "5767b71ea39c9dec7a4048d2c20a90d5092377b75d2a30ee8bfa6eacf8706859",
+      "bytes": 1653745
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_10.obj": {
+      "sha256": "0a84bb4718d74cd73f3d6deba97f64be1c38c58ca46190bcab8565e0071a0de2",
+      "bytes": 873844
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_0.obj": {
+      "sha256": "d3a806560ffb298ee6bdfe58cec3f396be3b26f12cca85525b8209df4e9cdd28",
+      "bytes": 22119
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_1.obj": {
+      "sha256": "fd4b4d781d168e8592e2d6026fac1b3c76d6dafc3bfa8531f10fb76f5468eab5",
+      "bytes": 6205
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_2.obj": {
+      "sha256": "4fb4e5dbbc3ff65969ad82980b67102ce7303151872aa90b65cb8642f40c77f5",
+      "bytes": 6406
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_3.obj": {
+      "sha256": "784b3e5e5c46d373038a2771585aeb224578a2d80ef429f8d44d165cc5a0d361",
+      "bytes": 11411
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_4.obj": {
+      "sha256": "468eeb3838c1a4c622146696da11cfd0716957a1b94b6daab9929e24a03db503",
+      "bytes": 3268
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_5.obj": {
+      "sha256": "93d12f511128af99146412ad6cf8cc16ff71e09e56672d575a60e55bbfec0cfc",
+      "bytes": 7950
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_6.obj": {
+      "sha256": "6b591a7991011eda690a71a400bbb3d4d3596ac2e335944a5ed893ed550b189d",
+      "bytes": 1789
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_7.obj": {
+      "sha256": "9564506679cb55c32882743924e98aa11e73c31cce33f1b5c4690de00663da11",
+      "bytes": 12541
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_8.obj": {
+      "sha256": "c49a0a2cf17012339cd75d843adfeffc7911e1d61ff8f580c5293c48175c14cf",
+      "bytes": 27882
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_9.obj": {
+      "sha256": "09e5d645695c1c0edad8e6f0fb54e5cb124aae160719e35419a069350f3634d8",
+      "bytes": 31496
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_10.obj": {
+      "sha256": "fda6f9b2af9c63107d6e362f1f9916162ba9cf8ea3f616241f2dfec803dc41e3",
+      "bytes": 7321
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_11.obj": {
+      "sha256": "04c28d0bfd0e6fee1992552182d0912608b0f4e453b79441e50516dfaf7f986d",
+      "bytes": 9184
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_12.obj": {
+      "sha256": "0370895498698b4dd209554c4bb74c1ebb8f14304e7c93d3159e89996ac70aa3",
+      "bytes": 5436
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_13.obj": {
+      "sha256": "efec39fd83bd90e0f4d257c9fab5ab42014df09c54720113e0511fb78413a7c1",
+      "bytes": 7681
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_14.obj": {
+      "sha256": "e7629e230072e2052750ba695ff73a1cae137053c12c87859fe5a4b947546133",
+      "bytes": 2408
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_15.obj": {
+      "sha256": "b0dfa0c0d8ad274d625dde56ce884b351daf2e90dd816276bc9ca9bd1c097e61",
+      "bytes": 7239
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_16.obj": {
+      "sha256": "0ff94b479a9745633812e7797a4e1ef35985d32d970c360b008c9254f81e9c18",
+      "bytes": 5431
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_17.obj": {
+      "sha256": "5f37c9b0099797a7f935c3c169fd0c7c289f7a2ac1480c51a6dcaaddd5f7d8ba",
+      "bytes": 8437
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_18.obj": {
+      "sha256": "f9d9db074c30e6a0e0a59b2a8c2f0377521f9a35e0203c84e542502325e74a16",
+      "bytes": 6654
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_19.obj": {
+      "sha256": "bac705fd03a27c0c887c950997dec026574e41e260e3f4ac047a535a6f1e3784",
+      "bytes": 30507
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_20.obj": {
+      "sha256": "01123faa79fbd4d27c029dadc46cb54227970d4a523dd4200f44b8ad3b60c4f3",
+      "bytes": 5452
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_21.obj": {
+      "sha256": "9746da053b19df68e1fb6f26be3769aa535f84255fd208d3b2b052720a003a59",
+      "bytes": 7115
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_22.obj": {
+      "sha256": "252ad449b4b4cf410b9ea4cad88b898fa7870a899d3b40af3910663263ca0f75",
+      "bytes": 6012
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_23.obj": {
+      "sha256": "b61ce91f407efd62d6602d2f2ae7c9ab3399e1f7c207cbdec3604983fade2007",
+      "bytes": 6595
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_24.obj": {
+      "sha256": "688778267c2dd2a0b1f5ca8d545fe9e998a6362260bf3669c0330170a65b21c7",
+      "bytes": 6726
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_25.obj": {
+      "sha256": "f2c0a5c7879bdba0c2858dc3cd23ea98853ea417d1d25a1f16d3753767bb13b7",
+      "bytes": 6304
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_26.obj": {
+      "sha256": "8699456da3835f324d3ab3d4e1bd88188ecfa6fad5131d0b11ae2e8b907d4e0f",
+      "bytes": 16602
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_27.obj": {
+      "sha256": "a82ba6a28c9320da6e431580749c2f76af5bcc79fce7840b107e882fedac2fe6",
+      "bytes": 12261
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_28.obj": {
+      "sha256": "9e654235ad9bb507164862c00ef5fd5c451c174e6f1d7689ba36d1e5260edfc1",
+      "bytes": 8353
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_29.obj": {
+      "sha256": "cf49d93968075f56783072a33928577d428485d2188511c80310a420ffbc3ad2",
+      "bytes": 21699
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_30.obj": {
+      "sha256": "13614b844fd55ea08546d2d8d100f60a61d406b9aba76624a8d37febc821e4b1",
+      "bytes": 14394
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_31.obj": {
+      "sha256": "7668d69f158fb6b3b2eabd1c3f31765c2b0727ebb14d68dae5eb8efb753f2f4a",
+      "bytes": 1080
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_32.obj": {
+      "sha256": "c96c219591b488c5a54d42e435eae5a3c35bf302e018b8e79da5078a4ddb1487",
+      "bytes": 3059
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_33.obj": {
+      "sha256": "e1b619badd41475f53154c5d69b6dde6416a54dd7726b14eedb0b0524191e3f1",
+      "bytes": 7887
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_34.obj": {
+      "sha256": "5c8bcd07858dec4bc8eeb2dd241409d68fd3e53f3853605c666ebf23c20aad01",
+      "bytes": 8696
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_35.obj": {
+      "sha256": "d6a44b3a5e87eff2e23c43e5ed0f5d95a7074e8663950e89054fd927af8e1fba",
+      "bytes": 3861
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_36.obj": {
+      "sha256": "be82fa3e26859a89a26973b4fd92e55802bbdcd8f3f131752a641b489cba8374",
+      "bytes": 18322
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_37.obj": {
+      "sha256": "e1e28a96aae405cd639484713db81b5fdcd427dc6c42217b7a5317c940b87e12",
+      "bytes": 4389
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_38.obj": {
+      "sha256": "6cc240c8361f2a7843ca79e8b767d0ea86e851a82a85978938e224cb4a02e383",
+      "bytes": 17302
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_39.obj": {
+      "sha256": "a59535e797e57468feb6a6513d0414dc6f3a7fee6f8d8f53e5e9f4287f15ceba",
+      "bytes": 16799
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_40.obj": {
+      "sha256": "7105994e8f688549ec56d01fb82ee045f9e3a151748b8abb81dba1e4df60494f",
+      "bytes": 13003
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_41.obj": {
+      "sha256": "0b0c5164f446bf54be44efbb0c24137fe7ba66b601179f22e65751eff793ac3b",
+      "bytes": 1832
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_42.obj": {
+      "sha256": "c4f3e7b19581144d5167efe3b28a3487a98c7ade42edccc7d482f4705dd75f98",
+      "bytes": 7091
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_43.obj": {
+      "sha256": "59cabdbe292874cfc5238c9bba0b3354961c1fe05b5dd4ae2affc0e74eb10bac",
+      "bytes": 2513
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_44.obj": {
+      "sha256": "10f5d12c09939cc339c21799bcc540bc21d730fc04f531071e9c4c9c3c5bccde",
+      "bytes": 6768
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_45.obj": {
+      "sha256": "e9475fb4717df4eb5156060eafe86bfa291aa3532a78d6672c51cb0c0044f171",
+      "bytes": 5790
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_46.obj": {
+      "sha256": "cedc4a60300c781303b8410e8fddabe251f771c50edae29c4cee05ea11b14713",
+      "bytes": 2921
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_47.obj": {
+      "sha256": "0adda46155fcbbb134675171cb8bae21aff0d9f70c01a0b6db57837d2c35dc49",
+      "bytes": 7304
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_48.obj": {
+      "sha256": "8cd3fe57533ac8c7cf8aea5a534d07cc77ab21bc87e0e039d216189748e6e329",
+      "bytes": 2247
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_49.obj": {
+      "sha256": "8d71ac758401bf870a4a9cae24a26dc5d9b7d4fc82a740a39f55f89bdff60de0",
+      "bytes": 3630
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_50.obj": {
+      "sha256": "babc278bc62b9e87862d4268434c680493c4a07407d0bef505bd3c9395a45c7b",
+      "bytes": 10309
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_51.obj": {
+      "sha256": "0d6059a22bd48ea4c26bb4552c3fe7aa46ef93641cc5e921411845a8c2bc1210",
+      "bytes": 5970
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_52.obj": {
+      "sha256": "f67a542ea40595599218e5584565e071c62bca14772457e8b416b72e1ac83d83",
+      "bytes": 2438
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_53.obj": {
+      "sha256": "4a28d8a6a44a2457bf864fd3009925a68b501466b2b947cd53242b7366ef3449",
+      "bytes": 3431
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_54.obj": {
+      "sha256": "d61d6ef7c49d0148603e5558d28647b1b5c8c5904f7f658f096efc4ccd00b125",
+      "bytes": 2130
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_55.obj": {
+      "sha256": "fe869b25411d8751f1631dedcb206f5223f32952af323e7c1d5f2f08618c28d2",
+      "bytes": 2227
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_56.obj": {
+      "sha256": "2d50d5f7abb1e243e24fb39bcbb9bd70f1afb8d3da7b0dab97357fea7f4eab17",
+      "bytes": 8165
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_57.obj": {
+      "sha256": "ea67615e7f51f3ed6acde4a6ece1bf0eae0318594cc0420e6d40851636e3e53c",
+      "bytes": 4418
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_58.obj": {
+      "sha256": "4ed02a9a886df8936d2e035e0b9e030976da46ecd80ef51c1f30ec6866d773e6",
+      "bytes": 3928
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_59.obj": {
+      "sha256": "7891f6cb9202721eaaecd96dee4a0874ef7af36e873d53e632a9d5ed4adb78bc",
+      "bytes": 1990
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_60.obj": {
+      "sha256": "eb43a95a6442dc39b397cdd2e2c36c412054faa0c2f9bcb4ed62a86d79651b26",
+      "bytes": 4031
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_61.obj": {
+      "sha256": "12a048a7f888299553cdd1a14e5c8df3578d25a2f5122176b154fb1390075de1",
+      "bytes": 3403
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_62.obj": {
+      "sha256": "169528c6c5a879637eb2058e9d8d2c9a49af33b79c25290bce219b5da3e2e285",
+      "bytes": 1683
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_63.obj": {
+      "sha256": "f06d3cda735431d86b2353dd92305cdd93eff5b2933a8c7764656194cc112775",
+      "bytes": 2640
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_64.obj": {
+      "sha256": "9b5bae754dd89e580dac3e303be2fd465df1d25c9e694219611d123ea6719cdf",
+      "bytes": 11385
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_65.obj": {
+      "sha256": "339cccc93e5e96aedf75ecfe5428865cd06f49709712e41a313081254c067ce4",
+      "bytes": 3085
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_66.obj": {
+      "sha256": "a8182713f91fc6f75159a16e601244f86ec3f2ee1424c4ef0bf166aa794acbf0",
+      "bytes": 886
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_67.obj": {
+      "sha256": "f9653a92ebb577bd6ecb179ded51fcb4fb0d40b34b87243b4bb1d799b9208bbe",
+      "bytes": 2165
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_68.obj": {
+      "sha256": "d488ba5c8fd6f23cfb3602e54c3cf952d3e63bee9d350e820c96cb67c1a9f177",
+      "bytes": 3096
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_69.obj": {
+      "sha256": "60e03626bc492a216a09155b84ba355853267740545d8c74fb2ee293217981ca",
+      "bytes": 2703
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_70.obj": {
+      "sha256": "45b4e2a41ec89ea3e9642dd621ed2ae3f48c5478914435d62363717ddd323c95",
+      "bytes": 6172
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_71.obj": {
+      "sha256": "e0a12f45b25d2986d4fcb8a23a8018c55d364de18acb7fd01418a488e856d093",
+      "bytes": 2509
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_72.obj": {
+      "sha256": "52092fb71748b6126af386760adbb424791fc993941822f3bf36ff90cca90511",
+      "bytes": 3032
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_73.obj": {
+      "sha256": "46bdcb6833cf4a6ffcf3d655e45598e9ea0b95cf3272a0f6a26dc7704acdd8c7",
+      "bytes": 3195
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_74.obj": {
+      "sha256": "87b9ee3336c229fcfb99a19bf0e3652677c1e80f536b603247398aea02e0197b",
+      "bytes": 5003
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_75.obj": {
+      "sha256": "267b75f1f5da52269f1ee4c230408e8756877ea94d423ad15301305f7f4de6fb",
+      "bytes": 4014
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_76.obj": {
+      "sha256": "14d20415d78e84a817c7df0f307f2a05138f14395eccdee2b7411767256b3659",
+      "bytes": 3327
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_77.obj": {
+      "sha256": "3748e2d732043ad5910c29de4da656372603fa1aa70cd71070812a2be8931959",
+      "bytes": 10718
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_78.obj": {
+      "sha256": "46c083433862f79c2ba94b5caf589ce7a7c4750dc214d0aa538d0241ce8ab935",
+      "bytes": 3910
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_79.obj": {
+      "sha256": "c66155b47f9765e53be9cada52a3d7886e2c579cd9e283e01ae146ef854dbaa6",
+      "bytes": 2878
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_80.obj": {
+      "sha256": "34181a4dc1a85f6c99a4d595e318f8968f4554efbdc7d65c891d70c715927628",
+      "bytes": 4777
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_81.obj": {
+      "sha256": "12a5023b2cedf53d676af2a85bf4008eee2d52d466a0bed24c70292861abf74a",
+      "bytes": 12217
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_82.obj": {
+      "sha256": "6d00f89bee1fcb227bda8329ddfdb96bfc2dc333fefb5fc86d7f58c6c3bb00cc",
+      "bytes": 3292
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_83.obj": {
+      "sha256": "4c7b2b90721be1e508c6f5654e2f430951cfb9ac90e7a318f3cd040cd9c05f2f",
+      "bytes": 4640
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_84.obj": {
+      "sha256": "6619818a46cb366566fbb12b21743a1ce6803444a98cbe72a9743bcc051101ef",
+      "bytes": 9425
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_85.obj": {
+      "sha256": "470fe8daf39d907d4c26b378f0dd9d75f6d490369cc2d1efcdacb59778fb89b9",
+      "bytes": 11781
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_86.obj": {
+      "sha256": "3e3521c2192b8f49f38b1c281fe2abacbafab976021c2d1d9b0f4ff5b4e3e8cb",
+      "bytes": 1949
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_87.obj": {
+      "sha256": "dba6fb91bc4e869cac5bb8eb1d03012cac5f8e51b82265bc6a8ac0068a29440b",
+      "bytes": 1039
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_88.obj": {
+      "sha256": "6ae6755280a2c67666947dc6b326d8e169e620a6865a057d7653321a67599273",
+      "bytes": 5474
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_89.obj": {
+      "sha256": "f4db0ea6d0050bee9a7fedd9bee1dadd1e6c5103ebdbb2c96efefb2290e42d98",
+      "bytes": 7485
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_90.obj": {
+      "sha256": "bc6f056e6e0072d6c4a0b80f497d51398a0dd81e62c8862961ad40bffe257026",
+      "bytes": 5027
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_91.obj": {
+      "sha256": "fcc0971f1b9336a854cc831b5623f9252286c8e005a760f680330b2af415107f",
+      "bytes": 8488
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_92.obj": {
+      "sha256": "a531cb20d8f76a9ddb86ab40a1891f729848519eef83f819fb98cf7e0e224fed",
+      "bytes": 2986
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_93.obj": {
+      "sha256": "3d833884de5c953751aafcc40804f266e4b2950f3af327e77bacf26a5251b891",
+      "bytes": 4164
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_94.obj": {
+      "sha256": "c7f31cd74ea7355993541aacace09ecf23050fea939baffeb97d3d6b4c2f32ff",
+      "bytes": 3587
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_95.obj": {
+      "sha256": "cc28053cc9fded2696e636c94cf00807e1a91b3c2c5095e64b9020b021fd7eff",
+      "bytes": 3767
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_96.obj": {
+      "sha256": "44ea5517fd6c8828d04cec02ec471e9e0af60ebe29dcc2f66003767d77ac7a97",
+      "bytes": 9187
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_97.obj": {
+      "sha256": "d86f27af5b8e47a4d00fea463ab8c85ce53e53186c96830f1965c5197a00890b",
+      "bytes": 2856
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_98.obj": {
+      "sha256": "3dd42f58e350ccb4586c66f36fb0e1d7d7571eeaaa5c0bd7a2d5a6c6c1406ef0",
+      "bytes": 9875
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_99.obj": {
+      "sha256": "fdafe2eab458ccb47def9fd5b79941f17bf96cbe94df19bd6a3c1244c0e73f47",
+      "bytes": 1953
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_100.obj": {
+      "sha256": "507504984c6c0e37770ba4f4c9e158199be3a9a4de8d6432b7623fc93e88d0eb",
+      "bytes": 2641
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_101.obj": {
+      "sha256": "2df50b0838997793786b55978b00510c0b98b9176d16e26029051aa49fcdbb33",
+      "bytes": 4900
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_102.obj": {
+      "sha256": "6c295038594cd0c9da249bb646df045039a60b8e406998c43816d06afb640f1d",
+      "bytes": 2028
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_103.obj": {
+      "sha256": "f148a426247d40e4e3de91d557121baeab50113dc0608f8e7ce71b64baa945d1",
+      "bytes": 1870
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_104.obj": {
+      "sha256": "600394e794925e8d2bf47d80f5e9eab12b492ac7c0a939a6695ee48e93ec947a",
+      "bytes": 3135
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_105.obj": {
+      "sha256": "4319b984f05172bfa5e8b87cf6e8f52e64f278130384bd1a98bb64e72c8ea7e6",
+      "bytes": 2273
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_106.obj": {
+      "sha256": "a4d31fdf1fbe843c929ca3393f52091ce21b180c7c996529e44b9bbcc397629c",
+      "bytes": 5449
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_107.obj": {
+      "sha256": "ce93f01b1fd24df2af4b27be6809977f1e9ba313c4c59e0b91d883f3e67f4fee",
+      "bytes": 1547
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_108.obj": {
+      "sha256": "72bcfc7134cdb0073a30a7b919f0d773fe709e5b8be9cf62694e563a5fb4cba0",
+      "bytes": 1238
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_109.obj": {
+      "sha256": "7f34828d8212b8cbfdd19e068c073e6b74c6aa795a4f427793299f1c6c98755a",
+      "bytes": 3835
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_110.obj": {
+      "sha256": "9844511d20a1c82248c231a715508c44467cdcfd6d7beaab507d7363daf273d6",
+      "bytes": 5659
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_111.obj": {
+      "sha256": "5cf1271b0281407e24d4a32e4b891bf068ea536d88064b6454248557fb01f644",
+      "bytes": 3441
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/FT_SENSOR_R/FT_SENSOR_R_collision_112.obj": {
+      "sha256": "acf386a5daa1d39ad1a9567cd211b6d2de98c4e766726ed04cee3ead32a53387",
+      "bytes": 2045
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_1/LINK_1.obj": {
+      "sha256": "1e7883b3575fcef74737d092a6f9edb0b20538e21da5d53a2370c102cc160303",
+      "bytes": 201901
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_1/LINK_1_collision_0.obj": {
+      "sha256": "8cdc402c7b4e5dd65e25013ec09f1cd29ee998c1046fd0afc3eb4cf0c55d7cbf",
+      "bytes": 59877
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_1/LINK_1_collision_1.obj": {
+      "sha256": "935061bc899789628805215fe54d874adc30626857119a27a6f749c80b631cd2",
+      "bytes": 56374
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_1/LINK_1_collision_2.obj": {
+      "sha256": "87978488ca3530700e8e5aeb39e082760b0b558a609cde00faf0db381852fe81",
+      "bytes": 31351
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_1/LINK_1_collision_3.obj": {
+      "sha256": "21e75a47da1dd4f4d2c6ff1315dbd2621198f8b90bb2f2859f4eccd9a6efd1b2",
+      "bytes": 27025
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_1/LINK_1_collision_4.obj": {
+      "sha256": "004cca262c882c338e44fdab339d8834e5d1bdcad7a5973624c0aa18a490779b",
+      "bytes": 13104
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_1/LINK_1_collision_5.obj": {
+      "sha256": "ed17203da160cd944dc34d9e611497d2f32513f9307391f2a3c6da64f41361a7",
+      "bytes": 28225
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_1/LINK_1_collision_6.obj": {
+      "sha256": "9a59cea712f40cd6d0b93cea1793c4b234047e2e9858cd7325938f55dc06d551",
+      "bytes": 5296
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_1/LINK_1_collision_7.obj": {
+      "sha256": "319eca47c6a5291dda471ffef1c8d48d6f28899a9e62e3f1034735944903f9c5",
+      "bytes": 5445
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_1/LINK_1_collision_8.obj": {
+      "sha256": "80df78865e9a52b4f4a00d898272a4f6cf0635e4fb908f416c689a5f784ef981",
+      "bytes": 3646
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_1/LINK_1_collision_9.obj": {
+      "sha256": "92503f2be635e449d8c77ea8f976a6bb398dd51d149fee2518a1de728f206f3b",
+      "bytes": 3869
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_0.obj": {
+      "sha256": "42c0114e943f1f553d81ab200456331f58f1984eefd24729faefde970684ebfe",
+      "bytes": 303535
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_1.obj": {
+      "sha256": "4f065c64b67f7761256d507c16b9ae05e0ece4f08f50830484128e34b73d9867",
+      "bytes": 442720
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_collision_0.obj": {
+      "sha256": "375d9e849a0590cbd6758b888ab72b6f7074dfe5d32e3ea07c91bbe97dfeeb50",
+      "bytes": 9250
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_collision_1.obj": {
+      "sha256": "e09e0f781b2f6ebbf77de2536adeed53376fbb483d9f4de436bf46afe8270fea",
+      "bytes": 107610
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_collision_2.obj": {
+      "sha256": "a6e259ce3db7f7a8a924c716e20fc413afcb4be04b6aa94c9939ee05051012e9",
+      "bytes": 6016
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_collision_3.obj": {
+      "sha256": "fc6d600e37a89b09c7538730ef0b8ceda45092f2b250bb13339be422f0514c70",
+      "bytes": 12352
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_collision_4.obj": {
+      "sha256": "486c5cf066310074ac6f5e9c52f6f765c10a78bb9b3843e57893b91983d969cd",
+      "bytes": 10670
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_collision_5.obj": {
+      "sha256": "6675dcc0449e58dcba888a94b3e6a2b746e2c803213a7659b6cb368e9ced9382",
+      "bytes": 9638
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_collision_6.obj": {
+      "sha256": "a500f380fbd8b2cf35f6b50c34aeae92565f00fec2203d274cb8ef04cf5f54bf",
+      "bytes": 29129
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_collision_7.obj": {
+      "sha256": "52453d69e8f5f5fabfbc681b5666e676d6c2619d6726a3cffb3dea8e6143ce2d",
+      "bytes": 31147
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_collision_8.obj": {
+      "sha256": "2f98903c25ef65ca18b6a4c9ef0cfa48968d67744b2fdea201d177960612fbb4",
+      "bytes": 1906
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_collision_9.obj": {
+      "sha256": "4dd97b393028b5a902f90ad999231a28fe6fc562298407cdc8e1b1a1a01c4bba",
+      "bytes": 1630
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_collision_10.obj": {
+      "sha256": "2360a836684272162c1e814760c9b5ab0382e2e17d306c9b16f11f077fe3c6f7",
+      "bytes": 1105
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_collision_11.obj": {
+      "sha256": "b0a05d4f8a73059577c3248381a7b474b1eeec342b5a2ea67b2c0f9a3877ca06",
+      "bytes": 1728
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_collision_12.obj": {
+      "sha256": "56f030bd40f32d1ceb87d228fdb1c2deb317ada5b21d9c19c091ca57484ffb88",
+      "bytes": 9561
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_collision_13.obj": {
+      "sha256": "e81f963ccdd82386dec556c4d15ba277cfd17031b0b42990b9dbc44d24a3a180",
+      "bytes": 1677
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_collision_14.obj": {
+      "sha256": "d84c8b4a88e436b29e0a0734dac024d3eb4d96199e9375d67675a3e601fad305",
+      "bytes": 10385
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_collision_15.obj": {
+      "sha256": "8a8fbbca6eed4be6d89fef1803b836375bb9706d1ebc837aa5f7971a59893a32",
+      "bytes": 8024
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_2/LINK_2_collision_16.obj": {
+      "sha256": "46cde38fcb6ee5fda278367808498dbfa79125bc0d9d34bd604a1da060ebe34b",
+      "bytes": 2224
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_3/LINK_3_0.obj": {
+      "sha256": "5707295db4fcd1c6a71d843f6a3505a5a6b72fb413e84f9a49c8dc02b03fd0f5",
+      "bytes": 306344
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_3/LINK_3_1.obj": {
+      "sha256": "b60a0da8bd650ad8e406a146597b083d05576896ebc180c22db6f1e368670e59",
+      "bytes": 431574
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_3/LINK_3_collision_0.obj": {
+      "sha256": "3d5e024964fc1cf268a5c134527eb956facccc41db7a8cf9175aae6282d7d126",
+      "bytes": 102955
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_3/LINK_3_collision_1.obj": {
+      "sha256": "f68811e888ce1021171ec685e5a46cc1db0d3be69e60804c79cf554c9804a7ee",
+      "bytes": 11890
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_3/LINK_3_collision_2.obj": {
+      "sha256": "86714fab46a5486ab7a2f058f43f1542afae2bf9789619377d66c33912763e13",
+      "bytes": 30757
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_3/LINK_3_collision_3.obj": {
+      "sha256": "0c7bdaa43fc5137c66bd9634dbba8df953e5dceda8434233db729eb02b2a56c7",
+      "bytes": 32234
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_3/LINK_3_collision_4.obj": {
+      "sha256": "1bbaa69f86b0174697177924027bf25f218f338c574d2777cf43713a8d300043",
+      "bytes": 5580
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_3/LINK_3_collision_5.obj": {
+      "sha256": "42df0a536665561d0a2a3ebc1374f5690faa62f41d366f578e6f062e38127b24",
+      "bytes": 7956
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_3/LINK_3_collision_6.obj": {
+      "sha256": "2f52bcee134e17db067053521cbddce8c528ca6d0c6ee1c9076da8faf51bd50e",
+      "bytes": 7078
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_3/LINK_3_collision_7.obj": {
+      "sha256": "aae7e7eb69aba8908c34a71ed7ecdc80d3dcd6b5499918f269c6581a8a9bd70c",
+      "bytes": 9482
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_3/LINK_3_collision_8.obj": {
+      "sha256": "dbb13cdaed6622cf6dbb9c257496edcff81077fce9b4382b2f2fe2c2eebd6ad2",
+      "bytes": 12211
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_3/LINK_3_collision_9.obj": {
+      "sha256": "9d6ad126f2f19d1b4b5e5bce573a1b44933a6f2f4212550692ae913afcd1c52a",
+      "bytes": 1678
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_3/LINK_3_collision_10.obj": {
+      "sha256": "b60f5f0d79a440bfac434be2c6b846f723bbec6ae0c965b0918de2880836587d",
+      "bytes": 3263
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_3/LINK_3_collision_11.obj": {
+      "sha256": "fcae81fa1b738deb8c03454dee2fdc54737df817ce466cd4e7b06d1d40a60723",
+      "bytes": 2063
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4.obj": {
+      "sha256": "0439cd093ff4b19699b201a2c213eb2d005cc35bc5adb2c0c9899a8e25c0d47a",
+      "bytes": 251303
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4_collision_0.obj": {
+      "sha256": "be80e9abe5c2602244cff35c1c1c80bafb235c78deafc0da4430130cf60c04ee",
+      "bytes": 46234
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4_collision_1.obj": {
+      "sha256": "6fade54ea5bf7cd9ef93e079ba6294001e5d04470d0467216a023c64b29b282c",
+      "bytes": 40182
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4_collision_2.obj": {
+      "sha256": "c34a319c0c82945dfbe06e34c8200c2715f087c75ed54d34bed3d2855ea06a61",
+      "bytes": 14215
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4_collision_3.obj": {
+      "sha256": "646a758e3e0c90c5967086b6d4ff7c0538e5c40a570abe89d8a5fc320f17d2a7",
+      "bytes": 4611
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4_collision_4.obj": {
+      "sha256": "e133034e121c0954b02ee4db40c0e4d7a9b1fcfb3670308b8e60aa677e96b49e",
+      "bytes": 38959
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4_collision_5.obj": {
+      "sha256": "f51e76ec140e2225f9cc65f08d1771dcacb05d74ce36af07b95836e8f47dd9d3",
+      "bytes": 32214
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4_collision_6.obj": {
+      "sha256": "daa9b71c60934c681ec779deef223d85ec194c1e7baea72e9f1cdb7282a5721c",
+      "bytes": 122247
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4_collision_7.obj": {
+      "sha256": "faa89f20d5ddf1dd73520f140fd666f91a7c23ae595ad3a18d5bd3ddb35ac72f",
+      "bytes": 121985
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4_collision_8.obj": {
+      "sha256": "91fc6acee6b6aa63da6655e19a50e470ad428f08da074976a164323a29e58b1c",
+      "bytes": 7535
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4_collision_9.obj": {
+      "sha256": "8b837a41d1ef6838ef6c90aa8af2b0b053d7cf10186be38bee1fe1113bf4d894",
+      "bytes": 7043
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4_collision_10.obj": {
+      "sha256": "a6db78d6c6234678f268dfc38c8ea180213243a28df96ff33a6bce30340828d1",
+      "bytes": 12912
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4_collision_11.obj": {
+      "sha256": "12f537bdf794235115ce1d7844721a18423351eb8b5d7f83b07121ca5ecd1c63",
+      "bytes": 8811
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4_collision_12.obj": {
+      "sha256": "f02355d0975611e6253b68e8a1f320f1e98d3c563a8fa09246bc413e9b32b26b",
+      "bytes": 17428
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4_collision_13.obj": {
+      "sha256": "a19a32ed64b10e74540f2f9515d4a6b38816f8f5b051a15cd303295d030bd3bd",
+      "bytes": 7096
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4_collision_14.obj": {
+      "sha256": "4002261eb1eded33b73374a973dabbd52759cfc94181a8b10c78356fdc908cc3",
+      "bytes": 26680
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4_collision_15.obj": {
+      "sha256": "8af1945c793881ce62157915460030fdad83671533249cb397b1e015a39fec6a",
+      "bytes": 78146
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4_collision_16.obj": {
+      "sha256": "06709eb633c224a3919c9c095bd3e5e4cb74b14dee23671735d2ebab2b3976ab",
+      "bytes": 27072
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_4/LINK_4_collision_17.obj": {
+      "sha256": "1896b81cf086d6c3cdcb5f2060f8256202e0bd7ab0841ab9761bb537d24320db",
+      "bytes": 27590
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5.obj": {
+      "sha256": "11ad20b180f83bd5325cb41adb9e8d035bbedb242879879593907175f7d25244",
+      "bytes": 219397
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_0.obj": {
+      "sha256": "1471e181aff5f538d0e6318e34df8e2cd36ff0cf173e02499777623759e65885",
+      "bytes": 10809
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_1.obj": {
+      "sha256": "a406684a453df3b8c0860a2492b1f033a080e974125ecf15fb83a45295f8adc8",
+      "bytes": 1915
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_2.obj": {
+      "sha256": "8cdab82e9b660e8e8d70d00bbf7d3797c3a42249981622db5b38bd03d8a4a2f0",
+      "bytes": 4418
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_3.obj": {
+      "sha256": "5d3750fcc7a55ea53f3219ead3ce603cd710e9058e188bbc3766603b2f550cca",
+      "bytes": 4904
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_4.obj": {
+      "sha256": "eb3b1128451944e545fbefe070b0e82a2235ea60414ffda748fb75042e59dfb6",
+      "bytes": 3860
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_5.obj": {
+      "sha256": "c976b309b0bd67af67117336ed0dc057ec070440b9bd92b5312933b6bae9f9e7",
+      "bytes": 8579
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_6.obj": {
+      "sha256": "f3113cc1ada2ed27f82e1fb1f188934edcd691d50756393ab75944852b4d0c27",
+      "bytes": 4630
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_7.obj": {
+      "sha256": "7943bc275be499c81604b717a00878cc9b1858be3e7b6a1c1a2f2186ff1d6fa0",
+      "bytes": 7438
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_8.obj": {
+      "sha256": "dccfa135c3638487ba803a15cf9fff740c6e3d43f741e914490d31446285b388",
+      "bytes": 60789
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_9.obj": {
+      "sha256": "3730c99d9ec1b50dbc3efe82b3b7ca6159f254cabf84bd5e582d749d5a7ea9b0",
+      "bytes": 6528
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_10.obj": {
+      "sha256": "818d1fdfa81e40c5f353949e3bf552e1e4d8885e09d19c76899d77ce40a23dc8",
+      "bytes": 710
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_11.obj": {
+      "sha256": "4aa1c4438719f92432d8dc3f484cf5852125e13f2c9872d73d25c75eca3fda27",
+      "bytes": 5898
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_12.obj": {
+      "sha256": "9df1446bb5abda4f30f65dce282bbf70c75f5c83154704f036ce88b4488d5342",
+      "bytes": 4889
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_13.obj": {
+      "sha256": "3d6bc6be849bde4f7e4f466bbb00ad30ee933697a407d94a33e891b608cb2e80",
+      "bytes": 3864
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_14.obj": {
+      "sha256": "885a4b32e1f2622a0ff9c27be7b9e453fd3109d353fc238f31c4f01c90ac549f",
+      "bytes": 96586
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_15.obj": {
+      "sha256": "fbfbd267096462143976c5758e5b4e25569226bf4ac944fc629ffd174efefedc",
+      "bytes": 38957
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_16.obj": {
+      "sha256": "8ecab38bd3c9aac13ca187388a3c85f651d6094076fcc468f140919ec2568053",
+      "bytes": 12391
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_17.obj": {
+      "sha256": "7d1851fe4dcfe5517c2fe3e4492d77b37446c0e997fee8ecf556613a5d6629c0",
+      "bytes": 4381
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_18.obj": {
+      "sha256": "fff78ea326ed20e2352c051584b7257de933405b334da6cfb8d00b2ccaeb6eb6",
+      "bytes": 3138
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_19.obj": {
+      "sha256": "c9499ad45af59935cc9cf33c64cb5a3d88ce6fd7db9ad32f6fe39cb2985f3b29",
+      "bytes": 816
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_20.obj": {
+      "sha256": "39bf5391645ec80141d0b3fe75311edbc9db0ce14907b2b879017007c0675d81",
+      "bytes": 2981
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_21.obj": {
+      "sha256": "68fbcd356553d550be6affd00832ab299b0a7bcccf04e3b134ab18a2d557a83d",
+      "bytes": 3048
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_22.obj": {
+      "sha256": "d78e1418c4fa19c761b5a55743a041fa222526bce41c28fc14743e9d5ae1ae3c",
+      "bytes": 37637
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_5/LINK_5_collision_23.obj": {
+      "sha256": "8a72ea6787ae19e26b2e1a781dbbd101fe2cacc5fe395be789bf8e69065b3022",
+      "bytes": 813
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_0.obj": {
+      "sha256": "4487d1d25047181718de30708b82116464df5d3d4dc0d9b9eb0cbc0a561561d0",
+      "bytes": 1421
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_1.obj": {
+      "sha256": "e521dbef09285125904af3ccf19907d9402b1af7c29c5ce3b01629516d64b1f1",
+      "bytes": 56711
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_2.obj": {
+      "sha256": "2ad18f1b6a2d8b1719735cd6da2b239ea91fe0ee9f8d266ebcfdc1b7c769e6f4",
+      "bytes": 6739631
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_3.obj": {
+      "sha256": "78038af838b820afd3f5567eb38da943fb2aebdd691d8df7b0b34aafbb431e8a",
+      "bytes": 605868
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_4.obj": {
+      "sha256": "8c532d394d924b906c7abdf85ef27f0a44e23f1b179a117a74829a9babc30d36",
+      "bytes": 873594
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_5.obj": {
+      "sha256": "15c0ad3a85f343981a25893030a0576cf2450f67e5fdfd3b26e5c6bf32e3dcc3",
+      "bytes": 831920
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_0.obj": {
+      "sha256": "a5caf6b6c41127e2dc2a249fd3fb2520e4990c164cef8527f2f8e17f3933628f",
+      "bytes": 4098
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_1.obj": {
+      "sha256": "9439f985f7129df86aacb93a86499cbcdd79401845b2a3502f136131001c55b8",
+      "bytes": 5626
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_2.obj": {
+      "sha256": "23e2bcf970b9e3e7c9a165210b33ffe13e3d6e85d98dfcaed6a3fe937ca38bfa",
+      "bytes": 937
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_3.obj": {
+      "sha256": "f186944e789f8a7c58b2b6ce3cd62c5b3f3e1427de3b9ba8ec380b6296cad917",
+      "bytes": 6691
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_4.obj": {
+      "sha256": "a121762a7ecfaa0a977f42d790ab31699bf5726e8d689a80a49be7b492604022",
+      "bytes": 1530
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_5.obj": {
+      "sha256": "91445affe62d68ab96c9a0fcc0b3b82e2cd165c0171b527be5c79b46f2c50d45",
+      "bytes": 3318
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_6.obj": {
+      "sha256": "f1ce4651fe0d2c4160083e9ca8cd92b2af5097dfae1dc55e6c64ff4480a53312",
+      "bytes": 2943
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_7.obj": {
+      "sha256": "6f52eb5eb5e30a8ee658d15227791dd1db8efc458eda23f39fd50762b411d5ad",
+      "bytes": 3651
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_8.obj": {
+      "sha256": "e651962ec07c5c396b441fe596fe84bb3d3e50c35957683d8a6176e380ad8d7f",
+      "bytes": 1748
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_9.obj": {
+      "sha256": "fdc2bdad1fa1f0394f22d37d953bb48d35b735cc0bec91a60dfbdd8ac3aa35f0",
+      "bytes": 3931
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_10.obj": {
+      "sha256": "b0dcc493f9e2b792341c8923b70318b62a62e17c58bdb05f9708f84179f91646",
+      "bytes": 1380
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_11.obj": {
+      "sha256": "bc06e87c026e1e5b9e89ce10b1fc44d2d15a4d3bec65f2aaa52618420ff92247",
+      "bytes": 3920
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_12.obj": {
+      "sha256": "c3c2d5e556b5e73e26c7e3dd67d324efa7afa5100b86c786286eabe227c57992",
+      "bytes": 2079
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_13.obj": {
+      "sha256": "595325434169416812e4025798ad5ae6d4b1596541b840f16167ea56986b7f9b",
+      "bytes": 3759
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_14.obj": {
+      "sha256": "55a95321e880cfdca379f9e5bfadff17eba6dfb476b66bb81b78bd5077fd2e63",
+      "bytes": 1869
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_15.obj": {
+      "sha256": "d821d22cae50d4a880171daf0e63b3093de2f75624386e3c0604ca0a773beee4",
+      "bytes": 2346
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_16.obj": {
+      "sha256": "4a8d48611a29d57dbb8ed8e3c5859f81a4c4c0ef03568d95831dea8b8d163a93",
+      "bytes": 2578
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_17.obj": {
+      "sha256": "782b4a468df29e25cee1c5454384726b6955296befb0aa3675288e58936cdb58",
+      "bytes": 10336
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_18.obj": {
+      "sha256": "b974ef10f7da8d671bfe2bf2fc9eacc7ade073541babd2431619589e620ceb7c",
+      "bytes": 6437
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_19.obj": {
+      "sha256": "24a5e2837007a897042eed3f80518d3d8ca5be07eb95852ba2df0c37a5868d9d",
+      "bytes": 12822
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_20.obj": {
+      "sha256": "5bdbc153be83ff7e181ca63dcd22c092cee810858d2ba367406ef223ae595ed7",
+      "bytes": 2555
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_21.obj": {
+      "sha256": "b7ced804e5fb9e241a69166e9b65475fea2391f22db65a02d8ca831111b49170",
+      "bytes": 2786
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_22.obj": {
+      "sha256": "b428e048d9ae6dd76c1fd6903233e0940bea85beeb0989cc411998559fe79b53",
+      "bytes": 2284
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_23.obj": {
+      "sha256": "9b0ddee1b6c87e7a2a6e0b399e8f1427c820a2078b972748d72eb40f9f7b658d",
+      "bytes": 1412
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_24.obj": {
+      "sha256": "200253eec22bd48adf54eb5ba7729501e6969d5095ec291678e7d09ada9530bb",
+      "bytes": 1640
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_25.obj": {
+      "sha256": "5dd33591046cec845b26d01d955f9bdde9504a48bd5d682452289cfda0792046",
+      "bytes": 2463
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_26.obj": {
+      "sha256": "9027e6dfb5210ee259af1905b286704e007b76d42652fbaecd96a9d011c4e2c9",
+      "bytes": 1856
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_27.obj": {
+      "sha256": "4d1c0c08e64a4668f8ced46b5774a2d6a0d79a409db24b1e66334c8c1a663543",
+      "bytes": 5961
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_28.obj": {
+      "sha256": "522f9df15f68d437b4a29862a999df3b8dfb4d93f36a4750e86446758a903575",
+      "bytes": 2415
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_29.obj": {
+      "sha256": "5ed00c9c34027c8fa3bb27b2ac9951a080c149789500dd40590f7f4689229963",
+      "bytes": 1884
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_30.obj": {
+      "sha256": "447c40f7ed956e61ad09d76e3115b3e43deaaa67b197e9a3d289abfa1e46e885",
+      "bytes": 1881
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_31.obj": {
+      "sha256": "0f21c0957deefd15a7ee98b7a4d36b9a01066fe7fe0d3b4479214a5c8b01d48e",
+      "bytes": 7114
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_32.obj": {
+      "sha256": "885c0a8620a224a507f11272045665d94ef0ba858385f3c344e49b0db5d377c2",
+      "bytes": 1795
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_33.obj": {
+      "sha256": "448ba119ec948337081d4a9dce0a85e5e4ed66c28e2f43984742b7c5909f09ce",
+      "bytes": 2702
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_34.obj": {
+      "sha256": "006185061674fb4081692d88c3f7a049e5283587c97fa8ad61d7ddfb6ded52f0",
+      "bytes": 3000
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_35.obj": {
+      "sha256": "1bdbbf3e2d2f2612ebc4f7e92b8f0a7fb6096e372e6734ee7be9d9bbee28c0a6",
+      "bytes": 2243
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_36.obj": {
+      "sha256": "3f9b8befd90e71d7e8c8ae176c40314c8e4bdb8b66fd690ae491fa0b2b6a311c",
+      "bytes": 3678
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_37.obj": {
+      "sha256": "44363006a0daa7c8c7e4bed128a9191732a7ace314b528531dd1ea8f8e716201",
+      "bytes": 2019
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_38.obj": {
+      "sha256": "7114eb3332ff0d3fb83e8716566c4a2fb51516db0c0fce678d07c09ea6fd55eb",
+      "bytes": 3119
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_39.obj": {
+      "sha256": "b1617aeaaf8c58610f927273d5d5325eafd758ef79488fd6a666c6a9198a5496",
+      "bytes": 889
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_40.obj": {
+      "sha256": "4cac8105fd171284b5d724c2d6a927dd702809be4cc0617b81dc9f2867dab202",
+      "bytes": 1802
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_41.obj": {
+      "sha256": "f78f998fe6ca34ad123dff612cd009f1bff3d1efe140902086651ffe3d5b4771",
+      "bytes": 5521
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_42.obj": {
+      "sha256": "a500be6f9d0a92d38cba0ca4b2b921952229fcdb86691dfe13f21c4cd3dc6836",
+      "bytes": 1797
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_43.obj": {
+      "sha256": "a56649a0b2f5f1ba9be8635183d0ff39b9b4e9c2b8e95c0fcda3e9dea51c3797",
+      "bytes": 1824
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_44.obj": {
+      "sha256": "db7b0f992632a8539898763d0719ff78b18be682d3e9f3b9c7becfc4af952805",
+      "bytes": 2434
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_45.obj": {
+      "sha256": "97e9944e954a198c913fbb8f68112fdf96c8c26eee1864dc437460e9a8a7b079",
+      "bytes": 1419
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_46.obj": {
+      "sha256": "22a16ec326afb28cd3780704ba98e0d28f98cc455eb1a3b7ebbd268e75ab9a34",
+      "bytes": 3577
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_47.obj": {
+      "sha256": "c7651ae3330450efc974eb90047d4e5b6b948bd96c5e950895db2067dbb79761",
+      "bytes": 4117
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_48.obj": {
+      "sha256": "9993762aa3ff41171b6f0f5ab46fd3b3f9dd7100b6655c6c38c7bdb503512a6b",
+      "bytes": 13135
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_49.obj": {
+      "sha256": "52ec26765499af8d2a95665eb2b4d4f79acb3f8ae7282e66dbadf075c2c67ae0",
+      "bytes": 2249
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_50.obj": {
+      "sha256": "2e011713fe60f7fc6a092825e101c0ab6244bbc569271dcd6f154b9717ee42a5",
+      "bytes": 833
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_51.obj": {
+      "sha256": "cbd9263772ba5f5b6ec95794bcb0b75da6a83ca30ae39609e95cd445117de3f9",
+      "bytes": 2650
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_52.obj": {
+      "sha256": "0e41e0fcde422387f19bec92444b038b876c39964f46e9db3c32f511657d4866",
+      "bytes": 2920
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_53.obj": {
+      "sha256": "52888da90a9fec2e4d77460664fdea0927ae0a2f3464f0a5ec0dc442cbf35be3",
+      "bytes": 2121
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_54.obj": {
+      "sha256": "ae82aa928f386d96807f37653c0bcd10f11a45ff7591a131bdc8505ac93fb2fd",
+      "bytes": 2624
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_55.obj": {
+      "sha256": "6fa62ffc0bb8be3b6b8962ac068d8ef01df3c6ecdbbda9fdaf4ee9229073cfb8",
+      "bytes": 7441
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_56.obj": {
+      "sha256": "ebbeaab4b476309f1824915d09b77990f3423c2eb8588679eb962c342d251d45",
+      "bytes": 5190
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_57.obj": {
+      "sha256": "656f88a2a73ea95e98035cf917041186de9bf407f88d15938d2a9bfa3c698140",
+      "bytes": 2795
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_58.obj": {
+      "sha256": "adec4b45288e76cd29744a9f21dbc3760f574e48e8e3b55a2e9d04901279283d",
+      "bytes": 3295
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_59.obj": {
+      "sha256": "c6757fbf5061b5b7b6f33862e75551289ebee8571b1576b4a9cd1385a15e55e9",
+      "bytes": 23066
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_60.obj": {
+      "sha256": "b9d3abe26b75b7915fb61195ee1619c12cf7302ddbdeb7b5cb4878c138737dce",
+      "bytes": 1847
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_61.obj": {
+      "sha256": "7eb453030636b896f9d667aa229bbfa9de0544c9aac1aaf4bf3e3460d29c6dcd",
+      "bytes": 2536
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_62.obj": {
+      "sha256": "c2a6ae666dca382c0e92869d555255c7d1d9ff855858942cc8a1ef7506fa10dd",
+      "bytes": 1343
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_63.obj": {
+      "sha256": "3f07c30eab449f69939f682c67d4185d487be1bb340b943876a73143e812dda2",
+      "bytes": 1386
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_64.obj": {
+      "sha256": "cc36eaf25910357eb2d2f0912dbb8f850ed4857fcbb763f1da6dd405d96d3020",
+      "bytes": 1446
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_65.obj": {
+      "sha256": "83cef0504a08289e37e74ffd7c1bdd4d4e64e4b671ba79978f4cd7fba4cebf09",
+      "bytes": 705
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_66.obj": {
+      "sha256": "4cd35383013c7498484be9607b5812e3a4edb50c003cb250431e3fa3f2bca355",
+      "bytes": 3172
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_67.obj": {
+      "sha256": "3c1c3407a502cb8a9c8b73c73bf46491fd6a58676f73691605781e55b52884e1",
+      "bytes": 1485
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_68.obj": {
+      "sha256": "e20dd363b4b4db63c7d85a6881759d04993094c67fa462f014e2c02dc9c4bbed",
+      "bytes": 3903
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_69.obj": {
+      "sha256": "2acb3088b0623b2ef091382d46dbd0a6d2e176399b02db894082cbf78cf7f919",
+      "bytes": 4741
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_70.obj": {
+      "sha256": "7c05bdd93fea2d6060b45cc5d135931f1c6d1a681b3b74fb340ef1226674b738",
+      "bytes": 2770
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_71.obj": {
+      "sha256": "89f87d480e15eb8a86fb7a33c63a261a13c89df14302b6baa897de898b02c22d",
+      "bytes": 2271
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_72.obj": {
+      "sha256": "8a6e01757372d7eadd69e6b3a9c7bafac6b45688bae088e1802814892e5e7d1e",
+      "bytes": 5811
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_73.obj": {
+      "sha256": "78d111f759ec702dfea10df301319f2d09a5d3a7957241945f3b3b7cdc150be0",
+      "bytes": 8740
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_74.obj": {
+      "sha256": "b2bb66e693285230cf50eaa187ea7d69ea82a57574856f6910d487753dac46f9",
+      "bytes": 2725
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_75.obj": {
+      "sha256": "1305e5e2609cf4ac59334b883e7151456d554ffba59f3b32d05ee219110e49d9",
+      "bytes": 18048
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_76.obj": {
+      "sha256": "4d755d450d9f83b00f66649ada066f2df3d483c1b1543dd5d74bd53e33214bcd",
+      "bytes": 1009
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_77.obj": {
+      "sha256": "194c1b8681304e4cde7b0d3506f98ea5052ba22ff24c0980da6de94402dbc336",
+      "bytes": 5884
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_78.obj": {
+      "sha256": "ed37e56998a73ddd57fd2dd4845a0d599294dd9c12918811c1e24f5547d3e975",
+      "bytes": 1808
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_79.obj": {
+      "sha256": "a799f0d37b213d2496947baee63c554bff990439e05f404a5659de698533aec0",
+      "bytes": 1022
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_80.obj": {
+      "sha256": "869c88396341206453a2439a8be578cd1d8773d63c651aee3a396f97333eeeb6",
+      "bytes": 2121
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_81.obj": {
+      "sha256": "a433d1dbde7ba5948c451d9c1567fabc6e7937ef42710a0b9583f2552cdc0848",
+      "bytes": 1706
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_82.obj": {
+      "sha256": "1bc3c141719b2af764304b9b96eaaebdb268d5d9a3c2a47da5fd90dbe0aa248e",
+      "bytes": 3051
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_83.obj": {
+      "sha256": "8d81946bdace168639e722b855ab1f009a2c712fd387e7f464be7a5dec8c1d56",
+      "bytes": 4181
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_84.obj": {
+      "sha256": "c0bd3bb42cd569478280cfc593ad7c835c419f416d6b5bd7f1c6d9401bcd9044",
+      "bytes": 1023
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_85.obj": {
+      "sha256": "3fb06566a268df2bccf8b28112c3537cdbbc3442e876b3e9d02c7907c489717a",
+      "bytes": 3632
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_86.obj": {
+      "sha256": "2bf5faa33e79e3d52ae236807ad4625b346b5ca0a464728ea9aa3aa8444f719a",
+      "bytes": 6591
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_87.obj": {
+      "sha256": "6910c9517b3ae97c8c1ce61699c3a9bcf61df6d225444afe46f3cd81a6c64216",
+      "bytes": 2272
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_88.obj": {
+      "sha256": "32cc045ad5707b948551a4d55ffb5fc9e5ee4f26b87c36480be503b57d87466d",
+      "bytes": 3502
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_89.obj": {
+      "sha256": "5a15d66dcb23eec8a2f98f3ed77e8887e3148e2d63f8ece19d66480483ceb2db",
+      "bytes": 2018
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_90.obj": {
+      "sha256": "3c27b17c02afb781696bee29cde7bd485044a440f414fbccb5881520e5125217",
+      "bytes": 2577
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_91.obj": {
+      "sha256": "650168a6ed7e3282efb53ad027625772e7bb160ab8174c0dfcafffaf81d23e73",
+      "bytes": 4410
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_92.obj": {
+      "sha256": "5e0beb023bdd1fdbe29f43213e4cb37b98e83416612768c81b82e181cddf0e27",
+      "bytes": 6329
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_93.obj": {
+      "sha256": "1bae37c60ea0e3e7d1e5437fe62213e42e9e001c6d1b12430ddaa7e0f62d65f8",
+      "bytes": 1283
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_94.obj": {
+      "sha256": "572ae357e7833c4115ade7180b825ab45a955183ce2f8ef8f7bf4f3c14e10b10",
+      "bytes": 4788
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_95.obj": {
+      "sha256": "3359948529dedbde3578f34964114dbbef6168c16344cd071d86253d65985a85",
+      "bytes": 2438
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_96.obj": {
+      "sha256": "c55e5519549a93fd35a5c2129dc074105969ecb872c75c6b254e56dc74c6441a",
+      "bytes": 2534
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_97.obj": {
+      "sha256": "003c80be830c0f20e1ad6e893b590a1af0aae022b89cf6df4c4c75e91c983aa5",
+      "bytes": 4463
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_98.obj": {
+      "sha256": "f0803f166742f763791ad1174c9ede85e23554a55468fe4280f2a4ee1e4d3213",
+      "bytes": 1246
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_99.obj": {
+      "sha256": "f2a6b3aba513ec3bb0734db42f9de22c6349117b1d07ed7c100d94e2e77200bd",
+      "bytes": 3240
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_100.obj": {
+      "sha256": "b9d6543ab6fae5114581eb4a9e81cd39e66be47a2d196c2587b7c325cdf69817",
+      "bytes": 1527
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_101.obj": {
+      "sha256": "d085497e60af9f78dc6f338d71a96bad55c96e0be6be91b5985330de383e390e",
+      "bytes": 3895
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_102.obj": {
+      "sha256": "63bad112dc5afcdc8ab65b31c53f47739dfaa5671566b5889a5138194b6a84fa",
+      "bytes": 3400
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_103.obj": {
+      "sha256": "04bad49775cb818a6606485582531e408cac4eb492d984c3ca88f6af081e0e8c",
+      "bytes": 3941
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_104.obj": {
+      "sha256": "471263381e4e9df1121b631fc4eda9d00f452e6b099ca0e49accbb30d6047952",
+      "bytes": 2290
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_105.obj": {
+      "sha256": "29ab4d1fa682874b58723892e8a911c3d691dc62c33229a9a4bedf7e56514051",
+      "bytes": 1178
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_106.obj": {
+      "sha256": "8817b185ccdcbf6967d1dad527ce999235d06b0ab2f928b4bf94fd52b4f5c737",
+      "bytes": 2285
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_107.obj": {
+      "sha256": "a1c04457de17172085ac5ddfcf25f1cb7d6531c5d2cfee229e89aae142c97c96",
+      "bytes": 3768
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_108.obj": {
+      "sha256": "5244605bf649e33606305c3575034b6a0f6ca8aa40cfbb68900bbb236c1391c4",
+      "bytes": 940
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_109.obj": {
+      "sha256": "b279c1f9469076aceba9f995691401c8ceea1056ed07dff72e0f9ebac312ac30",
+      "bytes": 3572
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_110.obj": {
+      "sha256": "a2f1fcc0884c6a14fd4185565ca166d28a8005d62a23a31353c849dcd3c383d8",
+      "bytes": 5412
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_111.obj": {
+      "sha256": "634113f8651c2c0025e77119c345e0dddbecd00aa18b583ece7668040f1c3597",
+      "bytes": 2412
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_112.obj": {
+      "sha256": "d04a868c2858f4f7fcebdaafa3058d3ce302ccc43642bb37952d09649f22dc51",
+      "bytes": 7503
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_113.obj": {
+      "sha256": "ee7e4da16c5cc74850a09f725e86d6cff569db5e835fb72fa62c6bf0240b9793",
+      "bytes": 1139
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_114.obj": {
+      "sha256": "48240008bab2cc84b5d8f1a501a7a799caf58e15319f87a15009be8c31c7ea0a",
+      "bytes": 20428
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_115.obj": {
+      "sha256": "94926cfe714fcdf31b7c24ef30a5d882b2ef5cd50044e001b0955ce626b5f3b3",
+      "bytes": 774
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_116.obj": {
+      "sha256": "d3d007c7afe8b840a7c6ced7e1f90a301fe6cbb298a418a0007ba7f22b78b0b5",
+      "bytes": 3090
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_117.obj": {
+      "sha256": "81188535ae040daddb7891eb9b77ca5c423e95245800eef499d45283f831b076",
+      "bytes": 1507
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_118.obj": {
+      "sha256": "1e129d446d02c27bf3c120edc272d27f4a765b48caf988791ea2b95b9d83d278",
+      "bytes": 3804
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_119.obj": {
+      "sha256": "80945531a8d3e36b2cde519e9765607e483ee5cc1ff71e057292abf5d0962529",
+      "bytes": 1470
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_120.obj": {
+      "sha256": "9d44723bca7fa61ac009f2b346a418394f6e0dd9ec2151de9cb13e20373d25d7",
+      "bytes": 845
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_121.obj": {
+      "sha256": "1e80f4b4439e4fa9771111faafffdc601f59ef4c7a20203389a6f421324ed1c6",
+      "bytes": 5307
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_122.obj": {
+      "sha256": "1ee2d7ba80b1c57a1ff9cb6bd6177ec3946abd1fa169083733c497e1db47e626",
+      "bytes": 3004
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_123.obj": {
+      "sha256": "c5138a7539fda9e14b8ac177c6167609016f9bd7290594a6a911e440b291e7eb",
+      "bytes": 2591
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_124.obj": {
+      "sha256": "2af588dc39466b0c50b4df82077e6575dbb1ff0be1de5b9a5d8523ddfbf7cd82",
+      "bytes": 2278
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_125.obj": {
+      "sha256": "dce980a6c2a4cd7bbbc36d4e57dfb100bb5c7ba70cd080c62b37de3d0e1fdd3f",
+      "bytes": 2988
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_126.obj": {
+      "sha256": "a54bb6b81593d6351e9464cbc5d2df000d57410a57c169992f202ad3fd9c77cc",
+      "bytes": 7220
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_127.obj": {
+      "sha256": "93da18396128879f93e6008f8719634dd421bbada18536e33898570a85a8114d",
+      "bytes": 4370
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_128.obj": {
+      "sha256": "93d96318a2662cd3429e99182fad92638a9b4910ffe2b2de0247cfc44ac2b97d",
+      "bytes": 4104
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_129.obj": {
+      "sha256": "094198c8d24d2e650df14a4f2f568f24021819cb51ef6c5670eba1127ad277b0",
+      "bytes": 5315
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_130.obj": {
+      "sha256": "ab4b4ee99c9912c0abf99f6ce34d7796b9a974d32e91b77379cc880c94b3fb8a",
+      "bytes": 2485
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_131.obj": {
+      "sha256": "841e014fde3c385343ea99b8a1696e79ce4a1645f33d13f7d7d2f805269c41be",
+      "bytes": 1213
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_132.obj": {
+      "sha256": "55104bfa9939b4b3fc23747f7490dd74b173e2709d58a59fbaf4c51dbd47e1bb",
+      "bytes": 2115
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_133.obj": {
+      "sha256": "33239f1ce8ad3058655a2a5725e771d4a6aa1ddaf6a6e84954ea6924b42f5aa2",
+      "bytes": 1443
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_134.obj": {
+      "sha256": "c27c946bd00fb9cd02bb17f8af20d0bc1c6b5e1f2f69a3fb216a6f7a69819ac3",
+      "bytes": 429
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_135.obj": {
+      "sha256": "b5345e5aa231cf7a843f4035a2080358a6e0db57b1fddab0a95faf12a786a55f",
+      "bytes": 1217
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_136.obj": {
+      "sha256": "a603cf803fa41fc5d1ca92cc778a49d35d2538b725c83c59f89995188cc7ddd1",
+      "bytes": 2530
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_137.obj": {
+      "sha256": "595bd5a24db276c38e9719708e432fadf818142d5d3259d4e29327d4708084ef",
+      "bytes": 3759
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_138.obj": {
+      "sha256": "c81690c046ccf59bf226de05f275f7ad8b824cfb5d6719cfad7f3a03b77d1e60",
+      "bytes": 4343
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_139.obj": {
+      "sha256": "553088391244d57ff2370f52208e1a72a49c59a4afad0d349d55a62595e14b49",
+      "bytes": 596
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_140.obj": {
+      "sha256": "d7da0a97e29de730db054876a2f202bff443005765ec89eb3640a8f44039741d",
+      "bytes": 2992
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_141.obj": {
+      "sha256": "328a055ab580c946d6d0dc6cb021b0b6a8e64897fd37bbe3f4a6050dce661ef3",
+      "bytes": 1077
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_142.obj": {
+      "sha256": "76dd473585ef49cf153ed5bd035841226d654ff988175b7e1abe9f80993c2007",
+      "bytes": 4521
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_143.obj": {
+      "sha256": "6225ba9619cc31e94b19b3b0c80ca57dad4cbda2d473e23220935f7b32d6e71e",
+      "bytes": 536
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_144.obj": {
+      "sha256": "05ada3d3f8640c597a3b4e33a6d1fbd8824c25a7e91a990a30b926b5fa6f9abf",
+      "bytes": 2892
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_145.obj": {
+      "sha256": "d07c5491078d598971f3e9f4976792cb3a37aa45745cd4671a9f4f0217e24679",
+      "bytes": 1933
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_146.obj": {
+      "sha256": "ab3c28e6fc0f99ed0d7edaed537a2d99a96cad9c49148eba65489ab18949645f",
+      "bytes": 2161
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_147.obj": {
+      "sha256": "137897fb4b648ef8df0bc4e2e2a238dd482d100fc65799b22013923778be1ace",
+      "bytes": 1703
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_148.obj": {
+      "sha256": "d76bee09634d830297c586b6fcaa08b9179f9c123b46fa54530678e7cf404038",
+      "bytes": 1433
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_149.obj": {
+      "sha256": "5b47d9cf87ac95f76699f39207a17110cd7abcc6a87fec2865d55d2d932cdeb8",
+      "bytes": 2448
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_150.obj": {
+      "sha256": "8f5c7bf20bb26776423e4fe36e38eb9b287ccc28e4efb7dbd86b5da676032c6d",
+      "bytes": 1672
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_151.obj": {
+      "sha256": "e308bfd9c472b65e547e855ade4dc7010b2f9b302a5503c0ed92c45786d003fb",
+      "bytes": 597
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_152.obj": {
+      "sha256": "618662cb99b27725b7c47041bb9ec2f09944b959e251dd941d5a5ddfa7242313",
+      "bytes": 5482
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_153.obj": {
+      "sha256": "8370b43ee53471a713ab00e37c8a8c76d862bd083ae877d487a57e29ebfc5f99",
+      "bytes": 2063
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_154.obj": {
+      "sha256": "604576e89784e76c1a7b68ff657c8d973f4544db69d1b4621a3f7204771ea368",
+      "bytes": 7088
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_155.obj": {
+      "sha256": "219a9fe8870b622d63342e24248159100ce3c3a9179abe467caba252fde216c9",
+      "bytes": 1271
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_156.obj": {
+      "sha256": "51ebd4706f5e4eab975c0f824e5421cffd584a8de73ac33e0cff9d1659be44f3",
+      "bytes": 1809
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_157.obj": {
+      "sha256": "fa98933ea6c51c50231e462fd8d4561449949447cfccb698bd87a2f478ad9b29",
+      "bytes": 3150
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_158.obj": {
+      "sha256": "eee6736bf8b59d68c5ac79f94923e0c5e7efeb662dedd822bbf56f1133fb6b1f",
+      "bytes": 780
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_159.obj": {
+      "sha256": "05565327449bd22232cf2f6d41e6a3a733b4b6786a8c3f06820f1fd6d8779b46",
+      "bytes": 1903
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_160.obj": {
+      "sha256": "18b60889011bf85c5507749047ec9e9814899e87fab08a676a7f1350d47c97b3",
+      "bytes": 2761
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_161.obj": {
+      "sha256": "c39207d9f09aa831a0806643c4c60979e3119d6aefeb58defccfc4622c9ecd57",
+      "bytes": 2767
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_162.obj": {
+      "sha256": "ece8ff0993bcadb72e3066f05db729ac17b5b8b795281f336ed921699e740f52",
+      "bytes": 2998
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_163.obj": {
+      "sha256": "2722d6379ab9e3b91a4fcf9b518a5ade82bf6e7c77b18fdc5fb3577837a4a693",
+      "bytes": 2596
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_164.obj": {
+      "sha256": "dd0b6f7c892c39424e9946533f7cb506fcf8108fffea5257145cfcae8447ff97",
+      "bytes": 2631
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_165.obj": {
+      "sha256": "d3a646084ee484b9116655280ea7af0b0bcbdae46e87ab1daed9f551bfb89888",
+      "bytes": 2943
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_166.obj": {
+      "sha256": "9648b067ac22333dec02fd3e4f88cece37c4342adb2d98f7cf7026e1a60aedd6",
+      "bytes": 2429
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_167.obj": {
+      "sha256": "c2b6e96aa9970539b54c986b1cf4d2784719a313ffcced1c1b9b1b950784b752",
+      "bytes": 881
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_168.obj": {
+      "sha256": "380d8a0f8507d43aa912172eb06e92cb575e6ab7151c6f9cd1fd566237471e09",
+      "bytes": 930
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_169.obj": {
+      "sha256": "fa8ba6558d5683a4dba4d36220e6696082982ea8d08449743e8fee39cb30d9e6",
+      "bytes": 2337
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_170.obj": {
+      "sha256": "28e13eb937c60f0fb974567389e67b2eb465fb86d9fab948ff77bd3d9102d230",
+      "bytes": 1706
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_171.obj": {
+      "sha256": "5bddf1b78bf174c053b99502debc424076c21af8f2de509351a8aa3e2406a369",
+      "bytes": 1347
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_172.obj": {
+      "sha256": "bea17c0f060c4f0079b09670bcd094bf9735745e28525533834c33e3f5b0a729",
+      "bytes": 6133
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_173.obj": {
+      "sha256": "d01cff90e16bcbd407080cddb5c7c79fb8f698ae2ad30bd81e1b08d7b9044a2c",
+      "bytes": 1056
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_174.obj": {
+      "sha256": "65d6691847436699eaedb49edf1b846178502660e75246ff67ee82d5867e0949",
+      "bytes": 655
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_175.obj": {
+      "sha256": "d60da53b1b2c2de91c7b028b8930a1932291a0b7e82ffde202c6148b4c3f0d77",
+      "bytes": 943
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_176.obj": {
+      "sha256": "a42e7b77611d7c695d39f0b01699a3f311acf7009a9ae2014a2225dc86666cba",
+      "bytes": 3582
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_177.obj": {
+      "sha256": "7a9194251c61bcccbc382fa941c9230c438f77f6c47b0737c8dd2b740964ca0b",
+      "bytes": 4746
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_178.obj": {
+      "sha256": "80d2115cceb5143b39f517f0bfe7b47f8004b278b5a00a735c3a4714bd5b6677",
+      "bytes": 3566
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_179.obj": {
+      "sha256": "459e8bf5b1fb4b59354e3f52e48a4fa0b5596a50146de8fe6b4b1a71dc701cab",
+      "bytes": 3547
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_180.obj": {
+      "sha256": "9563452833e652d30b748307695a1f2d4b4b2c2e321883d133c82286b38b8fe1",
+      "bytes": 2103
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_181.obj": {
+      "sha256": "2f8f77d9af23ea5167a86c42bd3c1a0e1c958d60fe21f22b3c1128531712161a",
+      "bytes": 25128
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_182.obj": {
+      "sha256": "ccf76caa7ac38ce359e10a2f5394f6a89a3f250e097d591b0b5b14cca3f523ee",
+      "bytes": 4190
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_183.obj": {
+      "sha256": "8006e3462058d7b7ce66f0bec6ddf435e1a94877b3810243d75acf7357d47343",
+      "bytes": 1775
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_184.obj": {
+      "sha256": "2bbdf7aac408a96d1a15d4d2205fcee2f7f2bf027bcda952705563bdc35dbdf7",
+      "bytes": 1225
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_185.obj": {
+      "sha256": "0e3ed5991c9d8d61c974cb572f4c7bfd35ffc811444ec89a28f52ed90d44e50a",
+      "bytes": 901
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_186.obj": {
+      "sha256": "073b5df6632af0a4379f32365238bc0f708543c4158f547834a827a6ff3ac336",
+      "bytes": 1292
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_187.obj": {
+      "sha256": "3ced647ad829d17f3a8cdee7c4489eaf62262fea64a9fa71a48aed40f01b1092",
+      "bytes": 5430
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_188.obj": {
+      "sha256": "42fa6e49072c1824600f7378e6fb3a0cefb15b7b38e55e0b5088df1f6f395ee0",
+      "bytes": 8355
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_189.obj": {
+      "sha256": "85da2ac647e46517d85aacb61492573246fadc00b4a6ed09d8305fd8ba936372",
+      "bytes": 2218
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_190.obj": {
+      "sha256": "4cf54d2892eedbfd51b08e5a517bdedcc9b72874bbc5fa034ce0073899dbcc5c",
+      "bytes": 1757
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_191.obj": {
+      "sha256": "4636b45f1d1169504fb287e8d42e7eb6368df17edb6d47ad610df9d5b0578d5b",
+      "bytes": 1239
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_192.obj": {
+      "sha256": "3e88bddef3a41f47089a986382a0d0278f8c67128fa04e003c433bff5169c3fe",
+      "bytes": 1445
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_193.obj": {
+      "sha256": "6b04d25e012d1be1887eb39f1fa8a1acfff7c0ba80b3adbf29fc8ebfd9a4d64b",
+      "bytes": 773
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_194.obj": {
+      "sha256": "d965b316d61a550e60caa4266aa08e7b43ccec2ec7b480dd40b64276801b61dc",
+      "bytes": 3955
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_195.obj": {
+      "sha256": "2ffbe4606911abe5d76078802847c7bfb0e8ca80e803ea09d7d364aa167128ad",
+      "bytes": 2802
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_196.obj": {
+      "sha256": "0e19e9d2f6eb3c1944ce0f287668ae36d4f4f6aee116b2dd8cc5e2c2e11165c0",
+      "bytes": 1308
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_197.obj": {
+      "sha256": "d0568b41ca51053382557db6aa1e9d73b5d2dac4e08e42c3456a8ed2afeda577",
+      "bytes": 1527
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_198.obj": {
+      "sha256": "ec09d9b208c61d4514599567ffbf172109377d7d2cb997b599b0bb7deafe2c1f",
+      "bytes": 4605
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_199.obj": {
+      "sha256": "ef40ada7321539b99cadbb5108ac6a62c819cae457aebf202eed4daf19361914",
+      "bytes": 1352
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_200.obj": {
+      "sha256": "858b2e3a9153c62967d79e2ca7fd38ef26e02dabb8c1c4cce3d363c001d18374",
+      "bytes": 2189
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_201.obj": {
+      "sha256": "e6555d3d494c11450484718174ae3b4628bfb7fe0405dc7edd82687851da941e",
+      "bytes": 1063
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_202.obj": {
+      "sha256": "d912c17e3a19b23a3a779fefcf8bf71dc5a06077eb593cc38dc4cb26b436135c",
+      "bytes": 2721
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_203.obj": {
+      "sha256": "c29772cc5ebaec6afb3408f22593570176ec6ffcd158cdef04173435eedf517a",
+      "bytes": 645
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_204.obj": {
+      "sha256": "0dc320429941d0cd2af1409d373a390fb0faf7b0530d4be90eba6d792c3981af",
+      "bytes": 1061
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_205.obj": {
+      "sha256": "49c69babc03c0c9a4b362a9ae58d5582cf70da851990a1fbcb8f62dda2253217",
+      "bytes": 2145
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_206.obj": {
+      "sha256": "7448ce2e1ea78237716152ea25e49ac42c9b12a738400d2ac8e7a042e25a7a6f",
+      "bytes": 1954
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_207.obj": {
+      "sha256": "68db5b4a794d6ec7712352b6dafa6e669d1b6aef3129bd8e4eaa22f04f311f20",
+      "bytes": 3413
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_208.obj": {
+      "sha256": "335b15a2807db587a92d3616bdae5e304647fc5219c8cc1908bd2a8b33fa3375",
+      "bytes": 5283
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_209.obj": {
+      "sha256": "9d66b77945f0170b652512b92ec17feb216853fec18161d26f4cf8fa9ec25b57",
+      "bytes": 2637
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_210.obj": {
+      "sha256": "04ec90d9ddc16c90ec1afdc96a15406f42c45130b4e625cadadcfcc87de24299",
+      "bytes": 4100
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_211.obj": {
+      "sha256": "9d7e966e140e9496d63ebf779fdb29bd2c4b2bac91e8bac552a7a97d530cf8e6",
+      "bytes": 3001
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_212.obj": {
+      "sha256": "0bb11b7a55001753ff376ced6d7c15a5c86e98dee435f6220dbd6a8903824f2d",
+      "bytes": 1507
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_213.obj": {
+      "sha256": "95395c7846ff2f47fc199cf61eb9b26bb802946672cf04e8f140e29fd49e8b3d",
+      "bytes": 1079
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_214.obj": {
+      "sha256": "68ec5405cfc351992d0c1210b86248e8a1c0b2008ec072cd5671c06c8ea25189",
+      "bytes": 1841
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_215.obj": {
+      "sha256": "44b35301078f16734bb073bd776428697d588b0ad36cd43a61f518b93381915e",
+      "bytes": 6005
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_216.obj": {
+      "sha256": "b788bd169005a35414b377bbf318fe63e3d9def3dea9653b355ffa7e4fd363b7",
+      "bytes": 4012
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_217.obj": {
+      "sha256": "6d4cb44759b55227654d33563b941b5d73fef0e5d89e55aff0c60975b5b3a186",
+      "bytes": 1328
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_218.obj": {
+      "sha256": "502fb768e153ebe548338c3514e85f1fdd93e87015d64f11706b20d38f27037c",
+      "bytes": 1703
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_219.obj": {
+      "sha256": "4ad15752652b08ba8c6103939f7606f819d244088fe827f8d1db93aebe8afc86",
+      "bytes": 6707
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_6/LINK_6_collision_220.obj": {
+      "sha256": "495ae09433514ec95162a3aca815d90cfde62bb3b4e2e9846a3b5d01bbd3f77f",
+      "bytes": 3655
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7.obj": {
+      "sha256": "2a547c76912a754ae64b54ead9c2d04d00a02649532573c00d3645a3c9c16914",
+      "bytes": 287348
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_0.obj": {
+      "sha256": "b201e4693ce7147fc66b40ffbe61d6e5ef2bb40cd917386a1454de7988daf4bd",
+      "bytes": 53753
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_1.obj": {
+      "sha256": "cc014ed90e007230c6f1f25d2f37acf2433c91c64286ba321e6f309ddfa13c47",
+      "bytes": 73465
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_2.obj": {
+      "sha256": "f8f0be23f15d386543e9463ec0615544fd1c5e65c51f5e620d693f0261759878",
+      "bytes": 100188
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_3.obj": {
+      "sha256": "40558abca5f0f2f6879707a2c2823cc421f00d527ce346829e65d7eca814705c",
+      "bytes": 3961
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_4.obj": {
+      "sha256": "dd4cbb52d5d7a66773fc245890e4ee2f8db630bd7f36b5cf2199267333327031",
+      "bytes": 5398
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_5.obj": {
+      "sha256": "7807e766efc9a94b464e642f050b537e0a2c9867f3ee2439b91167fe8f6dc290",
+      "bytes": 5942
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_6.obj": {
+      "sha256": "d2912170c99b259632e364a09028eaed888638f96cc902f5f45258544a23441f",
+      "bytes": 4976
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_7.obj": {
+      "sha256": "2454292906463e5ab7aaea581607a29d541e1bd153bd4c5fd27382504e8debde",
+      "bytes": 4643
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_8.obj": {
+      "sha256": "63ae77099cf87ff22ecf321fc22ddc091ff8aa43935ac8dd9fccafb1416488c4",
+      "bytes": 4622
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_9.obj": {
+      "sha256": "bb2bfca3e2c111eb827af65408dc85f471f35012f5abebe4399f83d681c815ce",
+      "bytes": 9818
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_10.obj": {
+      "sha256": "ce589b0edc639c8f54a44c720c2ac9227e666274938f1bba3f241e07ff7c6628",
+      "bytes": 7719
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_11.obj": {
+      "sha256": "e3aa8534b40f944ac9de91acf6124911656beb96c1fe52e66a6a7e72bef91ee3",
+      "bytes": 30473
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_12.obj": {
+      "sha256": "1bf718c63c5aa109bdeaadd21d849ba15c63337c52de63a0fae2fffec3aebf50",
+      "bytes": 3842
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_13.obj": {
+      "sha256": "5b29ac8000df7e15d2e33ddc0f26a2a8ecf46d8f2cfdcbfc94a914b14958cc07",
+      "bytes": 3191
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_14.obj": {
+      "sha256": "6824e9badd12c71a90316ef59c01c694d49de935ff5bd80e832dc5e2077d2509",
+      "bytes": 5751
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_15.obj": {
+      "sha256": "85436a5250b65d761f1292c82012806f2c2c1addc3840fc1971f10159e15649e",
+      "bytes": 10046
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_16.obj": {
+      "sha256": "f2505467ea8a3128219ce452bec088d742d44c5fe74e8850113ff68245782c44",
+      "bytes": 7628
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_17.obj": {
+      "sha256": "975f9d1355370c688148db550c141aae8c495def2ce7e52c6c5bca60219ae03d",
+      "bytes": 1554
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_18.obj": {
+      "sha256": "6f38d0decd889365bdb55c343d512d5df67579ea14e598b768d8e38c4f025f4f",
+      "bytes": 4776
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_7/LINK_7_collision_19.obj": {
+      "sha256": "6809573f3d10a96fd46540b289d6756afd601582bce668ca930808b20267ea2b",
+      "bytes": 4821
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_8/LINK_8.obj": {
+      "sha256": "49718247275342d6993750ae7704a1d957c1cca268ad8467b4ec6d434840319d",
+      "bytes": 112463
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_8/LINK_8_collision_0.obj": {
+      "sha256": "d60479c07b15ff0059ad31d8a1bf519a2f547fcc46e9bd14c2521b6b1f7a8828",
+      "bytes": 112325
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_8/LINK_8_collision_1.obj": {
+      "sha256": "c2190019584c2755193ec2746d7acd7d38f09f951961ffd70f3a411ef6750b96",
+      "bytes": 15378
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_8/LINK_8_collision_2.obj": {
+      "sha256": "71cd1d713ebc3d7aa88673ca51669a026e6cd9a8576f8b4af8fc39f526aed5db",
+      "bytes": 29812
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_8/LINK_8_collision_3.obj": {
+      "sha256": "9b1dde347fd26fe18257ed0fd0310a39a3cbc472a57b575515d9b704a4638467",
+      "bytes": 12782
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_8/LINK_8_collision_4.obj": {
+      "sha256": "b1c0e20443e582b76756f93fb7075fa214e29088a4dcbf2f08de099eae4f27bf",
+      "bytes": 18435
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_8/LINK_8_collision_5.obj": {
+      "sha256": "94af99b60546197fd478e0a32783f1e441d1f79f5b64041f98db8b97a66ea3dd",
+      "bytes": 17310
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_8/LINK_8_collision_6.obj": {
+      "sha256": "640e9774eb1c6c057c2b3a02530557ffc05aa42c591e0e396de4c61b8593ece7",
+      "bytes": 19390
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_8/LINK_8_collision_7.obj": {
+      "sha256": "98766b7a92a26ef0a7da3cb5f07d743de0fb877ce62e70dce77abd53a7c0fd7f",
+      "bytes": 10471
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_8/LINK_8_collision_8.obj": {
+      "sha256": "d4de3b27ed6f2c4d88eaeb62b79f8a51705b5980ddced2a7e78d6be99cbb58e9",
+      "bytes": 59745
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_8/LINK_8_collision_9.obj": {
+      "sha256": "fbeffa60bf28529d16bf919dc5ed083adc64b277eb81a326c4632e1ce097b117",
+      "bytes": 7764
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_8/LINK_8_collision_10.obj": {
+      "sha256": "36fa62455021fb889bd698e44e873f7d7072490a2225598af0dc33aa442fef10",
+      "bytes": 17123
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_8/LINK_8_collision_11.obj": {
+      "sha256": "b99708991d20a2f356ab38cb50247e53d5d83d942d40c3e2db546a59d272ef68",
+      "bytes": 7322
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_8/LINK_8_collision_12.obj": {
+      "sha256": "73f472feafe55a8832068d76d772dddc2ef29489c1c5e210b496c365a35edef3",
+      "bytes": 10317
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_8/LINK_8_collision_13.obj": {
+      "sha256": "ccccb93679b32fd9337504eee146ab3e227527c67709dc7baec79475fafdabe8",
+      "bytes": 5084
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_9/LINK_9_0.obj": {
+      "sha256": "96034e8cacf735114067145c57f9cd86e8bb4fed62aefb816a8f38b3dc6bbac4",
+      "bytes": 300834
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_9/LINK_9_1.obj": {
+      "sha256": "4c9eb01be1de337025d05d2d9fbae5281f648894ed8f764b685698853f504c02",
+      "bytes": 129587
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_9/LINK_9_collision_0.obj": {
+      "sha256": "602ccef8efda34347e3f8d815200e9965c4e23b00813d845f54e19888ecf98b3",
+      "bytes": 56996
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_9/LINK_9_collision_1.obj": {
+      "sha256": "1dd55d8392a6722b0255df16715cd2b0fde0eda2f82321d41eb61547ef0672f1",
+      "bytes": 65382
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_9/LINK_9_collision_2.obj": {
+      "sha256": "0d3c7766c64ba7f7ff92bbc7464a1d833e3057146a50c464b52c40cbbb66c08f",
+      "bytes": 24763
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_9/LINK_9_collision_3.obj": {
+      "sha256": "edac1cffdce48aad9b4318f50845d6c09f110b91ded7433c9ac24bef2e9e2c48",
+      "bytes": 11254
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_9/LINK_9_collision_4.obj": {
+      "sha256": "053edbd92eceaafa93ea7d6d4a749c4289e35ba5e9f80a6c2c63ec2b204b6453",
+      "bytes": 57495
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_9/LINK_9_collision_5.obj": {
+      "sha256": "b1816a1c3d0871f2d240e6e83a7131b1d3e67213d4b1958fe244ce94625f57b7",
+      "bytes": 31184
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_9/LINK_9_collision_6.obj": {
+      "sha256": "55634fdfe658f17f6b06aa03b43f8086205bb59977bafaf55860d0a5cc15d859",
+      "bytes": 8466
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_9/LINK_9_collision_7.obj": {
+      "sha256": "e9eed92fb7bd5ee3a176f1b4e5a85e69008861714e6e6d37a447b9969461c6f1",
+      "bytes": 30087
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_9/LINK_9_collision_8.obj": {
+      "sha256": "63f6cd07150cf6490c8c1f47ae70bad80a15b9714d80d7517c790affd3aba828",
+      "bytes": 7511
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_10/LINK_10_0.obj": {
+      "sha256": "dc4b2c72e9859e9279641bb13206157db64f6adfebff848ab3db9ed19f69281a",
+      "bytes": 218729
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_10/LINK_10_1.obj": {
+      "sha256": "b41807252ef8515af5e12752e554d5ff31ecf389944e8434af23152b1b839b42",
+      "bytes": 56246
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_10/LINK_10_collision_0.obj": {
+      "sha256": "d945f6c6d8093f5cf0d0f412c2ec919b8c6ade3caeecf10f79b442bf4f88c184",
+      "bytes": 45001
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_10/LINK_10_collision_1.obj": {
+      "sha256": "731357109c8fca9e037aa52c0575ae66c6331ee1bf0c60e24b3e7e776ea47ef0",
+      "bytes": 34940
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_10/LINK_10_collision_2.obj": {
+      "sha256": "4e5f842d768660fa3699266f89ffd5d23328cb00a33bb2d795d03c07f73b87f5",
+      "bytes": 72307
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_10/LINK_10_collision_3.obj": {
+      "sha256": "edbd4a76168b1a16eefd6c7ebc80afd90edb7f7918e0c9df578a3bb029b6cfa8",
+      "bytes": 87420
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_11/LINK_11_WY_1.obj": {
+      "sha256": "bcb37c72dba5395087bd883a0672d298cc3cdf4d9ad8d860f35c30b6755f39b0",
+      "bytes": 9585723
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_11/LINK_11_WY_2.obj": {
+      "sha256": "3bc2ec9f23b5786697f4c0ab0d73595ceb0fa2db005fded9b77081559ef27e05",
+      "bytes": 1981619
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_11/LINK_11_WY_collision_0.obj": {
+      "sha256": "2925d094c41f6bb3102021a6005924c072e4b0d44adb60adce7cc353ae42e5d8",
+      "bytes": 46256
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_12/LINK_12_WP.obj": {
+      "sha256": "15200f0a3674a5fe878e966c3d912ba1e58d1d7ca9d7af1628c1c1d579bf5aca",
+      "bytes": 3042226
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_12/LINK_12_WP_collision_0.obj": {
+      "sha256": "126e3e5a98f15bf324858a2f53da746e1dd178d80823cf67e06351a4570c3bb5",
+      "bytes": 59612
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_13/LINK_13_WR.obj": {
+      "sha256": "4a81b78a6476dc72f7d69d91aef376e97941ccb092c7d1006ee1a81195d5d0e2",
+      "bytes": 2152195
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_13/LINK_13_WR_collision_0.obj": {
+      "sha256": "52ac141b301a6a3266cb36ae866aa7b792249097bb5afefa388ec5738527adcf",
+      "bytes": 47806
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14.obj": {
+      "sha256": "a4d111757d0799667074978752fb0fac153069039356cb6dfa0b4e3dc0114f96",
+      "bytes": 288350
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14_collision_0.obj": {
+      "sha256": "e2370318384400d68827c42d7ddd75b0806d3fe1b10bb149b0c4a0ec79934140",
+      "bytes": 34280
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14_collision_1.obj": {
+      "sha256": "0b07838534f6f23ee72be3c523512f5f358da1efe9724a1814e1e36655774e71",
+      "bytes": 74529
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14_collision_2.obj": {
+      "sha256": "b9d2ef3f8fbb53106232b6513c4bdb3a7e082ce7ac328043736f15d2a3bf901d",
+      "bytes": 99241
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14_collision_3.obj": {
+      "sha256": "97244e88909fd2fd6bad310a8c66b7a6e4499a4e9614ff3a01fde74b582c0517",
+      "bytes": 11238
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14_collision_4.obj": {
+      "sha256": "e0f6bf8402d9eced6762af736315c65e8d8cac770dce56eac8848089ed7c2db1",
+      "bytes": 5501
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14_collision_5.obj": {
+      "sha256": "7a9832bbfc44a277f21736f6b00016648eedae5b6d16422192f82fb96b3a9816",
+      "bytes": 5127
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14_collision_6.obj": {
+      "sha256": "db90fe74cd74d99ebbed01f0a9ff98a33bd87838850585df0dade863df079ac3",
+      "bytes": 6679
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14_collision_7.obj": {
+      "sha256": "666b6d13fa4590f7a1867c3d3fd16a80d41c881683864c1ff8c66b0305636de7",
+      "bytes": 10300
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14_collision_8.obj": {
+      "sha256": "560e6094fbfd162ff99d1a7179aa1635fb1e23e89b7c13f47d82eb2f8e644a27",
+      "bytes": 4324
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14_collision_9.obj": {
+      "sha256": "480cd9a00c6465839fdd21e10ee637a5a3f9faad92d1a89ef9ab5c95e732994e",
+      "bytes": 30334
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14_collision_10.obj": {
+      "sha256": "49dfeee98aaeab72ccdb3a98a9420d824b49776666d9a4daf54337694a612af4",
+      "bytes": 10527
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14_collision_11.obj": {
+      "sha256": "86cdb17f985bdd9b6b96624f4c873b1f0764a5dd9085825d15bddbe415237679",
+      "bytes": 4762
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14_collision_12.obj": {
+      "sha256": "e14ccdd6054b88b4e296cf46af278f909cc8fe543ba700bb8353996c62a337fd",
+      "bytes": 3763
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14_collision_13.obj": {
+      "sha256": "3e1a958c3fa9c06eb36290c1565c1ef5b61372ceb1daadd3374794011ceb3169",
+      "bytes": 1699
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14_collision_14.obj": {
+      "sha256": "4317b5817ef884ca9a694c56c2ebd4d1b80843d2ad1b0c5c44cdd7948523e6ad",
+      "bytes": 4917
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14_collision_15.obj": {
+      "sha256": "bc1f24caf04888af2c2c7f5ed5fd692440af0d81f0c03cc16a1ec5b0224604f2",
+      "bytes": 8471
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14_collision_16.obj": {
+      "sha256": "0ab6d57d6e5c294af77d6e2d3f17362962bd8f97faf02fa4b81c36ec0cc97464",
+      "bytes": 5420
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_14/LINK_14_collision_17.obj": {
+      "sha256": "1be869f721aa0203841d21aba453a2efe7b180b32bb0498632d15b75f7885f70",
+      "bytes": 5602
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_15/LINK_15.obj": {
+      "sha256": "14a83910f5bed5976e784bb0b28a76bb29e8092522bfcd03a046ae8f7e9d5f69",
+      "bytes": 112562
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_15/LINK_15_collision_0.obj": {
+      "sha256": "6277e1707cb1d8f1c49d356412a29423f555ef64890f2c538f77718f6505948e",
+      "bytes": 112865
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_15/LINK_15_collision_1.obj": {
+      "sha256": "e4c32bb57c8441d9103f84635861a311952f6ae9ca323b5b027ebc2689b9d918",
+      "bytes": 14440
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_15/LINK_15_collision_2.obj": {
+      "sha256": "8c238eb33bc105a2c1fa67e66cb0ece27a71f5f935ca156692f0919bb57f96d6",
+      "bytes": 30681
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_15/LINK_15_collision_3.obj": {
+      "sha256": "fef5a75714d3dc1814176048bec1476599d83d3e59b60d1fe87457af86832266",
+      "bytes": 65771
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_15/LINK_15_collision_4.obj": {
+      "sha256": "6435822fea82868e0cc8494e8c95707233092a747c56e91add4d7b35a0188fc8",
+      "bytes": 12494
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_15/LINK_15_collision_5.obj": {
+      "sha256": "242bbd43abef04e51956a902b5bc0a29cfed88d2435d5f97b7e5d6007e7ed56e",
+      "bytes": 17598
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_15/LINK_15_collision_6.obj": {
+      "sha256": "d113cbd306a112b8e6d3854248e08b9b0ac41fd355c063a7bec28f58f52baabb",
+      "bytes": 19849
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_15/LINK_15_collision_7.obj": {
+      "sha256": "d3655e5b140990c774ee00173454d64362d1829a2a427f77b77f7e5dfe9e0cdd",
+      "bytes": 17640
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_15/LINK_15_collision_8.obj": {
+      "sha256": "97a030bf5e17a19ac4d01f49458ee2d079370877b10a8dffda9ab6b5e9d4f9d3",
+      "bytes": 8366
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_15/LINK_15_collision_9.obj": {
+      "sha256": "3196c7b849f03d2c7e9112793ab6f4cb2047e9cc7c3c83ef57653e04ba183d4a",
+      "bytes": 6768
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_15/LINK_15_collision_10.obj": {
+      "sha256": "5faa69dcca63b22e7bf0369696ca11da8a949364b84df9d7fc87601c343c41bb",
+      "bytes": 17591
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_15/LINK_15_collision_11.obj": {
+      "sha256": "ed894d5409beee88f6d49bf2545e99cf25169ef33966997df83fc06690b3b538",
+      "bytes": 10523
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_15/LINK_15_collision_12.obj": {
+      "sha256": "f3f9b61071546713a7c80428a7a1f347e3e8a2480804b599f0b0bfadd48d324e",
+      "bytes": 5270
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_16/LINK_16_0.obj": {
+      "sha256": "20fc30b9ed089577540e7272380eda877e274a605770c92e5da1e59dfd1a3639",
+      "bytes": 293932
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_16/LINK_16_1.obj": {
+      "sha256": "928dcc1655ece74ff0759ae2b5000f4cf7b272d7f3adb5393405c25a0405391e",
+      "bytes": 135070
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_16/LINK_16_collision_0.obj": {
+      "sha256": "55e98e24c40f67245bc6b9d96371f0c2e31d7fde23717f8ea9a2aa2814ec89ab",
+      "bytes": 22577
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_16/LINK_16_collision_1.obj": {
+      "sha256": "eb0042ce27b13a6d815a15512c6029ce7029fd755f5e53cf3748aa744e51c7f2",
+      "bytes": 77081
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_16/LINK_16_collision_2.obj": {
+      "sha256": "4864ec0fa1ed852028bf5945dab2a8e11abef9518926cbc8c23b058c849ae119",
+      "bytes": 56362
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_16/LINK_16_collision_3.obj": {
+      "sha256": "4598ea3e72f2e10d0b04ca58eb634e3ce73f794ad60170fef0eb4da46bdcfb17",
+      "bytes": 13020
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_16/LINK_16_collision_4.obj": {
+      "sha256": "1ecc69c00583ed30651cd150d1dce8c603ea5af30fc2bec8f31a5894589eda07",
+      "bytes": 5433
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_16/LINK_16_collision_5.obj": {
+      "sha256": "b802a1bf9adb6f721d66ec3bad3da0e7ebc685b42c8f21661978192477e9f728",
+      "bytes": 8861
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_16/LINK_16_collision_6.obj": {
+      "sha256": "32e0cce927f23ce0f07532944bfed08b0f191595725416313031ec8a769b0a5a",
+      "bytes": 61191
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_16/LINK_16_collision_7.obj": {
+      "sha256": "f7101946595b943ab29e7769769d123d0ac33ebe2c39dadd8d174b1d634da190",
+      "bytes": 5332
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_16/LINK_16_collision_8.obj": {
+      "sha256": "3383e9b56b4927ea7bee79c16f5b937449b173b952119c049319c52826a864f9",
+      "bytes": 29890
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_16/LINK_16_collision_9.obj": {
+      "sha256": "74b6cd95383a3cec23db6d04622a6f2a952ca087637beda6958ce11eeccb732b",
+      "bytes": 24986
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_16/LINK_16_collision_10.obj": {
+      "sha256": "2a676fc4aa231c81f17d797d37b55ca82d6de4ef9eb93ea30baae9396c01f9d5",
+      "bytes": 4429
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_16/LINK_16_collision_11.obj": {
+      "sha256": "86e847ff8d1e5f37c75d83e58a78dfe8390066a4ccb2023ba8421a582cc30cec",
+      "bytes": 14284
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_17/LINK_17_0.obj": {
+      "sha256": "c0f2b3d79474384b13070db52eb7b0dbc47af10ce04b7da9399803fb22cfffc4",
+      "bytes": 218982
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_17/LINK_17_1.obj": {
+      "sha256": "78a6ce69a2c4dc11ded9da99638e225728a31001362bbad13fb3e379d5d1133f",
+      "bytes": 56262
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_17/LINK_17_collision_0.obj": {
+      "sha256": "a86c43eb5007f7ec4e88eb73b70083ff3e91080fd04dbd9a9016f40d0da190a9",
+      "bytes": 34689
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_17/LINK_17_collision_1.obj": {
+      "sha256": "4f0b86c176f6499d7646357281b3d3cae5ab6359c66718305b10668a395498cc",
+      "bytes": 44129
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_17/LINK_17_collision_2.obj": {
+      "sha256": "e18b298493bf8de61b179216708134787bf02e3a4f33bd7c550a82f1281a3d9a",
+      "bytes": 72988
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_17/LINK_17_collision_3.obj": {
+      "sha256": "216ce8339687781dee6f3ee3dbba2444f7a4d9e6388e125892991fb3dfc3c091",
+      "bytes": 88394
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_18/LINK_18_WY_1.obj": {
+      "sha256": "5a2d56d64ae80385a23118b068b2aff676e14d203b346397eb54a2650d221cdc",
+      "bytes": 10289985
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_18/LINK_18_WY_2.obj": {
+      "sha256": "1f87b37f699bb4dd61172198d5aa17bd54ec2af36dbffa4ee7cba5a22f591d00",
+      "bytes": 1877841
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_18/LINK_18_WY_collision_0.obj": {
+      "sha256": "8dd10165cc198dca9b41f98d3913c10fce738d021f24fb85c72bee3d51f9589d",
+      "bytes": 46523
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_19/LINK_19_WP.obj": {
+      "sha256": "12bf7fc06a00a7b6dc61970c58043161def35eb4d0c4fce20fa991a44d9a86af",
+      "bytes": 3033250
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_19/LINK_19_WP_collision_0.obj": {
+      "sha256": "89f89348fb41e2dc2c3340e6ed074be21ac9d19583bbb979e7b0caeaabf78364",
+      "bytes": 63003
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_20/LINK_20_WR.obj": {
+      "sha256": "09d4c1b72611a749c1d327530971daf9c53e2e16e4137dce5847cb00f85a63f4",
+      "bytes": 899177
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LINK_20/LINK_20_WR_collision_0.obj": {
+      "sha256": "e436013c94220c9d7e5eba294a0120a1cd439133819bd4bdfbe46a0b80c8f7d8",
+      "bytes": 50273
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/NECK_0/NECK_0.obj": {
+      "sha256": "6c6e2b93ac21097352349b7eea2befb1254befb949f8f7ff5edbca232f977ef3",
+      "bytes": 111466
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/NECK_1/NECK_1.obj": {
+      "sha256": "b011493ff8bb1a047b2eaf4eea760a89256475026e2e229362098ebfb2aad00d",
+      "bytes": 234420
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/NECK_2/NECK_2.obj": {
+      "sha256": "34e426faeb0f5527cac2eef9f41d7a590696d19b2dfb48d919208e7dbb6940e1",
+      "bytes": 196183
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/RIGHT_MOUNT/ee_mount_r.obj": {
+      "sha256": "65252c4c05e7d234d3c66d8b651eef902364336897f3e84594c8de00636cac22",
+      "bytes": 7586
+    },
+    "visual/robosuite/models/assets/robots/rby1/assets/LEFT_MOUNT/ee_mount_l.obj": {
+      "sha256": "235ce0be1fa09c672273f54228904cb9d8b5ab35bb7d45134d3da668098a52cf",
+      "bytes": 7550
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_link.STL": {
+      "sha256": "c81f5ac529bbe5a789ffb8237e317e45a211b6cc35e8631f7145c049c735fd9f",
+      "bytes": 878184
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_ee_link.STL": {
+      "sha256": "d5c68aea36c3ec01ef6256bca427eb1aaf028a39daf8dac8ff1736aac58159c0",
+      "bytes": 6484
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_back_link.STL": {
+      "sha256": "73bbeb682fddeaf6034b0032a89074a5e94b43f284a62f86c651ed836e406c33",
+      "bytes": 382884
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_thumb_bend_link.STL": {
+      "sha256": "fe26f354076a440bfd838250ada7587d5fda0199d864210c293503a690b32148",
+      "bytes": 284984
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_thumb_rota_link1.STL": {
+      "sha256": "30df38923feddec135ef9e1a9ac5570e330c580e0d5fd2ff04ce568091884b01",
+      "bytes": 497184
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_thumb_rotaback_link1.STL": {
+      "sha256": "f4fc4d5b03cb6a0cbe9a7f2090351a5485ce1572f01a970a3410fc16e580ad96",
+      "bytes": 224884
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_thumb_rota_link2.STL": {
+      "sha256": "ceb6673529e5284e324c756d0279737e847de3921b5d71df5888015b6889a2c7",
+      "bytes": 315584
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_thumb_rotaback_link2.STL": {
+      "sha256": "ecd9b2bd0dadf23f81b2ea1128a4a40d89b093e6eb1248c9bf6b4f98a5f5035b",
+      "bytes": 342184
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_thumb_rota_tip.STL": {
+      "sha256": "6c49d268e518dd4838b5a0afa4e9b001fb0066f2d2898f5fa3d4e878d2b79b68",
+      "bytes": 6484
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_index_bend_link.STL": {
+      "sha256": "f388863a62d3eb0ebd844b49d567fc4582f352d1a796fe4b2fe290d5e4635f74",
+      "bytes": 263684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_index_rota_link1.STL": {
+      "sha256": "b9949f53f835d97fc2d3f6c12f700ed8c1c5b09f878441e2110c5dfdba3fb34d",
+      "bytes": 288584
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_index_rotaback_link1.STL": {
+      "sha256": "4457236883a16564c5be4fdbf6221968afc140dd7be0324111874a15f906069c",
+      "bytes": 352884
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_index_rota_link2.STL": {
+      "sha256": "1fa056d517a98c8c6f0e624035f2b47710550c82a63957f64a62c28a65a3b973",
+      "bytes": 318684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_index_rotaback_link2.STL": {
+      "sha256": "ac99b76c0edb85f8f9dc2013545a81eaf20613c5aae8ac2f7796dec5dbd4065c",
+      "bytes": 266684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_index_rota_tip.STL": {
+      "sha256": "7200d5b8ffa8ec54bf7990b0e222368b9000a67002a24cd9a623589679e79984",
+      "bytes": 6484
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_mid_link1.STL": {
+      "sha256": "3901eb5e8e1711454d04b7cdabd1ba9e6a1817f477f67872513975c97f74943d",
+      "bytes": 386584
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_midback_link1.STL": {
+      "sha256": "2189eafc6922abafc9f5800a48c314e0177fed8bc50b1af287696a1500ad5f6c",
+      "bytes": 352884
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_mid_link2.STL": {
+      "sha256": "bc0437cd644858337c9a9fdeb644cfead95c3eaa1eeef1059d2644e0752b5163",
+      "bytes": 318684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_midback_link2.STL": {
+      "sha256": "b85799cd9d28cde6e3fad1f4f346485897927e13427cee8e00479c22398527f8",
+      "bytes": 266684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_mid_tip.STL": {
+      "sha256": "e813d1f63455768a718c5c7d6056ff70b05ba1dbd492aacb3e2f26d3879009d8",
+      "bytes": 6484
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_ring_link1.STL": {
+      "sha256": "3e72ea74ea1cdd42bf7c312c4a23e4f1c8e0e0b013ba8e3cb282b2b609c32731",
+      "bytes": 386584
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_ringback_link1.STL": {
+      "sha256": "083719f02bfcfcd61edcbfc834a6178b32e48b7a82a07da1be9db343b2207246",
+      "bytes": 352884
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_ring_link2.STL": {
+      "sha256": "ae7ce7cbbe0c2880eea8364338cdd8fc279b4403d8aab3f0519bd36747950f1c",
+      "bytes": 318684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_ringback_link2.STL": {
+      "sha256": "3eab5ede2783143cdc30de6cd3dd54439b2606a218c5ca1e191c583d621f8a67",
+      "bytes": 266684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_ring_tip.STL": {
+      "sha256": "4f97752422dcba57697ef674eaecefabd459f61d02216745cb11a2fbcf769a67",
+      "bytes": 6484
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_pinky_link1.STL": {
+      "sha256": "73c3bbb5918d6aea10229abbd52312086cc57d51037535b34c33ac138c8e430d",
+      "bytes": 386584
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_pinkyback_link1.STL": {
+      "sha256": "4400ce5bd194b4597a99443d595143e5164609434ab5fe331fc03a7d8cd722a2",
+      "bytes": 352884
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_pinky_link2.STL": {
+      "sha256": "2496feb195cc69a0fca6ce60c695c5d9dfbb51bfce2c45cb70965ec56376ef56",
+      "bytes": 318684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_pinkyback_link2.STL": {
+      "sha256": "ed1209ad2da19db9278c807221cfaa4fd52c091e31cac344a5a852b4d0e72b7e",
+      "bytes": 266684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/right_hand_pinky_tip.STL": {
+      "sha256": "5058c94100d6e63f18b5064042287fb9c073ff777b4882b7ef97b48b49513921",
+      "bytes": 6484
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_link.STL": {
+      "sha256": "91e6945bcbdb842da0cef4d2ce79f0b75b80f1a17b5966cec0c28fdb8d71647e",
+      "bytes": 1094484
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_ee_link.STL": {
+      "sha256": "9a3996fbcf58833c42299392891f8954a49a7cc9eaa91a09fe94f443141c7c68",
+      "bytes": 6484
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_back_link.STL": {
+      "sha256": "79bf686dc8f107b7e1aee5f7a8d32f343774f2869a90a54d752959593c18cec8",
+      "bytes": 368484
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_thumb_bend_link.STL": {
+      "sha256": "14c4bd8beae683d12d900a682d4e6222acffc368fecdd0a43c915a3aae39cae3",
+      "bytes": 280484
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_thumb_rota_link1.STL": {
+      "sha256": "25f9595df84cbae57a803fcc018d311f3b9f066fe313b5faa5e0e73666e2ea82",
+      "bytes": 583984
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_thumb_rotaback_link1.STL": {
+      "sha256": "54333a0acc3eae71b01a3286983adc95447883422c8f1d2d0aa19b5407ffd1ed",
+      "bytes": 205784
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_thumb_rota_link2.STL": {
+      "sha256": "215d6396ab894d873c2eca0831bedc0f2443a43f1a7704d3ba5de137b0c0805a",
+      "bytes": 301684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_thumb_rotaback_link2.STL": {
+      "sha256": "aae7a4bbab633f69d950464df7aff65c4ae81cf462d655968576d5a0374b34a1",
+      "bytes": 326984
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_thumb_rota_tip.STL": {
+      "sha256": "dd0fe8e512c03b7d3c30bb27de3dfc326417b2686506728f8d621d026a519de8",
+      "bytes": 6484
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_index_bend_link.STL": {
+      "sha256": "84cce2980e3fcc2e427dd26223792e2a4935f8dfd0ce3fddfc0d003c864a7ccd",
+      "bytes": 263684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_index_rota_link1.STL": {
+      "sha256": "a3137669989778e29af714670f30b5bcd06a75b508daccfda57b91f8845eaf8d",
+      "bytes": 288584
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_index_rotaback_link1.STL": {
+      "sha256": "334907a5c4c7456d9e3f7d6a72b9dafd2fd794a0ac81571413a105e3f726979c",
+      "bytes": 352884
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_index_rota_link2.STL": {
+      "sha256": "c498467dfc1187ab8b944ca20aefaf9b36509c4aceb809cd006a818f763f284e",
+      "bytes": 318684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_index_rotaback_link2.STL": {
+      "sha256": "e60a7fad84dfa90f7cf6ccaf192111e055e155d7c8e109e220b7c3ad04db820b",
+      "bytes": 266684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_index_rota_tip.STL": {
+      "sha256": "fa859b5f7b71a44755689fe60b41b007f206a535c73b104ea29d3d144cd5204a",
+      "bytes": 6484
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_mid_link1.STL": {
+      "sha256": "b220d31ea69b7cf8f529b560d42208c845d033c0fae51b14a38994de9a97aaeb",
+      "bytes": 386584
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_midback_link1.STL": {
+      "sha256": "90d6b0d165456d3fc62a3a50c476ddf3399a9f01170760ff535ef485e9ca8bb5",
+      "bytes": 352884
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_mid_link2.STL": {
+      "sha256": "54903223ba105a4c0bcd5edaeee421da29b86baee906d000ee8f0d75e5a16770",
+      "bytes": 318684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_midback_link2.STL": {
+      "sha256": "12ee7465cb574297a0d9357902df9dd3262328fa9c775dd71cf76c5bfb8e9386",
+      "bytes": 266684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_mid_tip.STL": {
+      "sha256": "bd3effb483321872c88e67675641ac74b0e2aa52f53502f85710467d9964fa31",
+      "bytes": 6484
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_ring_link1.STL": {
+      "sha256": "129145cb0f26080fd26d0e40f670291e1a1930af140d4e529065ca5be471ed2f",
+      "bytes": 386584
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_ringback_link1.STL": {
+      "sha256": "5fac0aca56593c76c7ec1890c3ec86cd6d1a0b3e471ce859c35cc442ab184475",
+      "bytes": 352884
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_ring_link2.STL": {
+      "sha256": "a6376a01d139bc54076fdb66f2bdfc815eedb8f3949af636744b06b798136be2",
+      "bytes": 318684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_ringback_link2.STL": {
+      "sha256": "80debb967a3ba79eb356a183a45f5a2f50f039fb85b735bc36c5a9898e3ad821",
+      "bytes": 266684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_ring_tip.STL": {
+      "sha256": "cccd960df89e118e54c331170d399957088f38f81a40083ab11fef2c448159b1",
+      "bytes": 6484
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_pinky_link1.STL": {
+      "sha256": "1bc6357fb05d55b97a141fe707e2085d40f06cb90925f50614fefa78c901c29f",
+      "bytes": 386584
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_pinkyback_link1.STL": {
+      "sha256": "1e7dfc27f5ebf0a55a2ccf7e75ebb535f9bd79d74e5c35ee8065e488f109e165",
+      "bytes": 352884
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_pinky_link2.STL": {
+      "sha256": "bf563fb3dad6ed12095f541dfbd9d987a77eefeca039fcb88c2ea6e9a0d5597c",
+      "bytes": 318684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_pinkyback_link2.STL": {
+      "sha256": "1a8f3e4da08402044b14571b007d68a8ae5fca8c4cfb741b98760bf106df1ea1",
+      "bytes": 266684
+    },
+    "visual/robosuite/models/assets/grippers/meshes/x_hands/left_hand_pinky_tip.STL": {
+      "sha256": "1dfcc5812440857185cb4a0a0611705986b7487d64b407cc5d9b616498a7f9dc",
+      "bytes": 6484
+    },
+    "visual/robosuite/models/assets/textures/light-gray-floor-tile.png": {
+      "sha256": "a2aae4ba3b38c3ab9851eca9ad6e76cef9357ef75b3e9a4b280f694ca30acbc5",
+      "bytes": 73373
+    },
+    "visual/robosuite/models/assets/textures/ceramic.png": {
+      "sha256": "beef464a2aa9143ba6a25a44adcbfd1f1aff16c5969edbf08019b61025388402",
+      "bytes": 1442030
+    },
+    "visual/robosuite/models/assets/textures/steel-brushed.png": {
+      "sha256": "43f30e7a2d0e8085aa15f58623b1753a003f93e5fe336eeaf65c146f955a81d5",
+      "bytes": 275192
+    },
+    "visual/robosuite/models/assets/textures/light-gray-plaster.png": {
+      "sha256": "d0bdaf13b44ab6ef3122451f6b3853e40bdf20bb9be7662649683ba525dfe191",
+      "bytes": 516639
+    },
+    "visual/rl_tracking_dev/envs/taco_objects/meshes/022_cm.obj": {
+      "sha256": "35c52d853b85aa521eeadda78abb2bd370975611c8c35cd9a9d4c96746d8418c",
+      "bytes": 3848290
+    },
+    "visual/rl_tracking_dev/envs/taco_objects/meshes/022_convex.obj": {
+      "sha256": "663246b14e88aa83aada5907fe2ca8285cf567dd1e9e1ce31c505579264658df",
+      "bytes": 117590
+    },
+    "visual/rl_tracking_dev/envs/taco_objects/meshes/135_cm.obj": {
+      "sha256": "6316aea5b5c29a6231639d4ac8dad2c42ee013cfc55f1ce5a9dc5a38056f52a1",
+      "bytes": 7103853
+    },
+    "visual/rl_tracking_dev/envs/taco_objects/meshes/135_convex.obj": {
+      "sha256": "4aeef7cde15c52823822e635ca6a782c4c12832fff253a1b7c849aa41d7af3ac",
+      "bytes": 47305
+    }
+  }
+}

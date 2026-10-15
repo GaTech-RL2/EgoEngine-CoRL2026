@@ -1,0 +1,88 @@
+{
+  "dataset": {
+    "aria_root_base": "/home/ycl/projects/datasets",
+    "dataset_dir": "/home/ycl/projects/workspace/spider/example_datasets",
+    "dataset_name": "aria",
+    "robot_type": "xhand",
+    "source_embodiment": "right",
+    "hand_modes": ["right"],
+    "roots": {
+      "mustard": "mustard/data",
+      "drawer": "drawer/data",
+      "flower": "flower/data",
+      "hammer": "hammer/data"
+    }
+  },
+  "run": {
+    "mode": "batch",
+    "tasks": ["mustard", "drawer", "flower", "hammer"],
+    "python_bin": "python",
+    "device_env": "MPC_DEVICE",
+    "default_device": "cuda:0",
+    "show_viewer": false,
+    "viewer_backend": "mujoco",
+    "save_video": true,
+    "video_dir": "outputs/aria_mpc_videos"
+  },
+  "mpc": {
+    "sim_dt": 0.01,
+    "ctrl_dt": 0.05,
+    "horizon": 0.5,
+    "knot_dt": 0.05,
+    "num_samples": 2048,
+    "max_num_iterations": 32,
+    "improvement_threshold": 0.005,
+    "temperature": 0.1
+  },
+  "reward": {
+    "pos_rew_scale": 1.0,
+    "rot_rew_scale": 0.3,
+    "joint_rew_scale": 0.0,
+    "base_pos_rew_scale": 0.0,
+    "base_rot_rew_scale": 0.0,
+    "vel_rew_scale": 0.0,
+    "contact_rew_scale": 0.0,
+    "object_pos_threshold": 0.05,
+    "object_rot_threshold": 1,
+    "object_mass_scale": 0.1
+  },
+  "noise": {
+    "first_ctrl_noise_scale": 0.5,
+    "last_ctrl_noise_scale": 0.65,
+    "final_noise_scale": 0.1,
+    "joint_noise_scale": 0.3,
+    "pos_noise_scale": 0.08,
+    "rot_noise_scale": 0.05
+  },
+  "task_overrides": {
+    "mustard": {
+      "object_rot_threshold": 1.5,
+      "contact_rew_scale": 0.0,
+      "joint_rew_scale": 0.0,
+      "joint_noise_scale": 0.4,
+      "rot_noise_scale": 0.7
+    },
+    "drawer": {
+      "object_rot_threshold": 1.5,
+      "contact_rew_scale": 0.0,
+      "joint_rew_scale": 0.0,
+      "joint_noise_scale": 0.4,
+      "rot_noise_scale": 0.7
+    },
+    "flower": {
+      "object_rot_threshold": 1.5,
+      "contact_rew_scale": 0.0,
+      "joint_rew_scale": 0.0,
+      "joint_noise_scale": 0.4,
+      "rot_noise_scale": 0.7
+    },
+    "hammer": {
+      "early_termination": true,
+      "object_rot_threshold": 1.5,
+      "contact_rew_scale": 0.0,
+      "joint_rew_scale": 0.0,
+      "joint_noise_scale": 0.4,
+      "rot_noise_scale": 1.0
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "base_config": "aria_egoengine.json",
+  "task": "flower",
+  "run": {
+    "mode": "single"
+  }
+}

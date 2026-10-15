@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="330" viewBox="0 0 1420 330">
+<rect width="1420" height="330" fill="#f7f9fc"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="#58708c"/></marker></defs>
+<g fill="none" stroke="#58708c" stroke-width="2" marker-end="url(#arrow)">
+<path d="M230 140 L255 140 L255 77 L285 77"/><path d="M520 77 H575"/>
+<path d="M230 174 L270 174 L270 222 H575"/>
+<path d="M810 222 H865"/><path d="M1100 222 H1124 V166 H1155"/>
+<path d="M810 77 H1124 V138 H1155"/></g>
+<rect x="30" y="110" width="200" height="88" rx="12" fill="#e6eefb" stroke="#c8d4e3"/>
+<text x="44" y="135" font-family="sans-serif" font-size="17" font-weight="600" fill="#172a44">Prepared inputs</text>
+<text x="44" y="157" font-family="sans-serif" font-size="13" fill="#304966">Scene · poses · calibration</text>
+<text x="44" y="176" font-family="sans-serif" font-size="12" fill="#4a5b70">Background already removed</text>
+<rect x="285" y="35" width="235" height="84" rx="12" fill="#e8f4ef" stroke="#c8d4e3"/>
+<text x="299" y="60" font-family="sans-serif" font-size="17" font-weight="600" fill="#172a44">Action branch</text>
+<text x="299" y="82" font-family="sans-serif" font-size="13" fill="#304966">Replay → MPC → RL</text>
+<text x="299" y="101" font-family="sans-serif" font-size="12" fill="#4a5b70">Plan 2 chunks · commit 1</text>
+<rect x="575" y="35" width="235" height="84" rx="12" fill="#e8f4ef" stroke="#c8d4e3"/>
+<text x="589" y="60" font-family="sans-serif" font-size="17" font-weight="600" fill="#172a44">Aligned state export</text>
+<text x="589" y="82" font-family="sans-serif" font-size="13" fill="#304966">qpos · qvel · controls</text>
+<text x="589" y="101" font-family="sans-serif" font-size="12" fill="#4a5b70">Reference-frame timestamps</text>
+<rect x="575" y="180" width="235" height="84" rx="12" fill="#fff1df" stroke="#c8d4e3"/>
+<text x="589" y="205" font-family="sans-serif" font-size="17" font-weight="600" fill="#172a44">Visual branch</text>
+<text x="589" y="227" font-family="sans-serif" font-size="13" fill="#304966">Original RB-Y1 actions + mask</text>
+<text x="589" y="246" font-family="sans-serif" font-size="12" fill="#4a5b70">Occlusion from scene geometry</text>
+<rect x="865" y="180" width="235" height="84" rx="12" fill="#fff1df" stroke="#c8d4e3"/>
+<text x="879" y="205" font-family="sans-serif" font-size="17" font-weight="600" fill="#172a44">Composite</text>
+<text x="879" y="227" font-family="sans-serif" font-size="13" fill="#304966">Robot + removed background</text>
+<text x="879" y="246" font-family="sans-serif" font-size="12" fill="#4a5b70">Retained visual compositor</text>
+<rect x="1155" y="110" width="230" height="88" rx="12" fill="#e9e7fa" stroke="#c8d4e3"/>
+<text x="1169" y="135" font-family="sans-serif" font-size="17" font-weight="600" fill="#172a44">Paired dataset</text>
+<text x="1169" y="157" font-family="sans-serif" font-size="13" fill="#304966">RGB · state · action · time</text>
+<text x="1169" y="176" font-family="sans-serif" font-size="12" fill="#4a5b70">HDF5 + audit JSON</text>
+<text x="30" y="310" font-family="sans-serif" font-size="13" fill="#4a5b70">Prepared inputs feed both branches independently. Visual: original RB-Y1 replay. Action: floating-wrist refinement.</text>
+</svg>

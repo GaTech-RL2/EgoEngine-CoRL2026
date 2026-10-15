@@ -1,0 +1,15 @@
+{
+  "base_config": "aria_mpc.json",
+  "task": "hammer",
+  "run": {
+    "mode": "batch"
+  },
+  "overrides": {
+    "early_termination": true,
+    "object_rot_threshold": 1.5,
+    "contact_rew_scale": 0.0,
+    "joint_rew_scale": 0.0,
+    "joint_noise_scale": 0.4,
+    "rot_noise_scale": 1.0
+  }
+}

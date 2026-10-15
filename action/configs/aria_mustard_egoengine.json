@@ -1,0 +1,7 @@
+{
+  "base_config": "aria_egoengine.json",
+  "task": "mustard",
+  "run": {
+    "mode": "single"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "source": "DexCoDesign residual PPO formulation",
+  "base_commit": "0df42101",
+  "source_sha256": {
+    "mano_residual_env.py": "48408940d088b58002f507d8cef3fe56b8605828149e92c6fdf6a6c2866fead1",
+    "palm_geometry_observation.py": "88905559f9797942b66ad8313bae24e9e684d85d8be08411e1be0fee419c1589",
+    "ppo_session.py": "c6e5a1432551ba859143a3038cbee0cd6595f58c16441b427f0f5929c23a0c4d",
+    "mano_residual_env.yaml": "5bce4923d4821a0ccbea149c29c1bd52358b1358b12ec8a8169482385bcaa2b9",
+    "skrl_ppo_cfg.yaml": "367276c986aa0df0529dd940620942f82efc62a83eba8dc59e216ae66413b097"
+  },
+  "ported": [
+    "joint/tip/object goal observation",
+    "independent environment resets",
+    "separate residual correction capacity",
+    "bounded exploration and clipped actions",
+    "entropy coefficient 0.001",
+    "no timeout value bootstrapping"
+  ],
+  "retained": [
+    "EgoEngine physics and tracking/lifting reward",
+    "paper mode selector and original first-farthest timing",
+    "RSL-RL backend and [256, 128] ELU networks"
+  ],
+  "not_ported": [
+    "WUJI-specific morphology landmarks",
+    "Isaac Lab contact implementation",
+    "SKRL value-target scaling"
+  ]
+}

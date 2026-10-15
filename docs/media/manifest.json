@@ -1,0 +1,197 @@
+{
+  "cases": [
+    {
+      "case": "brush_brush_bowl_20230927_027",
+      "outputs": [
+        "brush_brush_bowl_20230927_027.gif",
+        "brush_brush_bowl_20230927_027_stages.png"
+      ],
+      "sources": [
+        "examples/prepared/visual_inputs/TACO/brush_brush_bowl_20230927_027/color.mp4",
+        "examples/prepared/visual_inputs/TACO/brush_brush_bowl_20230927_027/historical_ref.mp4",
+        "examples/prepared/visual_inputs/TACO/brush_brush_bowl_20230927_027/historical_rl.mp4",
+        "examples/prepared/visual_inputs/TACO/brush_brush_bowl_20230927_027/historical_inpainted_video.mp4",
+        "outputs/documentation_media/brush_brush_bowl_20230927_027/render/scene.mp4",
+        "outputs/documentation_media/brush_brush_bowl_20230927_027/render/visibility_mask.mp4"
+      ],
+      "labels": [
+        "Prepared RGB",
+        "Historical reference",
+        "Historical RL",
+        "Historical visual output",
+        "New full RB-Y1 reference",
+        "New visibility mask"
+      ],
+      "alignment": "independent normalized clip progress; not a paired timeline",
+      "gif_frames": 36,
+      "gif_display_fps": 10,
+      "output_scope": "retained historical output with reference-scene inspection; no new optimization claim"
+    },
+    {
+      "case": "cut_knife_plate_20230926_040",
+      "outputs": [
+        "cut_knife_plate_20230926_040.gif",
+        "cut_knife_plate_20230926_040_stages.png"
+      ],
+      "sources": [
+        "examples/prepared/visual_inputs/TACO/cut_knife_plate_20230926_040/color.mp4",
+        "examples/prepared/visual_inputs/TACO/cut_knife_plate_20230926_040/historical_ref.mp4",
+        "examples/prepared/visual_inputs/TACO/cut_knife_plate_20230926_040/historical_rl.mp4",
+        "examples/prepared/visual_inputs/TACO/cut_knife_plate_20230926_040/historical_inpainted_video.mp4",
+        "outputs/documentation_media/cut_knife_plate_20230926_040/render/scene.mp4",
+        "outputs/documentation_media/cut_knife_plate_20230926_040/render/visibility_mask.mp4"
+      ],
+      "labels": [
+        "Prepared RGB",
+        "Historical reference",
+        "Historical RL",
+        "Historical visual output",
+        "Original retarget: robot out of view",
+        "New visibility mask"
+      ],
+      "alignment": "independent normalized clip progress; not a paired timeline",
+      "gif_frames": 36,
+      "gif_display_fps": 10,
+      "output_scope": "retained historical output with reference-scene inspection; no new optimization claim"
+    },
+    {
+      "case": "scrape_off_knife_plate_20230926_034",
+      "outputs": [
+        "scrape_off_knife_plate_20230926_034.gif",
+        "scrape_off_knife_plate_20230926_034_stages.png"
+      ],
+      "sources": [
+        "examples/prepared/visual_inputs/TACO/scrape_off_knife_plate_20230926_034/color.mp4",
+        "examples/prepared/visual_inputs/TACO/scrape_off_knife_plate_20230926_034/historical_ref.mp4",
+        "examples/prepared/visual_inputs/TACO/scrape_off_knife_plate_20230926_034/historical_rl.mp4",
+        "examples/prepared/visual_inputs/TACO/scrape_off_knife_plate_20230926_034/historical_inpainted_video.mp4",
+        "outputs/documentation_media/scrape_off_knife_plate_20230926_034/render/scene.mp4",
+        "outputs/documentation_media/scrape_off_knife_plate_20230926_034/render/visibility_mask.mp4"
+      ],
+      "labels": [
+        "Prepared RGB",
+        "Historical reference",
+        "Historical RL",
+        "Historical visual output",
+        "New full RB-Y1 reference",
+        "New visibility mask"
+      ],
+      "alignment": "independent normalized clip progress; not a paired timeline",
+      "gif_frames": 36,
+      "gif_display_fps": 10,
+      "output_scope": "retained historical output with reference-scene inspection; no new optimization claim"
+    },
+    {
+      "case": "mustard_1",
+      "outputs": [
+        "mustard_1.gif",
+        "mustard_1_stages.png"
+      ],
+      "sources": [
+        "examples/prepared/visual_inputs/Aria/mustard_1/cropped_video.mp4",
+        "examples/prepared/visual_inputs/Aria/mustard_1/removed_w_mask_5.mp4",
+        "outputs/documentation_media/mustard_1/render/foreground.mp4",
+        "outputs/documentation_media/mustard_1/render/visibility_mask.mp4",
+        "outputs/documentation_media/mustard_1/visual.mp4",
+        "outputs/documentation_media/mustard_1/render/scene.mp4"
+      ],
+      "labels": [
+        "Prepared RGB",
+        "Removed background",
+        "New RB-Y1 robot layer",
+        "Visibility mask",
+        "New compositor output",
+        "New full reference scene"
+      ],
+      "alignment": "same reference frame",
+      "gif_frames": 36,
+      "gif_display_fps": 10,
+      "output_scope": "new full RB-Y1 reference render and compositor"
+    },
+    {
+      "case": "mustard_2",
+      "outputs": [
+        "mustard_2.gif",
+        "mustard_2_stages.png"
+      ],
+      "sources": [
+        "examples/prepared/visual_inputs/Aria/mustard_2/cropped_video.mp4",
+        "examples/prepared/visual_inputs/Aria/mustard_2/removed_w_mask_5.mp4",
+        "outputs/documentation_media/mustard_2/render/foreground.mp4",
+        "outputs/documentation_media/mustard_2/render/visibility_mask.mp4",
+        "outputs/documentation_media/mustard_2/visual.mp4",
+        "outputs/documentation_media/mustard_2/render/scene.mp4"
+      ],
+      "labels": [
+        "Prepared RGB",
+        "Removed background",
+        "New RB-Y1 robot layer",
+        "Visibility mask",
+        "New compositor output",
+        "New full reference scene"
+      ],
+      "alignment": "same reference frame",
+      "gif_frames": 36,
+      "gif_display_fps": 10,
+      "output_scope": "new full RB-Y1 reference render and compositor"
+    },
+    {
+      "case": "mustard_3",
+      "outputs": [
+        "mustard_3.gif",
+        "mustard_3_stages.png"
+      ],
+      "sources": [
+        "examples/prepared/visual_inputs/Aria/mustard_3/cropped_video.mp4",
+        "examples/prepared/visual_inputs/Aria/mustard_3/removed_w_mask_5.mp4",
+        "outputs/documentation_media/mustard_3/render/foreground.mp4",
+        "outputs/documentation_media/mustard_3/render/visibility_mask.mp4",
+        "outputs/documentation_media/mustard_3/visual.mp4",
+        "outputs/documentation_media/mustard_3/render/scene.mp4"
+      ],
+      "labels": [
+        "Prepared RGB",
+        "Removed background",
+        "New RB-Y1 robot layer",
+        "Visibility mask",
+        "New compositor output",
+        "New full reference scene"
+      ],
+      "alignment": "same reference frame",
+      "gif_frames": 36,
+      "gif_display_fps": 10,
+      "output_scope": "new full RB-Y1 reference render and compositor"
+    }
+  ],
+  "render_scenes": true,
+  "sha256": {
+    "mustard_1_stages.png": "32db8fc999f433bb6c949df75c2badc3c132e7fc7c7a1816c334929f5b7152cf",
+    "mustard_3_stages.png": "ce2ef0efd4e35048c2e290debfbb2b8829ea92072a17d32e31f490cdea09cb81",
+    "brush_brush_bowl_20230927_027_stages.png": "effa9624ac067dac526be642b9d75f7b4c5869a13076a0c78102596cba79aa21",
+    "cut_knife_plate_20230926_040_stages.png": "d3c9ea6921372dfb9f6a77d99e61097fc100d2818d0b88e7fcb062259fa8b921",
+    "mustard_2.gif": "4ce152d701055e4f33da7759483d868cb697dda37cea2f20b8cb57f65ce75263",
+    "scrape_off_knife_plate_20230926_034.gif": "3efeeac05ff228368a8ab88365e0196894610accaa9036b2d781ec89f4c4f88c",
+    "mustard_3.gif": "707f395a9566d62f43bdcd0032e880f609b5d226bcb202885454a7b05a4f27e3",
+    "mustard_1.gif": "5b0b927d60025307fc36e72fac3be61fc110646215e30b055056e529b71dec1c",
+    "examples.png": "b615711e591d5bfcc1377e852d557ba9295f5d70131bc7c4bca9a3ebf1704232",
+    "mustard_1_rl_learning.png": "c0698b2ce3c36b95ee83be74d0cdf2dd7738091c9f6e3381a6a0441a2ee0218c",
+    "scrape_off_knife_plate_20230926_034_stages.png": "62ecfca68b5f63e44c4d75f01c013132e7cad2bd6fb4989f692afbe75f698928",
+    "brush_brush_bowl_20230927_027.gif": "a312b2796c29df20e35b902e4bd25c029f44defc5c268870bae239ece08a0dd6",
+    "pipeline.svg": "9f452df66a73d32b67b650d275d39e7142336c3b1a3af6204d6db5fe767f8e80",
+    "cut_knife_plate_20230926_040.gif": "83e992e5c004318d21dfff6a57c5a036e90b6ac941afceba04eb9f02af02444f",
+    "mustard_2_stages.png": "a1e57c9e89216c4f0430891db89ae51ed0b0b4bc3b2bec7363dcdfd760ca7179"
+  },
+  "franka_xhand": {
+    "source": "Actual newly rendered configured robot and original compositor; matched source frame indices",
+    "validation": "docs/validation/FRANKA_XHAND.json",
+    "command": "python scripts/build_robot_visual_media.py",
+    "files": {
+      "docs/media/franka_xhand_mustard_1.gif": "bb12238b5e390c388171469473451d0de2d556bf6cf36e910c629e89f90c96ff",
+      "docs/media/franka_xhand_mustard_1.png": "9d3b34e47dc98b7fa2961eae219edc4a878d6dfb83f3367218a6a6156dc79d70",
+      "docs/media/franka_xhand_mustard_2.gif": "12b1001c7825ff42c88f3f71ab4d93c7543322e94fd6c23f77007bd9ce304629",
+      "docs/media/franka_xhand_mustard_2.png": "00c54f7406b02d46221993805ec846f5c2e1b7d46a7332e87f8a411fbd6f6c17",
+      "docs/media/franka_xhand_mustard_3.gif": "27a8e0343a08a7e2d6857ba8001fc57bb2711a69b224345cc6eee5317e9dc61e",
+      "docs/media/franka_xhand_mustard_3.png": "7d37713bee20a0b15af4e33d7965203783f5574a85967d5baa01de34e36061a8"
+    }
+  }
+}

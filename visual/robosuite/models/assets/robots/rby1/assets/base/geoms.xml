@@ -1,0 +1,26 @@
+<mujoco>
+  <worldbody>
+    <body name="base">
+      <geom type="mesh" mesh="base_0" rgba="0 0 0 1"/>
+      <geom type="mesh" mesh="base_1" rgba="0 0 0 1"/>
+      <geom type="mesh" mesh="base_2" rgba="0 0 0 1"/>
+      <geom type="mesh" mesh="base_3" rgba="0 0 0 1"/>
+      <geom type="mesh" mesh="base_collision_0" rgba="0 0 0 1" contype="1" conaffinity="1"/>
+      <geom type="mesh" mesh="base_collision_1" rgba="0 0 0 1" contype="1" conaffinity="1"/>
+      <geom type="mesh" mesh="base_collision_2" rgba="0 0 0 1" contype="1" conaffinity="1"/>
+      <geom type="mesh" mesh="base_collision_3" rgba="0 0 0 1" contype="1" conaffinity="1"/>
+      <geom type="mesh" mesh="base_collision_4" rgba="0 0 0 1" contype="1" conaffinity="1"/>
+      <geom type="mesh" mesh="base_collision_5" rgba="0 0 0 1" contype="1" conaffinity="1"/>
+      <geom type="mesh" mesh="base_collision_6" rgba="0 0 0 1" contype="1" conaffinity="1"/>
+      <geom type="mesh" mesh="base_collision_7" rgba="0 0 0 1" contype="1" conaffinity="1"/>
+      <geom type="mesh" mesh="base_collision_8" rgba="0 0 0 1" contype="1" conaffinity="1"/>
+      <geom type="mesh" mesh="base_collision_9" rgba="0 0 0 1" contype="1" conaffinity="1"/>
+      <geom type="mesh" mesh="base_collision_10" rgba="0 0 0 1" contype="1" conaffinity="1"/>
+      <geom type="mesh" mesh="base_collision_11" rgba="0 0 0 1" contype="1" conaffinity="1"/>
+      <geom type="mesh" mesh="base_collision_12" rgba="0 0 0 1" contype="1" conaffinity="1"/>
+      <geom type="mesh" mesh="base_collision_13" rgba="0 0 0 1" contype="1" conaffinity="1"/>
+      <geom type="mesh" mesh="base_collision_14" rgba="0 0 0 1" contype="1" conaffinity="1"/>
+      <geom type="mesh" mesh="base_collision_15" rgba="0 0 0 1" contype="1" conaffinity="1"/>
+    </body>
+  </worldbody>
+</mujoco>

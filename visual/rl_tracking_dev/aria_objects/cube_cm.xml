@@ -1,0 +1,29 @@
+<mujoco model="cube_5cm">
+  <!-- Use explicit inertia, not inferred from geoms -->
+  <compiler inertiafromgeom="false"/>
+
+  <worldbody>
+    <body>
+      <body name="object">
+        <!-- Give the body a safe mass & inertia (cube: side a=0.05 m) -->
+        <!-- For a cube, Ixx=Iyy=Izz=(1/6) m a^2. With m=0.05 kg, a=0.05 m => 2.08333e-05 kg·m^2 -->
+        <inertial pos="0 0 0" mass="0.05" diaginertia="2.08333e-05 2.08333e-05 2.08333e-05"/>
+
+        <!-- Main cube geom: 5 cm sides (half-size = 0.025), massless so inertia comes only from <inertial> -->
+        <geom type="box" size="0.025 0.025 0.025"
+              density="20"
+              friction="1.2 0.5 0.1"
+              solimp="0.998 0.998 0.001"
+              solref="0.001 1"
+              contype="4" conaffinity="7" condim="4" 
+              group="0" margin="0.001"/>
+
+      </body>
+
+      <!-- Reference sites at cube extents -->
+      <site name="bottom_site" rgba="0 0 0 0" size="0.001" pos="0 0 -0.025"/>
+      <site name="top_site" rgba="0 0 0 0" size="0.001" pos="0 0 0.025"/>
+      <site name="horizontal_radius_site" rgba="0 0 0 0" size="0.005" pos="0.025 0 0"/>
+    </body>
+  </worldbody>
+</mujoco>

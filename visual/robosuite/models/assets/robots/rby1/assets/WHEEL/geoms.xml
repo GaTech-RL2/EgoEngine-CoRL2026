@@ -1,0 +1,1 @@
+<mujoco><worldbody><body name="wheel_asset_preview"><geom type="mesh" mesh="WHEEL" rgba="0.7 0.7 0.7 1" /><geom type="mesh" mesh="WHEEL_collision_0" contype="1" conaffinity="1" /></body></worldbody></mujoco>

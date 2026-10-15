@@ -1,0 +1,19 @@
+{
+  "type": "JOINT_POSITION",
+  "body_parts": {
+    "arms": {
+      "right": {
+        "type": "JOINT_POSITION",
+        "kp": 1000,
+        "kv": 200,
+        "kd": 200
+      },
+      "left": {
+        "type": "JOINT_POSITION",
+        "kp": 1000,
+        "kv": 200,
+        "kd": 200
+      }
+    }
+  }
+}

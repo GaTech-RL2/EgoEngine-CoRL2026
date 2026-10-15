@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "egoengine"
+version = "0.1.0"
+description = "EgoEngine: prepared demonstrations to robot actions and visual observations"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26,<3", "mujoco>=3.3.7,<3.7", "opencv-python>=4.10,<5",
+  "scipy>=1.14,<2", "h5py>=3.11,<4", "Pillow>=11,<13",
+]
+
+[project.urls]
+Homepage = "https://egoengine.github.io/"
+Paper = "https://arxiv.org/abs/2606.12604"
+Repository = "https://github.com/GaTech-RL2/EgoEngine-CoRL2026"
+
+[project.optional-dependencies]
+action = [
+  "torch==2.11.0", "loguru==0.7.3", "tyro==0.9.35", "termcolor==3.3.0",
+  "hydra-core==1.3.2", "warp-lang==1.12.1", "rsl-rl-lib==5.3.0", "tensordict==0.12.1",
+  "mujoco-warp @ git+https://github.com/google-deepmind/mujoco_warp@5d5a6450a7699e695f1767efd7715251713da2ac",
+]
+retarget = ["matplotlib>=3.9,<4", "trimesh>=4,<5", "pybullet>=3.2.6", "mink", "qpsolvers[quadprog]", "pyyaml", "loop-rate-limiters==1.2.0"]
+dev = ["ruff>=0.13"]
+
+[project.scripts]
+egoengine = "egoengine.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["egoengine*", "spider*", "action*", "visual*"]
+exclude = ["*.tests*", "visual.robosuite*", "visual.retargeting*", "visual.rl_tracking_dev*", "visual.postprocess*"]
+
+[tool.setuptools.package-data]
+spider = ["assets/**/*.xml", "assets/**/*.yaml", "assets/**/*.urdf"]
+
+[tool.ruff]
+line-length = 100
+

@@ -1,0 +1,19 @@
+{
+  "base_config": "aria_rl.json",
+  "task": "drawer",
+  "run": {
+    "mode": "batch"
+  },
+  "overrides": {
+    "object_pos_threshold": 0.10,
+    "object_rot_threshold": 3.5,
+    "contact_rew_scale": 2.0,
+    "base_pos_rew_scale": 0.2,
+    "base_rot_rew_scale": 0.0,
+    "action_smoothness_rew_scale": 0.0,
+    "joint_rew_scale": 0.0,
+    "pos_noise_scale": 0.08,
+    "rot_noise_scale": 0.7,
+    "joint_noise_scale": 0.4
+  }
+}

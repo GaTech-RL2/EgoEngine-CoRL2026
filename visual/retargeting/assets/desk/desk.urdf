@@ -1,0 +1,134 @@
+<?xml version="1.0" ?>
+<robot name="simple_desk">
+
+  <!-- Base table top -->
+  <link name="table_top">
+    <visual>
+      <geometry>
+        <box size="1.0 2.0 0.05"/> <!-- width, depth, height -->
+      </geometry>
+      <material name="brown">
+        <color rgba="0.65 0.50 0.39 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="1.0 2 0.05"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="5"/>
+      <inertia ixx="0.12" ixy="0" ixz="0" iyy="0.12" iyz="0" izz="0.12"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </inertial>
+  </link>
+
+  <!-- Four legs -->
+  <!-- Leg 1 -->
+  <link name="leg_1">
+    <visual>
+      <geometry>
+        <cylinder length="0.699" radius="0.03"/>
+      </geometry>
+      <material name="dark_brown">
+        <color rgba="0.4 0.25 0.1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.699" radius="0.03"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.2"/>
+      <inertia ixx="0.013" ixy="0" ixz="0" iyy="0.013" iyz="0" izz="0.013"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </inertial>
+  </link>
+
+  <!-- Leg 1 joint -->
+  <joint name="leg_1_joint" type="fixed">
+    <parent link="table_top"/>
+    <child link="leg_1"/>
+    <origin xyz="0.5 1.0 -0.3495" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Leg 2 -->
+  <link name="leg_2">
+    <visual>
+      <geometry>
+        <cylinder length="0.699" radius="0.03"/>
+      </geometry>
+      <material name="dark_brown"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.699" radius="0.03"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.2"/>
+      <inertia ixx="0.013" ixy="0" ixz="0" iyy="0.013" iyz="0" izz="0.013"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </inertial>
+  </link>
+
+  <joint name="leg_2_joint" type="fixed">
+    <parent link="table_top"/>
+    <child link="leg_2"/>
+    <origin xyz="0.5 -1.0 -0.3495" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Leg 3 -->
+  <link name="leg_3">
+    <visual>
+      <geometry>
+        <cylinder length="0.699" radius="0.03"/>
+      </geometry>
+      <material name="dark_brown"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.699" radius="0.03"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.2"/>
+      <inertia ixx="0.013" ixy="0" ixz="0" iyy="0.013" iyz="0" izz="0.013"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </inertial>
+  </link>
+
+  <joint name="leg_3_joint" type="fixed">
+    <parent link="table_top"/>
+    <child link="leg_3"/>
+    <origin xyz="-0.5 1.0 -0.3495" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Leg 4 -->
+  <link name="leg_4">
+    <visual>
+      <geometry>
+        <cylinder length="0.699" radius="0.03"/>
+      </geometry>
+      <material name="dark_brown"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.699" radius="0.03"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.2"/>
+      <inertia ixx="0.013" ixy="0" ixz="0" iyy="0.013" iyz="0" izz="0.013"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </inertial>
+  </link>
+
+  <joint name="leg_4_joint" type="fixed">
+    <parent link="table_top"/>
+    <child link="leg_4"/>
+    <origin xyz="-0.5 -1.0 -0.3495" rpy="0 0 0"/>
+  </joint>
+
+</robot>

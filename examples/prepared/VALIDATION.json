@@ -1,0 +1,388 @@
+{
+  "cases": [
+    {
+      "task": "brush_brush_bowl_20230927_027",
+      "dataset": "TACO",
+      "reference_frames": 209,
+      "nq": 50,
+      "nu": 36,
+      "npz_shapes": {
+        "qpos": [
+          209,
+          50
+        ],
+        "qvel": [
+          209,
+          48
+        ],
+        "ctrl": [
+          209,
+          36
+        ],
+        "contact": [
+          209,
+          10
+        ],
+        "contact_pos": [
+          209,
+          10,
+          3
+        ],
+        "frequency": [
+          1
+        ]
+      },
+      "both_xmls_load": true,
+      "cpu_physics_steps": 5,
+      "videos": [
+        {
+          "file": "visual_inputs/TACO/brush_brush_bowl_20230927_027/color.mp4",
+          "decoded_frames": 337
+        },
+        {
+          "file": "visual_inputs/TACO/brush_brush_bowl_20230927_027/historical_inpainted_video.mp4",
+          "decoded_frames": 209
+        },
+        {
+          "file": "visual_inputs/TACO/brush_brush_bowl_20230927_027/historical_ref.mp4",
+          "decoded_frames": 421
+        },
+        {
+          "file": "visual_inputs/TACO/brush_brush_bowl_20230927_027/historical_replay.mp4",
+          "decoded_frames": 421
+        },
+        {
+          "file": "visual_inputs/TACO/brush_brush_bowl_20230927_027/historical_rl.mp4",
+          "decoded_frames": 421
+        }
+      ],
+      "visual_inputs_complete": false,
+      "visual_compositor_verified": false,
+      "validation_scope": "Asset loading, finite reference arrays, video decode, and five CPU steps; no full task success or GPU optimization claim."
+    },
+    {
+      "task": "cut_knife_plate_20230926_040",
+      "dataset": "TACO",
+      "reference_frames": 210,
+      "nq": 50,
+      "nu": 36,
+      "npz_shapes": {
+        "qpos": [
+          210,
+          50
+        ],
+        "qvel": [
+          210,
+          48
+        ],
+        "ctrl": [
+          210,
+          36
+        ],
+        "contact": [
+          210,
+          10
+        ],
+        "contact_pos": [
+          210,
+          10,
+          3
+        ],
+        "frequency": [
+          1
+        ]
+      },
+      "both_xmls_load": true,
+      "cpu_physics_steps": 5,
+      "videos": [
+        {
+          "file": "visual_inputs/TACO/cut_knife_plate_20230926_040/color.mp4",
+          "decoded_frames": 477
+        },
+        {
+          "file": "visual_inputs/TACO/cut_knife_plate_20230926_040/historical_inpainted_video.mp4",
+          "decoded_frames": 210
+        },
+        {
+          "file": "visual_inputs/TACO/cut_knife_plate_20230926_040/historical_ref.mp4",
+          "decoded_frames": 563
+        },
+        {
+          "file": "visual_inputs/TACO/cut_knife_plate_20230926_040/historical_replay.mp4",
+          "decoded_frames": 565
+        },
+        {
+          "file": "visual_inputs/TACO/cut_knife_plate_20230926_040/historical_rl.mp4",
+          "decoded_frames": 563
+        }
+      ],
+      "visual_inputs_complete": false,
+      "visual_compositor_verified": false,
+      "validation_scope": "Asset loading, finite reference arrays, video decode, and five CPU steps; no full task success or GPU optimization claim."
+    },
+    {
+      "task": "scrape_off_knife_plate_20230926_034",
+      "dataset": "TACO",
+      "reference_frames": 228,
+      "nq": 50,
+      "nu": 36,
+      "npz_shapes": {
+        "qpos": [
+          228,
+          50
+        ],
+        "qvel": [
+          228,
+          48
+        ],
+        "ctrl": [
+          228,
+          36
+        ],
+        "contact": [
+          228,
+          10
+        ],
+        "contact_pos": [
+          228,
+          10,
+          3
+        ],
+        "frequency": [
+          1
+        ]
+      },
+      "both_xmls_load": true,
+      "cpu_physics_steps": 5,
+      "videos": [
+        {
+          "file": "visual_inputs/TACO/scrape_off_knife_plate_20230926_034/color.mp4",
+          "decoded_frames": 306
+        },
+        {
+          "file": "visual_inputs/TACO/scrape_off_knife_plate_20230926_034/historical_inpainted_video.mp4",
+          "decoded_frames": 228
+        },
+        {
+          "file": "visual_inputs/TACO/scrape_off_knife_plate_20230926_034/historical_ref.mp4",
+          "decoded_frames": 693
+        },
+        {
+          "file": "visual_inputs/TACO/scrape_off_knife_plate_20230926_034/historical_replay.mp4",
+          "decoded_frames": 693
+        },
+        {
+          "file": "visual_inputs/TACO/scrape_off_knife_plate_20230926_034/historical_rl.mp4",
+          "decoded_frames": 693
+        }
+      ],
+      "visual_inputs_complete": false,
+      "visual_compositor_verified": false,
+      "validation_scope": "Asset loading, finite reference arrays, video decode, and five CPU steps; no full task success or GPU optimization claim."
+    },
+    {
+      "task": "mustard_1",
+      "dataset": "Aria",
+      "reference_frames": 93,
+      "nq": 25,
+      "nu": 18,
+      "npz_shapes": {
+        "qpos": [
+          93,
+          25
+        ],
+        "qvel": [
+          93,
+          24
+        ],
+        "ctrl": [
+          93,
+          18
+        ],
+        "contact": [
+          93,
+          10
+        ],
+        "contact_pos": [
+          93,
+          10,
+          3
+        ],
+        "frequency": [
+          1
+        ]
+      },
+      "both_xmls_load": true,
+      "cpu_physics_steps": 5,
+      "videos": [
+        {
+          "file": "visual_inputs/Aria/mustard_1/cropped_video.mp4",
+          "decoded_frames": 93
+        },
+        {
+          "file": "visual_inputs/Aria/mustard_1/ik.mp4",
+          "decoded_frames": 93
+        },
+        {
+          "file": "visual_inputs/Aria/mustard_1/inpainted_video_egoengine.mp4",
+          "decoded_frames": 93
+        },
+        {
+          "file": "visual_inputs/Aria/mustard_1/mask.mp4",
+          "decoded_frames": 93
+        },
+        {
+          "file": "visual_inputs/Aria/mustard_1/mask_bin.mp4",
+          "decoded_frames": 93
+        },
+        {
+          "file": "visual_inputs/Aria/mustard_1/removed_w_mask_5.mp4",
+          "decoded_frames": 93
+        },
+        {
+          "file": "visual_inputs/Aria/mustard_1/visual_regenerated.mp4",
+          "decoded_frames": 93
+        }
+      ],
+      "visual_inputs_complete": true,
+      "visual_compositor_verified": true,
+      "validation_scope": "Asset loading, finite reference arrays, video decode, and five CPU steps; no full task success or GPU optimization claim."
+    },
+    {
+      "task": "mustard_2",
+      "dataset": "Aria",
+      "reference_frames": 105,
+      "nq": 25,
+      "nu": 18,
+      "npz_shapes": {
+        "qpos": [
+          105,
+          25
+        ],
+        "qvel": [
+          105,
+          24
+        ],
+        "ctrl": [
+          105,
+          18
+        ],
+        "contact": [
+          105,
+          10
+        ],
+        "contact_pos": [
+          105,
+          10,
+          3
+        ],
+        "frequency": [
+          1
+        ]
+      },
+      "both_xmls_load": true,
+      "cpu_physics_steps": 5,
+      "videos": [
+        {
+          "file": "visual_inputs/Aria/mustard_2/cropped_video.mp4",
+          "decoded_frames": 105
+        },
+        {
+          "file": "visual_inputs/Aria/mustard_2/ik.mp4",
+          "decoded_frames": 105
+        },
+        {
+          "file": "visual_inputs/Aria/mustard_2/inpainted_video_egoengine.mp4",
+          "decoded_frames": 105
+        },
+        {
+          "file": "visual_inputs/Aria/mustard_2/mask.mp4",
+          "decoded_frames": 105
+        },
+        {
+          "file": "visual_inputs/Aria/mustard_2/mask_bin.mp4",
+          "decoded_frames": 105
+        },
+        {
+          "file": "visual_inputs/Aria/mustard_2/removed_w_mask_5.mp4",
+          "decoded_frames": 105
+        },
+        {
+          "file": "visual_inputs/Aria/mustard_2/visual_regenerated.mp4",
+          "decoded_frames": 105
+        }
+      ],
+      "visual_inputs_complete": true,
+      "visual_compositor_verified": true,
+      "validation_scope": "Asset loading, finite reference arrays, video decode, and five CPU steps; no full task success or GPU optimization claim."
+    },
+    {
+      "task": "mustard_3",
+      "dataset": "Aria",
+      "reference_frames": 108,
+      "nq": 25,
+      "nu": 18,
+      "npz_shapes": {
+        "qpos": [
+          108,
+          25
+        ],
+        "qvel": [
+          108,
+          24
+        ],
+        "ctrl": [
+          108,
+          18
+        ],
+        "contact": [
+          108,
+          10
+        ],
+        "contact_pos": [
+          108,
+          10,
+          3
+        ],
+        "frequency": [
+          1
+        ]
+      },
+      "both_xmls_load": true,
+      "cpu_physics_steps": 5,
+      "videos": [
+        {
+          "file": "visual_inputs/Aria/mustard_3/cropped_video.mp4",
+          "decoded_frames": 108
+        },
+        {
+          "file": "visual_inputs/Aria/mustard_3/ik.mp4",
+          "decoded_frames": 108
+        },
+        {
+          "file": "visual_inputs/Aria/mustard_3/inpainted_video_egoengine.mp4",
+          "decoded_frames": 108
+        },
+        {
+          "file": "visual_inputs/Aria/mustard_3/mask.mp4",
+          "decoded_frames": 108
+        },
+        {
+          "file": "visual_inputs/Aria/mustard_3/mask_bin.mp4",
+          "decoded_frames": 108
+        },
+        {
+          "file": "visual_inputs/Aria/mustard_3/removed_w_mask_5.mp4",
+          "decoded_frames": 108
+        },
+        {
+          "file": "visual_inputs/Aria/mustard_3/visual_regenerated.mp4",
+          "decoded_frames": 108
+        }
+      ],
+      "visual_inputs_complete": true,
+      "visual_compositor_verified": true,
+      "validation_scope": "Asset loading, finite reference arrays, video decode, and five CPU steps; no full task success or GPU optimization claim."
+    }
+  ]
+}

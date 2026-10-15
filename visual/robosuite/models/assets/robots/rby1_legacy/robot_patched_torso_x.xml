@@ -1,0 +1,2208 @@
+<mujoco model="RBY1">
+<compiler angle="radian" autolimits="true"/>
+<visual>
+<global offwidth="800" offheight="800"/>
+<map force="0.1" zfar="30"/>
+<rgba haze="0.15 0.25 0.35 1"/>
+</visual>
+<default>
+<motor ctrllimited="true" ctrlrange="-1 1"/>
+<material shininess="0.1"/>
+<default class="visual">
+<material shininess="0.1"/>
+<joint range="0 0" armature="0" damping="0"/>
+<geom type="mesh" contype="0" conaffinity="0" group="1"/>
+</default>
+<default class="collision">
+<material shininess="0.1"/>
+<joint range="0 0" armature="0" damping="0"/>
+<geom type="mesh" conaffinity="0" group="0"/>
+</default>
+<default class="in-model-collision">
+<material shininess="0.1"/>
+<joint range="0 0" armature="0" damping="0"/>
+<geom contype="0" conaffinity="0" group="0" rgba="0.3 0 0 0"/>
+</default>
+</default>
+<asset>
+<texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="3072"/>
+<texture type="2d" name="plane" builtin="checker" mark="cross" rgb1="0.2 0.3 0.4" rgb2="0.1 0.15 0.2" markrgb="0.8 0.8 0.8" width="512" height="512"/>
+<material name="plane" texture="plane" texuniform="true" reflectance="0.3"/>
+<material name="0,0,0" specular="0.2" shininess="0.1" rgba="0 0 0 1"/>
+<material name="10,10,10_LINK_6" specular="0.2" shininess="0.1" rgba="0.039216 0.039216 0.039216 1"/>
+<material name="10,10,10" specular="0.2" shininess="0.1" rgba="0.039216 0.039216 0.039216 1"/>
+<material name="163,163,175" specular="0.2" shininess="0.1" rgba="0.639216 0.639216 0.686275 1.000000"/>
+<material name="178,0,0" specular="0.2" shininess="0.1" rgba="0.698039 0 0 1"/>
+<material name="190,188,186" specular="0.2" shininess="0.1" rgba="0.558824 0.552941 0.547059 1.000000"/>
+<material name="191,191,191" specular="0.2" shininess="0.1" rgba="0.561765 0.561765 0.561765 1.000000"/>
+<material name="192,192,192" specular="0.2" shininess="0.1" rgba="0.564706 0.564706 0.564706 1.000000"/>
+<material name="216,214,214" specular="0.2" shininess="0.1" rgba="0.635294 0.629412 0.629412 1.000000"/>
+<material name="237,255,168" specular="0.2" shininess="0.1" rgba="0.697059 0.750000 0.494118 1.000000"/>
+<material name="242,236,238" specular="0.2" shininess="0.1" rgba="0.711765 0.694118 0.700000 1.000000"/>
+<material name="244,244,244" specular="0.2" shininess="0.1" rgba="0.717647 0.717647 0.717647 1.000000"/>
+<material name="25,25,25" specular="0.2" shininess="0.1" rgba="0.1 0.1 0.1 1"/>
+<material name="254,254,255_LINK_6" specular="0.2" shininess="0.1" rgba="0.747059 0.747059 0.750000 1.000000"/>
+<material name="254,254,255" specular="0.2" shininess="0.1" rgba="0.747059 0.747059 0.750000 1.000000"/>
+<material name="65,55,50" specular="0.2" shininess="0.1" rgba="0.254902 0.215686 0.196078 1"/>
+<material name="65,65,65" specular="0.2" shininess="0.1" rgba="0.254902 0.254902 0.254902 1"/>
+<material name="69,69,69_1" specular="0.2" shininess="0.1" rgba="0.270588 0.270588 0.270588 1"/>
+<material name="69,69,69" specular="0.2" shininess="0.1" rgba="0.270588 0.270588 0.270588 1"/>
+<material name="70,70,70_FINGER" specular="0.2" shininess="0.1" rgba="0.27451 0.27451 0.27451 1"/>
+<material name="70,70,70" specular="0.2" shininess="0.1" rgba="0.27451 0.27451 0.27451 1"/>
+<material name="79,79,79" specular="0.2" shininess="0.1" rgba="0.309804 0.309804 0.309804 1.000000"/>
+<material name="80,80,80" specular="0.2" shininess="0.1" rgba="0.313725 0.313725 0.313725 1.000000"/>
+<material name="219,216,216" specular="0.2" shininess="0.1" rgba="0.644118 0.635294 0.635294 1.000000"/>
+<material name="160,160,160" specular="0.2" shininess="0.1" rgba="0.627451 0.627451 0.627451 1.000000"/>
+<material name="246,246,243" specular="0.2" shininess="0.1" rgba="0.723529 0.723529 0.714706 1.000000"/>
+<material name="255,255,255" specular="0.2" shininess="0.1"/>
+<material name="235,235,235" specular="0.2" shininess="0.1" rgba="0.691177 0.691177 0.691177 1.000000"/>
+<mesh name="base_0" file="./assets/base/base_0.obj"/>
+<mesh name="base_1" file="./assets/base/base_1.obj"/>
+<mesh name="base_2" file="./assets/base/base_2.obj"/>
+<mesh name="base_3" file="./assets/base/base_3.obj"/>
+<mesh name="base_collision_0" file="./assets/base/base_collision_0.obj"/>
+<mesh name="base_collision_1" file="./assets/base/base_collision_1.obj"/>
+<mesh name="base_collision_2" file="./assets/base/base_collision_2.obj"/>
+<mesh name="base_collision_3" file="./assets/base/base_collision_3.obj"/>
+<mesh name="base_collision_4" file="./assets/base/base_collision_4.obj"/>
+<mesh name="base_collision_5" file="./assets/base/base_collision_5.obj"/>
+<mesh name="base_collision_6" file="./assets/base/base_collision_6.obj"/>
+<mesh name="base_collision_7" file="./assets/base/base_collision_7.obj"/>
+<mesh name="base_collision_8" file="./assets/base/base_collision_8.obj"/>
+<mesh name="base_collision_9" file="./assets/base/base_collision_9.obj"/>
+<mesh name="base_collision_10" file="./assets/base/base_collision_10.obj"/>
+<mesh name="base_collision_11" file="./assets/base/base_collision_11.obj"/>
+<mesh name="base_collision_12" file="./assets/base/base_collision_12.obj"/>
+<mesh name="base_collision_13" file="./assets/base/base_collision_13.obj"/>
+<mesh name="base_collision_14" file="./assets/base/base_collision_14.obj"/>
+<mesh name="base_collision_15" file="./assets/base/base_collision_15.obj"/>
+<mesh name="WHEEL" file="./assets/WHEEL/WHEEL.obj"/>
+<mesh name="WHEEL_collision_0" file="./assets/WHEEL/WHEEL_collision_0.obj"/>
+<mesh name="WHEEL_collision_1" file="./assets/WHEEL/WHEEL_collision_1.obj"/>
+<mesh name="WHEEL_collision_2" file="./assets/WHEEL/WHEEL_collision_2.obj"/>
+<mesh name="WHEEL_collision_3" file="./assets/WHEEL/WHEEL_collision_3.obj"/>
+<mesh name="WHEEL_collision_4" file="./assets/WHEEL/WHEEL_collision_4.obj"/>
+<mesh name="WHEEL_collision_5" file="./assets/WHEEL/WHEEL_collision_5.obj"/>
+<mesh name="WHEEL_collision_6" file="./assets/WHEEL/WHEEL_collision_6.obj"/>
+<mesh name="WHEEL_collision_7" file="./assets/WHEEL/WHEEL_collision_7.obj"/>
+<mesh name="WHEEL_collision_8" file="./assets/WHEEL/WHEEL_collision_8.obj"/>
+<mesh name="WHEEL_collision_9" file="./assets/WHEEL/WHEEL_collision_9.obj"/>
+<mesh name="WHEEL_collision_10" file="./assets/WHEEL/WHEEL_collision_10.obj"/>
+<mesh name="WHEEL_collision_11" file="./assets/WHEEL/WHEEL_collision_11.obj"/>
+<mesh name="WHEEL_collision_12" file="./assets/WHEEL/WHEEL_collision_12.obj"/>
+<mesh name="WHEEL_collision_13" file="./assets/WHEEL/WHEEL_collision_13.obj"/>
+<mesh name="WHEEL_collision_14" file="./assets/WHEEL/WHEEL_collision_14.obj"/>
+<mesh name="WHEEL_collision_15" file="./assets/WHEEL/WHEEL_collision_15.obj"/>
+<mesh name="WHEEL_collision_16" file="./assets/WHEEL/WHEEL_collision_16.obj"/>
+<mesh name="WHEEL_collision_17" file="./assets/WHEEL/WHEEL_collision_17.obj"/>
+<mesh name="WHEEL_collision_18" file="./assets/WHEEL/WHEEL_collision_18.obj"/>
+<mesh name="WHEEL_collision_19" file="./assets/WHEEL/WHEEL_collision_19.obj"/>
+<mesh name="WHEEL_collision_20" file="./assets/WHEEL/WHEEL_collision_20.obj"/>
+<mesh name="WHEEL_collision_21" file="./assets/WHEEL/WHEEL_collision_21.obj"/>
+<mesh name="WHEEL_collision_22" file="./assets/WHEEL/WHEEL_collision_22.obj"/>
+<mesh name="WHEEL_collision_23" file="./assets/WHEEL/WHEEL_collision_23.obj"/>
+<mesh name="WHEEL_collision_24" file="./assets/WHEEL/WHEEL_collision_24.obj"/>
+<mesh name="WHEEL_collision_25" file="./assets/WHEEL/WHEEL_collision_25.obj"/>
+<mesh name="WHEEL_collision_26" file="./assets/WHEEL/WHEEL_collision_26.obj"/>
+<mesh name="WHEEL_collision_27" file="./assets/WHEEL/WHEEL_collision_27.obj"/>
+<mesh name="WHEEL_collision_28" file="./assets/WHEEL/WHEEL_collision_28.obj"/>
+<mesh name="WHEEL_collision_29" file="./assets/WHEEL/WHEEL_collision_29.obj"/>
+<mesh name="WHEEL_collision_30" file="./assets/WHEEL/WHEEL_collision_30.obj"/>
+<mesh name="WHEEL_collision_31" file="./assets/WHEEL/WHEEL_collision_31.obj"/>
+<mesh name="WHEEL_collision_32" file="./assets/WHEEL/WHEEL_collision_32.obj"/>
+<mesh name="WHEEL_collision_33" file="./assets/WHEEL/WHEEL_collision_33.obj"/>
+<mesh name="WHEEL_collision_34" file="./assets/WHEEL/WHEEL_collision_34.obj"/>
+<mesh name="WHEEL_collision_35" file="./assets/WHEEL/WHEEL_collision_35.obj"/>
+<mesh name="WHEEL_collision_36" file="./assets/WHEEL/WHEEL_collision_36.obj"/>
+<mesh name="WHEEL_collision_37" file="./assets/WHEEL/WHEEL_collision_37.obj"/>
+<mesh name="EE_BODY" file="./assets/EE_BODY/EE_BODY.obj"/>
+<mesh name="EE_BODY_collision_0" file="./assets/EE_BODY/EE_BODY_collision_0.obj"/>
+<mesh name="EE_BODY_collision_1" file="./assets/EE_BODY/EE_BODY_collision_1.obj"/>
+<mesh name="EE_BODY_collision_2" file="./assets/EE_BODY/EE_BODY_collision_2.obj"/>
+<mesh name="EE_BODY_collision_3" file="./assets/EE_BODY/EE_BODY_collision_3.obj"/>
+<mesh name="EE_BODY_collision_4" file="./assets/EE_BODY/EE_BODY_collision_4.obj"/>
+<mesh name="EE_BODY_collision_5" file="./assets/EE_BODY/EE_BODY_collision_5.obj"/>
+<mesh name="EE_BODY_collision_6" file="./assets/EE_BODY/EE_BODY_collision_6.obj"/>
+<mesh name="EE_BODY_collision_7" file="./assets/EE_BODY/EE_BODY_collision_7.obj"/>
+<mesh name="EE_BODY_collision_8" file="./assets/EE_BODY/EE_BODY_collision_8.obj"/>
+<mesh name="EE_BODY_collision_9" file="./assets/EE_BODY/EE_BODY_collision_9.obj"/>
+<mesh name="EE_BODY_collision_10" file="./assets/EE_BODY/EE_BODY_collision_10.obj"/>
+<mesh name="EE_BODY_collision_11" file="./assets/EE_BODY/EE_BODY_collision_11.obj"/>
+<mesh name="EE_BODY_collision_12" file="./assets/EE_BODY/EE_BODY_collision_12.obj"/>
+<mesh name="EE_BODY_collision_13" file="./assets/EE_BODY/EE_BODY_collision_13.obj"/>
+<mesh name="EE_BODY_collision_14" file="./assets/EE_BODY/EE_BODY_collision_14.obj"/>
+<mesh name="EE_BODY_collision_15" file="./assets/EE_BODY/EE_BODY_collision_15.obj"/>
+<mesh name="EE_BODY_collision_16" file="./assets/EE_BODY/EE_BODY_collision_16.obj"/>
+<mesh name="EE_BODY_collision_17" file="./assets/EE_BODY/EE_BODY_collision_17.obj"/>
+<mesh name="EE_BODY_collision_18" file="./assets/EE_BODY/EE_BODY_collision_18.obj"/>
+<mesh name="EE_BODY_collision_19" file="./assets/EE_BODY/EE_BODY_collision_19.obj"/>
+<mesh name="EE_BODY_collision_20" file="./assets/EE_BODY/EE_BODY_collision_20.obj"/>
+<mesh name="EE_BODY_collision_21" file="./assets/EE_BODY/EE_BODY_collision_21.obj"/>
+<mesh name="EE_BODY_collision_22" file="./assets/EE_BODY/EE_BODY_collision_22.obj"/>
+<mesh name="EE_BODY_collision_23" file="./assets/EE_BODY/EE_BODY_collision_23.obj"/>
+<mesh name="EE_BODY_collision_24" file="./assets/EE_BODY/EE_BODY_collision_24.obj"/>
+<mesh name="EE_FINGER_0" file="./assets/EE_FINGER/EE_FINGER_0.obj"/>
+<mesh name="EE_FINGER_1" file="./assets/EE_FINGER/EE_FINGER_1.obj"/>
+<mesh name="EE_FINGER_collision_0" file="./assets/EE_FINGER/EE_FINGER_collision_0.obj"/>
+<mesh name="EE_FINGER_collision_1" file="./assets/EE_FINGER/EE_FINGER_collision_1.obj"/>
+<mesh name="EE_FINGER_collision_2" file="./assets/EE_FINGER/EE_FINGER_collision_2.obj"/>
+<mesh name="EE_FINGER_collision_3" file="./assets/EE_FINGER/EE_FINGER_collision_3.obj"/>
+<mesh name="EE_FINGER_collision_4" file="./assets/EE_FINGER/EE_FINGER_collision_4.obj"/>
+<mesh name="FT_SENSOR_L_0" file="./assets/FT_SENSOR_L/FT_SENSOR_L_0.obj"/>
+<mesh name="FT_SENSOR_L_1" file="./assets/FT_SENSOR_L/FT_SENSOR_L_1.obj"/>
+<mesh name="FT_SENSOR_L_2" file="./assets/FT_SENSOR_L/FT_SENSOR_L_2.obj"/>
+<mesh name="FT_SENSOR_L_3" file="./assets/FT_SENSOR_L/FT_SENSOR_L_3.obj"/>
+<mesh name="FT_SENSOR_L_4" file="./assets/FT_SENSOR_L/FT_SENSOR_L_4.obj"/>
+<mesh name="FT_SENSOR_L_5" file="./assets/FT_SENSOR_L/FT_SENSOR_L_5.obj"/>
+<mesh name="FT_SENSOR_L_6" file="./assets/FT_SENSOR_L/FT_SENSOR_L_6.obj"/>
+<mesh name="FT_SENSOR_L_7" file="./assets/FT_SENSOR_L/FT_SENSOR_L_7.obj"/>
+<mesh name="FT_SENSOR_L_8" file="./assets/FT_SENSOR_L/FT_SENSOR_L_8.obj"/>
+<mesh name="FT_SENSOR_L_9" file="./assets/FT_SENSOR_L/FT_SENSOR_L_9.obj"/>
+<mesh name="FT_SENSOR_L_10" file="./assets/FT_SENSOR_L/FT_SENSOR_L_10.obj"/>
+<mesh name="FT_SENSOR_L_collision_0" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_0.obj"/>
+<mesh name="FT_SENSOR_L_collision_1" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_1.obj"/>
+<mesh name="FT_SENSOR_L_collision_2" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_2.obj"/>
+<mesh name="FT_SENSOR_L_collision_3" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_3.obj"/>
+<mesh name="FT_SENSOR_L_collision_4" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_4.obj"/>
+<mesh name="FT_SENSOR_L_collision_5" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_5.obj"/>
+<mesh name="FT_SENSOR_L_collision_6" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_6.obj"/>
+<mesh name="FT_SENSOR_L_collision_7" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_7.obj"/>
+<mesh name="FT_SENSOR_L_collision_8" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_8.obj"/>
+<mesh name="FT_SENSOR_L_collision_9" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_9.obj"/>
+<mesh name="FT_SENSOR_L_collision_10" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_10.obj"/>
+<mesh name="FT_SENSOR_L_collision_11" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_11.obj"/>
+<mesh name="FT_SENSOR_L_collision_12" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_12.obj"/>
+<mesh name="FT_SENSOR_L_collision_13" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_13.obj"/>
+<mesh name="FT_SENSOR_L_collision_14" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_14.obj"/>
+<mesh name="FT_SENSOR_L_collision_15" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_15.obj"/>
+<mesh name="FT_SENSOR_L_collision_16" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_16.obj"/>
+<mesh name="FT_SENSOR_L_collision_17" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_17.obj"/>
+<mesh name="FT_SENSOR_L_collision_18" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_18.obj"/>
+<mesh name="FT_SENSOR_L_collision_19" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_19.obj"/>
+<mesh name="FT_SENSOR_L_collision_20" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_20.obj"/>
+<mesh name="FT_SENSOR_L_collision_21" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_21.obj"/>
+<mesh name="FT_SENSOR_L_collision_22" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_22.obj"/>
+<mesh name="FT_SENSOR_L_collision_23" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_23.obj"/>
+<mesh name="FT_SENSOR_L_collision_24" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_24.obj"/>
+<mesh name="FT_SENSOR_L_collision_25" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_25.obj"/>
+<mesh name="FT_SENSOR_L_collision_26" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_26.obj"/>
+<mesh name="FT_SENSOR_L_collision_27" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_27.obj"/>
+<mesh name="FT_SENSOR_L_collision_28" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_28.obj"/>
+<mesh name="FT_SENSOR_L_collision_29" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_29.obj"/>
+<mesh name="FT_SENSOR_L_collision_30" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_30.obj"/>
+<mesh name="FT_SENSOR_L_collision_31" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_31.obj"/>
+<mesh name="FT_SENSOR_L_collision_32" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_32.obj"/>
+<mesh name="FT_SENSOR_L_collision_33" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_33.obj"/>
+<mesh name="FT_SENSOR_L_collision_34" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_34.obj"/>
+<mesh name="FT_SENSOR_L_collision_35" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_35.obj"/>
+<mesh name="FT_SENSOR_L_collision_36" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_36.obj"/>
+<mesh name="FT_SENSOR_L_collision_37" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_37.obj"/>
+<mesh name="FT_SENSOR_L_collision_38" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_38.obj"/>
+<mesh name="FT_SENSOR_L_collision_39" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_39.obj"/>
+<mesh name="FT_SENSOR_L_collision_40" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_40.obj"/>
+<mesh name="FT_SENSOR_L_collision_41" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_41.obj"/>
+<mesh name="FT_SENSOR_L_collision_42" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_42.obj"/>
+<mesh name="FT_SENSOR_L_collision_43" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_43.obj"/>
+<mesh name="FT_SENSOR_L_collision_44" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_44.obj"/>
+<mesh name="FT_SENSOR_L_collision_45" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_45.obj"/>
+<mesh name="FT_SENSOR_L_collision_46" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_46.obj"/>
+<mesh name="FT_SENSOR_L_collision_47" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_47.obj"/>
+<mesh name="FT_SENSOR_L_collision_48" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_48.obj"/>
+<mesh name="FT_SENSOR_L_collision_49" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_49.obj"/>
+<mesh name="FT_SENSOR_L_collision_50" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_50.obj"/>
+<mesh name="FT_SENSOR_L_collision_51" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_51.obj"/>
+<mesh name="FT_SENSOR_L_collision_52" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_52.obj"/>
+<mesh name="FT_SENSOR_L_collision_53" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_53.obj"/>
+<mesh name="FT_SENSOR_L_collision_54" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_54.obj"/>
+<mesh name="FT_SENSOR_L_collision_55" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_55.obj"/>
+<mesh name="FT_SENSOR_L_collision_56" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_56.obj"/>
+<mesh name="FT_SENSOR_L_collision_57" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_57.obj"/>
+<mesh name="FT_SENSOR_L_collision_58" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_58.obj"/>
+<mesh name="FT_SENSOR_L_collision_59" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_59.obj"/>
+<mesh name="FT_SENSOR_L_collision_60" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_60.obj"/>
+<mesh name="FT_SENSOR_L_collision_61" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_61.obj"/>
+<mesh name="FT_SENSOR_L_collision_62" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_62.obj"/>
+<mesh name="FT_SENSOR_L_collision_63" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_63.obj"/>
+<mesh name="FT_SENSOR_L_collision_64" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_64.obj"/>
+<mesh name="FT_SENSOR_L_collision_65" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_65.obj"/>
+<mesh name="FT_SENSOR_L_collision_66" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_66.obj"/>
+<mesh name="FT_SENSOR_L_collision_67" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_67.obj"/>
+<mesh name="FT_SENSOR_L_collision_68" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_68.obj"/>
+<mesh name="FT_SENSOR_L_collision_69" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_69.obj"/>
+<mesh name="FT_SENSOR_L_collision_70" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_70.obj"/>
+<mesh name="FT_SENSOR_L_collision_71" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_71.obj"/>
+<mesh name="FT_SENSOR_L_collision_72" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_72.obj"/>
+<mesh name="FT_SENSOR_L_collision_73" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_73.obj"/>
+<mesh name="FT_SENSOR_L_collision_74" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_74.obj"/>
+<mesh name="FT_SENSOR_L_collision_75" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_75.obj"/>
+<mesh name="FT_SENSOR_L_collision_76" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_76.obj"/>
+<mesh name="FT_SENSOR_L_collision_77" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_77.obj"/>
+<mesh name="FT_SENSOR_L_collision_78" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_78.obj"/>
+<mesh name="FT_SENSOR_L_collision_79" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_79.obj"/>
+<mesh name="FT_SENSOR_L_collision_80" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_80.obj"/>
+<mesh name="FT_SENSOR_L_collision_81" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_81.obj"/>
+<mesh name="FT_SENSOR_L_collision_82" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_82.obj"/>
+<mesh name="FT_SENSOR_L_collision_83" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_83.obj"/>
+<mesh name="FT_SENSOR_L_collision_84" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_84.obj"/>
+<mesh name="FT_SENSOR_L_collision_85" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_85.obj"/>
+<mesh name="FT_SENSOR_L_collision_86" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_86.obj"/>
+<mesh name="FT_SENSOR_L_collision_87" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_87.obj"/>
+<mesh name="FT_SENSOR_L_collision_88" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_88.obj"/>
+<mesh name="FT_SENSOR_L_collision_89" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_89.obj"/>
+<mesh name="FT_SENSOR_L_collision_90" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_90.obj"/>
+<mesh name="FT_SENSOR_L_collision_91" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_91.obj"/>
+<mesh name="FT_SENSOR_L_collision_92" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_92.obj"/>
+<mesh name="FT_SENSOR_L_collision_93" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_93.obj"/>
+<mesh name="FT_SENSOR_L_collision_94" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_94.obj"/>
+<mesh name="FT_SENSOR_L_collision_95" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_95.obj"/>
+<mesh name="FT_SENSOR_L_collision_96" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_96.obj"/>
+<mesh name="FT_SENSOR_L_collision_97" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_97.obj"/>
+<mesh name="FT_SENSOR_L_collision_98" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_98.obj"/>
+<mesh name="FT_SENSOR_L_collision_99" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_99.obj"/>
+<mesh name="FT_SENSOR_L_collision_100" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_100.obj"/>
+<mesh name="FT_SENSOR_L_collision_101" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_101.obj"/>
+<mesh name="FT_SENSOR_L_collision_102" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_102.obj"/>
+<mesh name="FT_SENSOR_L_collision_103" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_103.obj"/>
+<mesh name="FT_SENSOR_L_collision_104" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_104.obj"/>
+<mesh name="FT_SENSOR_L_collision_105" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_105.obj"/>
+<mesh name="FT_SENSOR_L_collision_106" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_106.obj"/>
+<mesh name="FT_SENSOR_L_collision_107" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_107.obj"/>
+<mesh name="FT_SENSOR_L_collision_108" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_108.obj"/>
+<mesh name="FT_SENSOR_L_collision_109" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_109.obj"/>
+<mesh name="FT_SENSOR_L_collision_110" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_110.obj"/>
+<mesh name="FT_SENSOR_L_collision_111" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_111.obj"/>
+<mesh name="FT_SENSOR_L_collision_112" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_112.obj"/>
+<mesh name="FT_SENSOR_L_collision_113" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_113.obj"/>
+<mesh name="FT_SENSOR_L_collision_114" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_114.obj"/>
+<mesh name="FT_SENSOR_L_collision_115" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_115.obj"/>
+<mesh name="FT_SENSOR_L_collision_116" file="./assets/FT_SENSOR_L/FT_SENSOR_L_collision_116.obj"/>
+<mesh name="FT_SENSOR_R_0" file="./assets/FT_SENSOR_R/FT_SENSOR_R_0.obj"/>
+<mesh name="FT_SENSOR_R_1" file="./assets/FT_SENSOR_R/FT_SENSOR_R_1.obj"/>
+<mesh name="FT_SENSOR_R_2" file="./assets/FT_SENSOR_R/FT_SENSOR_R_2.obj"/>
+<mesh name="FT_SENSOR_R_3" file="./assets/FT_SENSOR_R/FT_SENSOR_R_3.obj"/>
+<mesh name="FT_SENSOR_R_4" file="./assets/FT_SENSOR_R/FT_SENSOR_R_4.obj"/>
+<mesh name="FT_SENSOR_R_5" file="./assets/FT_SENSOR_R/FT_SENSOR_R_5.obj"/>
+<mesh name="FT_SENSOR_R_6" file="./assets/FT_SENSOR_R/FT_SENSOR_R_6.obj"/>
+<mesh name="FT_SENSOR_R_7" file="./assets/FT_SENSOR_R/FT_SENSOR_R_7.obj"/>
+<mesh name="FT_SENSOR_R_8" file="./assets/FT_SENSOR_R/FT_SENSOR_R_8.obj"/>
+<mesh name="FT_SENSOR_R_9" file="./assets/FT_SENSOR_R/FT_SENSOR_R_9.obj"/>
+<mesh name="FT_SENSOR_R_10" file="./assets/FT_SENSOR_R/FT_SENSOR_R_10.obj"/>
+<mesh name="FT_SENSOR_R_collision_0" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_0.obj"/>
+<mesh name="FT_SENSOR_R_collision_1" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_1.obj"/>
+<mesh name="FT_SENSOR_R_collision_2" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_2.obj"/>
+<mesh name="FT_SENSOR_R_collision_3" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_3.obj"/>
+<mesh name="FT_SENSOR_R_collision_4" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_4.obj"/>
+<mesh name="FT_SENSOR_R_collision_5" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_5.obj"/>
+<mesh name="FT_SENSOR_R_collision_6" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_6.obj"/>
+<mesh name="FT_SENSOR_R_collision_7" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_7.obj"/>
+<mesh name="FT_SENSOR_R_collision_8" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_8.obj"/>
+<mesh name="FT_SENSOR_R_collision_9" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_9.obj"/>
+<mesh name="FT_SENSOR_R_collision_10" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_10.obj"/>
+<mesh name="FT_SENSOR_R_collision_11" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_11.obj"/>
+<mesh name="FT_SENSOR_R_collision_12" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_12.obj"/>
+<mesh name="FT_SENSOR_R_collision_13" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_13.obj"/>
+<mesh name="FT_SENSOR_R_collision_14" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_14.obj"/>
+<mesh name="FT_SENSOR_R_collision_15" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_15.obj"/>
+<mesh name="FT_SENSOR_R_collision_16" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_16.obj"/>
+<mesh name="FT_SENSOR_R_collision_17" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_17.obj"/>
+<mesh name="FT_SENSOR_R_collision_18" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_18.obj"/>
+<mesh name="FT_SENSOR_R_collision_19" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_19.obj"/>
+<mesh name="FT_SENSOR_R_collision_20" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_20.obj"/>
+<mesh name="FT_SENSOR_R_collision_21" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_21.obj"/>
+<mesh name="FT_SENSOR_R_collision_22" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_22.obj"/>
+<mesh name="FT_SENSOR_R_collision_23" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_23.obj"/>
+<mesh name="FT_SENSOR_R_collision_24" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_24.obj"/>
+<mesh name="FT_SENSOR_R_collision_25" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_25.obj"/>
+<mesh name="FT_SENSOR_R_collision_26" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_26.obj"/>
+<mesh name="FT_SENSOR_R_collision_27" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_27.obj"/>
+<mesh name="FT_SENSOR_R_collision_28" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_28.obj"/>
+<mesh name="FT_SENSOR_R_collision_29" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_29.obj"/>
+<mesh name="FT_SENSOR_R_collision_30" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_30.obj"/>
+<mesh name="FT_SENSOR_R_collision_31" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_31.obj"/>
+<mesh name="FT_SENSOR_R_collision_32" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_32.obj"/>
+<mesh name="FT_SENSOR_R_collision_33" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_33.obj"/>
+<mesh name="FT_SENSOR_R_collision_34" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_34.obj"/>
+<mesh name="FT_SENSOR_R_collision_35" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_35.obj"/>
+<mesh name="FT_SENSOR_R_collision_36" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_36.obj"/>
+<mesh name="FT_SENSOR_R_collision_37" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_37.obj"/>
+<mesh name="FT_SENSOR_R_collision_38" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_38.obj"/>
+<mesh name="FT_SENSOR_R_collision_39" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_39.obj"/>
+<mesh name="FT_SENSOR_R_collision_40" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_40.obj"/>
+<mesh name="FT_SENSOR_R_collision_41" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_41.obj"/>
+<mesh name="FT_SENSOR_R_collision_42" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_42.obj"/>
+<mesh name="FT_SENSOR_R_collision_43" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_43.obj"/>
+<mesh name="FT_SENSOR_R_collision_44" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_44.obj"/>
+<mesh name="FT_SENSOR_R_collision_45" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_45.obj"/>
+<mesh name="FT_SENSOR_R_collision_46" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_46.obj"/>
+<mesh name="FT_SENSOR_R_collision_47" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_47.obj"/>
+<mesh name="FT_SENSOR_R_collision_48" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_48.obj"/>
+<mesh name="FT_SENSOR_R_collision_49" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_49.obj"/>
+<mesh name="FT_SENSOR_R_collision_50" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_50.obj"/>
+<mesh name="FT_SENSOR_R_collision_51" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_51.obj"/>
+<mesh name="FT_SENSOR_R_collision_52" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_52.obj"/>
+<mesh name="FT_SENSOR_R_collision_53" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_53.obj"/>
+<mesh name="FT_SENSOR_R_collision_54" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_54.obj"/>
+<mesh name="FT_SENSOR_R_collision_55" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_55.obj"/>
+<mesh name="FT_SENSOR_R_collision_56" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_56.obj"/>
+<mesh name="FT_SENSOR_R_collision_57" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_57.obj"/>
+<mesh name="FT_SENSOR_R_collision_58" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_58.obj"/>
+<mesh name="FT_SENSOR_R_collision_59" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_59.obj"/>
+<mesh name="FT_SENSOR_R_collision_60" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_60.obj"/>
+<mesh name="FT_SENSOR_R_collision_61" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_61.obj"/>
+<mesh name="FT_SENSOR_R_collision_62" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_62.obj"/>
+<mesh name="FT_SENSOR_R_collision_63" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_63.obj"/>
+<mesh name="FT_SENSOR_R_collision_64" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_64.obj"/>
+<mesh name="FT_SENSOR_R_collision_65" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_65.obj"/>
+<mesh name="FT_SENSOR_R_collision_66" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_66.obj"/>
+<mesh name="FT_SENSOR_R_collision_67" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_67.obj"/>
+<mesh name="FT_SENSOR_R_collision_68" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_68.obj"/>
+<mesh name="FT_SENSOR_R_collision_69" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_69.obj"/>
+<mesh name="FT_SENSOR_R_collision_70" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_70.obj"/>
+<mesh name="FT_SENSOR_R_collision_71" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_71.obj"/>
+<mesh name="FT_SENSOR_R_collision_72" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_72.obj"/>
+<mesh name="FT_SENSOR_R_collision_73" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_73.obj"/>
+<mesh name="FT_SENSOR_R_collision_74" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_74.obj"/>
+<mesh name="FT_SENSOR_R_collision_75" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_75.obj"/>
+<mesh name="FT_SENSOR_R_collision_76" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_76.obj"/>
+<mesh name="FT_SENSOR_R_collision_77" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_77.obj"/>
+<mesh name="FT_SENSOR_R_collision_78" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_78.obj"/>
+<mesh name="FT_SENSOR_R_collision_79" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_79.obj"/>
+<mesh name="FT_SENSOR_R_collision_80" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_80.obj"/>
+<mesh name="FT_SENSOR_R_collision_81" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_81.obj"/>
+<mesh name="FT_SENSOR_R_collision_82" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_82.obj"/>
+<mesh name="FT_SENSOR_R_collision_83" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_83.obj"/>
+<mesh name="FT_SENSOR_R_collision_84" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_84.obj"/>
+<mesh name="FT_SENSOR_R_collision_85" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_85.obj"/>
+<mesh name="FT_SENSOR_R_collision_86" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_86.obj"/>
+<mesh name="FT_SENSOR_R_collision_87" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_87.obj"/>
+<mesh name="FT_SENSOR_R_collision_88" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_88.obj"/>
+<mesh name="FT_SENSOR_R_collision_89" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_89.obj"/>
+<mesh name="FT_SENSOR_R_collision_90" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_90.obj"/>
+<mesh name="FT_SENSOR_R_collision_91" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_91.obj"/>
+<mesh name="FT_SENSOR_R_collision_92" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_92.obj"/>
+<mesh name="FT_SENSOR_R_collision_93" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_93.obj"/>
+<mesh name="FT_SENSOR_R_collision_94" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_94.obj"/>
+<mesh name="FT_SENSOR_R_collision_95" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_95.obj"/>
+<mesh name="FT_SENSOR_R_collision_96" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_96.obj"/>
+<mesh name="FT_SENSOR_R_collision_97" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_97.obj"/>
+<mesh name="FT_SENSOR_R_collision_98" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_98.obj"/>
+<mesh name="FT_SENSOR_R_collision_99" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_99.obj"/>
+<mesh name="FT_SENSOR_R_collision_100" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_100.obj"/>
+<mesh name="FT_SENSOR_R_collision_101" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_101.obj"/>
+<mesh name="FT_SENSOR_R_collision_102" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_102.obj"/>
+<mesh name="FT_SENSOR_R_collision_103" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_103.obj"/>
+<mesh name="FT_SENSOR_R_collision_104" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_104.obj"/>
+<mesh name="FT_SENSOR_R_collision_105" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_105.obj"/>
+<mesh name="FT_SENSOR_R_collision_106" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_106.obj"/>
+<mesh name="FT_SENSOR_R_collision_107" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_107.obj"/>
+<mesh name="FT_SENSOR_R_collision_108" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_108.obj"/>
+<mesh name="FT_SENSOR_R_collision_109" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_109.obj"/>
+<mesh name="FT_SENSOR_R_collision_110" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_110.obj"/>
+<mesh name="FT_SENSOR_R_collision_111" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_111.obj"/>
+<mesh name="FT_SENSOR_R_collision_112" file="./assets/FT_SENSOR_R/FT_SENSOR_R_collision_112.obj"/>
+<mesh name="LINK_1" file="./assets/LINK_1/LINK_1.obj"/>
+<mesh name="LINK_1_collision_0" file="./assets/LINK_1/LINK_1_collision_0.obj"/>
+<mesh name="LINK_1_collision_1" file="./assets/LINK_1/LINK_1_collision_1.obj"/>
+<mesh name="LINK_1_collision_2" file="./assets/LINK_1/LINK_1_collision_2.obj"/>
+<mesh name="LINK_1_collision_3" file="./assets/LINK_1/LINK_1_collision_3.obj"/>
+<mesh name="LINK_1_collision_4" file="./assets/LINK_1/LINK_1_collision_4.obj"/>
+<mesh name="LINK_1_collision_5" file="./assets/LINK_1/LINK_1_collision_5.obj"/>
+<mesh name="LINK_1_collision_6" file="./assets/LINK_1/LINK_1_collision_6.obj"/>
+<mesh name="LINK_1_collision_7" file="./assets/LINK_1/LINK_1_collision_7.obj"/>
+<mesh name="LINK_1_collision_8" file="./assets/LINK_1/LINK_1_collision_8.obj"/>
+<mesh name="LINK_1_collision_9" file="./assets/LINK_1/LINK_1_collision_9.obj"/>
+<mesh name="LINK_2_0" file="./assets/LINK_2/LINK_2_0.obj"/>
+<mesh name="LINK_2_1" file="./assets/LINK_2/LINK_2_1.obj"/>
+<mesh name="LINK_2_collision_0" file="./assets/LINK_2/LINK_2_collision_0.obj"/>
+<mesh name="LINK_2_collision_1" file="./assets/LINK_2/LINK_2_collision_1.obj"/>
+<mesh name="LINK_2_collision_2" file="./assets/LINK_2/LINK_2_collision_2.obj"/>
+<mesh name="LINK_2_collision_3" file="./assets/LINK_2/LINK_2_collision_3.obj"/>
+<mesh name="LINK_2_collision_4" file="./assets/LINK_2/LINK_2_collision_4.obj"/>
+<mesh name="LINK_2_collision_5" file="./assets/LINK_2/LINK_2_collision_5.obj"/>
+<mesh name="LINK_2_collision_6" file="./assets/LINK_2/LINK_2_collision_6.obj"/>
+<mesh name="LINK_2_collision_7" file="./assets/LINK_2/LINK_2_collision_7.obj"/>
+<mesh name="LINK_2_collision_8" file="./assets/LINK_2/LINK_2_collision_8.obj"/>
+<mesh name="LINK_2_collision_9" file="./assets/LINK_2/LINK_2_collision_9.obj"/>
+<mesh name="LINK_2_collision_10" file="./assets/LINK_2/LINK_2_collision_10.obj"/>
+<mesh name="LINK_2_collision_11" file="./assets/LINK_2/LINK_2_collision_11.obj"/>
+<mesh name="LINK_2_collision_12" file="./assets/LINK_2/LINK_2_collision_12.obj"/>
+<mesh name="LINK_2_collision_13" file="./assets/LINK_2/LINK_2_collision_13.obj"/>
+<mesh name="LINK_2_collision_14" file="./assets/LINK_2/LINK_2_collision_14.obj"/>
+<mesh name="LINK_2_collision_15" file="./assets/LINK_2/LINK_2_collision_15.obj"/>
+<mesh name="LINK_2_collision_16" file="./assets/LINK_2/LINK_2_collision_16.obj"/>
+<mesh name="LINK_3_0" file="./assets/LINK_3/LINK_3_0.obj"/>
+<mesh name="LINK_3_1" file="./assets/LINK_3/LINK_3_1.obj"/>
+<mesh name="LINK_3_collision_0" file="./assets/LINK_3/LINK_3_collision_0.obj"/>
+<mesh name="LINK_3_collision_1" file="./assets/LINK_3/LINK_3_collision_1.obj"/>
+<mesh name="LINK_3_collision_2" file="./assets/LINK_3/LINK_3_collision_2.obj"/>
+<mesh name="LINK_3_collision_3" file="./assets/LINK_3/LINK_3_collision_3.obj"/>
+<mesh name="LINK_3_collision_4" file="./assets/LINK_3/LINK_3_collision_4.obj"/>
+<mesh name="LINK_3_collision_5" file="./assets/LINK_3/LINK_3_collision_5.obj"/>
+<mesh name="LINK_3_collision_6" file="./assets/LINK_3/LINK_3_collision_6.obj"/>
+<mesh name="LINK_3_collision_7" file="./assets/LINK_3/LINK_3_collision_7.obj"/>
+<mesh name="LINK_3_collision_8" file="./assets/LINK_3/LINK_3_collision_8.obj"/>
+<mesh name="LINK_3_collision_9" file="./assets/LINK_3/LINK_3_collision_9.obj"/>
+<mesh name="LINK_3_collision_10" file="./assets/LINK_3/LINK_3_collision_10.obj"/>
+<mesh name="LINK_3_collision_11" file="./assets/LINK_3/LINK_3_collision_11.obj"/>
+<mesh name="LINK_4" file="./assets/LINK_4/LINK_4.obj"/>
+<mesh name="LINK_4_collision_0" file="./assets/LINK_4/LINK_4_collision_0.obj"/>
+<mesh name="LINK_4_collision_1" file="./assets/LINK_4/LINK_4_collision_1.obj"/>
+<mesh name="LINK_4_collision_2" file="./assets/LINK_4/LINK_4_collision_2.obj"/>
+<mesh name="LINK_4_collision_3" file="./assets/LINK_4/LINK_4_collision_3.obj"/>
+<mesh name="LINK_4_collision_4" file="./assets/LINK_4/LINK_4_collision_4.obj"/>
+<mesh name="LINK_4_collision_5" file="./assets/LINK_4/LINK_4_collision_5.obj"/>
+<mesh name="LINK_4_collision_6" file="./assets/LINK_4/LINK_4_collision_6.obj"/>
+<mesh name="LINK_4_collision_7" file="./assets/LINK_4/LINK_4_collision_7.obj"/>
+<mesh name="LINK_4_collision_8" file="./assets/LINK_4/LINK_4_collision_8.obj"/>
+<mesh name="LINK_4_collision_9" file="./assets/LINK_4/LINK_4_collision_9.obj"/>
+<mesh name="LINK_4_collision_10" file="./assets/LINK_4/LINK_4_collision_10.obj"/>
+<mesh name="LINK_4_collision_11" file="./assets/LINK_4/LINK_4_collision_11.obj"/>
+<mesh name="LINK_4_collision_12" file="./assets/LINK_4/LINK_4_collision_12.obj"/>
+<mesh name="LINK_4_collision_13" file="./assets/LINK_4/LINK_4_collision_13.obj"/>
+<mesh name="LINK_4_collision_14" file="./assets/LINK_4/LINK_4_collision_14.obj"/>
+<mesh name="LINK_4_collision_15" file="./assets/LINK_4/LINK_4_collision_15.obj"/>
+<mesh name="LINK_4_collision_16" file="./assets/LINK_4/LINK_4_collision_16.obj"/>
+<mesh name="LINK_4_collision_17" file="./assets/LINK_4/LINK_4_collision_17.obj"/>
+<mesh name="LINK_5" file="./assets/LINK_5/LINK_5.obj"/>
+<mesh name="LINK_5_collision_0" file="./assets/LINK_5/LINK_5_collision_0.obj"/>
+<mesh name="LINK_5_collision_1" file="./assets/LINK_5/LINK_5_collision_1.obj"/>
+<mesh name="LINK_5_collision_2" file="./assets/LINK_5/LINK_5_collision_2.obj"/>
+<mesh name="LINK_5_collision_3" file="./assets/LINK_5/LINK_5_collision_3.obj"/>
+<mesh name="LINK_5_collision_4" file="./assets/LINK_5/LINK_5_collision_4.obj"/>
+<mesh name="LINK_5_collision_5" file="./assets/LINK_5/LINK_5_collision_5.obj"/>
+<mesh name="LINK_5_collision_6" file="./assets/LINK_5/LINK_5_collision_6.obj"/>
+<mesh name="LINK_5_collision_7" file="./assets/LINK_5/LINK_5_collision_7.obj"/>
+<mesh name="LINK_5_collision_8" file="./assets/LINK_5/LINK_5_collision_8.obj"/>
+<mesh name="LINK_5_collision_9" file="./assets/LINK_5/LINK_5_collision_9.obj"/>
+<mesh name="LINK_5_collision_10" file="./assets/LINK_5/LINK_5_collision_10.obj"/>
+<mesh name="LINK_5_collision_11" file="./assets/LINK_5/LINK_5_collision_11.obj"/>
+<mesh name="LINK_5_collision_12" file="./assets/LINK_5/LINK_5_collision_12.obj"/>
+<mesh name="LINK_5_collision_13" file="./assets/LINK_5/LINK_5_collision_13.obj"/>
+<mesh name="LINK_5_collision_14" file="./assets/LINK_5/LINK_5_collision_14.obj"/>
+<mesh name="LINK_5_collision_15" file="./assets/LINK_5/LINK_5_collision_15.obj"/>
+<mesh name="LINK_5_collision_16" file="./assets/LINK_5/LINK_5_collision_16.obj"/>
+<mesh name="LINK_5_collision_17" file="./assets/LINK_5/LINK_5_collision_17.obj"/>
+<mesh name="LINK_5_collision_18" file="./assets/LINK_5/LINK_5_collision_18.obj"/>
+<mesh name="LINK_5_collision_19" file="./assets/LINK_5/LINK_5_collision_19.obj"/>
+<mesh name="LINK_5_collision_20" file="./assets/LINK_5/LINK_5_collision_20.obj"/>
+<mesh name="LINK_5_collision_21" file="./assets/LINK_5/LINK_5_collision_21.obj"/>
+<mesh name="LINK_5_collision_22" file="./assets/LINK_5/LINK_5_collision_22.obj"/>
+<mesh name="LINK_5_collision_23" file="./assets/LINK_5/LINK_5_collision_23.obj"/>
+<mesh name="LINK_6_0" file="./assets/LINK_6/LINK_6_0.obj"/>
+<mesh name="LINK_6_1" file="./assets/LINK_6/LINK_6_1.obj"/>
+<mesh name="LINK_6_2" file="./assets/LINK_6/LINK_6_2.obj"/>
+<mesh name="LINK_6_3" file="./assets/LINK_6/LINK_6_3.obj"/>
+<mesh name="LINK_6_4" file="./assets/LINK_6/LINK_6_4.obj"/>
+<mesh name="LINK_6_5" file="./assets/LINK_6/LINK_6_5.obj"/>
+<mesh name="LINK_6_collision_0" file="./assets/LINK_6/LINK_6_collision_0.obj"/>
+<mesh name="LINK_6_collision_1" file="./assets/LINK_6/LINK_6_collision_1.obj"/>
+<mesh name="LINK_6_collision_2" file="./assets/LINK_6/LINK_6_collision_2.obj"/>
+<mesh name="LINK_6_collision_3" file="./assets/LINK_6/LINK_6_collision_3.obj"/>
+<mesh name="LINK_6_collision_4" file="./assets/LINK_6/LINK_6_collision_4.obj"/>
+<mesh name="LINK_6_collision_5" file="./assets/LINK_6/LINK_6_collision_5.obj"/>
+<mesh name="LINK_6_collision_6" file="./assets/LINK_6/LINK_6_collision_6.obj"/>
+<mesh name="LINK_6_collision_7" file="./assets/LINK_6/LINK_6_collision_7.obj"/>
+<mesh name="LINK_6_collision_8" file="./assets/LINK_6/LINK_6_collision_8.obj"/>
+<mesh name="LINK_6_collision_9" file="./assets/LINK_6/LINK_6_collision_9.obj"/>
+<mesh name="LINK_6_collision_10" file="./assets/LINK_6/LINK_6_collision_10.obj"/>
+<mesh name="LINK_6_collision_11" file="./assets/LINK_6/LINK_6_collision_11.obj"/>
+<mesh name="LINK_6_collision_12" file="./assets/LINK_6/LINK_6_collision_12.obj"/>
+<mesh name="LINK_6_collision_13" file="./assets/LINK_6/LINK_6_collision_13.obj"/>
+<mesh name="LINK_6_collision_14" file="./assets/LINK_6/LINK_6_collision_14.obj"/>
+<mesh name="LINK_6_collision_15" file="./assets/LINK_6/LINK_6_collision_15.obj"/>
+<mesh name="LINK_6_collision_16" file="./assets/LINK_6/LINK_6_collision_16.obj"/>
+<mesh name="LINK_6_collision_17" file="./assets/LINK_6/LINK_6_collision_17.obj"/>
+<mesh name="LINK_6_collision_18" file="./assets/LINK_6/LINK_6_collision_18.obj"/>
+<mesh name="LINK_6_collision_19" file="./assets/LINK_6/LINK_6_collision_19.obj"/>
+<mesh name="LINK_6_collision_20" file="./assets/LINK_6/LINK_6_collision_20.obj"/>
+<mesh name="LINK_6_collision_21" file="./assets/LINK_6/LINK_6_collision_21.obj"/>
+<mesh name="LINK_6_collision_22" file="./assets/LINK_6/LINK_6_collision_22.obj"/>
+<mesh name="LINK_6_collision_23" file="./assets/LINK_6/LINK_6_collision_23.obj"/>
+<mesh name="LINK_6_collision_24" file="./assets/LINK_6/LINK_6_collision_24.obj"/>
+<mesh name="LINK_6_collision_25" file="./assets/LINK_6/LINK_6_collision_25.obj"/>
+<mesh name="LINK_6_collision_26" file="./assets/LINK_6/LINK_6_collision_26.obj"/>
+<mesh name="LINK_6_collision_27" file="./assets/LINK_6/LINK_6_collision_27.obj"/>
+<mesh name="LINK_6_collision_28" file="./assets/LINK_6/LINK_6_collision_28.obj"/>
+<mesh name="LINK_6_collision_29" file="./assets/LINK_6/LINK_6_collision_29.obj"/>
+<mesh name="LINK_6_collision_30" file="./assets/LINK_6/LINK_6_collision_30.obj"/>
+<mesh name="LINK_6_collision_31" file="./assets/LINK_6/LINK_6_collision_31.obj"/>
+<mesh name="LINK_6_collision_32" file="./assets/LINK_6/LINK_6_collision_32.obj"/>
+<mesh name="LINK_6_collision_33" file="./assets/LINK_6/LINK_6_collision_33.obj"/>
+<mesh name="LINK_6_collision_34" file="./assets/LINK_6/LINK_6_collision_34.obj"/>
+<mesh name="LINK_6_collision_35" file="./assets/LINK_6/LINK_6_collision_35.obj"/>
+<mesh name="LINK_6_collision_36" file="./assets/LINK_6/LINK_6_collision_36.obj"/>
+<mesh name="LINK_6_collision_37" file="./assets/LINK_6/LINK_6_collision_37.obj"/>
+<mesh name="LINK_6_collision_38" file="./assets/LINK_6/LINK_6_collision_38.obj"/>
+<mesh name="LINK_6_collision_39" file="./assets/LINK_6/LINK_6_collision_39.obj"/>
+<mesh name="LINK_6_collision_40" file="./assets/LINK_6/LINK_6_collision_40.obj"/>
+<mesh name="LINK_6_collision_41" file="./assets/LINK_6/LINK_6_collision_41.obj"/>
+<mesh name="LINK_6_collision_42" file="./assets/LINK_6/LINK_6_collision_42.obj"/>
+<mesh name="LINK_6_collision_43" file="./assets/LINK_6/LINK_6_collision_43.obj"/>
+<mesh name="LINK_6_collision_44" file="./assets/LINK_6/LINK_6_collision_44.obj"/>
+<mesh name="LINK_6_collision_45" file="./assets/LINK_6/LINK_6_collision_45.obj"/>
+<mesh name="LINK_6_collision_46" file="./assets/LINK_6/LINK_6_collision_46.obj"/>
+<mesh name="LINK_6_collision_47" file="./assets/LINK_6/LINK_6_collision_47.obj"/>
+<mesh name="LINK_6_collision_48" file="./assets/LINK_6/LINK_6_collision_48.obj"/>
+<mesh name="LINK_6_collision_49" file="./assets/LINK_6/LINK_6_collision_49.obj"/>
+<mesh name="LINK_6_collision_50" file="./assets/LINK_6/LINK_6_collision_50.obj"/>
+<mesh name="LINK_6_collision_51" file="./assets/LINK_6/LINK_6_collision_51.obj"/>
+<mesh name="LINK_6_collision_52" file="./assets/LINK_6/LINK_6_collision_52.obj"/>
+<mesh name="LINK_6_collision_53" file="./assets/LINK_6/LINK_6_collision_53.obj"/>
+<mesh name="LINK_6_collision_54" file="./assets/LINK_6/LINK_6_collision_54.obj"/>
+<mesh name="LINK_6_collision_55" file="./assets/LINK_6/LINK_6_collision_55.obj"/>
+<mesh name="LINK_6_collision_56" file="./assets/LINK_6/LINK_6_collision_56.obj"/>
+<mesh name="LINK_6_collision_57" file="./assets/LINK_6/LINK_6_collision_57.obj"/>
+<mesh name="LINK_6_collision_58" file="./assets/LINK_6/LINK_6_collision_58.obj"/>
+<mesh name="LINK_6_collision_59" file="./assets/LINK_6/LINK_6_collision_59.obj"/>
+<mesh name="LINK_6_collision_60" file="./assets/LINK_6/LINK_6_collision_60.obj"/>
+<mesh name="LINK_6_collision_61" file="./assets/LINK_6/LINK_6_collision_61.obj"/>
+<mesh name="LINK_6_collision_62" file="./assets/LINK_6/LINK_6_collision_62.obj"/>
+<mesh name="LINK_6_collision_63" file="./assets/LINK_6/LINK_6_collision_63.obj"/>
+<mesh name="LINK_6_collision_64" file="./assets/LINK_6/LINK_6_collision_64.obj"/>
+<mesh name="LINK_6_collision_65" file="./assets/LINK_6/LINK_6_collision_65.obj"/>
+<mesh name="LINK_6_collision_66" file="./assets/LINK_6/LINK_6_collision_66.obj"/>
+<mesh name="LINK_6_collision_67" file="./assets/LINK_6/LINK_6_collision_67.obj"/>
+<mesh name="LINK_6_collision_68" file="./assets/LINK_6/LINK_6_collision_68.obj"/>
+<mesh name="LINK_6_collision_69" file="./assets/LINK_6/LINK_6_collision_69.obj"/>
+<mesh name="LINK_6_collision_70" file="./assets/LINK_6/LINK_6_collision_70.obj"/>
+<mesh name="LINK_6_collision_71" file="./assets/LINK_6/LINK_6_collision_71.obj"/>
+<mesh name="LINK_6_collision_72" file="./assets/LINK_6/LINK_6_collision_72.obj"/>
+<mesh name="LINK_6_collision_73" file="./assets/LINK_6/LINK_6_collision_73.obj"/>
+<mesh name="LINK_6_collision_74" file="./assets/LINK_6/LINK_6_collision_74.obj"/>
+<mesh name="LINK_6_collision_75" file="./assets/LINK_6/LINK_6_collision_75.obj"/>
+<mesh name="LINK_6_collision_76" file="./assets/LINK_6/LINK_6_collision_76.obj"/>
+<mesh name="LINK_6_collision_77" file="./assets/LINK_6/LINK_6_collision_77.obj"/>
+<mesh name="LINK_6_collision_78" file="./assets/LINK_6/LINK_6_collision_78.obj"/>
+<mesh name="LINK_6_collision_79" file="./assets/LINK_6/LINK_6_collision_79.obj"/>
+<mesh name="LINK_6_collision_80" file="./assets/LINK_6/LINK_6_collision_80.obj"/>
+<mesh name="LINK_6_collision_81" file="./assets/LINK_6/LINK_6_collision_81.obj"/>
+<mesh name="LINK_6_collision_82" file="./assets/LINK_6/LINK_6_collision_82.obj"/>
+<mesh name="LINK_6_collision_83" file="./assets/LINK_6/LINK_6_collision_83.obj"/>
+<mesh name="LINK_6_collision_84" file="./assets/LINK_6/LINK_6_collision_84.obj"/>
+<mesh name="LINK_6_collision_85" file="./assets/LINK_6/LINK_6_collision_85.obj"/>
+<mesh name="LINK_6_collision_86" file="./assets/LINK_6/LINK_6_collision_86.obj"/>
+<mesh name="LINK_6_collision_87" file="./assets/LINK_6/LINK_6_collision_87.obj"/>
+<mesh name="LINK_6_collision_88" file="./assets/LINK_6/LINK_6_collision_88.obj"/>
+<mesh name="LINK_6_collision_89" file="./assets/LINK_6/LINK_6_collision_89.obj"/>
+<mesh name="LINK_6_collision_90" file="./assets/LINK_6/LINK_6_collision_90.obj"/>
+<mesh name="LINK_6_collision_91" file="./assets/LINK_6/LINK_6_collision_91.obj"/>
+<mesh name="LINK_6_collision_92" file="./assets/LINK_6/LINK_6_collision_92.obj"/>
+<mesh name="LINK_6_collision_93" file="./assets/LINK_6/LINK_6_collision_93.obj"/>
+<mesh name="LINK_6_collision_94" file="./assets/LINK_6/LINK_6_collision_94.obj"/>
+<mesh name="LINK_6_collision_95" file="./assets/LINK_6/LINK_6_collision_95.obj"/>
+<mesh name="LINK_6_collision_96" file="./assets/LINK_6/LINK_6_collision_96.obj"/>
+<mesh name="LINK_6_collision_97" file="./assets/LINK_6/LINK_6_collision_97.obj"/>
+<mesh name="LINK_6_collision_98" file="./assets/LINK_6/LINK_6_collision_98.obj"/>
+<mesh name="LINK_6_collision_99" file="./assets/LINK_6/LINK_6_collision_99.obj"/>
+<mesh name="LINK_6_collision_100" file="./assets/LINK_6/LINK_6_collision_100.obj"/>
+<mesh name="LINK_6_collision_101" file="./assets/LINK_6/LINK_6_collision_101.obj"/>
+<mesh name="LINK_6_collision_102" file="./assets/LINK_6/LINK_6_collision_102.obj"/>
+<mesh name="LINK_6_collision_103" file="./assets/LINK_6/LINK_6_collision_103.obj"/>
+<mesh name="LINK_6_collision_104" file="./assets/LINK_6/LINK_6_collision_104.obj"/>
+<mesh name="LINK_6_collision_105" file="./assets/LINK_6/LINK_6_collision_105.obj"/>
+<mesh name="LINK_6_collision_106" file="./assets/LINK_6/LINK_6_collision_106.obj"/>
+<mesh name="LINK_6_collision_107" file="./assets/LINK_6/LINK_6_collision_107.obj"/>
+<mesh name="LINK_6_collision_108" file="./assets/LINK_6/LINK_6_collision_108.obj"/>
+<mesh name="LINK_6_collision_109" file="./assets/LINK_6/LINK_6_collision_109.obj"/>
+<mesh name="LINK_6_collision_110" file="./assets/LINK_6/LINK_6_collision_110.obj"/>
+<mesh name="LINK_6_collision_111" file="./assets/LINK_6/LINK_6_collision_111.obj"/>
+<mesh name="LINK_6_collision_112" file="./assets/LINK_6/LINK_6_collision_112.obj"/>
+<mesh name="LINK_6_collision_113" file="./assets/LINK_6/LINK_6_collision_113.obj"/>
+<mesh name="LINK_6_collision_114" file="./assets/LINK_6/LINK_6_collision_114.obj"/>
+<mesh name="LINK_6_collision_115" file="./assets/LINK_6/LINK_6_collision_115.obj"/>
+<mesh name="LINK_6_collision_116" file="./assets/LINK_6/LINK_6_collision_116.obj"/>
+<mesh name="LINK_6_collision_117" file="./assets/LINK_6/LINK_6_collision_117.obj"/>
+<mesh name="LINK_6_collision_118" file="./assets/LINK_6/LINK_6_collision_118.obj"/>
+<mesh name="LINK_6_collision_119" file="./assets/LINK_6/LINK_6_collision_119.obj"/>
+<mesh name="LINK_6_collision_120" file="./assets/LINK_6/LINK_6_collision_120.obj"/>
+<mesh name="LINK_6_collision_121" file="./assets/LINK_6/LINK_6_collision_121.obj"/>
+<mesh name="LINK_6_collision_122" file="./assets/LINK_6/LINK_6_collision_122.obj"/>
+<mesh name="LINK_6_collision_123" file="./assets/LINK_6/LINK_6_collision_123.obj"/>
+<mesh name="LINK_6_collision_124" file="./assets/LINK_6/LINK_6_collision_124.obj"/>
+<mesh name="LINK_6_collision_125" file="./assets/LINK_6/LINK_6_collision_125.obj"/>
+<mesh name="LINK_6_collision_126" file="./assets/LINK_6/LINK_6_collision_126.obj"/>
+<mesh name="LINK_6_collision_127" file="./assets/LINK_6/LINK_6_collision_127.obj"/>
+<mesh name="LINK_6_collision_128" file="./assets/LINK_6/LINK_6_collision_128.obj"/>
+<mesh name="LINK_6_collision_129" file="./assets/LINK_6/LINK_6_collision_129.obj"/>
+<mesh name="LINK_6_collision_130" file="./assets/LINK_6/LINK_6_collision_130.obj"/>
+<mesh name="LINK_6_collision_131" file="./assets/LINK_6/LINK_6_collision_131.obj"/>
+<mesh name="LINK_6_collision_132" file="./assets/LINK_6/LINK_6_collision_132.obj"/>
+<mesh name="LINK_6_collision_133" file="./assets/LINK_6/LINK_6_collision_133.obj"/>
+<mesh name="LINK_6_collision_134" file="./assets/LINK_6/LINK_6_collision_134.obj"/>
+<mesh name="LINK_6_collision_135" file="./assets/LINK_6/LINK_6_collision_135.obj"/>
+<mesh name="LINK_6_collision_136" file="./assets/LINK_6/LINK_6_collision_136.obj"/>
+<mesh name="LINK_6_collision_137" file="./assets/LINK_6/LINK_6_collision_137.obj"/>
+<mesh name="LINK_6_collision_138" file="./assets/LINK_6/LINK_6_collision_138.obj"/>
+<mesh name="LINK_6_collision_139" file="./assets/LINK_6/LINK_6_collision_139.obj"/>
+<mesh name="LINK_6_collision_140" file="./assets/LINK_6/LINK_6_collision_140.obj"/>
+<mesh name="LINK_6_collision_141" file="./assets/LINK_6/LINK_6_collision_141.obj"/>
+<mesh name="LINK_6_collision_142" file="./assets/LINK_6/LINK_6_collision_142.obj"/>
+<mesh name="LINK_6_collision_143" file="./assets/LINK_6/LINK_6_collision_143.obj"/>
+<mesh name="LINK_6_collision_144" file="./assets/LINK_6/LINK_6_collision_144.obj"/>
+<mesh name="LINK_6_collision_145" file="./assets/LINK_6/LINK_6_collision_145.obj"/>
+<mesh name="LINK_6_collision_146" file="./assets/LINK_6/LINK_6_collision_146.obj"/>
+<mesh name="LINK_6_collision_147" file="./assets/LINK_6/LINK_6_collision_147.obj"/>
+<mesh name="LINK_6_collision_148" file="./assets/LINK_6/LINK_6_collision_148.obj"/>
+<mesh name="LINK_6_collision_149" file="./assets/LINK_6/LINK_6_collision_149.obj"/>
+<mesh name="LINK_6_collision_150" file="./assets/LINK_6/LINK_6_collision_150.obj"/>
+<mesh name="LINK_6_collision_151" file="./assets/LINK_6/LINK_6_collision_151.obj"/>
+<mesh name="LINK_6_collision_152" file="./assets/LINK_6/LINK_6_collision_152.obj"/>
+<mesh name="LINK_6_collision_153" file="./assets/LINK_6/LINK_6_collision_153.obj"/>
+<mesh name="LINK_6_collision_154" file="./assets/LINK_6/LINK_6_collision_154.obj"/>
+<mesh name="LINK_6_collision_155" file="./assets/LINK_6/LINK_6_collision_155.obj"/>
+<mesh name="LINK_6_collision_156" file="./assets/LINK_6/LINK_6_collision_156.obj"/>
+<mesh name="LINK_6_collision_157" file="./assets/LINK_6/LINK_6_collision_157.obj"/>
+<mesh name="LINK_6_collision_158" file="./assets/LINK_6/LINK_6_collision_158.obj"/>
+<mesh name="LINK_6_collision_159" file="./assets/LINK_6/LINK_6_collision_159.obj"/>
+<mesh name="LINK_6_collision_160" file="./assets/LINK_6/LINK_6_collision_160.obj"/>
+<mesh name="LINK_6_collision_161" file="./assets/LINK_6/LINK_6_collision_161.obj"/>
+<mesh name="LINK_6_collision_162" file="./assets/LINK_6/LINK_6_collision_162.obj"/>
+<mesh name="LINK_6_collision_163" file="./assets/LINK_6/LINK_6_collision_163.obj"/>
+<mesh name="LINK_6_collision_164" file="./assets/LINK_6/LINK_6_collision_164.obj"/>
+<mesh name="LINK_6_collision_165" file="./assets/LINK_6/LINK_6_collision_165.obj"/>
+<mesh name="LINK_6_collision_166" file="./assets/LINK_6/LINK_6_collision_166.obj"/>
+<mesh name="LINK_6_collision_167" file="./assets/LINK_6/LINK_6_collision_167.obj"/>
+<mesh name="LINK_6_collision_168" file="./assets/LINK_6/LINK_6_collision_168.obj"/>
+<mesh name="LINK_6_collision_169" file="./assets/LINK_6/LINK_6_collision_169.obj"/>
+<mesh name="LINK_6_collision_170" file="./assets/LINK_6/LINK_6_collision_170.obj"/>
+<mesh name="LINK_6_collision_171" file="./assets/LINK_6/LINK_6_collision_171.obj"/>
+<mesh name="LINK_6_collision_172" file="./assets/LINK_6/LINK_6_collision_172.obj"/>
+<mesh name="LINK_6_collision_173" file="./assets/LINK_6/LINK_6_collision_173.obj"/>
+<mesh name="LINK_6_collision_174" file="./assets/LINK_6/LINK_6_collision_174.obj"/>
+<mesh name="LINK_6_collision_175" file="./assets/LINK_6/LINK_6_collision_175.obj"/>
+<mesh name="LINK_6_collision_176" file="./assets/LINK_6/LINK_6_collision_176.obj"/>
+<mesh name="LINK_6_collision_177" file="./assets/LINK_6/LINK_6_collision_177.obj"/>
+<mesh name="LINK_6_collision_178" file="./assets/LINK_6/LINK_6_collision_178.obj"/>
+<mesh name="LINK_6_collision_179" file="./assets/LINK_6/LINK_6_collision_179.obj"/>
+<mesh name="LINK_6_collision_180" file="./assets/LINK_6/LINK_6_collision_180.obj"/>
+<mesh name="LINK_6_collision_181" file="./assets/LINK_6/LINK_6_collision_181.obj"/>
+<mesh name="LINK_6_collision_182" file="./assets/LINK_6/LINK_6_collision_182.obj"/>
+<mesh name="LINK_6_collision_183" file="./assets/LINK_6/LINK_6_collision_183.obj"/>
+<mesh name="LINK_6_collision_184" file="./assets/LINK_6/LINK_6_collision_184.obj"/>
+<mesh name="LINK_6_collision_185" file="./assets/LINK_6/LINK_6_collision_185.obj"/>
+<mesh name="LINK_6_collision_186" file="./assets/LINK_6/LINK_6_collision_186.obj"/>
+<mesh name="LINK_6_collision_187" file="./assets/LINK_6/LINK_6_collision_187.obj"/>
+<mesh name="LINK_6_collision_188" file="./assets/LINK_6/LINK_6_collision_188.obj"/>
+<mesh name="LINK_6_collision_189" file="./assets/LINK_6/LINK_6_collision_189.obj"/>
+<mesh name="LINK_6_collision_190" file="./assets/LINK_6/LINK_6_collision_190.obj"/>
+<mesh name="LINK_6_collision_191" file="./assets/LINK_6/LINK_6_collision_191.obj"/>
+<mesh name="LINK_6_collision_192" file="./assets/LINK_6/LINK_6_collision_192.obj"/>
+<mesh name="LINK_6_collision_193" file="./assets/LINK_6/LINK_6_collision_193.obj"/>
+<mesh name="LINK_6_collision_194" file="./assets/LINK_6/LINK_6_collision_194.obj"/>
+<mesh name="LINK_6_collision_195" file="./assets/LINK_6/LINK_6_collision_195.obj"/>
+<mesh name="LINK_6_collision_196" file="./assets/LINK_6/LINK_6_collision_196.obj"/>
+<mesh name="LINK_6_collision_197" file="./assets/LINK_6/LINK_6_collision_197.obj"/>
+<mesh name="LINK_6_collision_198" file="./assets/LINK_6/LINK_6_collision_198.obj"/>
+<mesh name="LINK_6_collision_199" file="./assets/LINK_6/LINK_6_collision_199.obj"/>
+<mesh name="LINK_6_collision_200" file="./assets/LINK_6/LINK_6_collision_200.obj"/>
+<mesh name="LINK_6_collision_201" file="./assets/LINK_6/LINK_6_collision_201.obj"/>
+<mesh name="LINK_6_collision_202" file="./assets/LINK_6/LINK_6_collision_202.obj"/>
+<mesh name="LINK_6_collision_203" file="./assets/LINK_6/LINK_6_collision_203.obj"/>
+<mesh name="LINK_6_collision_204" file="./assets/LINK_6/LINK_6_collision_204.obj"/>
+<mesh name="LINK_6_collision_205" file="./assets/LINK_6/LINK_6_collision_205.obj"/>
+<mesh name="LINK_6_collision_206" file="./assets/LINK_6/LINK_6_collision_206.obj"/>
+<mesh name="LINK_6_collision_207" file="./assets/LINK_6/LINK_6_collision_207.obj"/>
+<mesh name="LINK_6_collision_208" file="./assets/LINK_6/LINK_6_collision_208.obj"/>
+<mesh name="LINK_6_collision_209" file="./assets/LINK_6/LINK_6_collision_209.obj"/>
+<mesh name="LINK_6_collision_210" file="./assets/LINK_6/LINK_6_collision_210.obj"/>
+<mesh name="LINK_6_collision_211" file="./assets/LINK_6/LINK_6_collision_211.obj"/>
+<mesh name="LINK_6_collision_212" file="./assets/LINK_6/LINK_6_collision_212.obj"/>
+<mesh name="LINK_6_collision_213" file="./assets/LINK_6/LINK_6_collision_213.obj"/>
+<mesh name="LINK_6_collision_214" file="./assets/LINK_6/LINK_6_collision_214.obj"/>
+<mesh name="LINK_6_collision_215" file="./assets/LINK_6/LINK_6_collision_215.obj"/>
+<mesh name="LINK_6_collision_216" file="./assets/LINK_6/LINK_6_collision_216.obj"/>
+<mesh name="LINK_6_collision_217" file="./assets/LINK_6/LINK_6_collision_217.obj"/>
+<mesh name="LINK_6_collision_218" file="./assets/LINK_6/LINK_6_collision_218.obj"/>
+<mesh name="LINK_6_collision_219" file="./assets/LINK_6/LINK_6_collision_219.obj"/>
+<mesh name="LINK_6_collision_220" file="./assets/LINK_6/LINK_6_collision_220.obj"/>
+<mesh name="LINK_7" file="./assets/LINK_7/LINK_7.obj"/>
+<mesh name="LINK_7_collision_0" file="./assets/LINK_7/LINK_7_collision_0.obj"/>
+<mesh name="LINK_7_collision_1" file="./assets/LINK_7/LINK_7_collision_1.obj"/>
+<mesh name="LINK_7_collision_2" file="./assets/LINK_7/LINK_7_collision_2.obj"/>
+<mesh name="LINK_7_collision_3" file="./assets/LINK_7/LINK_7_collision_3.obj"/>
+<mesh name="LINK_7_collision_4" file="./assets/LINK_7/LINK_7_collision_4.obj"/>
+<mesh name="LINK_7_collision_5" file="./assets/LINK_7/LINK_7_collision_5.obj"/>
+<mesh name="LINK_7_collision_6" file="./assets/LINK_7/LINK_7_collision_6.obj"/>
+<mesh name="LINK_7_collision_7" file="./assets/LINK_7/LINK_7_collision_7.obj"/>
+<mesh name="LINK_7_collision_8" file="./assets/LINK_7/LINK_7_collision_8.obj"/>
+<mesh name="LINK_7_collision_9" file="./assets/LINK_7/LINK_7_collision_9.obj"/>
+<mesh name="LINK_7_collision_10" file="./assets/LINK_7/LINK_7_collision_10.obj"/>
+<mesh name="LINK_7_collision_11" file="./assets/LINK_7/LINK_7_collision_11.obj"/>
+<mesh name="LINK_7_collision_12" file="./assets/LINK_7/LINK_7_collision_12.obj"/>
+<mesh name="LINK_7_collision_13" file="./assets/LINK_7/LINK_7_collision_13.obj"/>
+<mesh name="LINK_7_collision_14" file="./assets/LINK_7/LINK_7_collision_14.obj"/>
+<mesh name="LINK_7_collision_15" file="./assets/LINK_7/LINK_7_collision_15.obj"/>
+<mesh name="LINK_7_collision_16" file="./assets/LINK_7/LINK_7_collision_16.obj"/>
+<mesh name="LINK_7_collision_17" file="./assets/LINK_7/LINK_7_collision_17.obj"/>
+<mesh name="LINK_7_collision_18" file="./assets/LINK_7/LINK_7_collision_18.obj"/>
+<mesh name="LINK_7_collision_19" file="./assets/LINK_7/LINK_7_collision_19.obj"/>
+<mesh name="LINK_8" file="./assets/LINK_8/LINK_8.obj"/>
+<mesh name="LINK_8_collision_0" file="./assets/LINK_8/LINK_8_collision_0.obj"/>
+<mesh name="LINK_8_collision_1" file="./assets/LINK_8/LINK_8_collision_1.obj"/>
+<mesh name="LINK_8_collision_2" file="./assets/LINK_8/LINK_8_collision_2.obj"/>
+<mesh name="LINK_8_collision_3" file="./assets/LINK_8/LINK_8_collision_3.obj"/>
+<mesh name="LINK_8_collision_4" file="./assets/LINK_8/LINK_8_collision_4.obj"/>
+<mesh name="LINK_8_collision_5" file="./assets/LINK_8/LINK_8_collision_5.obj"/>
+<mesh name="LINK_8_collision_6" file="./assets/LINK_8/LINK_8_collision_6.obj"/>
+<mesh name="LINK_8_collision_7" file="./assets/LINK_8/LINK_8_collision_7.obj"/>
+<mesh name="LINK_8_collision_8" file="./assets/LINK_8/LINK_8_collision_8.obj"/>
+<mesh name="LINK_8_collision_9" file="./assets/LINK_8/LINK_8_collision_9.obj"/>
+<mesh name="LINK_8_collision_10" file="./assets/LINK_8/LINK_8_collision_10.obj"/>
+<mesh name="LINK_8_collision_11" file="./assets/LINK_8/LINK_8_collision_11.obj"/>
+<mesh name="LINK_8_collision_12" file="./assets/LINK_8/LINK_8_collision_12.obj"/>
+<mesh name="LINK_8_collision_13" file="./assets/LINK_8/LINK_8_collision_13.obj"/>
+<mesh name="LINK_9_0" file="./assets/LINK_9/LINK_9_0.obj"/>
+<mesh name="LINK_9_1" file="./assets/LINK_9/LINK_9_1.obj"/>
+<mesh name="LINK_9_collision_0" file="./assets/LINK_9/LINK_9_collision_0.obj"/>
+<mesh name="LINK_9_collision_1" file="./assets/LINK_9/LINK_9_collision_1.obj"/>
+<mesh name="LINK_9_collision_2" file="./assets/LINK_9/LINK_9_collision_2.obj"/>
+<mesh name="LINK_9_collision_3" file="./assets/LINK_9/LINK_9_collision_3.obj"/>
+<mesh name="LINK_9_collision_4" file="./assets/LINK_9/LINK_9_collision_4.obj"/>
+<mesh name="LINK_9_collision_5" file="./assets/LINK_9/LINK_9_collision_5.obj"/>
+<mesh name="LINK_9_collision_6" file="./assets/LINK_9/LINK_9_collision_6.obj"/>
+<mesh name="LINK_9_collision_7" file="./assets/LINK_9/LINK_9_collision_7.obj"/>
+<mesh name="LINK_9_collision_8" file="./assets/LINK_9/LINK_9_collision_8.obj"/>
+<mesh name="LINK_10_0" file="./assets/LINK_10/LINK_10_0.obj"/>
+<mesh name="LINK_10_1" file="./assets/LINK_10/LINK_10_1.obj"/>
+<mesh name="LINK_10_collision_0" file="./assets/LINK_10/LINK_10_collision_0.obj"/>
+<mesh name="LINK_10_collision_1" file="./assets/LINK_10/LINK_10_collision_1.obj"/>
+<mesh name="LINK_10_collision_2" file="./assets/LINK_10/LINK_10_collision_2.obj"/>
+<mesh name="LINK_10_collision_3" file="./assets/LINK_10/LINK_10_collision_3.obj"/>
+<mesh name="LINK_11" file="./assets/LINK_11/LINK_11.obj"/>
+<mesh name="LINK_11_collision_0" file="./assets/LINK_11/LINK_11_collision_0.obj"/>
+<mesh name="LINK_11_collision_1" file="./assets/LINK_11/LINK_11_collision_1.obj"/>
+<mesh name="LINK_11_collision_2" file="./assets/LINK_11/LINK_11_collision_2.obj"/>
+<mesh name="LINK_11_collision_3" file="./assets/LINK_11/LINK_11_collision_3.obj"/>
+<mesh name="LINK_11_collision_4" file="./assets/LINK_11/LINK_11_collision_4.obj"/>
+<mesh name="LINK_11_collision_5" file="./assets/LINK_11/LINK_11_collision_5.obj"/>
+<mesh name="LINK_11_collision_6" file="./assets/LINK_11/LINK_11_collision_6.obj"/>
+<mesh name="LINK_11_collision_7" file="./assets/LINK_11/LINK_11_collision_7.obj"/>
+<mesh name="LINK_11_collision_8" file="./assets/LINK_11/LINK_11_collision_8.obj"/>
+<mesh name="LINK_11_collision_9" file="./assets/LINK_11/LINK_11_collision_9.obj"/>
+<mesh name="LINK_11_collision_10" file="./assets/LINK_11/LINK_11_collision_10.obj"/>
+<mesh name="LINK_11_collision_11" file="./assets/LINK_11/LINK_11_collision_11.obj"/>
+<mesh name="LINK_11_collision_12" file="./assets/LINK_11/LINK_11_collision_12.obj"/>
+<mesh name="LINK_11_collision_13" file="./assets/LINK_11/LINK_11_collision_13.obj"/>
+<mesh name="LINK_11_collision_14" file="./assets/LINK_11/LINK_11_collision_14.obj"/>
+<mesh name="LINK_11_collision_15" file="./assets/LINK_11/LINK_11_collision_15.obj"/>
+<mesh name="LINK_11_collision_16" file="./assets/LINK_11/LINK_11_collision_16.obj"/>
+<mesh name="LINK_11_collision_17" file="./assets/LINK_11/LINK_11_collision_17.obj"/>
+<mesh name="LINK_11_collision_18" file="./assets/LINK_11/LINK_11_collision_18.obj"/>
+<mesh name="LINK_12_0" file="./assets/LINK_12/LINK_12_0.obj"/>
+<mesh name="LINK_12_1" file="./assets/LINK_12/LINK_12_1.obj"/>
+<mesh name="LINK_12_collision_0" file="./assets/LINK_12/LINK_12_collision_0.obj"/>
+<mesh name="LINK_12_collision_1" file="./assets/LINK_12/LINK_12_collision_1.obj"/>
+<mesh name="LINK_12_collision_2" file="./assets/LINK_12/LINK_12_collision_2.obj"/>
+<mesh name="LINK_12_collision_3" file="./assets/LINK_12/LINK_12_collision_3.obj"/>
+<mesh name="LINK_12_collision_4" file="./assets/LINK_12/LINK_12_collision_4.obj"/>
+<mesh name="LINK_12_collision_5" file="./assets/LINK_12/LINK_12_collision_5.obj"/>
+<mesh name="LINK_12_collision_6" file="./assets/LINK_12/LINK_12_collision_6.obj"/>
+<mesh name="LINK_12_collision_7" file="./assets/LINK_12/LINK_12_collision_7.obj"/>
+<mesh name="LINK_12_collision_8" file="./assets/LINK_12/LINK_12_collision_8.obj"/>
+<mesh name="LINK_12_collision_9" file="./assets/LINK_12/LINK_12_collision_9.obj"/>
+<mesh name="LINK_12_collision_10" file="./assets/LINK_12/LINK_12_collision_10.obj"/>
+<mesh name="LINK_12_collision_11" file="./assets/LINK_12/LINK_12_collision_11.obj"/>
+<mesh name="LINK_13" file="./assets/LINK_13/LINK_13.obj"/>
+<mesh name="LINK_13_collision_0" file="./assets/LINK_13/LINK_13_collision_0.obj"/>
+<mesh name="LINK_13_collision_1" file="./assets/LINK_13/LINK_13_collision_1.obj"/>
+<mesh name="LINK_13_collision_2" file="./assets/LINK_13/LINK_13_collision_2.obj"/>
+<mesh name="LINK_13_collision_3" file="./assets/LINK_13/LINK_13_collision_3.obj"/>
+<mesh name="LINK_13_collision_4" file="./assets/LINK_13/LINK_13_collision_4.obj"/>
+<mesh name="LINK_13_collision_5" file="./assets/LINK_13/LINK_13_collision_5.obj"/>
+<mesh name="LINK_13_collision_6" file="./assets/LINK_13/LINK_13_collision_6.obj"/>
+<mesh name="LINK_13_collision_7" file="./assets/LINK_13/LINK_13_collision_7.obj"/>
+<mesh name="LINK_13_collision_8" file="./assets/LINK_13/LINK_13_collision_8.obj"/>
+<mesh name="LINK_13_collision_9" file="./assets/LINK_13/LINK_13_collision_9.obj"/>
+<mesh name="LINK_13_collision_10" file="./assets/LINK_13/LINK_13_collision_10.obj"/>
+<mesh name="LINK_13_collision_11" file="./assets/LINK_13/LINK_13_collision_11.obj"/>
+<mesh name="LINK_13_collision_12" file="./assets/LINK_13/LINK_13_collision_12.obj"/>
+<mesh name="LINK_13_collision_13" file="./assets/LINK_13/LINK_13_collision_13.obj"/>
+<mesh name="LINK_13_collision_14" file="./assets/LINK_13/LINK_13_collision_14.obj"/>
+<mesh name="LINK_13_collision_15" file="./assets/LINK_13/LINK_13_collision_15.obj"/>
+<mesh name="LINK_13_collision_16" file="./assets/LINK_13/LINK_13_collision_16.obj"/>
+<mesh name="LINK_13_collision_17" file="./assets/LINK_13/LINK_13_collision_17.obj"/>
+<mesh name="LINK_13_collision_18" file="./assets/LINK_13/LINK_13_collision_18.obj"/>
+<mesh name="LINK_13_collision_19" file="./assets/LINK_13/LINK_13_collision_19.obj"/>
+<mesh name="LINK_13_collision_20" file="./assets/LINK_13/LINK_13_collision_20.obj"/>
+<mesh name="LINK_13_collision_21" file="./assets/LINK_13/LINK_13_collision_21.obj"/>
+<mesh name="LINK_13_collision_22" file="./assets/LINK_13/LINK_13_collision_22.obj"/>
+<mesh name="LINK_13_collision_23" file="./assets/LINK_13/LINK_13_collision_23.obj"/>
+<mesh name="LINK_13_collision_24" file="./assets/LINK_13/LINK_13_collision_24.obj"/>
+<mesh name="LINK_13_collision_25" file="./assets/LINK_13/LINK_13_collision_25.obj"/>
+<mesh name="LINK_13_collision_26" file="./assets/LINK_13/LINK_13_collision_26.obj"/>
+<mesh name="LINK_13_collision_27" file="./assets/LINK_13/LINK_13_collision_27.obj"/>
+<mesh name="LINK_13_collision_28" file="./assets/LINK_13/LINK_13_collision_28.obj"/>
+<mesh name="LINK_13_collision_29" file="./assets/LINK_13/LINK_13_collision_29.obj"/>
+<mesh name="LINK_13_collision_30" file="./assets/LINK_13/LINK_13_collision_30.obj"/>
+<mesh name="LINK_13_collision_31" file="./assets/LINK_13/LINK_13_collision_31.obj"/>
+<mesh name="LINK_13_collision_32" file="./assets/LINK_13/LINK_13_collision_32.obj"/>
+<mesh name="LINK_13_collision_33" file="./assets/LINK_13/LINK_13_collision_33.obj"/>
+<mesh name="LINK_13_collision_34" file="./assets/LINK_13/LINK_13_collision_34.obj"/>
+<mesh name="LINK_13_collision_35" file="./assets/LINK_13/LINK_13_collision_35.obj"/>
+<mesh name="LINK_13_collision_36" file="./assets/LINK_13/LINK_13_collision_36.obj"/>
+<mesh name="LINK_13_collision_37" file="./assets/LINK_13/LINK_13_collision_37.obj"/>
+<mesh name="LINK_13_collision_38" file="./assets/LINK_13/LINK_13_collision_38.obj"/>
+<mesh name="LINK_13_collision_39" file="./assets/LINK_13/LINK_13_collision_39.obj"/>
+<mesh name="LINK_13_collision_40" file="./assets/LINK_13/LINK_13_collision_40.obj"/>
+<mesh name="LINK_13_collision_41" file="./assets/LINK_13/LINK_13_collision_41.obj"/>
+<mesh name="LINK_14" file="./assets/LINK_14/LINK_14.obj"/>
+<mesh name="LINK_14_collision_0" file="./assets/LINK_14/LINK_14_collision_0.obj"/>
+<mesh name="LINK_14_collision_1" file="./assets/LINK_14/LINK_14_collision_1.obj"/>
+<mesh name="LINK_14_collision_2" file="./assets/LINK_14/LINK_14_collision_2.obj"/>
+<mesh name="LINK_14_collision_3" file="./assets/LINK_14/LINK_14_collision_3.obj"/>
+<mesh name="LINK_14_collision_4" file="./assets/LINK_14/LINK_14_collision_4.obj"/>
+<mesh name="LINK_14_collision_5" file="./assets/LINK_14/LINK_14_collision_5.obj"/>
+<mesh name="LINK_14_collision_6" file="./assets/LINK_14/LINK_14_collision_6.obj"/>
+<mesh name="LINK_14_collision_7" file="./assets/LINK_14/LINK_14_collision_7.obj"/>
+<mesh name="LINK_14_collision_8" file="./assets/LINK_14/LINK_14_collision_8.obj"/>
+<mesh name="LINK_14_collision_9" file="./assets/LINK_14/LINK_14_collision_9.obj"/>
+<mesh name="LINK_14_collision_10" file="./assets/LINK_14/LINK_14_collision_10.obj"/>
+<mesh name="LINK_14_collision_11" file="./assets/LINK_14/LINK_14_collision_11.obj"/>
+<mesh name="LINK_14_collision_12" file="./assets/LINK_14/LINK_14_collision_12.obj"/>
+<mesh name="LINK_14_collision_13" file="./assets/LINK_14/LINK_14_collision_13.obj"/>
+<mesh name="LINK_14_collision_14" file="./assets/LINK_14/LINK_14_collision_14.obj"/>
+<mesh name="LINK_14_collision_15" file="./assets/LINK_14/LINK_14_collision_15.obj"/>
+<mesh name="LINK_14_collision_16" file="./assets/LINK_14/LINK_14_collision_16.obj"/>
+<mesh name="LINK_14_collision_17" file="./assets/LINK_14/LINK_14_collision_17.obj"/>
+<mesh name="LINK_15" file="./assets/LINK_15/LINK_15.obj"/>
+<mesh name="LINK_15_collision_0" file="./assets/LINK_15/LINK_15_collision_0.obj"/>
+<mesh name="LINK_15_collision_1" file="./assets/LINK_15/LINK_15_collision_1.obj"/>
+<mesh name="LINK_15_collision_2" file="./assets/LINK_15/LINK_15_collision_2.obj"/>
+<mesh name="LINK_15_collision_3" file="./assets/LINK_15/LINK_15_collision_3.obj"/>
+<mesh name="LINK_15_collision_4" file="./assets/LINK_15/LINK_15_collision_4.obj"/>
+<mesh name="LINK_15_collision_5" file="./assets/LINK_15/LINK_15_collision_5.obj"/>
+<mesh name="LINK_15_collision_6" file="./assets/LINK_15/LINK_15_collision_6.obj"/>
+<mesh name="LINK_15_collision_7" file="./assets/LINK_15/LINK_15_collision_7.obj"/>
+<mesh name="LINK_15_collision_8" file="./assets/LINK_15/LINK_15_collision_8.obj"/>
+<mesh name="LINK_15_collision_9" file="./assets/LINK_15/LINK_15_collision_9.obj"/>
+<mesh name="LINK_15_collision_10" file="./assets/LINK_15/LINK_15_collision_10.obj"/>
+<mesh name="LINK_15_collision_11" file="./assets/LINK_15/LINK_15_collision_11.obj"/>
+<mesh name="LINK_15_collision_12" file="./assets/LINK_15/LINK_15_collision_12.obj"/>
+<mesh name="LINK_16_0" file="./assets/LINK_16/LINK_16_0.obj"/>
+<mesh name="LINK_16_1" file="./assets/LINK_16/LINK_16_1.obj"/>
+<mesh name="LINK_16_collision_0" file="./assets/LINK_16/LINK_16_collision_0.obj"/>
+<mesh name="LINK_16_collision_1" file="./assets/LINK_16/LINK_16_collision_1.obj"/>
+<mesh name="LINK_16_collision_2" file="./assets/LINK_16/LINK_16_collision_2.obj"/>
+<mesh name="LINK_16_collision_3" file="./assets/LINK_16/LINK_16_collision_3.obj"/>
+<mesh name="LINK_16_collision_4" file="./assets/LINK_16/LINK_16_collision_4.obj"/>
+<mesh name="LINK_16_collision_5" file="./assets/LINK_16/LINK_16_collision_5.obj"/>
+<mesh name="LINK_16_collision_6" file="./assets/LINK_16/LINK_16_collision_6.obj"/>
+<mesh name="LINK_16_collision_7" file="./assets/LINK_16/LINK_16_collision_7.obj"/>
+<mesh name="LINK_16_collision_8" file="./assets/LINK_16/LINK_16_collision_8.obj"/>
+<mesh name="LINK_16_collision_9" file="./assets/LINK_16/LINK_16_collision_9.obj"/>
+<mesh name="LINK_16_collision_10" file="./assets/LINK_16/LINK_16_collision_10.obj"/>
+<mesh name="LINK_16_collision_11" file="./assets/LINK_16/LINK_16_collision_11.obj"/>
+<mesh name="LINK_17_0" file="./assets/LINK_17/LINK_17_0.obj"/>
+<mesh name="LINK_17_1" file="./assets/LINK_17/LINK_17_1.obj"/>
+<mesh name="LINK_17_collision_0" file="./assets/LINK_17/LINK_17_collision_0.obj"/>
+<mesh name="LINK_17_collision_1" file="./assets/LINK_17/LINK_17_collision_1.obj"/>
+<mesh name="LINK_17_collision_2" file="./assets/LINK_17/LINK_17_collision_2.obj"/>
+<mesh name="LINK_17_collision_3" file="./assets/LINK_17/LINK_17_collision_3.obj"/>
+<mesh name="LINK_18" file="./assets/LINK_18/LINK_18.obj"/>
+<mesh name="LINK_18_collision_0" file="./assets/LINK_18/LINK_18_collision_0.obj"/>
+<mesh name="LINK_18_collision_1" file="./assets/LINK_18/LINK_18_collision_1.obj"/>
+<mesh name="LINK_18_collision_2" file="./assets/LINK_18/LINK_18_collision_2.obj"/>
+<mesh name="LINK_18_collision_3" file="./assets/LINK_18/LINK_18_collision_3.obj"/>
+<mesh name="LINK_18_collision_4" file="./assets/LINK_18/LINK_18_collision_4.obj"/>
+<mesh name="LINK_18_collision_5" file="./assets/LINK_18/LINK_18_collision_5.obj"/>
+<mesh name="LINK_18_collision_6" file="./assets/LINK_18/LINK_18_collision_6.obj"/>
+<mesh name="LINK_18_collision_7" file="./assets/LINK_18/LINK_18_collision_7.obj"/>
+<mesh name="LINK_18_collision_8" file="./assets/LINK_18/LINK_18_collision_8.obj"/>
+<mesh name="LINK_18_collision_9" file="./assets/LINK_18/LINK_18_collision_9.obj"/>
+<mesh name="LINK_18_collision_10" file="./assets/LINK_18/LINK_18_collision_10.obj"/>
+<mesh name="LINK_18_collision_11" file="./assets/LINK_18/LINK_18_collision_11.obj"/>
+<mesh name="LINK_18_collision_12" file="./assets/LINK_18/LINK_18_collision_12.obj"/>
+<mesh name="LINK_18_collision_13" file="./assets/LINK_18/LINK_18_collision_13.obj"/>
+<mesh name="LINK_18_collision_14" file="./assets/LINK_18/LINK_18_collision_14.obj"/>
+<mesh name="LINK_18_collision_15" file="./assets/LINK_18/LINK_18_collision_15.obj"/>
+<mesh name="LINK_18_collision_16" file="./assets/LINK_18/LINK_18_collision_16.obj"/>
+<mesh name="LINK_18_collision_17" file="./assets/LINK_18/LINK_18_collision_17.obj"/>
+<mesh name="LINK_18_collision_18" file="./assets/LINK_18/LINK_18_collision_18.obj"/>
+<mesh name="LINK_18_collision_19" file="./assets/LINK_18/LINK_18_collision_19.obj"/>
+<mesh name="LINK_18_collision_20" file="./assets/LINK_18/LINK_18_collision_20.obj"/>
+<mesh name="LINK_19_0" file="./assets/LINK_19/LINK_19_0.obj"/>
+<mesh name="LINK_19_1" file="./assets/LINK_19/LINK_19_1.obj"/>
+<mesh name="LINK_19_collision_0" file="./assets/LINK_19/LINK_19_collision_0.obj"/>
+<mesh name="LINK_19_collision_1" file="./assets/LINK_19/LINK_19_collision_1.obj"/>
+<mesh name="LINK_19_collision_2" file="./assets/LINK_19/LINK_19_collision_2.obj"/>
+<mesh name="LINK_19_collision_3" file="./assets/LINK_19/LINK_19_collision_3.obj"/>
+<mesh name="LINK_19_collision_4" file="./assets/LINK_19/LINK_19_collision_4.obj"/>
+<mesh name="LINK_19_collision_5" file="./assets/LINK_19/LINK_19_collision_5.obj"/>
+<mesh name="LINK_19_collision_6" file="./assets/LINK_19/LINK_19_collision_6.obj"/>
+<mesh name="LINK_19_collision_7" file="./assets/LINK_19/LINK_19_collision_7.obj"/>
+<mesh name="LINK_19_collision_8" file="./assets/LINK_19/LINK_19_collision_8.obj"/>
+<mesh name="LINK_19_collision_9" file="./assets/LINK_19/LINK_19_collision_9.obj"/>
+<mesh name="LINK_20" file="./assets/LINK_20/LINK_20.obj"/>
+<mesh name="LINK_20_collision_0" file="./assets/LINK_20/LINK_20_collision_0.obj"/>
+<mesh name="LINK_20_collision_1" file="./assets/LINK_20/LINK_20_collision_1.obj"/>
+<mesh name="LINK_20_collision_2" file="./assets/LINK_20/LINK_20_collision_2.obj"/>
+<mesh name="LINK_20_collision_3" file="./assets/LINK_20/LINK_20_collision_3.obj"/>
+<mesh name="LINK_20_collision_4" file="./assets/LINK_20/LINK_20_collision_4.obj"/>
+<mesh name="LINK_20_collision_5" file="./assets/LINK_20/LINK_20_collision_5.obj"/>
+<mesh name="LINK_20_collision_6" file="./assets/LINK_20/LINK_20_collision_6.obj"/>
+<mesh name="LINK_20_collision_7" file="./assets/LINK_20/LINK_20_collision_7.obj"/>
+<mesh name="LINK_20_collision_8" file="./assets/LINK_20/LINK_20_collision_8.obj"/>
+<mesh name="LINK_20_collision_9" file="./assets/LINK_20/LINK_20_collision_9.obj"/>
+<mesh name="LINK_20_collision_10" file="./assets/LINK_20/LINK_20_collision_10.obj"/>
+<mesh name="LINK_20_collision_11" file="./assets/LINK_20/LINK_20_collision_11.obj"/>
+<mesh name="LINK_20_collision_12" file="./assets/LINK_20/LINK_20_collision_12.obj"/>
+<mesh name="LINK_20_collision_13" file="./assets/LINK_20/LINK_20_collision_13.obj"/>
+<mesh name="LINK_20_collision_14" file="./assets/LINK_20/LINK_20_collision_14.obj"/>
+<mesh name="LINK_20_collision_15" file="./assets/LINK_20/LINK_20_collision_15.obj"/>
+<mesh name="LINK_20_collision_16" file="./assets/LINK_20/LINK_20_collision_16.obj"/>
+<mesh name="LINK_20_collision_17" file="./assets/LINK_20/LINK_20_collision_17.obj"/>
+<mesh name="LINK_20_collision_18" file="./assets/LINK_20/LINK_20_collision_18.obj"/>
+<mesh name="LINK_20_collision_19" file="./assets/LINK_20/LINK_20_collision_19.obj"/>
+<mesh name="LINK_20_collision_20" file="./assets/LINK_20/LINK_20_collision_20.obj"/>
+<mesh name="LINK_20_collision_21" file="./assets/LINK_20/LINK_20_collision_21.obj"/>
+<mesh name="LINK_20_collision_22" file="./assets/LINK_20/LINK_20_collision_22.obj"/>
+<mesh name="LINK_20_collision_23" file="./assets/LINK_20/LINK_20_collision_23.obj"/>
+<mesh name="LINK_20_collision_24" file="./assets/LINK_20/LINK_20_collision_24.obj"/>
+<mesh name="LINK_20_collision_25" file="./assets/LINK_20/LINK_20_collision_25.obj"/>
+<mesh name="LINK_20_collision_26" file="./assets/LINK_20/LINK_20_collision_26.obj"/>
+<mesh name="LINK_20_collision_27" file="./assets/LINK_20/LINK_20_collision_27.obj"/>
+<mesh name="LINK_20_collision_28" file="./assets/LINK_20/LINK_20_collision_28.obj"/>
+<mesh name="LINK_20_collision_29" file="./assets/LINK_20/LINK_20_collision_29.obj"/>
+<mesh name="LINK_20_collision_30" file="./assets/LINK_20/LINK_20_collision_30.obj"/>
+<mesh name="LINK_20_collision_31" file="./assets/LINK_20/LINK_20_collision_31.obj"/>
+<mesh name="LINK_20_collision_32" file="./assets/LINK_20/LINK_20_collision_32.obj"/>
+<mesh name="LINK_20_collision_33" file="./assets/LINK_20/LINK_20_collision_33.obj"/>
+<mesh name="LINK_20_collision_34" file="./assets/LINK_20/LINK_20_collision_34.obj"/>
+<mesh name="LINK_20_collision_35" file="./assets/LINK_20/LINK_20_collision_35.obj"/>
+<mesh name="LINK_20_collision_36" file="./assets/LINK_20/LINK_20_collision_36.obj"/>
+<mesh name="LINK_20_collision_37" file="./assets/LINK_20/LINK_20_collision_37.obj"/>
+<mesh name="LINK_20_collision_38" file="./assets/LINK_20/LINK_20_collision_38.obj"/>
+<mesh name="LINK_20_collision_39" file="./assets/LINK_20/LINK_20_collision_39.obj"/>
+<mesh name="LINK_20_collision_40" file="./assets/LINK_20/LINK_20_collision_40.obj"/>
+<mesh name="LINK_20_collision_41" file="./assets/LINK_20/LINK_20_collision_41.obj"/>
+<mesh name="LINK_20_collision_42" file="./assets/LINK_20/LINK_20_collision_42.obj"/>
+<mesh name="LINK_20_collision_43" file="./assets/LINK_20/LINK_20_collision_43.obj"/>
+<mesh name="LINK_20_collision_44" file="./assets/LINK_20/LINK_20_collision_44.obj"/>
+<mesh name="LINK_20_collision_45" file="./assets/LINK_20/LINK_20_collision_45.obj"/>
+<mesh name="LINK_20_collision_46" file="./assets/LINK_20/LINK_20_collision_46.obj"/>
+<mesh name="LINK_20_collision_47" file="./assets/LINK_20/LINK_20_collision_47.obj"/>
+<mesh name="LINK_20_collision_48" file="./assets/LINK_20/LINK_20_collision_48.obj"/>
+<mesh name="PAN_TILT_1_0" file="./assets/PAN_TILT_1/PAN_TILT_1_0.obj"/>
+<mesh name="PAN_TILT_1_1" file="./assets/PAN_TILT_1/PAN_TILT_1_1.obj"/>
+<mesh name="PAN_TILT_1_2" file="./assets/PAN_TILT_1/PAN_TILT_1_2.obj"/>
+<mesh name="PAN_TILT_1_3" file="./assets/PAN_TILT_1/PAN_TILT_1_3.obj"/>
+<mesh name="PAN_TILT_1_collision_0" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_0.obj"/>
+<mesh name="PAN_TILT_1_collision_1" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_1.obj"/>
+<mesh name="PAN_TILT_1_collision_2" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_2.obj"/>
+<mesh name="PAN_TILT_1_collision_3" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_3.obj"/>
+<mesh name="PAN_TILT_1_collision_4" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_4.obj"/>
+<mesh name="PAN_TILT_1_collision_5" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_5.obj"/>
+<mesh name="PAN_TILT_1_collision_6" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_6.obj"/>
+<mesh name="PAN_TILT_1_collision_7" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_7.obj"/>
+<mesh name="PAN_TILT_1_collision_8" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_8.obj"/>
+<mesh name="PAN_TILT_1_collision_9" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_9.obj"/>
+<mesh name="PAN_TILT_1_collision_10" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_10.obj"/>
+<mesh name="PAN_TILT_1_collision_11" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_11.obj"/>
+<mesh name="PAN_TILT_1_collision_12" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_12.obj"/>
+<mesh name="PAN_TILT_1_collision_13" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_13.obj"/>
+<mesh name="PAN_TILT_1_collision_14" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_14.obj"/>
+<mesh name="PAN_TILT_1_collision_15" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_15.obj"/>
+<mesh name="PAN_TILT_1_collision_16" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_16.obj"/>
+<mesh name="PAN_TILT_1_collision_17" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_17.obj"/>
+<mesh name="PAN_TILT_1_collision_18" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_18.obj"/>
+<mesh name="PAN_TILT_1_collision_19" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_19.obj"/>
+<mesh name="PAN_TILT_1_collision_20" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_20.obj"/>
+<mesh name="PAN_TILT_1_collision_21" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_21.obj"/>
+<mesh name="PAN_TILT_1_collision_22" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_22.obj"/>
+<mesh name="PAN_TILT_1_collision_23" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_23.obj"/>
+<mesh name="PAN_TILT_1_collision_24" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_24.obj"/>
+<mesh name="PAN_TILT_1_collision_25" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_25.obj"/>
+<mesh name="PAN_TILT_1_collision_26" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_26.obj"/>
+<mesh name="PAN_TILT_1_collision_27" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_27.obj"/>
+<mesh name="PAN_TILT_1_collision_28" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_28.obj"/>
+<mesh name="PAN_TILT_1_collision_29" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_29.obj"/>
+<mesh name="PAN_TILT_1_collision_30" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_30.obj"/>
+<mesh name="PAN_TILT_1_collision_31" file="./assets/PAN_TILT_1/PAN_TILT_1_collision_31.obj"/>
+<mesh name="PAN_TILT_2_0" file="./assets/PAN_TILT_2/PAN_TILT_2_0.obj"/>
+<mesh name="PAN_TILT_2_1" file="./assets/PAN_TILT_2/PAN_TILT_2_1.obj"/>
+<mesh name="PAN_TILT_2_2" file="./assets/PAN_TILT_2/PAN_TILT_2_2.obj"/>
+<mesh name="PAN_TILT_2_collision_0" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_0.obj"/>
+<mesh name="PAN_TILT_2_collision_1" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_1.obj"/>
+<mesh name="PAN_TILT_2_collision_2" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_2.obj"/>
+<mesh name="PAN_TILT_2_collision_3" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_3.obj"/>
+<mesh name="PAN_TILT_2_collision_4" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_4.obj"/>
+<mesh name="PAN_TILT_2_collision_5" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_5.obj"/>
+<mesh name="PAN_TILT_2_collision_6" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_6.obj"/>
+<mesh name="PAN_TILT_2_collision_7" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_7.obj"/>
+<mesh name="PAN_TILT_2_collision_8" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_8.obj"/>
+<mesh name="PAN_TILT_2_collision_9" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_9.obj"/>
+<mesh name="PAN_TILT_2_collision_10" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_10.obj"/>
+<mesh name="PAN_TILT_2_collision_11" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_11.obj"/>
+<mesh name="PAN_TILT_2_collision_12" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_12.obj"/>
+<mesh name="PAN_TILT_2_collision_13" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_13.obj"/>
+<mesh name="PAN_TILT_2_collision_14" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_14.obj"/>
+<mesh name="PAN_TILT_2_collision_15" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_15.obj"/>
+<mesh name="PAN_TILT_2_collision_16" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_16.obj"/>
+<mesh name="PAN_TILT_2_collision_17" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_17.obj"/>
+<mesh name="PAN_TILT_2_collision_18" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_18.obj"/>
+<mesh name="PAN_TILT_2_collision_19" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_19.obj"/>
+<mesh name="PAN_TILT_2_collision_20" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_20.obj"/>
+<mesh name="PAN_TILT_2_collision_21" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_21.obj"/>
+<mesh name="PAN_TILT_2_collision_22" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_22.obj"/>
+<mesh name="PAN_TILT_2_collision_23" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_23.obj"/>
+<mesh name="PAN_TILT_2_collision_24" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_24.obj"/>
+<mesh name="PAN_TILT_2_collision_25" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_25.obj"/>
+<mesh name="PAN_TILT_2_collision_26" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_26.obj"/>
+<mesh name="PAN_TILT_2_collision_27" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_27.obj"/>
+<mesh name="PAN_TILT_2_collision_28" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_28.obj"/>
+<mesh name="PAN_TILT_2_collision_29" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_29.obj"/>
+<mesh name="PAN_TILT_2_collision_30" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_30.obj"/>
+<mesh name="PAN_TILT_2_collision_31" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_31.obj"/>
+<mesh name="PAN_TILT_2_collision_32" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_32.obj"/>
+<mesh name="PAN_TILT_2_collision_33" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_33.obj"/>
+<mesh name="PAN_TILT_2_collision_34" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_34.obj"/>
+<mesh name="PAN_TILT_2_collision_35" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_35.obj"/>
+<mesh name="PAN_TILT_2_collision_36" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_36.obj"/>
+<mesh name="PAN_TILT_2_collision_37" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_37.obj"/>
+<mesh name="PAN_TILT_2_collision_38" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_38.obj"/>
+<mesh name="PAN_TILT_2_collision_39" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_39.obj"/>
+<mesh name="PAN_TILT_2_collision_40" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_40.obj"/>
+<mesh name="PAN_TILT_2_collision_41" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_41.obj"/>
+<mesh name="PAN_TILT_2_collision_42" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_42.obj"/>
+<mesh name="PAN_TILT_2_collision_43" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_43.obj"/>
+<mesh name="PAN_TILT_2_collision_44" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_44.obj"/>
+<mesh name="PAN_TILT_2_collision_45" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_45.obj"/>
+<mesh name="PAN_TILT_2_collision_46" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_46.obj"/>
+<mesh name="PAN_TILT_2_collision_47" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_47.obj"/>
+<mesh name="PAN_TILT_2_collision_48" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_48.obj"/>
+<mesh name="PAN_TILT_2_collision_49" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_49.obj"/>
+<mesh name="PAN_TILT_2_collision_50" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_50.obj"/>
+<mesh name="PAN_TILT_2_collision_51" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_51.obj"/>
+<mesh name="PAN_TILT_2_collision_52" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_52.obj"/>
+<mesh name="PAN_TILT_2_collision_53" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_53.obj"/>
+<mesh name="PAN_TILT_2_collision_54" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_54.obj"/>
+<mesh name="PAN_TILT_2_collision_55" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_55.obj"/>
+<mesh name="PAN_TILT_2_collision_56" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_56.obj"/>
+<mesh name="PAN_TILT_2_collision_57" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_57.obj"/>
+<mesh name="PAN_TILT_2_collision_58" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_58.obj"/>
+<mesh name="PAN_TILT_2_collision_59" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_59.obj"/>
+<mesh name="PAN_TILT_2_collision_60" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_60.obj"/>
+<mesh name="PAN_TILT_2_collision_61" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_61.obj"/>
+<mesh name="PAN_TILT_2_collision_62" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_62.obj"/>
+<mesh name="PAN_TILT_2_collision_63" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_63.obj"/>
+<mesh name="PAN_TILT_2_collision_64" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_64.obj"/>
+<mesh name="PAN_TILT_2_collision_65" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_65.obj"/>
+<mesh name="PAN_TILT_2_collision_66" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_66.obj"/>
+<mesh name="PAN_TILT_2_collision_67" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_67.obj"/>
+<mesh name="PAN_TILT_2_collision_68" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_68.obj"/>
+<mesh name="PAN_TILT_2_collision_69" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_69.obj"/>
+<mesh name="PAN_TILT_2_collision_70" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_70.obj"/>
+<mesh name="PAN_TILT_2_collision_71" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_71.obj"/>
+<mesh name="PAN_TILT_2_collision_72" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_72.obj"/>
+<mesh name="PAN_TILT_2_collision_73" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_73.obj"/>
+<mesh name="PAN_TILT_2_collision_74" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_74.obj"/>
+<mesh name="PAN_TILT_2_collision_75" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_75.obj"/>
+<mesh name="PAN_TILT_2_collision_76" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_76.obj"/>
+<mesh name="PAN_TILT_2_collision_77" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_77.obj"/>
+<mesh name="PAN_TILT_2_collision_78" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_78.obj"/>
+<mesh name="PAN_TILT_2_collision_79" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_79.obj"/>
+<mesh name="PAN_TILT_2_collision_80" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_80.obj"/>
+<mesh name="PAN_TILT_2_collision_81" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_81.obj"/>
+<mesh name="PAN_TILT_2_collision_82" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_82.obj"/>
+<mesh name="PAN_TILT_2_collision_83" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_83.obj"/>
+<mesh name="PAN_TILT_2_collision_84" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_84.obj"/>
+<mesh name="PAN_TILT_2_collision_85" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_85.obj"/>
+<mesh name="PAN_TILT_2_collision_86" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_86.obj"/>
+<mesh name="PAN_TILT_2_collision_87" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_87.obj"/>
+<mesh name="PAN_TILT_2_collision_88" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_88.obj"/>
+<mesh name="PAN_TILT_2_collision_89" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_89.obj"/>
+<mesh name="PAN_TILT_2_collision_90" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_90.obj"/>
+<mesh name="PAN_TILT_2_collision_91" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_91.obj"/>
+<mesh name="PAN_TILT_2_collision_92" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_92.obj"/>
+<mesh name="PAN_TILT_2_collision_93" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_93.obj"/>
+<mesh name="PAN_TILT_2_collision_94" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_94.obj"/>
+<mesh name="PAN_TILT_2_collision_95" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_95.obj"/>
+<mesh name="PAN_TILT_2_collision_96" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_96.obj"/>
+<mesh name="PAN_TILT_2_collision_97" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_97.obj"/>
+<mesh name="PAN_TILT_2_collision_98" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_98.obj"/>
+<mesh name="PAN_TILT_2_collision_99" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_99.obj"/>
+<mesh name="PAN_TILT_2_collision_100" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_100.obj"/>
+<mesh name="PAN_TILT_2_collision_101" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_101.obj"/>
+<mesh name="PAN_TILT_2_collision_102" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_102.obj"/>
+<mesh name="PAN_TILT_2_collision_103" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_103.obj"/>
+<mesh name="PAN_TILT_2_collision_104" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_104.obj"/>
+<mesh name="PAN_TILT_2_collision_105" file="./assets/PAN_TILT_2/PAN_TILT_2_collision_105.obj"/>
+<mesh name="PAN_TILT_3_0" file="./assets/PAN_TILT_3/PAN_TILT_3_0.obj"/>
+<mesh name="PAN_TILT_3_1" file="./assets/PAN_TILT_3/PAN_TILT_3_1.obj"/>
+<mesh name="PAN_TILT_3_collision_0" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_0.obj"/>
+<mesh name="PAN_TILT_3_collision_1" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_1.obj"/>
+<mesh name="PAN_TILT_3_collision_2" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_2.obj"/>
+<mesh name="PAN_TILT_3_collision_3" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_3.obj"/>
+<mesh name="PAN_TILT_3_collision_4" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_4.obj"/>
+<mesh name="PAN_TILT_3_collision_5" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_5.obj"/>
+<mesh name="PAN_TILT_3_collision_6" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_6.obj"/>
+<mesh name="PAN_TILT_3_collision_7" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_7.obj"/>
+<mesh name="PAN_TILT_3_collision_8" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_8.obj"/>
+<mesh name="PAN_TILT_3_collision_9" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_9.obj"/>
+<mesh name="PAN_TILT_3_collision_10" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_10.obj"/>
+<mesh name="PAN_TILT_3_collision_11" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_11.obj"/>
+<mesh name="PAN_TILT_3_collision_12" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_12.obj"/>
+<mesh name="PAN_TILT_3_collision_13" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_13.obj"/>
+<mesh name="PAN_TILT_3_collision_14" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_14.obj"/>
+<mesh name="PAN_TILT_3_collision_15" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_15.obj"/>
+<mesh name="PAN_TILT_3_collision_16" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_16.obj"/>
+<mesh name="PAN_TILT_3_collision_17" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_17.obj"/>
+<mesh name="PAN_TILT_3_collision_18" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_18.obj"/>
+<mesh name="PAN_TILT_3_collision_19" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_19.obj"/>
+<mesh name="PAN_TILT_3_collision_20" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_20.obj"/>
+<mesh name="PAN_TILT_3_collision_21" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_21.obj"/>
+<mesh name="PAN_TILT_3_collision_22" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_22.obj"/>
+<mesh name="PAN_TILT_3_collision_23" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_23.obj"/>
+<mesh name="PAN_TILT_3_collision_24" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_24.obj"/>
+<mesh name="PAN_TILT_3_collision_25" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_25.obj"/>
+<mesh name="PAN_TILT_3_collision_26" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_26.obj"/>
+<mesh name="PAN_TILT_3_collision_27" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_27.obj"/>
+<mesh name="PAN_TILT_3_collision_28" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_28.obj"/>
+<mesh name="PAN_TILT_3_collision_29" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_29.obj"/>
+<mesh name="PAN_TILT_3_collision_30" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_30.obj"/>
+<mesh name="PAN_TILT_3_collision_31" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_31.obj"/>
+<mesh name="PAN_TILT_3_collision_32" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_32.obj"/>
+<mesh name="PAN_TILT_3_collision_33" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_33.obj"/>
+<mesh name="PAN_TILT_3_collision_34" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_34.obj"/>
+<mesh name="PAN_TILT_3_collision_35" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_35.obj"/>
+<mesh name="PAN_TILT_3_collision_36" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_36.obj"/>
+<mesh name="PAN_TILT_3_collision_37" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_37.obj"/>
+<mesh name="PAN_TILT_3_collision_38" file="./assets/PAN_TILT_3/PAN_TILT_3_collision_38.obj"/>
+<mesh name="RIGHT_MOUNT/ee_mount_r" file="./assets/RIGHT_MOUNT/ee_mount_r.obj"/>
+<mesh name="RIGHT_MOUNT/ee_mount_r_collision" file="./assets/RIGHT_MOUNT/ee_mount_r.obj"/>
+<mesh name="LEFT_MOUNT/ee_mount_l" file="./assets/LEFT_MOUNT/ee_mount_l.obj"/>
+<mesh name="LEFT_MOUNT/ee_mount_l_collision" file="./assets/LEFT_MOUNT/ee_mount_l.obj"/>
+</asset>
+<worldbody>
+<light pos="0 0 5" dir="0 0 -1" directional="true" castshadow="false" diffuse="0.8 0.8 0.8" specular="0 0 0"/>
+<body name="base">
+<inertial pos="-0.0615794 -0.00142271 0.135139" quat="0.00383057 0.733861 -0.00742942 0.679248" mass="60.0804" diaginertia="3.77525 2.99424 1.36264"/>
+<geom class="visual" material="191,191,191" mesh="base_0" rgba="0 0 0 0"/>
+<geom class="visual" material="237,255,168" mesh="base_1" rgba="0 0 0 0"/>
+<geom class="visual" material="190,188,186" mesh="base_2" rgba="0 0 0 0"/>
+<geom class="visual" material="25,25,25" mesh="base_3" rgba="0 0 0 0"/>
+<geom class="collision" rgba="0.913776 0.409043 0.222730 1.000000" mesh="base_collision_0"/>
+<geom class="collision" rgba="0.439059 0.480101 0.581859 1.000000" mesh="base_collision_1"/>
+<geom class="collision" rgba="0.530996 0.133082 0.647987 1.000000" mesh="base_collision_2"/>
+<geom class="collision" rgba="0.576751 0.278222 0.248449 1.000000" mesh="base_collision_3"/>
+<geom class="collision" rgba="0.590156 0.338018 0.504138 1.000000" mesh="base_collision_4"/>
+<geom class="collision" rgba="0.436278 0.705720 0.519255 1.000000" mesh="base_collision_5"/>
+<geom class="collision" rgba="0.016861 0.663206 0.400969 1.000000" mesh="base_collision_6"/>
+<geom class="collision" rgba="0.070310 0.963799 0.983775 1.000000" mesh="base_collision_7"/>
+<geom class="collision" rgba="0.274053 0.729646 0.727085 1.000000" mesh="base_collision_8"/>
+<geom class="collision" rgba="0.491009 0.452147 0.655199 1.000000" mesh="base_collision_9"/>
+<geom class="collision" rgba="0.603384 0.124052 0.712968 1.000000" mesh="base_collision_10"/>
+<geom class="collision" rgba="0.991949 0.068318 0.527824 1.000000" mesh="base_collision_11"/>
+<geom class="collision" rgba="0.754519 0.433870 0.852582 1.000000" mesh="base_collision_12"/>
+<geom class="collision" rgba="0.446317 0.742202 0.586933 1.000000" mesh="base_collision_13"/>
+<geom class="collision" rgba="0.534582 0.929289 0.374113 1.000000" mesh="base_collision_14"/>
+<geom class="collision" rgba="0.705177 0.523034 0.376231 1.000000" mesh="base_collision_15"/>
+<body name="wheel_r" pos="0.228 -0.265 0.1">
+<inertial pos="0 -0.00073938 0" quat="0.707107 0 0 0.707107" mass="1.37784" diaginertia="0.00811815 0.00426657 0.00426657"/>
+<joint name="right_wheel" pos="0 0 0" axis="0 -1 0" limited="false"/>
+<geom class="visual" material="235,235,235" mesh="WHEEL" rgba="0 0 0 0"/>
+<geom class="collision" rgba="0.575219 0.450143 0.121775 1.000000" mesh="WHEEL_collision_0"/>
+<geom class="collision" rgba="0.280237 0.361966 0.0389314 1" mesh="WHEEL_collision_1"/>
+<geom class="collision" rgba="0.557010 0.361777 0.403106 1.000000" mesh="WHEEL_collision_2"/>
+<geom class="collision" rgba="0.576892 0.553638 0.413150 1.000000" mesh="WHEEL_collision_3"/>
+<geom class="collision" rgba="0.556389 0.614084 0.786947 1.000000" mesh="WHEEL_collision_4"/>
+<geom class="collision" rgba="0.136402 0.981767 0.524777 1.000000" mesh="WHEEL_collision_5"/>
+<geom class="collision" rgba="0.0165071 0.531773 0.0879867 1" mesh="WHEEL_collision_6"/>
+<geom class="collision" rgba="0.288013 0.895121 0.552922 1.000000" mesh="WHEEL_collision_7"/>
+<geom class="collision" rgba="0.020306 0.442121 0.994982 1.000000" mesh="WHEEL_collision_8"/>
+<geom class="collision" rgba="0.892098 0.447347 0.535988 1.000000" mesh="WHEEL_collision_9"/>
+<geom class="collision" rgba="0.161441 0.742903 0.646821 1.000000" mesh="WHEEL_collision_10"/>
+<geom class="collision" rgba="0.584437 0.901803 0.526190 1.000000" mesh="WHEEL_collision_11"/>
+<geom class="collision" rgba="0.080152 0.817171 0.994636 1.000000" mesh="WHEEL_collision_12"/>
+<geom class="collision" rgba="0.699301 0.833283 0.420252 1.000000" mesh="WHEEL_collision_13"/>
+<geom class="collision" rgba="0.619468 0.528836 0.700112 1.000000" mesh="WHEEL_collision_14"/>
+<geom class="collision" rgba="0.604696 0.733146 0.654867 1.000000" mesh="WHEEL_collision_15"/>
+<geom class="collision" rgba="0.236482 0.841013 0.358831 1.000000" mesh="WHEEL_collision_16"/>
+<geom class="collision" rgba="0.785784 0.019432 0.572608 1.000000" mesh="WHEEL_collision_17"/>
+<geom class="collision" rgba="0.775922 0.519569 0.436864 1.000000" mesh="WHEEL_collision_18"/>
+<geom class="collision" rgba="0.169067 0.12417 0.500384 1" mesh="WHEEL_collision_19"/>
+<geom class="collision" rgba="0.043757 0.945130 0.922656 1.000000" mesh="WHEEL_collision_20"/>
+<geom class="collision" rgba="0.182998 0.724078 0.643613 1.000000" mesh="WHEEL_collision_21"/>
+<geom class="collision" rgba="0.449670 0.712404 0.244655 1.000000" mesh="WHEEL_collision_22"/>
+<geom class="collision" rgba="0.113954 0.375237 0.174562 1" mesh="WHEEL_collision_23"/>
+<geom class="collision" rgba="0.044915 0.869015 0.073073 1.000000" mesh="WHEEL_collision_24"/>
+<geom class="collision" rgba="0.389513 0.183207 0.532504 1.000000" mesh="WHEEL_collision_25"/>
+<geom class="collision" rgba="0.739154 0.695534 0.184904 1.000000" mesh="WHEEL_collision_26"/>
+<geom class="collision" rgba="0.189253 0.119881 0.485511 1" mesh="WHEEL_collision_27"/>
+<geom class="collision" rgba="0.321660 0.605435 0.652379 1.000000" mesh="WHEEL_collision_28"/>
+<geom class="collision" rgba="0.682670 0.589318 0.455786 1.000000" mesh="WHEEL_collision_29"/>
+<geom class="collision" rgba="0.647211 0.851232 0.279683 1.000000" mesh="WHEEL_collision_30"/>
+<geom class="collision" rgba="0.405955 0.20067 0.138823 1" mesh="WHEEL_collision_31"/>
+<geom class="collision" rgba="0.948094 0.055784 0.464194 1.000000" mesh="WHEEL_collision_32"/>
+<geom class="collision" rgba="0.422653 0.279826 0.328065 1.000000" mesh="WHEEL_collision_33"/>
+<geom class="collision" rgba="0.564021 0.584976 0.447043 1.000000" mesh="WHEEL_collision_34"/>
+<geom class="collision" rgba="0.103951 0.31805 0.393863 1" mesh="WHEEL_collision_35"/>
+<geom class="collision" rgba="0.666517 0.278393 0.442348 1.000000" mesh="WHEEL_collision_36"/>
+<geom class="collision" rgba="0.511142 0.546538 0.735071 1.000000" mesh="WHEEL_collision_37"/>
+</body>
+<body name="wheel_l" pos="0.228 0.265 0.1">
+<inertial pos="0 0.00073938 0" quat="0.707107 0 0 0.707107" mass="1.37784" diaginertia="0.00811815 0.00426657 0.00426657"/>
+<joint name="left_wheel" pos="0 0 0" axis="0 -1 0" limited="false"/>
+<geom class="visual" material="235,235,235" mesh="WHEEL" rgba="0 0 0 0"/>
+<geom class="collision" rgba="0.575219 0.450143 0.121775 1.000000" mesh="WHEEL_collision_0"/>
+<geom class="collision" rgba="0.280237 0.361966 0.0389314 1" mesh="WHEEL_collision_1"/>
+<geom class="collision" rgba="0.557010 0.361777 0.403106 1.000000" mesh="WHEEL_collision_2"/>
+<geom class="collision" rgba="0.576892 0.553638 0.413150 1.000000" mesh="WHEEL_collision_3"/>
+<geom class="collision" rgba="0.556389 0.614084 0.786947 1.000000" mesh="WHEEL_collision_4"/>
+<geom class="collision" rgba="0.136402 0.981767 0.524777 1.000000" mesh="WHEEL_collision_5"/>
+<geom class="collision" rgba="0.0165071 0.531773 0.0879867 1" mesh="WHEEL_collision_6"/>
+<geom class="collision" rgba="0.288013 0.895121 0.552922 1.000000" mesh="WHEEL_collision_7"/>
+<geom class="collision" rgba="0.020306 0.442121 0.994982 1.000000" mesh="WHEEL_collision_8"/>
+<geom class="collision" rgba="0.892098 0.447347 0.535988 1.000000" mesh="WHEEL_collision_9"/>
+<geom class="collision" rgba="0.161441 0.742903 0.646821 1.000000" mesh="WHEEL_collision_10"/>
+<geom class="collision" rgba="0.584437 0.901803 0.526190 1.000000" mesh="WHEEL_collision_11"/>
+<geom class="collision" rgba="0.080152 0.817171 0.994636 1.000000" mesh="WHEEL_collision_12"/>
+<geom class="collision" rgba="0.699301 0.833283 0.420252 1.000000" mesh="WHEEL_collision_13"/>
+<geom class="collision" rgba="0.619468 0.528836 0.700112 1.000000" mesh="WHEEL_collision_14"/>
+<geom class="collision" rgba="0.604696 0.733146 0.654867 1.000000" mesh="WHEEL_collision_15"/>
+<geom class="collision" rgba="0.236482 0.841013 0.358831 1.000000" mesh="WHEEL_collision_16"/>
+<geom class="collision" rgba="0.785784 0.019432 0.572608 1.000000" mesh="WHEEL_collision_17"/>
+<geom class="collision" rgba="0.775922 0.519569 0.436864 1.000000" mesh="WHEEL_collision_18"/>
+<geom class="collision" rgba="0.169067 0.12417 0.500384 1" mesh="WHEEL_collision_19"/>
+<geom class="collision" rgba="0.043757 0.945130 0.922656 1.000000" mesh="WHEEL_collision_20"/>
+<geom class="collision" rgba="0.182998 0.724078 0.643613 1.000000" mesh="WHEEL_collision_21"/>
+<geom class="collision" rgba="0.449670 0.712404 0.244655 1.000000" mesh="WHEEL_collision_22"/>
+<geom class="collision" rgba="0.113954 0.375237 0.174562 1" mesh="WHEEL_collision_23"/>
+<geom class="collision" rgba="0.044915 0.869015 0.073073 1.000000" mesh="WHEEL_collision_24"/>
+<geom class="collision" rgba="0.389513 0.183207 0.532504 1.000000" mesh="WHEEL_collision_25"/>
+<geom class="collision" rgba="0.739154 0.695534 0.184904 1.000000" mesh="WHEEL_collision_26"/>
+<geom class="collision" rgba="0.189253 0.119881 0.485511 1" mesh="WHEEL_collision_27"/>
+<geom class="collision" rgba="0.321660 0.605435 0.652379 1.000000" mesh="WHEEL_collision_28"/>
+<geom class="collision" rgba="0.682670 0.589318 0.455786 1.000000" mesh="WHEEL_collision_29"/>
+<geom class="collision" rgba="0.647211 0.851232 0.279683 1.000000" mesh="WHEEL_collision_30"/>
+<geom class="collision" rgba="0.405955 0.20067 0.138823 1" mesh="WHEEL_collision_31"/>
+<geom class="collision" rgba="0.948094 0.055784 0.464194 1.000000" mesh="WHEEL_collision_32"/>
+<geom class="collision" rgba="0.422653 0.279826 0.328065 1.000000" mesh="WHEEL_collision_33"/>
+<geom class="collision" rgba="0.564021 0.584976 0.447043 1.000000" mesh="WHEEL_collision_34"/>
+<geom class="collision" rgba="0.103951 0.31805 0.393863 1" mesh="WHEEL_collision_35"/>
+<geom class="collision" rgba="0.666517 0.278393 0.442348 1.000000" mesh="WHEEL_collision_36"/>
+<geom class="collision" rgba="0.511142 0.546538 0.735071 1.000000" mesh="WHEEL_collision_37"/>
+</body>
+<body name="link_torso_0" pos="0 0 0.2805">
+<inertial pos="-0.0884841 0.00021367 4.6e-07" quat="0.443798 0.550483 -0.443815 0.55049" mass="2.24282" diaginertia="0.0189253 0.0143368 0.00985172"/>
+<joint name="torso_0" pos="0 0 0" axis="1 0 0" limited="true" range="0 0.000000000001"/>
+<geom class="visual" material="254,254,255" mesh="LINK_1" rgba="0 0 0 0"/>
+<geom class="collision" rgba="0.00335443 0.464104 0.341321 1" mesh="LINK_1_collision_0"/>
+<geom class="collision" rgba="0.062715 0.070602 0.941567 1.000000" mesh="LINK_1_collision_1"/>
+<geom class="collision" rgba="0.226473 0.601387 0.366906 1.000000" mesh="LINK_1_collision_2"/>
+<geom class="collision" rgba="0.348605 0.325343 0.874153 1.000000" mesh="LINK_1_collision_3"/>
+<geom class="collision" rgba="0.698653 0.074489 0.247745 1.000000" mesh="LINK_1_collision_4"/>
+<geom class="collision" rgba="0.395168 0.931441 0.458303 1.000000" mesh="LINK_1_collision_5"/>
+<geom class="collision" rgba="0.424230 0.321302 0.807372 1.000000" mesh="LINK_1_collision_6"/>
+<geom class="collision" rgba="0.499067 0.690662 0.420662 1.000000" mesh="LINK_1_collision_7"/>
+<geom class="collision" rgba="0.501394 0.929684 0.226623 1.000000" mesh="LINK_1_collision_8"/>
+<geom class="collision" rgba="0.403159 0.644530 0.141536 1.000000" mesh="LINK_1_collision_9"/>
+<geom class="in-model-collision" size="0.105" pos="-0.115 0 0" quat="0.707105 0 0.707108 0"/>
+<body name="link_torso_1">
+<inertial pos="0.00728955 -0.0172852 0.0691138" quat="0.997768 -0.0453891 0.0382115 -0.0306483" mass="9.72163" diaginertia="0.149421 0.139376 0.0275059"/>
+<joint name="torso_1" pos="0 0 0" axis="0 1 0" limited="true" range="0.5 0.500000001"/>
+<geom class="visual" material="0,0,0" mesh="LINK_2_0" rgba="0 0 0 0"/>
+<geom class="visual" material="254,254,255" mesh="LINK_2_1" rgba="0 0 0 0"/>
+<geom class="collision" rgba="0.988146 0.079111 0.502579 1.000000" mesh="LINK_2_collision_0"/>
+<geom class="collision" rgba="0.142836 0.978351 0.693149 1.000000" mesh="LINK_2_collision_1"/>
+<geom class="collision" rgba="0.370191 0.068903 0.844880 1.000000" mesh="LINK_2_collision_2"/>
+<geom class="collision" rgba="0.434746 0.200827 0.879242 1.000000" mesh="LINK_2_collision_3"/>
+<geom class="collision" rgba="0.042533 0.631211 0.541433 1.000000" mesh="LINK_2_collision_4"/>
+<geom class="collision" rgba="0.399521 0.844109 0.500993 1.000000" mesh="LINK_2_collision_5"/>
+<geom class="collision" rgba="0.213421 0.561018 0.149186 1.000000" mesh="LINK_2_collision_6"/>
+<geom class="collision" rgba="0.789628 0.715294 0.276861 1.000000" mesh="LINK_2_collision_7"/>
+<geom class="collision" rgba="0.219858 0.150431 0.278137 1" mesh="LINK_2_collision_8"/>
+<geom class="collision" rgba="0.0632126 0.0204493 0.430714 1" mesh="LINK_2_collision_9"/>
+<geom class="collision" rgba="0.696688 0.082552 0.889482 1.000000" mesh="LINK_2_collision_10"/>
+<geom class="collision" rgba="0.728940 0.536709 0.458786 1.000000" mesh="LINK_2_collision_11"/>
+<geom class="collision" rgba="0.734388 0.712349 0.567234 1.000000" mesh="LINK_2_collision_12"/>
+<geom class="collision" rgba="0.312578 0.505701 0.0739962 1" mesh="LINK_2_collision_13"/>
+<geom class="collision" rgba="0.400210 0.144450 0.656993 1.000000" mesh="LINK_2_collision_14"/>
+<geom class="collision" rgba="0.816932 0.096299 0.886882 1.000000" mesh="LINK_2_collision_15"/>
+<geom class="collision" rgba="0.130384 0.277917 0.550422 1.000000" mesh="LINK_2_collision_16"/>
+<geom class="in-model-collision" size="0.115" pos="0.01 0 0.24"/>
+<body name="link_torso_2" pos="0 0 0.35">
+<inertial pos="0.00653835 -0.0176954 0.0563658" quat="0.99687 -0.052526 0.0433482 -0.0401474" mass="9.21692" diaginertia="0.12242 0.116748 0.0292915"/>
+<joint name="torso_2" pos="0 0 0" axis="0 1 0" limited="true" range="-1.000000000000001 -1.00"/>
+<geom class="visual" material="10,10,10" mesh="LINK_3_0" rgba="0 0 0 0"/>
+<geom class="visual" material="254,254,255" mesh="LINK_3_1" rgba="0 0 0 0"/>
+<geom class="collision" rgba="0.445331 0.577146 0.938911 1.000000" mesh="LINK_3_collision_0"/>
+<geom class="collision" rgba="0.127711 0.975411 0.857006 1.000000" mesh="LINK_3_collision_1"/>
+<geom class="collision" rgba="0.286310 0.652003 0.853762 1.000000" mesh="LINK_3_collision_2"/>
+<geom class="collision" rgba="0.34182 0.0827254 0.0571686 1" mesh="LINK_3_collision_3"/>
+<geom class="collision" rgba="0.116383 0.165821 0.697386 1.000000" mesh="LINK_3_collision_4"/>
+<geom class="collision" rgba="0.736341 0.729362 0.510520 1.000000" mesh="LINK_3_collision_5"/>
+<geom class="collision" rgba="0.464860 0.411822 0.947474 1.000000" mesh="LINK_3_collision_6"/>
+<geom class="collision" rgba="0.458292 0.479945 0.402780 1.000000" mesh="LINK_3_collision_7"/>
+<geom class="collision" rgba="0.480920 0.214617 0.407310 1.000000" mesh="LINK_3_collision_8"/>
+<geom class="collision" rgba="0.375274 0.151843 0.10931 1" mesh="LINK_3_collision_9"/>
+<geom class="collision" rgba="0.641291 0.585906 0.327740 1.000000" mesh="LINK_3_collision_10"/>
+<geom class="collision" rgba="0.710833 0.387534 0.596270 1.000000" mesh="LINK_3_collision_11"/>
+<geom class="in-model-collision" size="0.095" pos="0.025 0 0.23"/>
+<body name="link_torso_3" pos="0 0 0.35">
+<inertial pos="-0.00574156 -0.0172598 5.61e-05" quat="0.0913806 0.682262 -0.18841 0.700478" mass="4.18679" diaginertia="0.00955618 0.00946572 0.00832635"/>
+<joint name="torso_3" pos="0 0 0" axis="0 1 0" limited="true" range="0.5 0.500000001"/>
+<geom class="visual" material="10,10,10" mesh="LINK_4" rgba="0 0 0 0"/>
+<geom class="collision" rgba="0.570044 0.232273 0.184018 1.000000" mesh="LINK_4_collision_0"/>
+<geom class="collision" rgba="0.384158 0.416996 0.115604 1.000000" mesh="LINK_4_collision_1"/>
+<geom class="collision" rgba="0.804974 0.688906 0.102789 1.000000" mesh="LINK_4_collision_2"/>
+<geom class="collision" rgba="0.477803 0.701289 0.579155 1.000000" mesh="LINK_4_collision_3"/>
+<geom class="collision" rgba="0.956679 0.222815 0.591491 1.000000" mesh="LINK_4_collision_4"/>
+<geom class="collision" rgba="0.706036 0.410004 0.305486 1.000000" mesh="LINK_4_collision_5"/>
+<geom class="collision" rgba="0.321298 0.279490 0.388509 1.000000" mesh="LINK_4_collision_6"/>
+<geom class="collision" rgba="0.474232 0.123536 0.884627 1.000000" mesh="LINK_4_collision_7"/>
+<geom class="collision" rgba="0.302178 0.138434 0.508775 1.000000" mesh="LINK_4_collision_8"/>
+<geom class="collision" rgba="0.0590659 0.038523 0.429264 1" mesh="LINK_4_collision_9"/>
+<geom class="collision" rgba="0.290493 0.363528 0.524917 1.000000" mesh="LINK_4_collision_10"/>
+<geom class="collision" rgba="0.234547 0.994337 0.808671 1.000000" mesh="LINK_4_collision_11"/>
+<geom class="collision" rgba="0.574295 0.661843 0.755938 1.000000" mesh="LINK_4_collision_12"/>
+<geom class="collision" rgba="0.155603 0.032046 0.805468 1.000000" mesh="LINK_4_collision_13"/>
+<geom class="collision" rgba="0.325601 0.534643 0.351192 1.000000" mesh="LINK_4_collision_14"/>
+<geom class="collision" rgba="0.668324 0.510615 0.727769 1.000000" mesh="LINK_4_collision_15"/>
+<geom class="collision" rgba="0.156323 0.425762 0.530566 1.000000" mesh="LINK_4_collision_16"/>
+<geom class="collision" rgba="0.546918 0.877207 0.227723 1.000000" mesh="LINK_4_collision_17"/>
+<body name="link_torso_4">
+<inertial pos="-0.0909709 5.085e-05 0.0260195" quat="-0.0536434 0.4399 -0.0270045 0.896036" mass="4.45566" diaginertia="0.0255574 0.0255082 0.00942882"/>
+<joint name="torso_4" pos="0 0 0" axis="1 0 0" limited="true" range="0 0.000000000001"/>
+<geom class="visual" material="10,10,10" mesh="LINK_5" rgba="0 0 0 0"/>
+<geom class="collision" rgba="0.122477 0.0688048 0.537766 1" mesh="LINK_5_collision_0"/>
+<geom class="collision" rgba="0.331488 0.625165 0.433921 1.000000" mesh="LINK_5_collision_1"/>
+<geom class="collision" rgba="0.125510 0.920308 0.500364 1.000000" mesh="LINK_5_collision_2"/>
+<geom class="collision" rgba="0.692754 0.669274 0.375908 1.000000" mesh="LINK_5_collision_3"/>
+<geom class="collision" rgba="0.718580 0.616353 0.272604 1.000000" mesh="LINK_5_collision_4"/>
+<geom class="collision" rgba="0.335607 0.800393 0.823929 1.000000" mesh="LINK_5_collision_5"/>
+<geom class="collision" rgba="0.457671 0.727173 0.761137 1.000000" mesh="LINK_5_collision_6"/>
+<geom class="collision" rgba="0.979297 0.704840 0.337566 1.000000" mesh="LINK_5_collision_7"/>
+<geom class="collision" rgba="0.398961 0.585416 0.936142 1.000000" mesh="LINK_5_collision_8"/>
+<geom class="collision" rgba="0.953424 0.301008 0.698018 1.000000" mesh="LINK_5_collision_9"/>
+<geom class="collision" rgba="0.372751 0.375133 0.314837 1.000000" mesh="LINK_5_collision_10"/>
+<geom class="collision" rgba="0.767549 0.271163 0.524837 1.000000" mesh="LINK_5_collision_11"/>
+<geom class="collision" rgba="0.177562 0.572833 0.599205 1.000000" mesh="LINK_5_collision_12"/>
+<geom class="collision" rgba="0.010528 0.718666 0.499306 1.000000" mesh="LINK_5_collision_13"/>
+<geom class="collision" rgba="0.890597 0.480424 0.337036 1.000000" mesh="LINK_5_collision_14"/>
+<geom class="collision" rgba="0.246044 0.681112 0.915810 1.000000" mesh="LINK_5_collision_15"/>
+<geom class="collision" rgba="0.863894 0.384449 0.187993 1.000000" mesh="LINK_5_collision_16"/>
+<geom class="collision" rgba="0.158941 0.297937 0.096627 1" mesh="LINK_5_collision_17"/>
+<geom class="collision" rgba="0.310521 0.868240 0.889769 1.000000" mesh="LINK_5_collision_18"/>
+<geom class="collision" rgba="0.555597 0.428452 0.278236 1.000000" mesh="LINK_5_collision_19"/>
+<geom class="collision" rgba="0.772073 0.637273 0.618797 1.000000" mesh="LINK_5_collision_20"/>
+<geom class="collision" rgba="0.421381 0.667641 0.776193 1.000000" mesh="LINK_5_collision_21"/>
+<geom class="collision" rgba="0.708631 0.480259 0.691619 1.000000" mesh="LINK_5_collision_22"/>
+<geom class="collision" rgba="0.261053 0.105517 0.377191 1" mesh="LINK_5_collision_23"/>
+<geom class="in-model-collision" size="0.105" pos="-0.07 0 0.0385" quat="0.707105 0 0.707108 0"/>
+<body name="link_torso_5" pos="0 0 0.309427">
+<inertial pos="-0.0132199 0.000254676 -0.0318761" quat="0.998675 -0.00438307 -0.0510462 0.00477378" mass="12.6659" diaginertia="0.21618 0.167212 0.132309"/>
+<joint name="torso_5" pos="0 0 0" axis="0 0 1" limited="true" range="0 0.000000000001"/>
+<geom class="visual" material="254,254,255_LINK_6" mesh="LINK_6_0" rgba="0 0 0 0"/>
+<geom class="visual" material="191,191,191" mesh="LINK_6_1" rgba="0 0 0 0"/>
+<geom class="visual" material="70,70,70" mesh="LINK_6_2" rgba="0 0 0 0"/>
+<geom class="visual" material="178,0,0" mesh="LINK_6_3" rgba="0 0 0 0"/>
+<geom class="visual" material="10,10,10_LINK_6" mesh="LINK_6_4" rgba="0 0 0 0"/>
+<geom class="visual" material="254,254,255_LINK_6" mesh="LINK_6_5" rgba="0 0 0 0"/>
+<geom class="collision" rgba="0.503213 0.602797 0.694279 1.000000" mesh="LINK_6_collision_0"/>
+<geom class="collision" rgba="0.582840 0.574918 0.698350 1.000000" mesh="LINK_6_collision_1"/>
+<geom class="collision" rgba="0.563497 0.361427 0.551036 1.000000" mesh="LINK_6_collision_2"/>
+<geom class="collision" rgba="0.917808 0.070122 0.096945 1.000000" mesh="LINK_6_collision_3"/>
+<geom class="collision" rgba="0.501465 0.438073 0.892918 1.000000" mesh="LINK_6_collision_4"/>
+<geom class="collision" rgba="0.033527 0.796062 0.188619 1.000000" mesh="LINK_6_collision_5"/>
+<geom class="collision" rgba="0.152055 0.479965 0.346845 1.000000" mesh="LINK_6_collision_6"/>
+<geom class="collision" rgba="0.849923 0.654797 0.315694 1.000000" mesh="LINK_6_collision_7"/>
+<geom class="collision" rgba="0.282398 0.218818 0.977030 1.000000" mesh="LINK_6_collision_8"/>
+<geom class="collision" rgba="0.846623 0.077491 0.456622 1.000000" mesh="LINK_6_collision_9"/>
+<geom class="collision" rgba="0.185282 0.0974587 0.211064 1" mesh="LINK_6_collision_10"/>
+<geom class="collision" rgba="0.738757 0.118984 0.076492 1.000000" mesh="LINK_6_collision_11"/>
+<geom class="collision" rgba="0.856659 0.001417 0.377360 1.000000" mesh="LINK_6_collision_12"/>
+<geom class="collision" rgba="0.756017 0.870042 0.130526 1.000000" mesh="LINK_6_collision_13"/>
+<geom class="collision" rgba="0.709865 0.716354 0.318603 1.000000" mesh="LINK_6_collision_14"/>
+<geom class="collision" rgba="0.343359 0.171530 0.874348 1.000000" mesh="LINK_6_collision_15"/>
+<geom class="collision" rgba="0.786212 0.292617 0.820632 1.000000" mesh="LINK_6_collision_16"/>
+<geom class="collision" rgba="0.377144 0.502919 0.448641 1.000000" mesh="LINK_6_collision_17"/>
+<geom class="collision" rgba="0.280470 0.713578 0.697642 1.000000" mesh="LINK_6_collision_18"/>
+<geom class="collision" rgba="0.707444 0.655820 0.361142 1.000000" mesh="LINK_6_collision_19"/>
+<geom class="collision" rgba="0.430613 0.638555 0.560233 1.000000" mesh="LINK_6_collision_20"/>
+<geom class="collision" rgba="0.243627 0.439613 0.497891 1.000000" mesh="LINK_6_collision_21"/>
+<geom class="collision" rgba="0.380434 0.493700 0.660949 1.000000" mesh="LINK_6_collision_22"/>
+<geom class="collision" rgba="0.637586 0.019331 0.311735 1.000000" mesh="LINK_6_collision_23"/>
+<geom class="collision" rgba="0.130865 0.983428 0.539341 1.000000" mesh="LINK_6_collision_24"/>
+<geom class="collision" rgba="0.0540982 0.0306283 0.655782 1" mesh="LINK_6_collision_25"/>
+<geom class="collision" rgba="0.226509 0.777907 0.553229 1.000000" mesh="LINK_6_collision_26"/>
+<geom class="collision" rgba="0.214966 0.566364 0.825629 1.000000" mesh="LINK_6_collision_27"/>
+<geom class="collision" rgba="0.661897 0.123623 0.875115 1.000000" mesh="LINK_6_collision_28"/>
+<geom class="collision" rgba="0.801096 0.437591 0.181214 1.000000" mesh="LINK_6_collision_29"/>
+<geom class="collision" rgba="0.413463 0.989274 0.237689 1.000000" mesh="LINK_6_collision_30"/>
+<geom class="collision" rgba="0.285718 0.904460 0.763068 1.000000" mesh="LINK_6_collision_31"/>
+<geom class="collision" rgba="0.0756921 0.0816994 0.156088 1" mesh="LINK_6_collision_32"/>
+<geom class="collision" rgba="0.721194 0.465152 0.679443 1.000000" mesh="LINK_6_collision_33"/>
+<geom class="collision" rgba="0.660098 0.352787 0.576212 1.000000" mesh="LINK_6_collision_34"/>
+<geom class="collision" rgba="0.090024 0.285468 0.662099 1.000000" mesh="LINK_6_collision_35"/>
+<geom class="collision" rgba="0.463820 0.569281 0.702562 1.000000" mesh="LINK_6_collision_36"/>
+<geom class="collision" rgba="0.138437 0.690165 0.522802 1.000000" mesh="LINK_6_collision_37"/>
+<geom class="collision" rgba="0.721525 0.213487 0.654264 1.000000" mesh="LINK_6_collision_38"/>
+<geom class="collision" rgba="0.646444 0.488775 0.621250 1.000000" mesh="LINK_6_collision_39"/>
+<geom class="collision" rgba="0.170498 0.302146 0.484658 1.000000" mesh="LINK_6_collision_40"/>
+<geom class="collision" rgba="0.116185 0.0502752 0.260817 1" mesh="LINK_6_collision_41"/>
+<geom class="collision" rgba="0.152734 0.551024 0.180357 1" mesh="LINK_6_collision_42"/>
+<geom class="collision" rgba="0.107027 0.123485 0.605808 1" mesh="LINK_6_collision_43"/>
+<geom class="collision" rgba="0.698106 0.440156 0.527099 1.000000" mesh="LINK_6_collision_44"/>
+<geom class="collision" rgba="0.813046 0.853788 0.404626 1.000000" mesh="LINK_6_collision_45"/>
+<geom class="collision" rgba="0.181608 0.152569 0.830618 1.000000" mesh="LINK_6_collision_46"/>
+<geom class="collision" rgba="0.472807 0.614989 0.621196 1.000000" mesh="LINK_6_collision_47"/>
+<geom class="collision" rgba="0.800957 0.464041 0.041207 1.000000" mesh="LINK_6_collision_48"/>
+<geom class="collision" rgba="0.873251 0.037815 0.851933 1.000000" mesh="LINK_6_collision_49"/>
+<geom class="collision" rgba="0.340943 0.445647 0.196306 1.000000" mesh="LINK_6_collision_50"/>
+<geom class="collision" rgba="0.701232 0.425820 0.555346 1.000000" mesh="LINK_6_collision_51"/>
+<geom class="collision" rgba="0.281276 0.676991 0.174043 1.000000" mesh="LINK_6_collision_52"/>
+<geom class="collision" rgba="0.355998 0.921498 0.141032 1.000000" mesh="LINK_6_collision_53"/>
+<geom class="collision" rgba="0.104027 0.559706 0.154309 1" mesh="LINK_6_collision_54"/>
+<geom class="collision" rgba="0.664410 0.616203 0.439705 1.000000" mesh="LINK_6_collision_55"/>
+<geom class="collision" rgba="0.667951 0.744147 0.307071 1.000000" mesh="LINK_6_collision_56"/>
+<geom class="collision" rgba="0.704867 0.661859 0.406628 1.000000" mesh="LINK_6_collision_57"/>
+<geom class="collision" rgba="0.212416 0.517962 0.950734 1.000000" mesh="LINK_6_collision_58"/>
+<geom class="collision" rgba="0.865648 0.555122 0.322181 1.000000" mesh="LINK_6_collision_59"/>
+<geom class="collision" rgba="0.158929 0.371401 0.519788 1.000000" mesh="LINK_6_collision_60"/>
+<geom class="collision" rgba="0.778521 0.200898 0.951451 1.000000" mesh="LINK_6_collision_61"/>
+<geom class="collision" rgba="0.601699 0.708479 0.396227 1.000000" mesh="LINK_6_collision_62"/>
+<geom class="collision" rgba="0.947247 0.495787 0.239130 1.000000" mesh="LINK_6_collision_63"/>
+<geom class="collision" rgba="0.727051 0.240517 0.697626 1.000000" mesh="LINK_6_collision_64"/>
+<geom class="collision" rgba="0.377790 0.337438 0.380816 1.000000" mesh="LINK_6_collision_65"/>
+<geom class="collision" rgba="0.749883 0.356738 0.514389 1.000000" mesh="LINK_6_collision_66"/>
+<geom class="collision" rgba="0.896016 0.200129 0.477963 1.000000" mesh="LINK_6_collision_67"/>
+<geom class="collision" rgba="0.682347 0.594872 0.725924 1.000000" mesh="LINK_6_collision_68"/>
+<geom class="collision" rgba="0.383502 0.280225 0.791274 1.000000" mesh="LINK_6_collision_69"/>
+<geom class="collision" rgba="0.0208666 0.323371 0.13093 1" mesh="LINK_6_collision_70"/>
+<geom class="collision" rgba="0.935397 0.237844 0.023590 1.000000" mesh="LINK_6_collision_71"/>
+<geom class="collision" rgba="0.728101 0.382683 0.768286 1.000000" mesh="LINK_6_collision_72"/>
+<geom class="collision" rgba="0.216405 0.531465 0.475667 1.000000" mesh="LINK_6_collision_73"/>
+<geom class="collision" rgba="0.587010 0.652625 0.489700 1.000000" mesh="LINK_6_collision_74"/>
+<geom class="collision" rgba="0.273684 0.143196 0.605194 1.000000" mesh="LINK_6_collision_75"/>
+<geom class="collision" rgba="0.679679 0.137314 0.731935 1.000000" mesh="LINK_6_collision_76"/>
+<geom class="collision" rgba="0.845573 0.653830 0.118394 1.000000" mesh="LINK_6_collision_77"/>
+<geom class="collision" rgba="0.506067 0.140993 0.0863536 1" mesh="LINK_6_collision_78"/>
+<geom class="collision" rgba="0.327231 0.001879 0.827952 1.000000" mesh="LINK_6_collision_79"/>
+<geom class="collision" rgba="0.274065 0.179001 0.174778 1" mesh="LINK_6_collision_80"/>
+<geom class="collision" rgba="0.192794 0.273582 0.837916 1.000000" mesh="LINK_6_collision_81"/>
+<geom class="collision" rgba="0.810169 0.915384 0.084283 1.000000" mesh="LINK_6_collision_82"/>
+<geom class="collision" rgba="0.727137 0.346408 0.088084 1.000000" mesh="LINK_6_collision_83"/>
+<geom class="collision" rgba="0.0315803 0.609165 0.187033 1" mesh="LINK_6_collision_84"/>
+<geom class="collision" rgba="0.703488 0.723738 0.381183 1.000000" mesh="LINK_6_collision_85"/>
+<geom class="collision" rgba="0.925221 0.441751 0.601182 1.000000" mesh="LINK_6_collision_86"/>
+<geom class="collision" rgba="0.978965 0.000622 0.408698 1.000000" mesh="LINK_6_collision_87"/>
+<geom class="collision" rgba="0.884311 0.245019 0.455601 1.000000" mesh="LINK_6_collision_88"/>
+<geom class="collision" rgba="0.600780 0.567650 0.728201 1.000000" mesh="LINK_6_collision_89"/>
+<geom class="collision" rgba="0.693753 0.475673 0.039528 1.000000" mesh="LINK_6_collision_90"/>
+<geom class="collision" rgba="0.0774318 0.535073 0.2871 1" mesh="LINK_6_collision_91"/>
+<geom class="collision" rgba="0.654782 0.463183 0.471106 1.000000" mesh="LINK_6_collision_92"/>
+<geom class="collision" rgba="0.506694 0.615342 0.502922 1.000000" mesh="LINK_6_collision_93"/>
+<geom class="collision" rgba="0.598207 0.497644 0.541727 1.000000" mesh="LINK_6_collision_94"/>
+<geom class="collision" rgba="0.382113 0.910464 0.182347 1.000000" mesh="LINK_6_collision_95"/>
+<geom class="collision" rgba="0.773257 0.097074 0.200899 1.000000" mesh="LINK_6_collision_96"/>
+<geom class="collision" rgba="0.441368 0.919552 0.066310 1.000000" mesh="LINK_6_collision_97"/>
+<geom class="collision" rgba="0.650268 0.252932 0.977884 1.000000" mesh="LINK_6_collision_98"/>
+<geom class="collision" rgba="0.062602 0.963953 0.653541 1.000000" mesh="LINK_6_collision_99"/>
+<geom class="collision" rgba="0.369170 0.688894 0.745410 1.000000" mesh="LINK_6_collision_100"/>
+<geom class="collision" rgba="0.608725 0.086802 0.279116 1.000000" mesh="LINK_6_collision_101"/>
+<geom class="collision" rgba="0.030229 0.737334 0.619071 1.000000" mesh="LINK_6_collision_102"/>
+<geom class="collision" rgba="0.598306 0.375053 0.678053 1.000000" mesh="LINK_6_collision_103"/>
+<geom class="collision" rgba="0.407752 0.365404 0.543061 1.000000" mesh="LINK_6_collision_104"/>
+<geom class="collision" rgba="0.704163 0.505815 0.433858 1.000000" mesh="LINK_6_collision_105"/>
+<geom class="collision" rgba="0.849877 0.373425 0.555919 1.000000" mesh="LINK_6_collision_106"/>
+<geom class="collision" rgba="0.470053 0.194556 0.720510 1.000000" mesh="LINK_6_collision_107"/>
+<geom class="collision" rgba="0.500155 0.506100 0.098874 1.000000" mesh="LINK_6_collision_108"/>
+<geom class="collision" rgba="0.170701 0.628772 0.757498 1.000000" mesh="LINK_6_collision_109"/>
+<geom class="collision" rgba="0.185845 0.960962 0.669910 1.000000" mesh="LINK_6_collision_110"/>
+<geom class="collision" rgba="0.381596 0.344557 0.455628 1.000000" mesh="LINK_6_collision_111"/>
+<geom class="collision" rgba="0.377978 0.745771 0.616818 1.000000" mesh="LINK_6_collision_112"/>
+<geom class="collision" rgba="0.477588 0.140826 0.844093 1.000000" mesh="LINK_6_collision_113"/>
+<geom class="collision" rgba="0.634471 0.332707 0.906284 1.000000" mesh="LINK_6_collision_114"/>
+<geom class="collision" rgba="0.710050 0.716309 0.041694 1.000000" mesh="LINK_6_collision_115"/>
+<geom class="collision" rgba="0.573020 0.309456 0.133884 1.000000" mesh="LINK_6_collision_116"/>
+<geom class="collision" rgba="0.577130 0.789590 0.247769 1.000000" mesh="LINK_6_collision_117"/>
+<geom class="collision" rgba="0.439630 0.652179 0.503214 1.000000" mesh="LINK_6_collision_118"/>
+<geom class="collision" rgba="0.0503124 0.582003 0.126935 1" mesh="LINK_6_collision_119"/>
+<geom class="collision" rgba="0.898845 0.084529 0.343586 1.000000" mesh="LINK_6_collision_120"/>
+<geom class="collision" rgba="0.497818 0.723347 0.649440 1.000000" mesh="LINK_6_collision_121"/>
+<geom class="collision" rgba="0.701337 0.504985 0.516421 1.000000" mesh="LINK_6_collision_122"/>
+<geom class="collision" rgba="0.291553 0.109704 0.392037 1" mesh="LINK_6_collision_123"/>
+<geom class="collision" rgba="0.826344 0.510228 0.463521 1.000000" mesh="LINK_6_collision_124"/>
+<geom class="collision" rgba="0.660482 0.424060 0.665311 1.000000" mesh="LINK_6_collision_125"/>
+<geom class="collision" rgba="0.697325 0.506190 0.188260 1.000000" mesh="LINK_6_collision_126"/>
+<geom class="collision" rgba="0.638187 0.045317 0.292413 1.000000" mesh="LINK_6_collision_127"/>
+<geom class="collision" rgba="0.279249 0.00679196 0.519089 1" mesh="LINK_6_collision_128"/>
+<geom class="collision" rgba="0.05437 0.685694 0.107772 1" mesh="LINK_6_collision_129"/>
+<geom class="collision" rgba="0.111207 0.240191 0.114957 1" mesh="LINK_6_collision_130"/>
+<geom class="collision" rgba="0.693990 0.455129 0.624472 1.000000" mesh="LINK_6_collision_131"/>
+<geom class="collision" rgba="0.432112 0.436308 0.331297 1.000000" mesh="LINK_6_collision_132"/>
+<geom class="collision" rgba="0.108385 0.545311 0.518934 1.000000" mesh="LINK_6_collision_133"/>
+<geom class="collision" rgba="0.084453 0.747822 0.823175 1.000000" mesh="LINK_6_collision_134"/>
+<geom class="collision" rgba="0.0901448 0.653867 0.0315576 1" mesh="LINK_6_collision_135"/>
+<geom class="collision" rgba="0.586693 0.326755 0.609656 1.000000" mesh="LINK_6_collision_136"/>
+<geom class="collision" rgba="0.802128 0.562266 0.104960 1.000000" mesh="LINK_6_collision_137"/>
+<geom class="collision" rgba="0.163261 0.178485 0.249566 1" mesh="LINK_6_collision_138"/>
+<geom class="collision" rgba="0.404688 0.648798 0.663901 1.000000" mesh="LINK_6_collision_139"/>
+<geom class="collision" rgba="0.110351 0.189826 0.250993 1" mesh="LINK_6_collision_140"/>
+<geom class="collision" rgba="0.931474 0.427149 0.516550 1.000000" mesh="LINK_6_collision_141"/>
+<geom class="collision" rgba="0.690299 0.580184 0.442340 1.000000" mesh="LINK_6_collision_142"/>
+<geom class="collision" rgba="0.263036 0.672448 0.264428 1.000000" mesh="LINK_6_collision_143"/>
+<geom class="collision" rgba="0.017695 0.425394 0.609217 1.000000" mesh="LINK_6_collision_144"/>
+<geom class="collision" rgba="0.727182 0.578172 0.310403 1.000000" mesh="LINK_6_collision_145"/>
+<geom class="collision" rgba="0.565512 0.181858 0.534247 1.000000" mesh="LINK_6_collision_146"/>
+<geom class="collision" rgba="0.937906 0.167695 0.605307 1.000000" mesh="LINK_6_collision_147"/>
+<geom class="collision" rgba="0.186728 0.552480 0.672165 1.000000" mesh="LINK_6_collision_148"/>
+<geom class="collision" rgba="0.651074 0.374188 0.611466 1.000000" mesh="LINK_6_collision_149"/>
+<geom class="collision" rgba="0.447700 0.925521 0.486916 1.000000" mesh="LINK_6_collision_150"/>
+<geom class="collision" rgba="0.825091 0.609295 0.321457 1.000000" mesh="LINK_6_collision_151"/>
+<geom class="collision" rgba="0.37955 0.119182 0.292189 1" mesh="LINK_6_collision_152"/>
+<geom class="collision" rgba="0.656709 0.138176 0.707249 1.000000" mesh="LINK_6_collision_153"/>
+<geom class="collision" rgba="0.951668 0.351243 0.685722 1.000000" mesh="LINK_6_collision_154"/>
+<geom class="collision" rgba="0.728211 0.037554 0.722450 1.000000" mesh="LINK_6_collision_155"/>
+<geom class="collision" rgba="0.740412 0.329209 0.699799 1.000000" mesh="LINK_6_collision_156"/>
+<geom class="collision" rgba="0.551586 0.502966 0.236801 1.000000" mesh="LINK_6_collision_157"/>
+<geom class="collision" rgba="0.860219 0.085758 0.316386 1.000000" mesh="LINK_6_collision_158"/>
+<geom class="collision" rgba="0.800889 0.439080 0.454215 1.000000" mesh="LINK_6_collision_159"/>
+<geom class="collision" rgba="0.084020 0.736501 0.420919 1.000000" mesh="LINK_6_collision_160"/>
+<geom class="collision" rgba="0.133157 0.632765 0.616072 1.000000" mesh="LINK_6_collision_161"/>
+<geom class="collision" rgba="0.496348 0.724259 0.625949 1.000000" mesh="LINK_6_collision_162"/>
+<geom class="collision" rgba="0.278743 0.096440 0.570403 1.000000" mesh="LINK_6_collision_163"/>
+<geom class="collision" rgba="0.367659 0.393532 0.980115 1.000000" mesh="LINK_6_collision_164"/>
+<geom class="collision" rgba="0.257642 0.718893 0.152931 1.000000" mesh="LINK_6_collision_165"/>
+<geom class="collision" rgba="0.461912 0.278098 0.712917 1.000000" mesh="LINK_6_collision_166"/>
+<geom class="collision" rgba="0.544423 0.663556 0.636553 1.000000" mesh="LINK_6_collision_167"/>
+<geom class="collision" rgba="0.633906 0.306531 0.831996 1.000000" mesh="LINK_6_collision_168"/>
+<geom class="collision" rgba="0.246944 0.487792 0.405767 1.000000" mesh="LINK_6_collision_169"/>
+<geom class="collision" rgba="0.467646 0.724748 0.505783 1.000000" mesh="LINK_6_collision_170"/>
+<geom class="collision" rgba="0.701481 0.660747 0.582582 1.000000" mesh="LINK_6_collision_171"/>
+<geom class="collision" rgba="0.171895 0.889315 0.109252 1.000000" mesh="LINK_6_collision_172"/>
+<geom class="collision" rgba="0.681758 0.039163 0.975624 1.000000" mesh="LINK_6_collision_173"/>
+<geom class="collision" rgba="0.465312 0.543783 0.703752 1.000000" mesh="LINK_6_collision_174"/>
+<geom class="collision" rgba="0.356073 0.200375 0.726603 1.000000" mesh="LINK_6_collision_175"/>
+<geom class="collision" rgba="0.386170 0.877348 0.200242 1.000000" mesh="LINK_6_collision_176"/>
+<geom class="collision" rgba="0.124974 0.112302 0.550192 1" mesh="LINK_6_collision_177"/>
+<geom class="collision" rgba="0.573191 0.286822 0.738723 1.000000" mesh="LINK_6_collision_178"/>
+<geom class="collision" rgba="0.809502 0.306067 0.427984 1.000000" mesh="LINK_6_collision_179"/>
+<geom class="collision" rgba="0.181145 0.490388 0.539707 1.000000" mesh="LINK_6_collision_180"/>
+<geom class="collision" rgba="0.447630 0.962894 0.183244 1.000000" mesh="LINK_6_collision_181"/>
+<geom class="collision" rgba="0.939077 0.274378 0.140884 1.000000" mesh="LINK_6_collision_182"/>
+<geom class="collision" rgba="0.066441 0.680870 0.452222 1.000000" mesh="LINK_6_collision_183"/>
+<geom class="collision" rgba="0.749191 0.843868 0.013638 1.000000" mesh="LINK_6_collision_184"/>
+<geom class="collision" rgba="0.452290 0.153524 0.678089 1.000000" mesh="LINK_6_collision_185"/>
+<geom class="collision" rgba="0.466324 0.018116 0.955236 1.000000" mesh="LINK_6_collision_186"/>
+<geom class="collision" rgba="0.193700 0.282831 0.443005 1.000000" mesh="LINK_6_collision_187"/>
+<geom class="collision" rgba="0.395442 0.604883 0.540556 1.000000" mesh="LINK_6_collision_188"/>
+<geom class="collision" rgba="0.300586 0.666074 0.890337 1.000000" mesh="LINK_6_collision_189"/>
+<geom class="collision" rgba="0.542240 0.407658 0.930738 1.000000" mesh="LINK_6_collision_190"/>
+<geom class="collision" rgba="0.621032 0.487293 0.695157 1.000000" mesh="LINK_6_collision_191"/>
+<geom class="collision" rgba="0.282022 0.763755 0.257213 1.000000" mesh="LINK_6_collision_192"/>
+<geom class="collision" rgba="0.200322 0.610419 0.842237 1.000000" mesh="LINK_6_collision_193"/>
+<geom class="collision" rgba="0.550985 0.488849 0.615811 1.000000" mesh="LINK_6_collision_194"/>
+<geom class="collision" rgba="0.111359 0.880794 0.431143 1.000000" mesh="LINK_6_collision_195"/>
+<geom class="collision" rgba="0.343720 0.527134 0.441524 1.000000" mesh="LINK_6_collision_196"/>
+<geom class="collision" rgba="0.066332 0.956654 0.304000 1.000000" mesh="LINK_6_collision_197"/>
+<geom class="collision" rgba="0.593922 0.487797 0.410759 1.000000" mesh="LINK_6_collision_198"/>
+<geom class="collision" rgba="0.729087 0.578655 0.440288 1.000000" mesh="LINK_6_collision_199"/>
+<geom class="collision" rgba="0.726810 0.501536 0.483067 1.000000" mesh="LINK_6_collision_200"/>
+<geom class="collision" rgba="0.0591589 0.184171 0.263133 1" mesh="LINK_6_collision_201"/>
+<geom class="collision" rgba="0.351833 0.899831 0.054928 1.000000" mesh="LINK_6_collision_202"/>
+<geom class="collision" rgba="0.0805865 0.478552 0.191926 1" mesh="LINK_6_collision_203"/>
+<geom class="collision" rgba="0.296583 0.774317 0.104552 1.000000" mesh="LINK_6_collision_204"/>
+<geom class="collision" rgba="0.465706 0.281809 0.742889 1.000000" mesh="LINK_6_collision_205"/>
+<geom class="collision" rgba="0.534326 0.0948678 0.157688 1" mesh="LINK_6_collision_206"/>
+<geom class="collision" rgba="0.746831 0.955463 0.204029 1.000000" mesh="LINK_6_collision_207"/>
+<geom class="collision" rgba="0.818515 0.517899 0.621452 1.000000" mesh="LINK_6_collision_208"/>
+<geom class="collision" rgba="0.534833 0.617928 0.578559 1.000000" mesh="LINK_6_collision_209"/>
+<geom class="collision" rgba="0.844068 0.570762 0.007061 1.000000" mesh="LINK_6_collision_210"/>
+<geom class="collision" rgba="0.350606 0.629311 0.659002 1.000000" mesh="LINK_6_collision_211"/>
+<geom class="collision" rgba="0.444754 0.133638 0.809464 1.000000" mesh="LINK_6_collision_212"/>
+<geom class="collision" rgba="0.0694613 0.0798865 0.70326 1" mesh="LINK_6_collision_213"/>
+<geom class="collision" rgba="0.215767 0.042213 0.628299 1" mesh="LINK_6_collision_214"/>
+<geom class="collision" rgba="0.597416 0.492474 0.085658 1.000000" mesh="LINK_6_collision_215"/>
+<geom class="collision" rgba="0.863703 0.006118 0.780506 1.000000" mesh="LINK_6_collision_216"/>
+<geom class="collision" rgba="0.034108 0.524130 0.432206 1.000000" mesh="LINK_6_collision_217"/>
+<geom class="collision" rgba="0.279001 0.935338 0.399033 1.000000" mesh="LINK_6_collision_218"/>
+<geom class="collision" rgba="0.559629 0.300907 0.730225 1.000000" mesh="LINK_6_collision_219"/>
+<geom class="collision" rgba="0.555194 0.112806 0.342746 1.000000" mesh="LINK_6_collision_220"/>
+<geom class="in-model-collision" size="0.155" pos="0 0 0.0075"/>
+<body name="link_head_0" pos="0.022 0 0.120073">
+<inertial pos="0 0 0" mass="0" diaginertia="0 0 0"/>
+<geom class="visual" material="244,244,244" mesh="PAN_TILT_1_0" rgba="0 0 0 0"/>
+<geom class="visual" material="69,69,69" mesh="PAN_TILT_1_1" rgba="0 0 0 0"/>
+<geom class="visual" material="191,191,191" mesh="PAN_TILT_1_2" rgba="0 0 0 0"/>
+<geom class="visual" material="254,254,255" mesh="PAN_TILT_1_3" rgba="0 0 0 0"/>
+<geom class="collision" rgba="0.223185 0.779584 0.679219 1.000000" mesh="PAN_TILT_1_collision_0"/>
+<geom class="collision" rgba="0.362550 0.469913 0.575873 1.000000" mesh="PAN_TILT_1_collision_1"/>
+<geom class="collision" rgba="0.856265 0.167031 0.649359 1.000000" mesh="PAN_TILT_1_collision_2"/>
+<geom class="collision" rgba="0.735807 0.390339 0.733942 1.000000" mesh="PAN_TILT_1_collision_3"/>
+<geom class="collision" rgba="0.601277 0.382156 0.774308 1.000000" mesh="PAN_TILT_1_collision_4"/>
+<geom class="collision" rgba="0.999213 0.383660 0.339722 1.000000" mesh="PAN_TILT_1_collision_5"/>
+<geom class="collision" rgba="0.765672 0.231581 0.849453 1.000000" mesh="PAN_TILT_1_collision_6"/>
+<geom class="collision" rgba="0.958368 0.190054 0.253077 1.000000" mesh="PAN_TILT_1_collision_7"/>
+<geom class="collision" rgba="0.466265 0.985358 0.116653 1.000000" mesh="PAN_TILT_1_collision_8"/>
+<geom class="collision" rgba="0.871916 0.126978 0.809383 1.000000" mesh="PAN_TILT_1_collision_9"/>
+<geom class="collision" rgba="0.585404 0.500807 0.014565 1.000000" mesh="PAN_TILT_1_collision_10"/>
+<geom class="collision" rgba="0.128029 0.484475 0.213232 1" mesh="PAN_TILT_1_collision_11"/>
+<geom class="collision" rgba="0.233699 0.300350 0.943785 1.000000" mesh="PAN_TILT_1_collision_12"/>
+<geom class="collision" rgba="0.135221 0.946936 0.064215 1.000000" mesh="PAN_TILT_1_collision_13"/>
+<geom class="collision" rgba="0.160587 0.005462 0.859647 1.000000" mesh="PAN_TILT_1_collision_14"/>
+<geom class="collision" rgba="0.828670 0.043970 0.622571 1.000000" mesh="PAN_TILT_1_collision_15"/>
+<geom class="collision" rgba="0.705614 0.344252 0.468589 1.000000" mesh="PAN_TILT_1_collision_16"/>
+<geom class="collision" rgba="0.933576 0.010641 0.171006 1.000000" mesh="PAN_TILT_1_collision_17"/>
+<geom class="collision" rgba="0.127308 0.833807 0.471750 1.000000" mesh="PAN_TILT_1_collision_18"/>
+<geom class="collision" rgba="0.713907 0.389788 0.534685 1.000000" mesh="PAN_TILT_1_collision_19"/>
+<geom class="collision" rgba="0.0861101 0.320532 0.0892901 1" mesh="PAN_TILT_1_collision_20"/>
+<geom class="collision" rgba="0.460737 0.605133 0.778105 1.000000" mesh="PAN_TILT_1_collision_21"/>
+<geom class="collision" rgba="0.224260 0.306329 0.509468 1.000000" mesh="PAN_TILT_1_collision_22"/>
+<geom class="collision" rgba="0.023755 0.019719 0.658477 1" mesh="PAN_TILT_1_collision_23"/>
+<geom class="collision" rgba="0.596671 0.051877 0.784114 1.000000" mesh="PAN_TILT_1_collision_24"/>
+<geom class="collision" rgba="0.447358 0.209623 0.998155 1.000000" mesh="PAN_TILT_1_collision_25"/>
+<geom class="collision" rgba="0.451076 0.246240 0.331526 1.000000" mesh="PAN_TILT_1_collision_26"/>
+<geom class="collision" rgba="0.459259 0.268552 0.0176479 1" mesh="PAN_TILT_1_collision_27"/>
+<geom class="collision" rgba="0.322015 0.513265 0.353096 1.000000" mesh="PAN_TILT_1_collision_28"/>
+<geom class="collision" rgba="0.972875 0.083176 0.654006 1.000000" mesh="PAN_TILT_1_collision_29"/>
+<geom class="collision" rgba="0.748448 0.369991 0.087189 1.000000" mesh="PAN_TILT_1_collision_30"/>
+<geom class="collision" rgba="0.051181 0.445311 0.776391 1.000000" mesh="PAN_TILT_1_collision_31"/>
+</body>
+<body name="link_right_arm_0" pos="0 -0.22 0.0800735">
+<site name="right_center" pos="0 0 0" size="0.01" rgba="1.000000 0.300000 0.300000 1.000000" group="2"/>
+<inertial pos="-0.00316662 0.0343718 -3e-07" quat="0.536676 0.553304 0.439546 0.461122" mass="1.26164" diaginertia="0.00433912 0.00432154 0.00223129"/>
+<joint name="right_arm_0" pos="0 0 0" axis="0 0.939693 -0.34202" limited="true" range="-2.35619 2.35619"/>
+<geom class="visual" material="10,10,10" mesh="LINK_7"/>
+<geom class="collision" rgba="0.415696 0.639983 0.396772 1.000000" mesh="LINK_7_collision_0"/>
+<geom class="collision" rgba="0.168942 0.244135 0.916109 1.000000" mesh="LINK_7_collision_1"/>
+<geom class="collision" rgba="0.478609 0.156110 0.319609 1.000000" mesh="LINK_7_collision_2"/>
+<geom class="collision" rgba="0.422679 0.995381 0.622168 1.000000" mesh="LINK_7_collision_3"/>
+<geom class="collision" rgba="0.746814 0.892092 0.245563 1.000000" mesh="LINK_7_collision_4"/>
+<geom class="collision" rgba="0.608129 0.891946 0.589744 1.000000" mesh="LINK_7_collision_5"/>
+<geom class="collision" rgba="0.886376 0.195699 0.386877 1.000000" mesh="LINK_7_collision_6"/>
+<geom class="collision" rgba="0.674416 0.527355 0.477280 1.000000" mesh="LINK_7_collision_7"/>
+<geom class="collision" rgba="0.608631 0.675419 0.227083 1.000000" mesh="LINK_7_collision_8"/>
+<geom class="collision" rgba="0.126672 0.194257 0.457223 1" mesh="LINK_7_collision_9"/>
+<geom class="collision" rgba="0.279508 0.691616 0.141007 1.000000" mesh="LINK_7_collision_10"/>
+<geom class="collision" rgba="0.421364 0.823424 0.438073 1.000000" mesh="LINK_7_collision_11"/>
+<geom class="collision" rgba="0.990312 0.537550 0.507082 1.000000" mesh="LINK_7_collision_12"/>
+<geom class="collision" rgba="0.088080 0.619881 0.321361 1.000000" mesh="LINK_7_collision_13"/>
+<geom class="collision" rgba="0.886131 0.353942 0.607271 1.000000" mesh="LINK_7_collision_14"/>
+<geom class="collision" rgba="0.612597 0.490030 0.561555 1.000000" mesh="LINK_7_collision_15"/>
+<geom class="collision" rgba="0.597158 0.638342 0.714668 1.000000" mesh="LINK_7_collision_16"/>
+<geom class="collision" rgba="0.155397 0.490091 0.562114 1.000000" mesh="LINK_7_collision_17"/>
+<geom class="collision" rgba="0.798353 0.354702 0.030249 1.000000" mesh="LINK_7_collision_18"/>
+<geom class="collision" rgba="0.422567 0.297994 0.288990 1.000000" mesh="LINK_7_collision_19"/>
+<geom class="in-model-collision" size="0.075" pos="-0.015 0.018 -0.008" quat="0.707105 0 0.707108 0"/>
+<body name="link_right_arm_1">
+<inertial pos="-0.00307855 -0.00124741 -0.0129432" quat="0.691024 -0.061096 -0.016345 0.72006" mass="2.27287" diaginertia="0.00447747 0.0038967 0.00286448"/>
+<joint name="right_arm_1" pos="0 0 0" axis="1 0 0" limited="true" range="-3.14159 0.05"/>
+<geom class="visual" material="10,10,10" mesh="LINK_8"/>
+<geom class="collision" rgba="0.396603 0.723347 0.790090 1.000000" mesh="LINK_8_collision_0"/>
+<geom class="collision" rgba="0.709483 0.447314 0.648555 1.000000" mesh="LINK_8_collision_1"/>
+<geom class="collision" rgba="0.432842 0.507949 0.566378 1.000000" mesh="LINK_8_collision_2"/>
+<geom class="collision" rgba="0.678255 0.382514 0.735858 1.000000" mesh="LINK_8_collision_3"/>
+<geom class="collision" rgba="0.743383 0.225025 0.929280 1.000000" mesh="LINK_8_collision_4"/>
+<geom class="collision" rgba="0.754415 0.229025 0.194017 1.000000" mesh="LINK_8_collision_5"/>
+<geom class="collision" rgba="0.543934 0.0674062 0.210485 1" mesh="LINK_8_collision_6"/>
+<geom class="collision" rgba="0.377243 0.994208 0.079206 1.000000" mesh="LINK_8_collision_7"/>
+<geom class="collision" rgba="0.629847 0.303169 0.713021 1.000000" mesh="LINK_8_collision_8"/>
+<geom class="collision" rgba="0.684672 0.485782 0.759938 1.000000" mesh="LINK_8_collision_9"/>
+<geom class="collision" rgba="0.570120 0.538632 0.898261 1.000000" mesh="LINK_8_collision_10"/>
+<geom class="collision" rgba="0.907179 0.125337 0.066009 1.000000" mesh="LINK_8_collision_11"/>
+<geom class="collision" rgba="0.142597 0.47314 0.0668656 1" mesh="LINK_8_collision_12"/>
+<geom class="collision" rgba="0.448265 0.516548 0.717167 1.000000" mesh="LINK_8_collision_13"/>
+<geom class="in-model-collision" size="0.05" pos="0 0 -0.1"/>
+<body name="link_right_arm_2">
+<inertial pos="0.00115434 -0.00196635 -0.161925" quat="0.998316 -0.0390505 -0.0388849 0.0181103" mass="2.46909" diaginertia="0.0098447 0.00928024 0.00322202"/>
+<joint name="right_arm_2" pos="0 0 0" axis="0 0 1" limited="true" range="-2.0944 2.0944"/>
+<geom class="visual" material="254,254,255" mesh="LINK_9_0"/>
+<geom class="visual" material="10,10,10" mesh="LINK_9_1"/>
+<geom class="collision" rgba="0.555479 0.342970 0.745642 1.000000" mesh="LINK_9_collision_0"/>
+<geom class="collision" rgba="0.781705 0.379878 0.109290 1.000000" mesh="LINK_9_collision_1"/>
+<geom class="collision" rgba="0.0499903 0.572391 0.00159486 1" mesh="LINK_9_collision_2"/>
+<geom class="collision" rgba="0.129055 0.919906 0.848492 1.000000" mesh="LINK_9_collision_3"/>
+<geom class="collision" rgba="0.425236 0.856622 0.159606 1.000000" mesh="LINK_9_collision_4"/>
+<geom class="collision" rgba="0.904888 0.046188 0.170714 1.000000" mesh="LINK_9_collision_5"/>
+<geom class="collision" rgba="0.069659 0.826089 0.434541 1.000000" mesh="LINK_9_collision_6"/>
+<geom class="collision" rgba="0.177491 0.146092 0.826676 1.000000" mesh="LINK_9_collision_7"/>
+<geom class="collision" rgba="0.334128 0.0309075 0.131705 1" mesh="LINK_9_collision_8"/>
+<geom class="in-model-collision" size="0.05" pos="0.026 0 -0.276" quat="0.707105 0.707108 0 0"/>
+<body name="link_right_arm_3" pos="0.031 0 -0.276">
+<inertial pos="-0.0160313 -0.00692891 -0.0454981" quat="0.950945 0.0932571 0.100342 0.277377" mass="2.26099" diaginertia="0.0086724 0.00849326 0.00187523"/>
+<joint name="right_arm_3" pos="0 0 0" axis="0 1 0" limited="true" range="-2.61799 0.01"/>
+<geom class="visual" material="254,254,255" mesh="LINK_10_0"/>
+<geom class="visual" material="10,10,10" mesh="LINK_10_1"/>
+<geom class="collision" rgba="0.160788 0.785403 0.620264 1.000000" mesh="LINK_10_collision_0"/>
+<geom class="collision" rgba="0.688090 0.504721 0.323054 1.000000" mesh="LINK_10_collision_1"/>
+<geom class="collision" rgba="0.129237 0.624425 0.798142 1.000000" mesh="LINK_10_collision_2"/>
+<geom class="collision" rgba="0.426275 0.710304 0.548808 1.000000" mesh="LINK_10_collision_3"/>
+<geom class="in-model-collision" size="0.04" pos="-0.031 0 -0.1075"/>
+<body name="link_right_arm_4" pos="-0.031 0 -0.256">
+<inertial pos="-1.1e-07 -0.0269604 0.0618211" quat="0.686909 -0.167796 0.167796 0.686909" mass="0.425087" diaginertia="0.000885625 0.00082466 0.000266295"/>
+<joint name="right_arm_4" pos="0 0 0" axis="0 0 1" limited="true" range="-6.28319 6.28319"/>
+<geom class="visual" material="254,254,255" mesh="LINK_11"/>
+<geom class="collision" rgba="0.365043 0.142608 0.0255638 1" mesh="LINK_11_collision_0"/>
+<geom class="collision" rgba="0.148171 0.0692983 0.279203 1" mesh="LINK_11_collision_1"/>
+<geom class="collision" rgba="0.308319 0.0752515 0.0333721 1" mesh="LINK_11_collision_2"/>
+<geom class="collision" rgba="0.809459 0.293439 0.895622 1.000000" mesh="LINK_11_collision_3"/>
+<geom class="collision" rgba="0.047514 0.691011 0.856874 1.000000" mesh="LINK_11_collision_4"/>
+<geom class="collision" rgba="0.481432 0.0666085 0.11149 1" mesh="LINK_11_collision_5"/>
+<geom class="collision" rgba="0.686261 0.361321 0.581434 1.000000" mesh="LINK_11_collision_6"/>
+<geom class="collision" rgba="0.006872 0.242831 0.936307 1.000000" mesh="LINK_11_collision_7"/>
+<geom class="collision" rgba="0.720071 0.634256 0.693475 1.000000" mesh="LINK_11_collision_8"/>
+<geom class="collision" rgba="0.535354 0.340400 0.855968 1.000000" mesh="LINK_11_collision_9"/>
+<geom class="collision" rgba="0.455753 0.292601 0.359403 1.000000" mesh="LINK_11_collision_10"/>
+<geom class="collision" rgba="0.758011 0.039432 0.832228 1.000000" mesh="LINK_11_collision_11"/>
+<geom class="collision" rgba="0.391947 0.762532 0.544317 1.000000" mesh="LINK_11_collision_12"/>
+<geom class="collision" rgba="0.0400123 0.369043 0.238032 1" mesh="LINK_11_collision_13"/>
+<geom class="collision" rgba="0.320967 0.206925 0.455444 1.000000" mesh="LINK_11_collision_14"/>
+<geom class="collision" rgba="0.493788 0.463996 0.815182 1.000000" mesh="LINK_11_collision_15"/>
+<geom class="collision" rgba="0.354686 0.851164 0.541198 1.000000" mesh="LINK_11_collision_16"/>
+<geom class="collision" rgba="0.430438 0.622913 0.542877 1.000000" mesh="LINK_11_collision_17"/>
+<geom class="collision" rgba="0.0334432 0.45319 0.385725 1" mesh="LINK_11_collision_18"/>
+<geom class="in-model-collision" size="0.035" pos="0 -0.038 0.0175"/>
+<body name="link_right_arm_5">
+<inertial pos="0.00318034 -0.00532264 -0.0280966" quat="0.559407 0.0608226 -0.0803636 0.822743" mass="1.59194" diaginertia="0.00262685 0.00255036 0.00151658"/>
+<joint name="right_arm_5" pos="0 0 0" axis="0 1 0" limited="true" range="-1.74533 2.00713"/>
+<geom class="visual" material="10,10,10" mesh="LINK_12_0"/>
+<geom class="visual" material="254,254,255" mesh="LINK_12_1"/>
+<geom class="collision" rgba="0.656516 0.636324 0.546159 1.000000" mesh="LINK_12_collision_0"/>
+<geom class="collision" rgba="0.298944 0.189508 0.360238 1" mesh="LINK_12_collision_1"/>
+<geom class="collision" rgba="0.194454 0.181051 0.419176 1" mesh="LINK_12_collision_2"/>
+<geom class="collision" rgba="0.691912 0.687341 0.463765 1.000000" mesh="LINK_12_collision_3"/>
+<geom class="collision" rgba="0.173505 0.888859 0.940509 1.000000" mesh="LINK_12_collision_4"/>
+<geom class="collision" rgba="0.193571 0.0866696 0.0516544 1" mesh="LINK_12_collision_5"/>
+<geom class="collision" rgba="0.269114 0.054388 0.621665 1.000000" mesh="LINK_12_collision_6"/>
+<geom class="collision" rgba="0.220889 0.178298 0.719898 1.000000" mesh="LINK_12_collision_7"/>
+<geom class="collision" rgba="0.235340 0.641288 0.992825 1.000000" mesh="LINK_12_collision_8"/>
+<geom class="collision" rgba="0.177639 0.0519613 0.561919 1" mesh="LINK_12_collision_9"/>
+<geom class="collision" rgba="0.966757 0.406932 0.140185 1.000000" mesh="LINK_12_collision_10"/>
+<geom class="collision" rgba="0.387443 0.468657 0.987477 1.000000" mesh="LINK_12_collision_11"/>
+<geom class="in-model-collision" size="0.075" pos="0 0 -0.024"/>
+<body name="link_right_arm_6">
+<inertial pos="0.00101419 0.000398553 -0.149904" quat="0.730015 -0.0098152 -0.00428736 0.683347" mass="1.16921" diaginertia="0.00296506 0.00265919 0.00114611"/>
+<joint name="right_arm_6" pos="0 0 0" axis="0 0 1" limited="true" range="-2.96706 2.96706"/>
+<geom class="visual" material="10,10,10" mesh="LINK_13"/>
+<geom class="collision" rgba="0.120867 0.668425 0.301727 1.000000" mesh="LINK_13_collision_0"/>
+<geom class="collision" rgba="0.699004 0.693695 0.631456 1.000000" mesh="LINK_13_collision_1"/>
+<geom class="collision" rgba="0.957952 0.075273 0.161828 1.000000" mesh="LINK_13_collision_2"/>
+<geom class="collision" rgba="0.0938881 0.203953 0.492946 1" mesh="LINK_13_collision_3"/>
+<geom class="collision" rgba="0.219139 0.761533 0.384714 1.000000" mesh="LINK_13_collision_4"/>
+<geom class="collision" rgba="0.775972 0.098248 0.510272 1.000000" mesh="LINK_13_collision_5"/>
+<geom class="collision" rgba="0.597325 0.662145 0.542285 1.000000" mesh="LINK_13_collision_6"/>
+<geom class="collision" rgba="0.769221 0.598550 0.326749 1.000000" mesh="LINK_13_collision_7"/>
+<geom class="collision" rgba="0.524457 0.858438 0.544006 1.000000" mesh="LINK_13_collision_8"/>
+<geom class="collision" rgba="0.700247 0.006180 0.218590 1.000000" mesh="LINK_13_collision_9"/>
+<geom class="collision" rgba="0.811536 0.376164 0.479527 1.000000" mesh="LINK_13_collision_10"/>
+<geom class="collision" rgba="0.625628 0.097358 0.933800 1.000000" mesh="LINK_13_collision_11"/>
+<geom class="collision" rgba="0.135395 0.596455 0.620048 1.000000" mesh="LINK_13_collision_12"/>
+<geom class="collision" rgba="0.630086 0.323367 0.707383 1.000000" mesh="LINK_13_collision_13"/>
+<geom class="collision" rgba="0.516475 0.288350 0.424055 1.000000" mesh="LINK_13_collision_14"/>
+<geom class="collision" rgba="0.408253 0.503486 0.461629 1.000000" mesh="LINK_13_collision_15"/>
+<geom class="collision" rgba="0.141069 0.4865 0.097612 1" mesh="LINK_13_collision_16"/>
+<geom class="collision" rgba="0.480797 0.401580 0.562529 1.000000" mesh="LINK_13_collision_17"/>
+<geom class="collision" rgba="0.509628 0.0403318 0.17584 1" mesh="LINK_13_collision_18"/>
+<geom class="collision" rgba="0.207345 0.928811 0.804468 1.000000" mesh="LINK_13_collision_19"/>
+<geom class="collision" rgba="0.216926 0.576169 0.0658643 1" mesh="LINK_13_collision_20"/>
+<geom class="collision" rgba="0.821302 0.309004 0.653566 1.000000" mesh="LINK_13_collision_21"/>
+<geom class="collision" rgba="0.175760 0.658647 0.656635 1.000000" mesh="LINK_13_collision_22"/>
+<geom class="collision" rgba="0.537311 0.327762 0.613867 1.000000" mesh="LINK_13_collision_23"/>
+<geom class="collision" rgba="0.358322 0.493047 0.755059 1.000000" mesh="LINK_13_collision_24"/>
+<geom class="collision" rgba="0.380772 0.886948 0.490344 1.000000" mesh="LINK_13_collision_25"/>
+<geom class="collision" rgba="0.971627 0.468721 0.049480 1.000000" mesh="LINK_13_collision_26"/>
+<geom class="collision" rgba="0.884854 0.471725 0.386254 1.000000" mesh="LINK_13_collision_27"/>
+<geom class="collision" rgba="0.427425 0.773810 0.700630 1.000000" mesh="LINK_13_collision_28"/>
+<geom class="collision" rgba="0.406943 0.135130 0.620963 1.000000" mesh="LINK_13_collision_29"/>
+<geom class="collision" rgba="0.744956 0.638675 0.449766 1.000000" mesh="LINK_13_collision_30"/>
+<geom class="collision" rgba="0.897029 0.554537 0.217348 1.000000" mesh="LINK_13_collision_31"/>
+<geom class="collision" rgba="0.971614 0.056057 0.021195 1.000000" mesh="LINK_13_collision_32"/>
+<geom class="collision" rgba="0.392257 0.683225 0.812181 1.000000" mesh="LINK_13_collision_33"/>
+<geom class="collision" rgba="0.481118 0.118745 0.967439 1.000000" mesh="LINK_13_collision_34"/>
+<geom class="collision" rgba="0.915052 0.101599 0.061281 1.000000" mesh="LINK_13_collision_35"/>
+<geom class="collision" rgba="0.319616 0.774264 0.427802 1.000000" mesh="LINK_13_collision_36"/>
+<geom class="collision" rgba="0.177621 0.958528 0.710712 1.000000" mesh="LINK_13_collision_37"/>
+<geom class="collision" rgba="0.668834 0.285098 0.111507 1.000000" mesh="LINK_13_collision_38"/>
+<geom class="collision" rgba="0.966692 0.045645 0.525591 1.000000" mesh="LINK_13_collision_39"/>
+<geom class="collision" rgba="0.354843 0.684147 0.201879 1.000000" mesh="LINK_13_collision_40"/>
+<geom class="collision" rgba="0.968971 0.38215 0.494599 1" mesh="LINK_13_collision_41"/>
+<body name="right_mount" pos="0 0 -0.1237" quat="0.707107 0 0 0.707107">
+<geom class="visual" material="10,10,10" mesh="RIGHT_MOUNT/ee_mount_r"/>
+<geom class="collision" rgba="0.626659 0.0926462 0.885688 1" mesh="RIGHT_MOUNT/ee_mount_r"/>
+</body>
+<body name="right_eef" pos="0 0 -0.1387" quat="0.707107 0 0 0.707107">
+<site name="right_eef_site" pos="0 0 0" size="0.01" rgba="1 0.3 0.3 1" group="2"/>
+</body>
+</body>
+</body>
+</body>
+</body>
+</body>
+</body>
+</body>
+<body name="link_left_arm_0" pos="0 0.22 0.0800735">
+<site name="left_center" pos="0 0 0" size="0.01" rgba="1.000000 0.300000 0.300000 1.000000" group="2"/>
+<inertial pos="-0.00316662 -0.0343715 2.42e-06" quat="0.441442 0.459281 0.538276 0.551768" mass="1.26164" diaginertia="0.0043391 0.00432158 0.00223133"/>
+<joint name="left_arm_0" pos="0 0 0" axis="0 0.939693 0.34202" limited="true" range="-2.35619 2.35619"/>
+<geom class="visual" material="10,10,10" mesh="LINK_14"/>
+<geom class="collision" rgba="0.658896 0.227723 0.351012 1.000000" mesh="LINK_14_collision_0"/>
+<geom class="collision" rgba="0.527493 0.482282 0.681279 1.000000" mesh="LINK_14_collision_1"/>
+<geom class="collision" rgba="0.331008 0.391189 0.0928608 1" mesh="LINK_14_collision_2"/>
+<geom class="collision" rgba="0.591875 0.741837 0.522448 1.000000" mesh="LINK_14_collision_3"/>
+<geom class="collision" rgba="0.763602 0.254482 0.753656 1.000000" mesh="LINK_14_collision_4"/>
+<geom class="collision" rgba="0.008961 0.941050 0.185390 1.000000" mesh="LINK_14_collision_5"/>
+<geom class="collision" rgba="0.943748 0.594392 0.117513 1.000000" mesh="LINK_14_collision_6"/>
+<geom class="collision" rgba="0.986519 0.656633 0.445279 1.000000" mesh="LINK_14_collision_7"/>
+<geom class="collision" rgba="0.424142 0.610847 0.747286 1.000000" mesh="LINK_14_collision_8"/>
+<geom class="collision" rgba="0.387185 0.611466 0.171194 1.000000" mesh="LINK_14_collision_9"/>
+<geom class="collision" rgba="0.195813 0.865424 0.648536 1.000000" mesh="LINK_14_collision_10"/>
+<geom class="collision" rgba="0.406962 0.253079 0.109401 1" mesh="LINK_14_collision_11"/>
+<geom class="collision" rgba="0.600606 0.832831 0.064442 1.000000" mesh="LINK_14_collision_12"/>
+<geom class="collision" rgba="0.306606 0.377534 0.965805 1.000000" mesh="LINK_14_collision_13"/>
+<geom class="collision" rgba="0.722973 0.167577 0.051601 1.000000" mesh="LINK_14_collision_14"/>
+<geom class="collision" rgba="0.018609 0.714373 0.269886 1.000000" mesh="LINK_14_collision_15"/>
+<geom class="collision" rgba="0.472537 0.377985 0.186323 1.000000" mesh="LINK_14_collision_16"/>
+<geom class="collision" rgba="0.218388 0.471455 0.0699751 1" mesh="LINK_14_collision_17"/>
+<geom class="in-model-collision" size="0.075" pos="-0.015 -0.018 -0.008" quat="0.707105 0 0.707108 0"/>
+<body name="link_left_arm_1">
+<inertial pos="-0.0018347 0.00040596 -0.0100873" quat="0.701113 -0.0246572 -0.049881 0.710875" mass="1.88139" diaginertia="0.00355382 0.00296561 0.0022966"/>
+<joint name="left_arm_1" pos="0 0 0" axis="1 0 0" limited="true" range="-0.05 3.14159"/>
+<geom class="visual" material="10,10,10" mesh="LINK_15"/>
+<geom class="collision" rgba="0.605134 0.635644 0.477331 1.000000" mesh="LINK_15_collision_0"/>
+<geom class="collision" rgba="0.666802 0.606495 0.742396 1.000000" mesh="LINK_15_collision_1"/>
+<geom class="collision" rgba="0.535184 0.556706 0.231874 1.000000" mesh="LINK_15_collision_2"/>
+<geom class="collision" rgba="0.657341 0.497485 0.926882 1.000000" mesh="LINK_15_collision_3"/>
+<geom class="collision" rgba="0.464876 0.814370 0.424935 1.000000" mesh="LINK_15_collision_4"/>
+<geom class="collision" rgba="0.966185 0.054642 0.974373 1.000000" mesh="LINK_15_collision_5"/>
+<geom class="collision" rgba="0.021276 0.543351 0.739886 1.000000" mesh="LINK_15_collision_6"/>
+<geom class="collision" rgba="0.453930 0.897724 0.603587 1.000000" mesh="LINK_15_collision_7"/>
+<geom class="collision" rgba="0.196873 0.931645 0.696195 1.000000" mesh="LINK_15_collision_8"/>
+<geom class="collision" rgba="0.471261 0.630731 0.985089 1.000000" mesh="LINK_15_collision_9"/>
+<geom class="collision" rgba="0.690373 0.443029 0.611222 1.000000" mesh="LINK_15_collision_10"/>
+<geom class="collision" rgba="0.047919 0.801514 0.303553 1.000000" mesh="LINK_15_collision_11"/>
+<geom class="collision" rgba="0.411658 0.387721 0.819765 1.000000" mesh="LINK_15_collision_12"/>
+<geom class="in-model-collision" size="0.05" pos="0 0 -0.1"/>
+<body name="link_left_arm_2">
+<inertial pos="0.00066086 -0.00038583 -0.15743" quat="0.999413 -0.00635373 -0.0335732 -0.00246859" mass="2.35634" diaginertia="0.00845197 0.00802394 0.00293109"/>
+<joint name="left_arm_2" pos="0 0 0" axis="0 0 1" limited="true" range="-2.0944 2.0944"/>
+<geom class="visual" material="254,254,255" mesh="LINK_16_0"/>
+<geom class="visual" material="10,10,10" mesh="LINK_16_1"/>
+<geom class="collision" rgba="0.482372 0.502287 0.460695 1.000000" mesh="LINK_16_collision_0"/>
+<geom class="collision" rgba="0.010220 0.700697 0.712643 1.000000" mesh="LINK_16_collision_1"/>
+<geom class="collision" rgba="0.010643 0.989816 0.827425 1.000000" mesh="LINK_16_collision_2"/>
+<geom class="collision" rgba="0.976107 0.171655 0.180398 1.000000" mesh="LINK_16_collision_3"/>
+<geom class="collision" rgba="0.630280 0.817608 0.245085 1.000000" mesh="LINK_16_collision_4"/>
+<geom class="collision" rgba="0.000201 0.183595 0.878469 1.000000" mesh="LINK_16_collision_5"/>
+<geom class="collision" rgba="0.421517 0.517134 0.978153 1.000000" mesh="LINK_16_collision_6"/>
+<geom class="collision" rgba="0.571396 0.0574628 0.226908 1" mesh="LINK_16_collision_7"/>
+<geom class="collision" rgba="0.232506 0.329983 0.799821 1.000000" mesh="LINK_16_collision_8"/>
+<geom class="collision" rgba="0.275698 0.276459 0.169058 1" mesh="LINK_16_collision_9"/>
+<geom class="collision" rgba="0.884810 0.529556 0.259237 1.000000" mesh="LINK_16_collision_10"/>
+<geom class="collision" rgba="0.691638 0.072899 0.694389 1.000000" mesh="LINK_16_collision_11"/>
+<geom class="in-model-collision" size="0.05" pos="0.026 0 -0.276" quat="0.707105 0.707108 0 0"/>
+<body name="link_left_arm_3" pos="0.031 0 -0.276">
+<inertial pos="-0.015653 0.00793126 -0.0499794" quat="0.977098 -0.0897025 0.113811 -0.15582" mass="2.00906" diaginertia="0.00798526 0.00783637 0.00146823"/>
+<joint name="left_arm_3" pos="0 0 0" axis="0 1 0" limited="true" range="-2.61799 0.01"/>
+<geom class="visual" material="254,254,255" mesh="LINK_17_0"/>
+<geom class="visual" material="10,10,10" mesh="LINK_17_1"/>
+<geom class="collision" rgba="0.045213 0.806852 0.788385 1.000000" mesh="LINK_17_collision_0"/>
+<geom class="collision" rgba="0.584039 0.372764 0.655312 1.000000" mesh="LINK_17_collision_1"/>
+<geom class="collision" rgba="0.122324 0.326903 0.603638 1.000000" mesh="LINK_17_collision_2"/>
+<geom class="collision" rgba="0.0385106 0.0892887 0.471616 1" mesh="LINK_17_collision_3"/>
+<geom class="in-model-collision" size="0.04" pos="-0.031 0 -0.1075"/>
+<body name="link_left_arm_4" pos="-0.031 0 -0.256">
+<inertial pos="1.1e-07 0.0269604 0.0618211" quat="0.686909 0.167796 -0.167796 0.686909" mass="0.425087" diaginertia="0.000885625 0.00082466 0.000266295"/>
+<joint name="left_arm_4" pos="0 0 0" axis="0 0 1" limited="true" range="-6.28319 6.28319"/>
+<geom class="visual" material="254,254,255" mesh="LINK_18"/>
+<geom class="collision" rgba="0.947885 0.198701 0.844940 1.000000" mesh="LINK_18_collision_0"/>
+<geom class="collision" rgba="0.225386 0.753514 0.988957 1.000000" mesh="LINK_18_collision_1"/>
+<geom class="collision" rgba="0.737094 0.815650 0.028178 1.000000" mesh="LINK_18_collision_2"/>
+<geom class="collision" rgba="0.474763 0.125729 0.188419 1" mesh="LINK_18_collision_3"/>
+<geom class="collision" rgba="0.318456 0.937415 0.333305 1.000000" mesh="LINK_18_collision_4"/>
+<geom class="collision" rgba="0.640693 0.344684 0.932471 1.000000" mesh="LINK_18_collision_5"/>
+<geom class="collision" rgba="0.600090 0.700256 0.551556 1.000000" mesh="LINK_18_collision_6"/>
+<geom class="collision" rgba="0.623528 0.816736 0.028147 1.000000" mesh="LINK_18_collision_7"/>
+<geom class="collision" rgba="0.158573 0.740973 0.681642 1.000000" mesh="LINK_18_collision_8"/>
+<geom class="collision" rgba="0.295358 0.319927 0.986124 1.000000" mesh="LINK_18_collision_9"/>
+<geom class="collision" rgba="0.283130 0.487108 0.331093 1.000000" mesh="LINK_18_collision_10"/>
+<geom class="collision" rgba="0.507768 0.176238 0.912893 1.000000" mesh="LINK_18_collision_11"/>
+<geom class="collision" rgba="0.282614 0.534701 0.756620 1.000000" mesh="LINK_18_collision_12"/>
+<geom class="collision" rgba="0.246669 0.592770 0.295166 1.000000" mesh="LINK_18_collision_13"/>
+<geom class="collision" rgba="0.637549 0.565539 0.374414 1.000000" mesh="LINK_18_collision_14"/>
+<geom class="collision" rgba="0.425820 0.749820 0.704410 1.000000" mesh="LINK_18_collision_15"/>
+<geom class="collision" rgba="0.138251 0.513022 0.0239463 1" mesh="LINK_18_collision_16"/>
+<geom class="collision" rgba="0.278474 0.164761 0.583301 1.000000" mesh="LINK_18_collision_17"/>
+<geom class="collision" rgba="0.547609 0.717197 0.570991 1.000000" mesh="LINK_18_collision_18"/>
+<geom class="collision" rgba="0.702185 0.662894 0.447855 1.000000" mesh="LINK_18_collision_19"/>
+<geom class="collision" rgba="0.645617 0.579319 0.719254 1.000000" mesh="LINK_18_collision_20"/>
+<geom class="in-model-collision" size="0.035" pos="0 0.038 0.0175"/>
+<body name="link_left_arm_5">
+<inertial pos="0.00340082 0.00576824 -0.0250731" quat="0.874666 -0.0845974 0.0492323 0.474742" mass="1.44265" diaginertia="0.00238544 0.00231489 0.00134498"/>
+<joint name="left_arm_5" pos="0 0 0" axis="0 1 0" limited="true" range="-1.74533 2.00713"/>
+<geom class="visual" material="10,10,10" mesh="LINK_19_0"/>
+<geom class="visual" material="254,254,255" mesh="LINK_19_1"/>
+<geom class="collision" rgba="0.076504 0.471424 0.455031 1.000000" mesh="LINK_19_collision_0"/>
+<geom class="collision" rgba="0.038781 0.396438 0.904985 1.000000" mesh="LINK_19_collision_1"/>
+<geom class="collision" rgba="0.090136 0.723520 0.638003 1.000000" mesh="LINK_19_collision_2"/>
+<geom class="collision" rgba="0.256249 0.475402 0.835725 1.000000" mesh="LINK_19_collision_3"/>
+<geom class="collision" rgba="0.150442 0.541314 0.688264 1.000000" mesh="LINK_19_collision_4"/>
+<geom class="collision" rgba="0.395537 0.448913 0.920112 1.000000" mesh="LINK_19_collision_5"/>
+<geom class="collision" rgba="0.228460 0.707055 0.767425 1.000000" mesh="LINK_19_collision_6"/>
+<geom class="collision" rgba="0.548584 0.092025 0.830177 1.000000" mesh="LINK_19_collision_7"/>
+<geom class="collision" rgba="0.702957 0.346065 0.546348 1.000000" mesh="LINK_19_collision_8"/>
+<geom class="collision" rgba="0.296481 0.626564 0.477718 1.000000" mesh="LINK_19_collision_9"/>
+<geom class="in-model-collision" size="0.075" pos="0 0 -0.024"/>
+<body name="link_left_arm_6">
+<inertial pos="-0.00092669 0.000508285 -0.149904" quat="0.72966 0.00249295 0.012223 0.683697" mass="1.16921" diaginertia="0.00296541 0.00265922 0.00114589"/>
+<joint name="left_arm_6" pos="0 0 0" axis="0 0 1" limited="true" range="-2.96706 2.96706"/>
+<geom class="visual" material="10,10,10" mesh="LINK_20"/>
+<geom class="collision" rgba="0.064442 0.332411 0.871844 1.000000" mesh="LINK_20_collision_0"/>
+<geom class="collision" rgba="0.739209 0.435687 0.431197 1.000000" mesh="LINK_20_collision_1"/>
+<geom class="collision" rgba="0.0498319 0.0500401 0.235488 1" mesh="LINK_20_collision_2"/>
+<geom class="collision" rgba="0.241221 0.740509 0.397123 1.000000" mesh="LINK_20_collision_3"/>
+<geom class="collision" rgba="0.194577 0.263056 0.349337 1" mesh="LINK_20_collision_4"/>
+<geom class="collision" rgba="0.272106 0.15558 0.150198 1" mesh="LINK_20_collision_5"/>
+<geom class="collision" rgba="0.242858 0.684423 0.766857 1.000000" mesh="LINK_20_collision_6"/>
+<geom class="collision" rgba="0.800340 0.454644 0.603243 1.000000" mesh="LINK_20_collision_7"/>
+<geom class="collision" rgba="0.553988 0.756443 0.637371 1.000000" mesh="LINK_20_collision_8"/>
+<geom class="collision" rgba="0.556667 0.686723 0.539287 1.000000" mesh="LINK_20_collision_9"/>
+<geom class="collision" rgba="0.115394 0.825016 0.891443 1.000000" mesh="LINK_20_collision_10"/>
+<geom class="collision" rgba="0.651112 0.329673 0.147189 1.000000" mesh="LINK_20_collision_11"/>
+<geom class="collision" rgba="0.350173 0.463236 0.220699 1.000000" mesh="LINK_20_collision_12"/>
+<geom class="collision" rgba="0.395754 0.851469 0.563840 1.000000" mesh="LINK_20_collision_13"/>
+<geom class="collision" rgba="0.238450 0.061858 0.742562 1.000000" mesh="LINK_20_collision_14"/>
+<geom class="collision" rgba="0.967050 0.488960 0.417583 1.000000" mesh="LINK_20_collision_15"/>
+<geom class="collision" rgba="0.382252 0.277039 0.348076 1.000000" mesh="LINK_20_collision_16"/>
+<geom class="collision" rgba="0.202627 0.301439 0.32074 1" mesh="LINK_20_collision_17"/>
+<geom class="collision" rgba="0.480895 0.812892 0.805321 1.000000" mesh="LINK_20_collision_18"/>
+<geom class="collision" rgba="0.244006 0.783382 0.491767 1.000000" mesh="LINK_20_collision_19"/>
+<geom class="collision" rgba="0.062959 0.423478 0.536348 1.000000" mesh="LINK_20_collision_20"/>
+<geom class="collision" rgba="0.156276 0.137771 0.437792 1" mesh="LINK_20_collision_21"/>
+<geom class="collision" rgba="0.807748 0.123325 0.624320 1.000000" mesh="LINK_20_collision_22"/>
+<geom class="collision" rgba="0.535235 0.655960 0.409553 1.000000" mesh="LINK_20_collision_23"/>
+<geom class="collision" rgba="0.143032 0.462004 0.514717 1.000000" mesh="LINK_20_collision_24"/>
+<geom class="collision" rgba="0.288566 0.274338 0.487004 1.000000" mesh="LINK_20_collision_25"/>
+<geom class="collision" rgba="0.376018 0.779328 0.671812 1.000000" mesh="LINK_20_collision_26"/>
+<geom class="collision" rgba="0.258397 0.303277 0.810144 1.000000" mesh="LINK_20_collision_27"/>
+<geom class="collision" rgba="0.449078 0.093845 0.578342 1.000000" mesh="LINK_20_collision_28"/>
+<geom class="collision" rgba="0.690755 0.729520 0.178976 1.000000" mesh="LINK_20_collision_29"/>
+<geom class="collision" rgba="0.477468 0.756106 0.521930 1.000000" mesh="LINK_20_collision_30"/>
+<geom class="collision" rgba="0.557873 0.074016 0.485239 1.000000" mesh="LINK_20_collision_31"/>
+<geom class="collision" rgba="0.544757 0.984940 0.545826 1.000000" mesh="LINK_20_collision_32"/>
+<geom class="collision" rgba="0.474268 0.124547 0.411770 1.000000" mesh="LINK_20_collision_33"/>
+<geom class="collision" rgba="0.577271 0.116644 0.707024 1.000000" mesh="LINK_20_collision_34"/>
+<geom class="collision" rgba="0.074322 0.270790 0.732115 1.000000" mesh="LINK_20_collision_35"/>
+<geom class="collision" rgba="0.925397 0.542252 0.535035 1.000000" mesh="LINK_20_collision_36"/>
+<geom class="collision" rgba="0.973760 0.526252 0.556333 1.000000" mesh="LINK_20_collision_37"/>
+<geom class="collision" rgba="0.668058 0.417605 0.887408 1.000000" mesh="LINK_20_collision_38"/>
+<geom class="collision" rgba="0.250465 0.504059 0.636081 1.000000" mesh="LINK_20_collision_39"/>
+<geom class="collision" rgba="0.931950 0.081809 0.417316 1.000000" mesh="LINK_20_collision_40"/>
+<geom class="collision" rgba="0.780764 0.006050 0.897880 1.000000" mesh="LINK_20_collision_41"/>
+<geom class="collision" rgba="0.125366 0.934661 0.769450 1.000000" mesh="LINK_20_collision_42"/>
+<geom class="collision" rgba="0.586604 0.700516 0.175066 1.000000" mesh="LINK_20_collision_43"/>
+<geom class="collision" rgba="0.129474 0.456766 0.351791 1.000000" mesh="LINK_20_collision_44"/>
+<geom class="collision" rgba="0.817306 0.802076 0.149823 1.000000" mesh="LINK_20_collision_45"/>
+<geom class="collision" rgba="0.419654 0.706326 0.560399 1.000000" mesh="LINK_20_collision_46"/>
+<geom class="collision" rgba="0.148501 0.918779 0.144163 1.000000" mesh="LINK_20_collision_47"/>
+<geom class="collision" rgba="0.982516 0.994559 0.268533 1" mesh="LINK_20_collision_48"/>
+<body name="left_mount" pos="0 0 -0.1237" quat="0.707107 0 0 0.707107">
+<geom class="visual" material="10,10,10" mesh="LEFT_MOUNT/ee_mount_l"/>
+<geom class="collision" rgba="0.626659 0.0926462 0.885688 1" mesh="LEFT_MOUNT/ee_mount_l"/>
+</body>
+<body name="left_eef" pos="0 0 -0.1387" quat="0.707107 0 0 0.707107">
+<site name="left_eef_site" pos="0 0 0" size="0.01" rgba="1 0.3 0.3 1" group="2"/>
+</body>
+</body>
+</body>
+</body>
+</body>
+</body>
+</body>
+</body>
+<body name="link_head_1" pos="0.022 0 0.140073">
+<inertial pos="-0.0115068 -0.0011427 -0.00031579" quat="0.354317 0.578329 0.650884 0.341093" mass="0.0745058" diaginertia="2.45449e-05 2.18237e-05 1.72614e-05"/>
+<joint name="head_0" pos="0 0 0" axis="0 0 1" limited="true" range="-0.523 0.523"/>
+<geom class="visual" material="69,69,69_1" mesh="PAN_TILT_2_0" rgba="0 0 0 0"/>
+<geom class="visual" material="191,191,191" mesh="PAN_TILT_2_1" rgba="0 0 0 0"/>
+<geom class="visual" material="69,69,69" mesh="PAN_TILT_2_2" rgba="0 0 0 0"/>
+<geom class="collision" rgba="0.192340 0.853985 0.396348 1.000000" mesh="PAN_TILT_2_collision_0"/>
+<geom class="collision" rgba="0.764616 0.154996 0.496371 1.000000" mesh="PAN_TILT_2_collision_1"/>
+<geom class="collision" rgba="0.563668 0.361529 0.037431 1.000000" mesh="PAN_TILT_2_collision_2"/>
+<geom class="collision" rgba="0.591085 0.970089 0.289487 1.000000" mesh="PAN_TILT_2_collision_3"/>
+<geom class="collision" rgba="0.246877 0.378616 0.328962 1.000000" mesh="PAN_TILT_2_collision_4"/>
+<geom class="collision" rgba="0.288844 0.566813 0.218062 1.000000" mesh="PAN_TILT_2_collision_5"/>
+<geom class="collision" rgba="0.860063 0.313887 0.511750 1.000000" mesh="PAN_TILT_2_collision_6"/>
+<geom class="collision" rgba="0.840611 0.590952 0.327110 1.000000" mesh="PAN_TILT_2_collision_7"/>
+<geom class="collision" rgba="0.702367 0.919485 0.082817 1.000000" mesh="PAN_TILT_2_collision_8"/>
+<geom class="collision" rgba="0.893396 0.180966 0.075337 1.000000" mesh="PAN_TILT_2_collision_9"/>
+<geom class="collision" rgba="0.565474 0.436369 0.942435 1.000000" mesh="PAN_TILT_2_collision_10"/>
+<geom class="collision" rgba="0.792409 0.169534 0.177198 1.000000" mesh="PAN_TILT_2_collision_11"/>
+<geom class="collision" rgba="0.724940 0.373214 0.356883 1.000000" mesh="PAN_TILT_2_collision_12"/>
+<geom class="collision" rgba="0.444326 0.648223 0.403573 1.000000" mesh="PAN_TILT_2_collision_13"/>
+<geom class="collision" rgba="0.887702 0.000319 0.438557 1.000000" mesh="PAN_TILT_2_collision_14"/>
+<geom class="collision" rgba="0.862859 0.119624 0.493556 1.000000" mesh="PAN_TILT_2_collision_15"/>
+<geom class="collision" rgba="0.702475 0.372766 0.805384 1.000000" mesh="PAN_TILT_2_collision_16"/>
+<geom class="collision" rgba="0.374102 0.438217 0.173847 1.000000" mesh="PAN_TILT_2_collision_17"/>
+<geom class="collision" rgba="0.514699 0.863276 0.164514 1.000000" mesh="PAN_TILT_2_collision_18"/>
+<geom class="collision" rgba="0.698711 0.447648 0.696625 1.000000" mesh="PAN_TILT_2_collision_19"/>
+<geom class="collision" rgba="0.371457 0.243877 0.344741 1.000000" mesh="PAN_TILT_2_collision_20"/>
+<geom class="collision" rgba="0.981878 0.362243 0.324540 1.000000" mesh="PAN_TILT_2_collision_21"/>
+<geom class="collision" rgba="0.730668 0.579364 0.265157 1.000000" mesh="PAN_TILT_2_collision_22"/>
+<geom class="collision" rgba="0.637406 0.334184 0.996219 1.000000" mesh="PAN_TILT_2_collision_23"/>
+<geom class="collision" rgba="0.630498 0.900967 0.414641 1.000000" mesh="PAN_TILT_2_collision_24"/>
+<geom class="collision" rgba="0.677034 0.125555 0.0846629 1" mesh="PAN_TILT_2_collision_25"/>
+<geom class="collision" rgba="0.954472 0.669163 0.107523 1.000000" mesh="PAN_TILT_2_collision_26"/>
+<geom class="collision" rgba="0.706989 0.124289 0.156144 1.000000" mesh="PAN_TILT_2_collision_27"/>
+<geom class="collision" rgba="0.642689 0.884974 0.206915 1.000000" mesh="PAN_TILT_2_collision_28"/>
+<geom class="collision" rgba="0.439854 0.557114 0.757085 1.000000" mesh="PAN_TILT_2_collision_29"/>
+<geom class="collision" rgba="0.324650 0.587312 0.327304 1.000000" mesh="PAN_TILT_2_collision_30"/>
+<geom class="collision" rgba="0.304366 0.113024 0.996928 1.000000" mesh="PAN_TILT_2_collision_31"/>
+<geom class="collision" rgba="0.941200 0.000419 0.030892 1.000000" mesh="PAN_TILT_2_collision_32"/>
+<geom class="collision" rgba="0.715039 0.870585 0.323086 1.000000" mesh="PAN_TILT_2_collision_33"/>
+<geom class="collision" rgba="0.698191 0.606377 0.244360 1.000000" mesh="PAN_TILT_2_collision_34"/>
+<geom class="collision" rgba="0.11239 0.359492 0.413041 1" mesh="PAN_TILT_2_collision_35"/>
+<geom class="collision" rgba="0.681588 0.690885 0.563736 1.000000" mesh="PAN_TILT_2_collision_36"/>
+<geom class="collision" rgba="0.519024 0.662982 0.407931 1.000000" mesh="PAN_TILT_2_collision_37"/>
+<geom class="collision" rgba="0.440708 0.841841 0.051311 1.000000" mesh="PAN_TILT_2_collision_38"/>
+<geom class="collision" rgba="0.480769 0.662220 0.628503 1.000000" mesh="PAN_TILT_2_collision_39"/>
+<geom class="collision" rgba="0.122150 0.712309 0.631367 1.000000" mesh="PAN_TILT_2_collision_40"/>
+<geom class="collision" rgba="0.566585 0.479128 0.468619 1.000000" mesh="PAN_TILT_2_collision_41"/>
+<geom class="collision" rgba="0.409121 0.814112 0.696084 1.000000" mesh="PAN_TILT_2_collision_42"/>
+<geom class="collision" rgba="0.294240 0.271215 0.847093 1.000000" mesh="PAN_TILT_2_collision_43"/>
+<geom class="collision" rgba="0.737610 0.742465 0.265620 1.000000" mesh="PAN_TILT_2_collision_44"/>
+<geom class="collision" rgba="0.071615 0.098317 0.858128 1.000000" mesh="PAN_TILT_2_collision_45"/>
+<geom class="collision" rgba="0.744687 0.095784 0.105887 1.000000" mesh="PAN_TILT_2_collision_46"/>
+<geom class="collision" rgba="0.276628 0.246334 0.999581 1.000000" mesh="PAN_TILT_2_collision_47"/>
+<geom class="collision" rgba="0.165622 0.776951 0.227286 1.000000" mesh="PAN_TILT_2_collision_48"/>
+<geom class="collision" rgba="0.489634 0.706717 0.346177 1.000000" mesh="PAN_TILT_2_collision_49"/>
+<geom class="collision" rgba="0.024762 0.187683 0.757845 1.000000" mesh="PAN_TILT_2_collision_50"/>
+<geom class="collision" rgba="0.044395 0.428727 0.503870 1.000000" mesh="PAN_TILT_2_collision_51"/>
+<geom class="collision" rgba="0.670145 0.495714 0.635821 1.000000" mesh="PAN_TILT_2_collision_52"/>
+<geom class="collision" rgba="0.054433 0.242769 0.748085 1.000000" mesh="PAN_TILT_2_collision_53"/>
+<geom class="collision" rgba="0.868860 0.430641 0.781789 1.000000" mesh="PAN_TILT_2_collision_54"/>
+<geom class="collision" rgba="0.41225 0.0281637 0.303747 1" mesh="PAN_TILT_2_collision_55"/>
+<geom class="collision" rgba="0.249264 0.683654 0.457494 1.000000" mesh="PAN_TILT_2_collision_56"/>
+<geom class="collision" rgba="0.586220 0.643396 0.560370 1.000000" mesh="PAN_TILT_2_collision_57"/>
+<geom class="collision" rgba="0.121293 0.180546 0.639928 1.000000" mesh="PAN_TILT_2_collision_58"/>
+<geom class="collision" rgba="0.220847 0.926090 0.483756 1.000000" mesh="PAN_TILT_2_collision_59"/>
+<geom class="collision" rgba="0.627124 0.233694 0.0211337 1" mesh="PAN_TILT_2_collision_60"/>
+<geom class="collision" rgba="0.614924 0.863833 0.025075 1.000000" mesh="PAN_TILT_2_collision_61"/>
+<geom class="collision" rgba="0.852491 0.756162 0.296017 1.000000" mesh="PAN_TILT_2_collision_62"/>
+<geom class="collision" rgba="0.298649 0.857575 0.901663 1.000000" mesh="PAN_TILT_2_collision_63"/>
+<geom class="collision" rgba="0.535588 0.639628 0.363396 1.000000" mesh="PAN_TILT_2_collision_64"/>
+<geom class="collision" rgba="0.038164 0.862609 0.541151 1.000000" mesh="PAN_TILT_2_collision_65"/>
+<geom class="collision" rgba="0.052337 0.959783 0.250240 1.000000" mesh="PAN_TILT_2_collision_66"/>
+<geom class="collision" rgba="0.43523 0.140502 0.212239 1" mesh="PAN_TILT_2_collision_67"/>
+<geom class="collision" rgba="0.15695 0.0384431 0.656709 1" mesh="PAN_TILT_2_collision_68"/>
+<geom class="collision" rgba="0.024448 0.343281 0.559908 1.000000" mesh="PAN_TILT_2_collision_69"/>
+<geom class="collision" rgba="0.670085 0.180487 0.736275 1.000000" mesh="PAN_TILT_2_collision_70"/>
+<geom class="collision" rgba="0.396645 0.659230 0.617361 1.000000" mesh="PAN_TILT_2_collision_71"/>
+<geom class="collision" rgba="0.487422 0.724347 0.411268 1.000000" mesh="PAN_TILT_2_collision_72"/>
+<geom class="collision" rgba="0.997770 0.356357 0.286580 1.000000" mesh="PAN_TILT_2_collision_73"/>
+<geom class="collision" rgba="0.328552 0.373519 0.541596 1.000000" mesh="PAN_TILT_2_collision_74"/>
+<geom class="collision" rgba="0.009881 0.291846 0.906636 1.000000" mesh="PAN_TILT_2_collision_75"/>
+<geom class="collision" rgba="0.893492 0.261090 0.816145 1.000000" mesh="PAN_TILT_2_collision_76"/>
+<geom class="collision" rgba="0.663092 0.465727 0.052629 1.000000" mesh="PAN_TILT_2_collision_77"/>
+<geom class="collision" rgba="0.724689 0.254697 0.577543 1.000000" mesh="PAN_TILT_2_collision_78"/>
+<geom class="collision" rgba="0.562457 0.637994 0.610242 1.000000" mesh="PAN_TILT_2_collision_79"/>
+<geom class="collision" rgba="0.701228 0.194694 0.971505 1.000000" mesh="PAN_TILT_2_collision_80"/>
+<geom class="collision" rgba="0.388482 0.916656 0.199157 1.000000" mesh="PAN_TILT_2_collision_81"/>
+<geom class="collision" rgba="0.0480745 0.224705 0.568018 1" mesh="PAN_TILT_2_collision_82"/>
+<geom class="collision" rgba="0.411859 0.246491 0.0917374 1" mesh="PAN_TILT_2_collision_83"/>
+<geom class="collision" rgba="0.657770 0.611740 0.238067 1.000000" mesh="PAN_TILT_2_collision_84"/>
+<geom class="collision" rgba="0.465353 0.379470 0.554149 1.000000" mesh="PAN_TILT_2_collision_85"/>
+<geom class="collision" rgba="0.412510 0.136855 0.820578 1.000000" mesh="PAN_TILT_2_collision_86"/>
+<geom class="collision" rgba="0.500241 0.798470 0.634961 1.000000" mesh="PAN_TILT_2_collision_87"/>
+<geom class="collision" rgba="0.511240 0.682223 0.535032 1.000000" mesh="PAN_TILT_2_collision_88"/>
+<geom class="collision" rgba="0.777792 0.096319 0.042547 1.000000" mesh="PAN_TILT_2_collision_89"/>
+<geom class="collision" rgba="0.015829 0.565500 0.912008 1.000000" mesh="PAN_TILT_2_collision_90"/>
+<geom class="collision" rgba="0.155136 0.0502689 0.228224 1" mesh="PAN_TILT_2_collision_91"/>
+<geom class="collision" rgba="0.255449 0.145487 0.00777331 1" mesh="PAN_TILT_2_collision_92"/>
+<geom class="collision" rgba="0.333975 0.898705 0.056556 1.000000" mesh="PAN_TILT_2_collision_93"/>
+<geom class="collision" rgba="0.907964 0.572120 0.297605 1.000000" mesh="PAN_TILT_2_collision_94"/>
+<geom class="collision" rgba="0.911393 0.960394 0.127800 1.000000" mesh="PAN_TILT_2_collision_95"/>
+<geom class="collision" rgba="0.263011 0.774672 0.550460 1.000000" mesh="PAN_TILT_2_collision_96"/>
+<geom class="collision" rgba="0.373800 0.288800 0.363062 1.000000" mesh="PAN_TILT_2_collision_97"/>
+<geom class="collision" rgba="0.922265 0.198202 0.166494 1.000000" mesh="PAN_TILT_2_collision_98"/>
+<geom class="collision" rgba="0.0602882 0.473905 0.0753782 1" mesh="PAN_TILT_2_collision_99"/>
+<geom class="collision" rgba="0.499062 0.670334 0.791581 1.000000" mesh="PAN_TILT_2_collision_100"/>
+<geom class="collision" rgba="0.981985 0.378233 0.546593 1.000000" mesh="PAN_TILT_2_collision_101"/>
+<geom class="collision" rgba="0.419273 0.650698 0.584584 1.000000" mesh="PAN_TILT_2_collision_102"/>
+<geom class="collision" rgba="0.352438 0.510764 0.725459 1.000000" mesh="PAN_TILT_2_collision_103"/>
+<geom class="collision" rgba="0.540909 0.913060 0.433922 1.000000" mesh="PAN_TILT_2_collision_104"/>
+<geom class="collision" rgba="0.463004 0.330092 0.00478377 1" mesh="PAN_TILT_2_collision_105"/>
+<body name="link_head_2">
+<inertial pos="-0.00081966 0.00099024 0.022837" quat="0.797736 0.60274 0.0137914 -0.0114992" mass="0.0358537" diaginertia="2.04697e-05 1.31161e-05 1.02242e-05"/>
+<joint name="head_1" pos="0 0 0" axis="0 1 0" limited="true" range="-0.35 1.57"/>
+<geom class="visual" material="65,65,65" mesh="PAN_TILT_3_0" rgba="0 0 0 0"/>
+<geom class="visual" material="69,69,69" mesh="PAN_TILT_3_1" rgba="0 0 0 0"/>
+<geom class="collision" rgba="0.611762 0.809572 0.620089 1.000000" mesh="PAN_TILT_3_collision_0"/>
+<geom class="collision" rgba="0.529337 0.279619 0.272354 1.000000" mesh="PAN_TILT_3_collision_1"/>
+<geom class="collision" rgba="0.598311 0.823682 0.598936 1.000000" mesh="PAN_TILT_3_collision_2"/>
+<geom class="collision" rgba="0.294282 0.479269 0.394180 1.000000" mesh="PAN_TILT_3_collision_3"/>
+<geom class="collision" rgba="0.564683 0.504851 0.734053 1.000000" mesh="PAN_TILT_3_collision_4"/>
+<geom class="collision" rgba="0.226223 0.431210 0.872686 1.000000" mesh="PAN_TILT_3_collision_5"/>
+<geom class="collision" rgba="0.243516 0.512593 0.891619 1.000000" mesh="PAN_TILT_3_collision_6"/>
+<geom class="collision" rgba="0.132041 0.509212 0.406288 1.000000" mesh="PAN_TILT_3_collision_7"/>
+<geom class="collision" rgba="0.639183 0.295714 0.846349 1.000000" mesh="PAN_TILT_3_collision_8"/>
+<geom class="collision" rgba="0.638031 0.117185 0.976269 1.000000" mesh="PAN_TILT_3_collision_9"/>
+<geom class="collision" rgba="0.446805 0.187777 0.468741 1.000000" mesh="PAN_TILT_3_collision_10"/>
+<geom class="collision" rgba="0.345990 0.973527 0.556962 1.000000" mesh="PAN_TILT_3_collision_11"/>
+<geom class="collision" rgba="0.687557 0.731785 0.188207 1.000000" mesh="PAN_TILT_3_collision_12"/>
+<geom class="collision" rgba="0.727782 0.106414 0.301327 1.000000" mesh="PAN_TILT_3_collision_13"/>
+<geom class="collision" rgba="0.061633 0.621161 0.585483 1.000000" mesh="PAN_TILT_3_collision_14"/>
+<geom class="collision" rgba="0.159992 0.188934 0.769322 1.000000" mesh="PAN_TILT_3_collision_15"/>
+<geom class="collision" rgba="0.575164 0.288018 0.209529 1.000000" mesh="PAN_TILT_3_collision_16"/>
+<geom class="collision" rgba="0.371156 0.469693 0.164590 1.000000" mesh="PAN_TILT_3_collision_17"/>
+<geom class="collision" rgba="0.395921 0.935798 0.101190 1.000000" mesh="PAN_TILT_3_collision_18"/>
+<geom class="collision" rgba="0.498733 0.588248 0.488925 1.000000" mesh="PAN_TILT_3_collision_19"/>
+<geom class="collision" rgba="0.658673 0.365572 0.611133 1.000000" mesh="PAN_TILT_3_collision_20"/>
+<geom class="collision" rgba="0.213482 0.303664 0.0140287 1" mesh="PAN_TILT_3_collision_21"/>
+<geom class="collision" rgba="0.213739 0.863739 0.410498 1.000000" mesh="PAN_TILT_3_collision_22"/>
+<geom class="collision" rgba="0.519634 0.565368 0.699806 1.000000" mesh="PAN_TILT_3_collision_23"/>
+<geom class="collision" rgba="0.870698 0.709365 0.373475 1.000000" mesh="PAN_TILT_3_collision_24"/>
+<geom class="collision" rgba="0.222092 0.697673 0.018425 1.000000" mesh="PAN_TILT_3_collision_25"/>
+<geom class="collision" rgba="0.121078 0.106094 0.107914 1" mesh="PAN_TILT_3_collision_26"/>
+<geom class="collision" rgba="0.876568 0.165251 0.172758 1.000000" mesh="PAN_TILT_3_collision_27"/>
+<geom class="collision" rgba="0.020267 0.0408755 0.348794 1" mesh="PAN_TILT_3_collision_28"/>
+<geom class="collision" rgba="0.296216 0.330527 0.472069 1.000000" mesh="PAN_TILT_3_collision_29"/>
+<geom class="collision" rgba="0.510064 0.792474 0.207687 1.000000" mesh="PAN_TILT_3_collision_30"/>
+<geom class="collision" rgba="0.692952 0.330379 0.749865 1.000000" mesh="PAN_TILT_3_collision_31"/>
+<geom class="collision" rgba="0.116972 0.092426 0.867080 1.000000" mesh="PAN_TILT_3_collision_32"/>
+<geom class="collision" rgba="0.821825 0.983989 0.113438 1.000000" mesh="PAN_TILT_3_collision_33"/>
+<geom class="collision" rgba="0.156279 0.562990 0.760061 1.000000" mesh="PAN_TILT_3_collision_34"/>
+<geom class="collision" rgba="0.003557 0.365196 0.596473 1.000000" mesh="PAN_TILT_3_collision_35"/>
+<geom class="collision" rgba="0.541963 0.472867 0.632690 1.000000" mesh="PAN_TILT_3_collision_36"/>
+<geom class="collision" rgba="0.576555 0.623383 0.329205 1.000000" mesh="PAN_TILT_3_collision_37"/>
+<geom class="collision" rgba="0.543002 0.896731 0.340516 1.000000" mesh="PAN_TILT_3_collision_38"/>
+</body>
+</body>
+</body>
+</body>
+</body>
+</body>
+</body>
+</body>
+</body>
+</worldbody>
+<actuator>
+<motor name="left_wheel" joint="left_wheel" ctrllimited="true" ctrlrange="-1 1"/>
+<motor name="right_wheel" joint="right_wheel" ctrllimited="true" ctrlrange="-1 1"/>
+
+<motor name="right_arm_0" joint="right_arm_0" ctrllimited="true" ctrlrange="-10000 10000"/>
+<motor name="right_arm_1" joint="right_arm_1" ctrllimited="true" ctrlrange="-10000 10000"/>
+<motor name="right_arm_2" joint="right_arm_2" ctrllimited="true" ctrlrange="-10000 10000"/>
+<motor name="right_arm_3" joint="right_arm_3" ctrllimited="true" ctrlrange="-10000 10000"/>
+<motor name="right_arm_4" joint="right_arm_4" ctrllimited="true" ctrlrange="-10000 10000"/>
+<motor name="right_arm_5" joint="right_arm_5" ctrllimited="true" ctrlrange="-10000 10000"/>
+<motor name="right_arm_6" joint="right_arm_6" ctrllimited="true" ctrlrange="-10000 10000"/>
+
+<motor name="left_arm_0" joint="left_arm_0" ctrllimited="true" ctrlrange="-10000 10000"/>
+<motor name="left_arm_1" joint="left_arm_1" ctrllimited="true" ctrlrange="-10000 10000"/>
+<motor name="left_arm_2" joint="left_arm_2" ctrllimited="true" ctrlrange="-10000 10000"/>
+<motor name="left_arm_3" joint="left_arm_3" ctrllimited="true" ctrlrange="-10000 10000"/>
+<motor name="left_arm_4" joint="left_arm_4" ctrllimited="true" ctrlrange="-10000 10000"/>
+<motor name="left_arm_5" joint="left_arm_5" ctrllimited="true" ctrlrange="-10000 10000"/>
+<motor name="left_arm_6" joint="left_arm_6" ctrllimited="true" ctrlrange="-10000 10000"/>
+<motor name="torso_0" joint="torso_0" ctrllimited="true" ctrlrange="-1e-08 0"/>
+<motor name="torso_1" joint="torso_1" ctrllimited="true" ctrlrange="-1e-08 0"/>
+<motor name="torso_2" joint="torso_2" ctrllimited="true" ctrlrange="-1e-08 0"/>
+<motor name="torso_3" joint="torso_3" ctrllimited="true" ctrlrange="-1e-08 0"/>
+<motor name="torso_4" joint="torso_4" ctrllimited="true" ctrlrange="-1e-08 0.0"/>
+<motor name="torso_5" joint="torso_5" ctrllimited="true" ctrlrange="-1e-08 0.0"/>
+<motor name="head_0" joint="head_0" ctrllimited="true" ctrlrange="-10000 10000"/>
+<motor name="head_1" joint="head_1" ctrllimited="true" ctrlrange="-10000 10000"/>
+</actuator>
+</mujoco>

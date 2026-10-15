@@ -1,0 +1,23 @@
+{
+  "base_config": "aria_rl_real.json",
+  "task": "hammer",
+  "run": {
+    "mode": "batch"
+  },
+  "overrides": {
+    "object_pos_threshold": 0.08,
+    "object_rot_threshold": 2.5,
+    "contact_rew_scale": 2.0,
+    "base_pos_rew_scale": 0.2,
+    "base_rot_rew_scale": 1.0,
+    "action_smoothness_rew_scale": 0.8,
+    "joint_rew_scale": 0.0,
+    "pos_noise_scale": 0.045,
+    "rot_noise_scale": 1.0,
+    "joint_noise_scale": 0.8,
+    "num_dr": 8,
+    "pair_margin_range": [-0.005, 0.005],
+    "xy_offset_range": [-0.015, 0.015],
+    "object_mass_scale_range": [0.8, 1.2]
+  }
+}

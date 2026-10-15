@@ -1,0 +1,12 @@
+{
+  "base_config": "aria_replay.json",
+  "task": "drawer",
+  "run": {
+    "mode": "batch"
+  },
+  "overrides": {
+    "object_rot_threshold": 1.5,
+    "contact_rew_scale": 0.0,
+    "joint_rew_scale": 0.0
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "source": "PyPI robosuite 1.5.1 official wheel",
+  "url": "https://files.pythonhosted.org/packages/f4/15/82093cadf23811463d0b52ec6745949356b66badf6e25bee64ec82aa8689/robosuite-1.5.1-py3-none-any.whl",
+  "wheel_sha256_from_pypi": "39810a9e9f193455fcb13a9b4846424abef77481ac3091892c2077c88dcdc153",
+  "extraction": "Only referenced Panda asset members; ZIP CRC verified by zipfile",
+  "robot_xml_preserved_sha256": "67f62e98681d2ae0d5c50352105492b0041bcc9b9502e83fed02823195338c90",
+  "files": {
+    "visual/robosuite/models/assets/robots/panda/meshes/link0.stl": {
+      "sha256": "dfc6d94330de8ddb005b311bfdba9f3b8e1aa7c256b71592ee7ff32cb9a9a5aa",
+      "bytes": 10084
+    },
+    "visual/robosuite/models/assets/robots/panda/meshes/link1.stl": {
+      "sha256": "d24e332dffccf260b91d05dde17c5998bb9559d37da8608a8ee5213d9661f603",
+      "bytes": 625884
+    },
+    "visual/robosuite/models/assets/robots/panda/meshes/link2.stl": {
+      "sha256": "370f7605a0fae3529db169ded50f52f171024aa792d4d773bc84197301f6a039",
+      "bytes": 15084
+    },
+    "visual/robosuite/models/assets/robots/panda/meshes/link3.stl": {
+      "sha256": "0a8d638b9349c6c0eefc4e888636ac4838c4b27170f18a51699321118af709c1",
+      "bytes": 15084
+    },
+    "visual/robosuite/models/assets/robots/panda/meshes/link4.stl": {
+      "sha256": "0180ebb5772ec9840cb049750cffb29a9ddc90311752a16ea34757782ef9e48d",
+      "bytes": 15084
+    },
+    "visual/robosuite/models/assets/robots/panda/meshes/link5.stl": {
+      "sha256": "dd17e688c7870e722283525879643d53a74c0024d328b0e14b034b54c8b6c31a",
+      "bytes": 15084
+    },
+    "visual/robosuite/models/assets/robots/panda/meshes/link6.stl": {
+      "sha256": "20b768e99a0e0440b5754dcca108016434e57937cc356acd9c352ccd3cb27f77",
+      "bytes": 10084
+    },
+    "visual/robosuite/models/assets/robots/panda/meshes/link7.stl": {
+      "sha256": "92ac6afcf7574c034d3170d8a68e95ac9048ab9d0dd5bbd8311b86e551b9ab1c",
+      "bytes": 10084
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_0.obj": {
+      "sha256": "ff032aa0aa3514c0820f8c07a676892fe5a7a85977ed3e4818d8ee8080cd8a2c",
+      "bytes": 358725
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_1.obj": {
+      "sha256": "d033464e59f40a3096d2d6cf7853afb5bdb258bf19accefa24fa040ea73763e2",
+      "bytes": 122052
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_10.obj": {
+      "sha256": "5d879fddef79581242c8d28bc4dea19759712f5d83820b9a7c8bf519035d52d3",
+      "bytes": 407944
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_11.obj": {
+      "sha256": "1f47131b0f4a638b64065fa9d7fa0f6d196c7aa56ba717ce9d127d36a67338a5",
+      "bytes": 24799
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_2.obj": {
+      "sha256": "5f8782b8a222da3981d0c0108930fb8dadf44639a16bd85bc89cd7401ee5a766",
+      "bytes": 731627
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_3.obj": {
+      "sha256": "3fc91c0cd10c4aef9a493699fa83457c225d0854b28d55ccb0b47fe38f412f28",
+      "bytes": 58037
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_4.obj": {
+      "sha256": "f23819a788f7ce26965e540cef7a9bf5970ed99da3c1b875a91b0e544511e39d",
+      "bytes": 256094
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_5.obj": {
+      "sha256": "e8e5ff98258aaca852979fd62a39d929c1d726d9e6fa19f1acc030553cdf2ed3",
+      "bytes": 21416
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_6.obj": {
+      "sha256": "41be78cbdc6b0d401efe4fa630fe6924ee3312e294403aa35a4e18a70f99139e",
+      "bytes": 4495
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_7.obj": {
+      "sha256": "75e3a2661f6366bb6c665282cd77f18b0da09ec1eaa8df29617fccf279970f6f",
+      "bytes": 34000
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_8.obj": {
+      "sha256": "d751e2ad68ca735b0c3b0f8f11f7364026fe64166ebf4aab69446d4465c6129d",
+      "bytes": 3621712
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link0_vis/link0_vis_9.obj": {
+      "sha256": "19817601101caeea79826ffe057ad0481b97f60e80870ee768fe32b6855ab9d2",
+      "bytes": 125294
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link1_vis/link1_vis.obj": {
+      "sha256": "7e6cffc2656cac8c8faa9b43e41cba312b35519c9cc4c5bddd7159f14df50f2d",
+      "bytes": 3676668
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link2_vis/link2_vis.obj": {
+      "sha256": "42ada2805819bd9364e567e23b4c1b71b91d9ac02525598d823c14bf8d25dabd",
+      "bytes": 3713545
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link3_vis/link3_vis_0.obj": {
+      "sha256": "6a1f18e21663f2acea23752dcb79b2a8e8ae96ab286dd9d90de1d61c0dd87c0b",
+      "bytes": 3499294
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link3_vis/link3_vis_1.obj": {
+      "sha256": "73ad9e69c96283cc865424a64e38b53b7cd4385a0ff9834cae91a258ab92cb97",
+      "bytes": 81340
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link3_vis/link3_vis_2.obj": {
+      "sha256": "9cd5a95e3599005bfc76e3700f1e3b3051efe07665b0ae6efbce75860a89e7f9",
+      "bytes": 98021
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link3_vis/link3_vis_3.obj": {
+      "sha256": "01f69ca50a96cceb1bc1a0fcb4de9a7fe2b5b11d1d2e2a5c445723acef7eb483",
+      "bytes": 571618
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link4_vis/link4_vis_0.obj": {
+      "sha256": "76f42fd26edf4a6b78b055d3b48c4df59cebb93ffc36fc6e6e6c8d441dbec3c9",
+      "bytes": 99644
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link4_vis/link4_vis_1.obj": {
+      "sha256": "85907c1c058ea1133cd6cf5a23535a1b77257b4852c753e08cbf87f79c4003c2",
+      "bytes": 3608854
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link4_vis/link4_vis_2.obj": {
+      "sha256": "a019f7f862b782af509f649050ef45354ff73642742dea7525d8e1369a07fd94",
+      "bytes": 566926
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link4_vis/link4_vis_3.obj": {
+      "sha256": "b0fcc4417a0680860ee11af60df227ecc328b4b1c66908b9872dedfa8620d992",
+      "bytes": 80397
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link5_vis/link5_vis_0.obj": {
+      "sha256": "e30aa36ca950b2b57ba695423ee30da5da662b1a70b72d1533c5cd435b88355d",
+      "bytes": 907061
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link5_vis/link5_vis_1.obj": {
+      "sha256": "1d4089d9f2d26ef677ff42b27a2cb4ba9691a8fcd19ac665ac5203b23d22b876",
+      "bytes": 45788
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link5_vis/link5_vis_2.obj": {
+      "sha256": "c095257424ff95526d2ebab4f396833a2d77227e0d2b3bb899a0019d19c38c49",
+      "bytes": 4535777
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_0.obj": {
+      "sha256": "ca3ca6f238a0ed1138bfd5d11982f610d96dfc98d2d663646f07fc4c2a3ea7b0",
+      "bytes": 181786
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_1.obj": {
+      "sha256": "a96dc760e3b8b0f6ab4e098248e4019e67ec9fcf404c6ab944e216dfc752e590",
+      "bytes": 23299
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_10.obj": {
+      "sha256": "915c2eedef0d04869814126a96da1ff70d1fc89fc65ac80021084b00cad5d757",
+      "bytes": 462054
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_11.obj": {
+      "sha256": "6edb35baa656d0b647541ab9de4706c4d471ec831e732955f9f4d347f4bc02fb",
+      "bytes": 30999
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_12.obj": {
+      "sha256": "5af3b6bdecc4de424eb0217627bf0f6185f126dbb0bc1a7fe39253f0a26f2907",
+      "bytes": 4214
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_13.obj": {
+      "sha256": "21dfaf6cb5f27a8593be82cee6ca3023e3829d5f2be5e30af54b5955ea87a554",
+      "bytes": 4327
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_14.obj": {
+      "sha256": "8aa89ae8b85fb54400771754d25d6813dfb41299821bc984f37498ac0d9cba14",
+      "bytes": 533553
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_15.obj": {
+      "sha256": "a9c3bcfb59c80b0e9f67c62775ea7564f1f11f55faf94b971c7fa2ee436e91bc",
+      "bytes": 819438
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_16.obj": {
+      "sha256": "0e76221e7c530dde22117afc57d95d48ddf30a5e586e3bd99ba6777a30b50e58",
+      "bytes": 4284801
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_2.obj": {
+      "sha256": "bef85a944a58e7032a765cbb10445ac44450fe047f3fefe501e3a3ac90dd6caf",
+      "bytes": 10246
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_3.obj": {
+      "sha256": "a8f1f77b3978a16fcc8b4dd00af50431d1bca26576ef92f73d90d984dd188211",
+      "bytes": 15976
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_4.obj": {
+      "sha256": "0cf60228d09854089185c5bf9f23004603b3aef874b61b2b8dad7bdcc29178e1",
+      "bytes": 18377
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_5.obj": {
+      "sha256": "dfdcbfb610c052e2a4830fbc26a53ec99c0658ec3664a179c5471ff42d6a60de",
+      "bytes": 15690
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_6.obj": {
+      "sha256": "b13bafd7d8cee84a07e5a0667da8d1e1d9467112415332f23ef79c582421f8ce",
+      "bytes": 16884
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_7.obj": {
+      "sha256": "52d8f9cac4326716f46fad9aa1314491d377b1b36a374258a97aae196b006e51",
+      "bytes": 2464
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_8.obj": {
+      "sha256": "5e586f0aaa641cdae0d372bd2fb689600cf13fc629a52ba4ad6076bfa7b0834f",
+      "bytes": 6323
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link6_vis/link6_vis_9.obj": {
+      "sha256": "3a3caf4c3596ff2661d559ee291a9ac7f66a6d943ebfcc417f229de72962d0dc",
+      "bytes": 16367
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_0.obj": {
+      "sha256": "4a43571b6feb5dbb0b6f5b3d0a06f51f356371d27a10fc580c985107db16f2ac",
+      "bytes": 1831721
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_1.obj": {
+      "sha256": "0fefd18ce20e90dac5ce7d181e676e6cf7504cca1f050c4d05c098169b417116",
+      "bytes": 162840
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_2.obj": {
+      "sha256": "44ae15f4a83bd36f4de3cce78e3f592c8a070ca1fd4539be3b1c58e21d8d8671",
+      "bytes": 280928
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_3.obj": {
+      "sha256": "08c6308530928ae7234edd1297039aff02b0d84d8bbfec8d01c5ab104fc4209b",
+      "bytes": 164977
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_4.obj": {
+      "sha256": "53e0bffb56a0fe9ebab0f43dc997512287ab14d8f9b2d77f1baf7f0c96367f59",
+      "bytes": 114146
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_5.obj": {
+      "sha256": "1fd161fb00e729732950770f20fb6e75c5a5ca1620bceac9d550c54f322d469d",
+      "bytes": 304295
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_6.obj": {
+      "sha256": "cd4f2b39adfd4857f922f3104fdd4cef01390265a5f2582c73d97f39dbc1755b",
+      "bytes": 133885
+    },
+    "visual/robosuite/models/assets/robots/panda/obj_meshes/link7_vis/link7_vis_7.obj": {
+      "sha256": "f4f9e3c8532df4d1588e1c2ff82fae10facfb30a52329b7f595ee37d7bad6229",
+      "bytes": 1058189
+    }
+  },
+  "downloaded_archive_bytes": 5997202
+}

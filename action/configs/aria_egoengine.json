@@ -1,0 +1,19 @@
+{
+  "run": {
+    "python_bin": "python",
+    "device_env": "MIXED_DEVICE",
+    "default_device": "cuda:0"
+  },
+  "mixed": {
+    "methods": ["replay", "mpc", "rl"],
+    "window_size": 20,
+    "task": "brush_brush_bowl_20231005_186",
+    "dataset_dir": "example_datasets",
+    "dataset_name": "gigahand",
+    "robot_type": "xhand",
+    "embodiment_type": "bimanual",
+    "active_hand": "right",
+    "data_id": 0,
+    "output_name": "mixed_replay_smoke.npz"
+  }
+}

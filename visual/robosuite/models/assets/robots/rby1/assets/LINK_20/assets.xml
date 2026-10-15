@@ -1,0 +1,4 @@
+<mujoco>
+  <mesh file="LINK_20_WR.obj"/>
+  <mesh file="LINK_20_WR_collision_0.obj"/>
+</mujoco>

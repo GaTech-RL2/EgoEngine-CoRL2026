@@ -1,0 +1,13 @@
+{
+  "schema": "egoengine.visual_robot.v1",
+  "name": "FrankaXHand",
+  "robot_module": "robosuite.models.robots.manipulators.panda_robot",
+  "robot_class": "Panda",
+  "arm_joints": ["joint1", "joint2", "joint3", "joint4", "joint5", "joint6", "joint7"],
+  "base_position_in_desk": [-0.9, -0.7, 0.05],
+  "base_quat_wxyz": [1, 0, 0, 0],
+  "gripper_name": "XRightHandAria",
+  "wrist_body": "gripper0_right_x_right_hand_root",
+  "source_wrist_body": "gripper0_right_x_right_hand_root",
+  "ik_max_evaluations": 150
+}

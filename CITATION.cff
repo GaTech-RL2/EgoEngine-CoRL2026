@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use EgoEngine, please cite the accompanying paper."
+title: "EgoEngine: From Egocentric Human Videos to High-Fidelity Dexterous Robot Demonstrations"
+type: software
+version: 0.1.0
+authors:
+  - family-names: Liu
+    given-names: Yangcen
+  - family-names: Cheng
+    given-names: Shuo
+  - family-names: Yin
+    given-names: Xinchen
+  - family-names: Shin
+    given-names: Woo Chul
+  - family-names: Cueva
+    given-names: Alfred
+  - family-names: Yang
+    given-names: Yiran
+  - family-names: Chen
+    given-names: Zhenyang
+  - family-names: Zhang
+    given-names: Chuye
+  - family-names: Xu
+    given-names: Danfei
+repository-code: "https://github.com/GaTech-RL2/EgoEngine-CoRL2026"
+url: "https://egoengine.github.io/"
+identifiers:
+  - type: url
+    value: "https://arxiv.org/abs/2606.12604"

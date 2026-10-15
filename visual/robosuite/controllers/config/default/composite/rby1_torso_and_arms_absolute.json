@@ -1,0 +1,60 @@
+{
+    "type": "RBY1_TORSO_AND_ARMS_ABSOLUTE",
+    "body_parts": {
+        "arms": {
+            "right": {
+                "type" : "JOINT_POSITION",
+                "input_max": 1,
+                "input_min": -1,
+                "input_type": "absolute",
+                "output_max": 0.5,
+                "output_min": -0.5,
+                "kd": 200,
+                "kv": 20,
+                "kp": 2000,
+                "velocity_limits": [-1,1],
+                "kp_limits": [0, 1000],
+                "interpolation": null,
+                "ramp_ratio": 0.2,
+                "gripper": {
+                    "type": "GRIP",
+                    "use_action_scaling": false
+                }
+            },
+            "left": {
+                "type" : "JOINT_POSITION",
+                "input_max": 1,
+                "input_min": -1,
+                "input_type": "absolute",
+                "output_max": 0.5,
+                "output_min": -0.5,
+                "kd": 200,
+                "kv": 20,
+                "kp": 2000,
+                "velocity_limits": [-1,1],
+                "kp_limits": [0, 1000],
+                "interpolation": null,
+                "ramp_ratio": 0.2,
+                "gripper": {
+                    "type": "GRIP",
+                    "use_action_scaling": false
+                }
+            }
+        },
+        "torso": {
+            "type" : "JOINT_POSITION",
+            "input_max": 1,
+            "input_min": -1,
+            "input_type": "delta",
+            "output_max": 0.5,
+            "output_min": -0.5,
+            "kd": 30,
+            "kv": 20,
+            "kp": 150,
+            "velocity_limits": [-1,1],
+            "kp_limits": [0, 1000],
+            "interpolation": null,
+            "ramp_ratio": 0.2
+        }
+    }
+}

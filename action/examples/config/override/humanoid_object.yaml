@@ -1,0 +1,33 @@
+# @package _global_
+# Override configuration for fair_mon dataset
+dataset_name: omomo
+robot_type: unitree_g1
+viewer: mujoco-rerun
+embodiment_type: humanoid_object
+task: move_largebox
+rerun_spawn: true
+sim_dt: 0.0166667
+ref_dt: 0.0333333
+trace_dt: 0.0333333
+max_sim_steps: -1
+horizon: 0.8
+ctrl_dt: 0.1
+knot_dt: 0.1
+# annealing parameters
+first_ctrl_noise_scale: 0.5
+last_ctrl_noise_scale: 1.0
+final_noise_scale: 0.1
+joint_noise_scale: 0.1
+# sampling
+improvement_threshold: 0.01
+max_num_iterations: 16
+temperature: 1.0
+num_samples: 2048
+# reward
+vel_rew_scale: 0.0
+joint_rew_scale: 1.0
+base_pos_rew_scale: 1.0
+base_rot_rew_scale: 1.0
+pos_rew_scale: 1.0
+rot_rew_scale: 0.3
+# note: above parameter is optimized for speed. you can have better performance with horizon=1.0

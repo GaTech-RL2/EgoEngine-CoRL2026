@@ -1,0 +1,4 @@
+<mujoco>
+  <mesh file="LINK_12_WP.obj"/>
+  <mesh file="LINK_12_WP_collision_0.obj"/>
+</mujoco>

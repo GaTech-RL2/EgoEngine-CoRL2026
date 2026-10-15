@@ -1,0 +1,10 @@
+This repository combines components with their retained upstream licenses.
+
+spider/ and action/: the SPIDER license in licenses/SPIDER.txt (CC BY-NC 4.0).
+visual/: the robosuite license in licenses/ROBOSUITE.txt (MIT, with its retained
+MuJoCo implementation notice).
+
+The inherited noncommercial restriction remains on the action component. The
+combined repository is a research source release; it is not wholly MIT-licensed.
+Prepared dataset inputs and robot/object assets retain their source terms. See
+THIRD_PARTY_NOTICES.md and UPSTREAMS.json for provenance.

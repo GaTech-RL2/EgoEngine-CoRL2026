@@ -1,0 +1,15 @@
+# Complete runtime pins validated in a fresh Python 3.10 environment, macOS.
+absl-py==2.5.1
+etils==1.13.0
+fsspec==2026.9.0
+glfw==2.10.2
+h5py==3.16.0
+importlib_resources==7.1.0
+mujoco==3.5.0
+numpy==1.26.4
+opencv-python==4.10.0.84
+pillow==11.0.0
+PyOpenGL==3.1.10
+scipy==1.14.1
+typing_extensions==4.16.0
+zipp==4.1.1

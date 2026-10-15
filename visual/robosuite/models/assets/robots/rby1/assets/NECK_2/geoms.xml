@@ -1,0 +1,1 @@
+<mujoco><worldbody><body name="NECK_2_preview" pos="0 0 0"><geom type="mesh" mesh="NECK_2" rgba="0.7 0.7 0.7 1" contype="0" conaffinity="0" /></body></worldbody></mujoco>

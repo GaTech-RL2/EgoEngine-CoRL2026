@@ -1,0 +1,66 @@
+{
+  "scope": "Visual arm replacement and paired reference-EEF export; no new RL or hardware claim",
+  "robot": "FrankaXHand",
+  "materials_verified": 52,
+  "cases": [
+    {
+      "case": "mustard_1",
+      "frames": 93,
+      "original_hand_commands_identical": true,
+      "camera_and_object_tracks_unchanged": true,
+      "eef_actions_unchanged": true,
+      "rendered_fk_matches_mapping": true,
+      "collision_geometry_visible": false,
+      "visible_robot_frames": 93,
+      "max_wrist_position_error_m": 0.011934244170758038,
+      "max_wrist_orientation_error_rad": 0.036669655369232744
+    },
+    {
+      "case": "mustard_2",
+      "frames": 105,
+      "original_hand_commands_identical": true,
+      "camera_and_object_tracks_unchanged": true,
+      "eef_actions_unchanged": true,
+      "rendered_fk_matches_mapping": true,
+      "collision_geometry_visible": false,
+      "visible_robot_frames": 105,
+      "max_wrist_position_error_m": 6.481941021348807e-07,
+      "max_wrist_orientation_error_rad": 1.539623905023781e-06
+    },
+    {
+      "case": "mustard_3",
+      "frames": 108,
+      "original_hand_commands_identical": true,
+      "camera_and_object_tracks_unchanged": true,
+      "eef_actions_unchanged": true,
+      "rendered_fk_matches_mapping": true,
+      "collision_geometry_visible": false,
+      "visible_robot_frames": 108,
+      "max_wrist_position_error_m": 0.008015861626416957,
+      "max_wrist_orientation_error_rad": 0.025378574192830846
+    }
+  ],
+  "robot_config_sha256": "f40efce002cdc6c8efdcd23ffbe9a41d37c219071b4251820c1b9a9c327fa929",
+  "source_sha256": {
+    "egoengine/robot_visual.py": "3e71e6ac47bfe4fa1d300394531b1a1006068b02c4d60d344ee016b3a93524c8",
+    "egoengine/visual.py": "a794eb88fe54f2c006ae6d6cb038d744d1a5970d9c6cb3595b4d67229eb7c38d",
+    "egoengine/export.py": "0c2a531409b4a8899de7475c4fd4fbfd0dfc728d9c7b3ddf2c502ffd2a886021",
+    "egoengine/cli.py": "0c6089e444c7d171bcfec110f57f527fa6999e58a3cb5b073f16d8e8a8a07764",
+    "examples/robots/franka_xhand.json": "f40efce002cdc6c8efdcd23ffbe9a41d37c219071b4251820c1b9a9c327fa929",
+    "scripts/reproduce_franka_visual.sh": "e8c266fd3dd1a98fda30812e7a8e5b0875e5e96517bfec6c899e24e9dae89e80",
+    "scripts/validate_robot_visual.py": "687b854405f880b1f314d08b3591d436856dc1697d1c58fcd2d89b43bf0c7ee9",
+    "scripts/build_robot_visual_media.py": "2441f306a1e61b9a1ef5870049eb9d03ba7952da1ab2fbfff23aa09b360a0ec2"
+  },
+  "validated_at_utc": "2026-10-15T05:08:20.085509+00:00",
+  "tests": {
+    "minimal_cpu_suite": {
+      "passed": 27,
+      "skipped": 1
+    },
+    "original_visual_profile": {
+      "passed": 2
+    },
+    "configured_robot_artifacts": "All 306 frames decoded, hand/action values and camera/object tracks checked",
+    "lint": "passed"
+  }
+}
