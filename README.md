@@ -187,7 +187,7 @@ egoengine demo --case mustard_1 --robot-config examples/robots/franka_xhand.json
   --output outputs/franka_xhand
 ```
 
-![Franka Panda + XHand visual example](docs/media/franka_xhand_mustard_1.gif)
+![Franka Panda + XHand visual example](https://raw.githubusercontent.com/GaTech-RL2/EgoEngine-CoRL2026/7fb9298eef89ff6766988bde737c8469e5a5d54d/docs/media/franka_xhand_mustard_1.gif)
 
 ## Dataset format
 
