@@ -140,8 +140,8 @@
     "examples/robots/franka_xhand.json": "f40efce002cdc6c8efdcd23ffbe9a41d37c219071b4251820c1b9a9c327fa929",
     "scripts/reproduce_franka_visual.sh": "e8c266fd3dd1a98fda30812e7a8e5b0875e5e96517bfec6c899e24e9dae89e80",
     "scripts/validate_robot_visual.py": "bc555efb3e1e2a5c502785bc497beca4afdf47c2607a042c993c7ee9c9f3c29f",
-    "scripts/build_robot_visual_media.py": "2441f306a1e61b9a1ef5870049eb9d03ba7952da1ab2fbfff23aa09b360a0ec2",
+    "scripts/build_robot_visual_media.py": "18948ae0a1dcc475992ea78df297edb012aeb327091a668ef2ceab0b99237ded",
     "tests/test_robot_config.py": "2fb148e763f482954ed2f83e1626447e075ae45bf56a1423344103ead05b3d21"
   },
-  "validated_at_utc": "2026-10-16T13:42:15.702092+00:00"
+  "validated_at_utc": "2026-10-16T14:40:05.257171+00:00"
 }

@@ -71,11 +71,11 @@ remain those of the authored Panda and XHand assets.
 The panels show source RGB, the newly rendered Franka + original XHand foreground,
 and the output from the retained compositor at matching frame indices.
 
-![Franka Mustard 1](https://raw.githubusercontent.com/GaTech-RL2/EgoEngine-CoRL2026/7fb9298eef89ff6766988bde737c8469e5a5d54d/docs/media/franka_xhand_mustard_1.gif)
+![Franka Mustard 1](https://raw.githubusercontent.com/GaTech-RL2/EgoEngine-CoRL2026/main/docs/media/franka_xhand_mustard_1.gif?v=48536b29efc7)
 
 | Mustard 2 | Mustard 3 |
 | --- | --- |
-| ![Franka Mustard 2](https://raw.githubusercontent.com/GaTech-RL2/EgoEngine-CoRL2026/7fb9298eef89ff6766988bde737c8469e5a5d54d/docs/media/franka_xhand_mustard_2.gif) | ![Franka Mustard 3](https://raw.githubusercontent.com/GaTech-RL2/EgoEngine-CoRL2026/7fb9298eef89ff6766988bde737c8469e5a5d54d/docs/media/franka_xhand_mustard_3.gif) |
+| ![Franka Mustard 2](https://raw.githubusercontent.com/GaTech-RL2/EgoEngine-CoRL2026/main/docs/media/franka_xhand_mustard_2.gif?v=331f5d25104a) | ![Franka Mustard 3](https://raw.githubusercontent.com/GaTech-RL2/EgoEngine-CoRL2026/main/docs/media/franka_xhand_mustard_3.gif?v=85a061ad878b) |
 
 ## Configuration
 

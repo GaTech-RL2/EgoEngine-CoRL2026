@@ -31,7 +31,7 @@ def main():
         )
         frames = []
         count = len(case.reference()["qpos"])
-        for index in np.linspace(0, count - 1, 36).astype(int):
+        for index in np.linspace(0, count - 1, 18).astype(int):
             panel = Image.new("RGB", (672, 256), "#f2f4f5")
             draw = ImageDraw.Draw(panel)
             for column, (label, path) in enumerate(
@@ -41,11 +41,18 @@ def main():
                 panel.paste(picture, (column * 224, 32))
                 draw.text((column * 224 + 7, 8), label, fill="#17232d", font=font)
             frames.append(panel)
-        frames[0].save(
+        samples = Image.new("RGB", (336, 128 * len(frames)))
+        for index, frame in enumerate(frames):
+            samples.paste(frame.resize((336, 128)), (0, index * 128))
+        palette = samples.quantize(colors=256, method=Image.Quantize.MAXCOVERAGE)
+        gif_frames = [
+            frame.quantize(palette=palette, dither=Image.Dither.NONE) for frame in frames
+        ]
+        gif_frames[0].save(
             args.output / f"franka_xhand_{name}.gif",
             save_all=True,
-            append_images=frames[1:],
-            duration=100,
+            append_images=gif_frames[1:],
+            duration=200,
             loop=0,
             optimize=True,
         )

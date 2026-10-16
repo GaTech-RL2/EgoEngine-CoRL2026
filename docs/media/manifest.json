@@ -185,13 +185,16 @@
     "validation": "docs/validation/FRANKA_XHAND.json",
     "command": "python scripts/build_robot_visual_media.py",
     "files": {
-      "docs/media/franka_xhand_mustard_1.gif": "801eab87fff029a637467718b725d430f4fd7a172252e32a26b787e9ae103f27",
-      "docs/media/franka_xhand_mustard_1.png": "c5476cfb60f79702158253b7c1cc47dfa24b2f68af643aa3db53c50845adf890",
-      "docs/media/franka_xhand_mustard_2.gif": "5006f34ee34f58f82c01b9e1a0a694786ce26926a8ba8d464b1e8d5f3ed3f738",
-      "docs/media/franka_xhand_mustard_2.png": "5aca5ec00b8484a052d83f86aa65e8ed831bd4614491027b361d5f59436bf706",
-      "docs/media/franka_xhand_mustard_3.gif": "522c37f2e6bf2c184385f943e7bc5b63e046419b90631a54300ffe4db987a7a8",
-      "docs/media/franka_xhand_mustard_3.png": "24297324485c83f19b49e6c6fa6c7c50c52a0d56001c4ac08d8a1fa9997b8d1c"
+      "docs/media/franka_xhand_mustard_1.gif": "48536b29efc7e6fe11baedf69e0efda7f8b5dd25d06e029061f69a12d9cd9fac",
+      "docs/media/franka_xhand_mustard_1.png": "7042272068bdc0b2dcd192c2dbb4aee04ac2d7ef84bf598ea8087cc024105964",
+      "docs/media/franka_xhand_mustard_2.gif": "331f5d25104a65087e371fd614ec7e269fc11ac546cd0a26427e7c343fe9361c",
+      "docs/media/franka_xhand_mustard_2.png": "bb4f507e20983ae38b881c92df38612c9fd7a860928003a5c2408d29eafd6452",
+      "docs/media/franka_xhand_mustard_3.gif": "85a061ad878bc79bf0ef2f36ad70a319f2e791420dc920f67816bca17d4ca7f8",
+      "docs/media/franka_xhand_mustard_3.png": "123d992c745764730b7d676609b685c5b69d2df2caf13e3b4c86e8b7f024e3eb"
     },
-    "lighting": "Original Aria world lights and headlight retained independently of robot replacement"
+    "lighting": "Original Aria world lights and headlight retained independently of robot replacement",
+    "gif_frames": 18,
+    "gif_display_fps": 5,
+    "gif_palette_colors": 256
   }
 }
