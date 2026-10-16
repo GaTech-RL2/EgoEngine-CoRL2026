@@ -187,6 +187,8 @@ egoengine demo --case mustard_1 --robot-config examples/robots/franka_xhand.json
   --output outputs/franka_xhand
 ```
 
+![Franka Panda + XHand visual example](docs/media/franka_xhand_mustard_1.gif)
+
 ## Dataset format
 
 The HDF5 schema is `egoengine.prepared.v1`. Arrays under `data/demo_0` share the
