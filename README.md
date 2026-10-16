@@ -7,15 +7,15 @@
 **CoRL 2026 · Conference on Robot Learning**
 
 [Yangcen Liu](https://yangcenliu.github.io/),
-[Shuo Cheng](https://sites.google.com/view/shuocheng)<sup>†</sup>,
+[Shuo Cheng](https://sites.google.com/view/shuocheng),
 [Xinchen Yin](https://xinchenyin.github.io/)<sup>†</sup>,
 [Woo Chul Shin](https://woocshin.github.io/profile/)<sup>†</sup>,
-[Alfred Cueva](https://alfred-cueva.github.io/), Yiran Yang,
+[Alfred Cueva](https://alfred-cueva.github.io/)<sup>†</sup>, Yiran Yang,
 [Zhenyang Chen](https://chenzheny.github.io/),
 [Chuye Zhang](https://zhangchuye.github.io/),
 [Danfei Xu](https://faculty.cc.gatech.edu/~danfei/)
 
-<sub>† Co-second authors (equal contribution).</sub>
+<sub>† Co-third authors (equal contribution).</sub>
 
 [![Paper on arXiv](https://img.shields.io/badge/Paper-24242A?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2606.12604)
 [![Code on GitHub](https://img.shields.io/badge/Code-24242A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GaTech-RL2/EgoEngine-CoRL2026)
@@ -112,10 +112,6 @@ RB-Y1 foreground, visibility mask and the resulting composite:
 
 ![Mustard 1 visual stages](docs/media/mustard_1.gif)
 
-| Mustard 2 | Mustard 3 |
-| --- | --- |
-| ![Mustard 2](docs/media/mustard_2.gif) | ![Mustard 3](docs/media/mustard_3.gif) |
-
 TACO stage previews and their source/alignment labels are recorded in the
 [media manifest](docs/media/manifest.json). Historical display clips are not
 used as newly generated paired training data.
@@ -190,8 +186,6 @@ the original XHand, camera/object tracks and compositor:
 egoengine demo --case mustard_1 --robot-config examples/robots/franka_xhand.json \
   --output outputs/franka_xhand
 ```
-
-![Franka Panda + XHand](docs/media/franka_xhand_mustard_1.gif)
 
 ## Dataset format
 
