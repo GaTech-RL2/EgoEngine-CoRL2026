@@ -65,7 +65,7 @@ def base_pose(config, retarget):
     return desk @ relative
 
 
-def register_robot(config, placement):
+def register_robot(config, placement, scene_lights=None):
     from robosuite.robots import register_robot_class
 
     parent = getattr(importlib.import_module(config["robot_module"]), config["robot_class"])
@@ -74,6 +74,12 @@ def register_robot(config, placement):
         def __init__(self, idn=0):
             super().__init__(idn=idn)
             self.set_base_ori(Rotation.from_matrix(placement[:3, :3]).as_euler("xyz"))
+            if scene_lights is not None:
+                # World lights belong to the scene, independent of the replacement arm.
+                for light in self.worldbody.findall("light"):
+                    self.worldbody.remove(light)
+                for light in scene_lights:
+                    self.worldbody.append(deepcopy(light))
 
         @property
         def default_base(self):
@@ -95,11 +101,31 @@ def register_robot(config, placement):
     return VisualRobot
 
 
-def source_wrist_poses(case, original, config):
+def lighting_state(model):
+    """Record compiled scene lights independently of robot geometry and placement."""
+    return {
+        "headlight": {
+            key: np.asarray(getattr(model.vis.headlight, key)).tolist()
+            for key in ("active", "ambient", "diffuse", "specular")
+        },
+        "world_lights": [
+            {
+                key: np.asarray(getattr(model, "light_" + key)[index]).tolist()
+                for key in ("pos", "dir", "ambient", "diffuse", "specular", "castshadow")
+            }
+            for index in range(model.nlight)
+            if model.light_bodyid[index] == 0
+        ],
+    }
+
+
+def source_visual_reference(case, original, config):
     args = SimpleNamespace(data_file=str(case.visual / "retarget.json"), cam_name="cameraview")
     env = original.make_tracking_env(args, use_cam_obs=False)()
     poses = []
     try:
+        scene_lights = deepcopy(env.env.robots[0].robot_model.worldbody.findall("light"))
+        lighting = lighting_state(env.env.sim.model._model)
         for frame in case.retarget_frames():
             env._set_full_config(frame["robot_cfg"])
             pose = np.eye(4)
@@ -108,7 +134,7 @@ def source_wrist_poses(case, original, config):
             poses.append(pose)
     finally:
         env.close()
-    return np.asarray(poses)
+    return np.asarray(poses), scene_lights, lighting
 
 
 def map_arm(config, robot_class, placement, targets, frames, hand_joints):
@@ -293,8 +319,8 @@ def worker(case, config_path, output, width, height):
     source_path = case.visual / "retarget.json"
     retarget = json.loads(source_path.read_text())
     placement = base_pose(config, retarget)
-    targets = source_wrist_poses(case, original, config)
-    robot_class = register_robot(config, placement)
+    targets, scene_lights, source_lighting = source_visual_reference(case, original, config)
+    robot_class = register_robot(config, placement, scene_lights)
     commands, actual = map_arm(
         config, robot_class, placement, targets, case.retarget_frames(), original.RIGHT_XHAND_JOINTS
     )
@@ -338,6 +364,9 @@ def worker(case, config_path, output, width, height):
     args = SimpleNamespace(data_file=str(data_file), cam_name="cameraview")
     env = make_environment(original, args, config, width, height)
     try:
+        lighting = lighting_state(env.env.sim.model._model)
+        if lighting != source_lighting:
+            raise ValueError("Replacement robot changed the original scene lighting")
         pixels, replayed = replay_layers(
             env,
             original,
@@ -370,6 +399,9 @@ def worker(case, config_path, output, width, height):
         action_sha256=None,
         commands_file="robot_commands.npz",
         xhand_commands="unchanged from original retarget",
+        lighting_source="original_retarget_environment",
+        scene_lights=[dict(light.attrib) for light in scene_lights],
+        lighting=lighting,
         base_to_world=placement.tolist(),
         render_collision_mesh=collision_visible,
         frames_with_visible_robot=sum(value > 0 for value in pixels),

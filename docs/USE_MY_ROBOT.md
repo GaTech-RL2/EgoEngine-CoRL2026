@@ -59,6 +59,13 @@ Missing referenced meshes are restored from the robosuite 1.5.1 distribution;
 their source and hashes are recorded in `docs/upstream/FRANKA_VISUAL_ASSETS.json`.
 Group-0 collision geometry is excluded from rendering.
 
+Scene lighting is inherited from the original replay independently of the arm.
+For Aria, this includes the warm overhead light defined in the RB-Y1 worldbody.
+The replacement keeps that light in world coordinates, along with the original
+headlight settings. Before rendering, the adapter verifies that the compiled
+scene lights match the original environment. Mesh colors and material properties
+remain those of the authored Panda and XHand assets.
+
 ## Rendered examples
 
 The panels show source RGB, the newly rendered Franka + original XHand foreground,
@@ -115,7 +122,8 @@ outputs/franka_xhand/mustard_1/
 `robot_commands.npz` contains seven Franka arm commands, twelve unchanged XHand
 commands, target/actual wrist poses and per-frame wrist errors. Inspect those
 errors and the rendered mask when calibrating a new robot. `render.json` records
-the fixed base pose, source/configuration hashes and visibility statistics.
+the fixed base pose, source/configuration hashes, compiled scene lighting and
+visibility statistics.
 
 The HDF5 `actions` retain EEF + XHand semantics. The optional
 `obs/robot_joint_commands` stores the nineteen visual replay joint values, with
@@ -127,7 +135,8 @@ The original RL recipe, mode switching and metric code are unchanged by this
 adapter.
 
 After generating all three cases, verify the recorded hand commands, camera and
-object tracks, rendered wrist poses, authored materials and exported action labels:
+object tracks, rendered wrist poses, scene lighting, authored materials and
+exported action labels:
 
 ```bash
 python scripts/validate_robot_visual.py

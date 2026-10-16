@@ -1,10 +1,12 @@
 """Check actual visual-robot outputs against the unchanged prepared demonstration."""
 
 import argparse
+from datetime import datetime, timezone
 import hashlib
 import json
 from pathlib import Path
 import sys
+from types import SimpleNamespace
 import xml.etree.ElementTree as ET
 
 import h5py
@@ -12,7 +14,7 @@ import mujoco
 import numpy as np
 
 from egoengine.data import PROJECT_ROOT, get_case
-from egoengine.robot_visual import base_pose, load_config, register_robot
+from egoengine.robot_visual import base_pose, lighting_state, load_config, register_robot
 from egoengine.video import video_info
 
 
@@ -43,6 +45,20 @@ def check_materials(config, placement):
     return checked
 
 
+def reference_lighting(case):
+    sys.path.insert(0, str(PROJECT_ROOT / "visual"))
+    from rl_tracking_dev.replay_trajectory_seg_aria import make_tracking_env
+
+    args = SimpleNamespace(data_file=str(case.visual / "retarget.json"), cam_name="cameraview")
+    env = make_tracking_env(args, use_cam_obs=False)()
+    try:
+        return lighting_state(env.env.sim.model._model), [
+            dict(light.attrib) for light in env.env.robots[0].robot_model.worldbody.findall("light")
+        ]
+    finally:
+        env.close()
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=PROJECT_ROOT / "outputs/franka_xhand")
@@ -55,6 +71,7 @@ def main():
     )
     args = parser.parse_args()
     config = load_config(args.robot_config)
+    original_lighting, original_lights = reference_lighting(get_case(args.cases[0]))
     rows = []
     for name in args.cases:
         case = get_case(name)
@@ -64,6 +81,9 @@ def main():
         assert visual_metadata["renderer"] == "configured_robot"
         assert visual_metadata["robot_name"] == config["name"]
         assert visual_metadata["robot_config_sha256"] == metadata["robot_config_sha256"]
+        assert metadata["lighting_source"] == "original_retarget_environment"
+        assert metadata["lighting"] == original_lighting
+        assert metadata["scene_lights"] == original_lights
         source_path = case.visual / "retarget.json"
         retarget = json.loads(source_path.read_text())
         adapted = json.loads(
@@ -116,6 +136,7 @@ def main():
                 camera_and_object_tracks_unchanged=True,
                 eef_actions_unchanged=True,
                 rendered_fk_matches_mapping=True,
+                lighting_matches_original_scene=True,
                 collision_geometry_visible=False,
                 visible_robot_frames=metadata["frames_with_visible_robot"],
                 max_wrist_position_error_m=metadata["max_wrist_position_error_m"],
@@ -127,8 +148,25 @@ def main():
         scope="Visual arm replacement and paired reference-EEF export; no new RL or hardware claim",
         robot=config["name"],
         materials_verified=materials,
+        restored_scene_lights=original_lights,
+        compiled_lighting=original_lighting,
         cases=rows,
         robot_config_sha256=hashlib.sha256(args.robot_config.read_bytes()).hexdigest(),
+        source_sha256={
+            name: hashlib.sha256((PROJECT_ROOT / name).read_bytes()).hexdigest()
+            for name in (
+                "egoengine/robot_visual.py",
+                "egoengine/visual.py",
+                "egoengine/export.py",
+                "egoengine/cli.py",
+                "examples/robots/franka_xhand.json",
+                "scripts/reproduce_franka_visual.sh",
+                "scripts/validate_robot_visual.py",
+                "scripts/build_robot_visual_media.py",
+                "tests/test_robot_config.py",
+            )
+        },
+        validated_at_utc=datetime.now(timezone.utc).isoformat(),
     )
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, indent=2) + "\n")
